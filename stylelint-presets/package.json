@@ -1,0 +1,19 @@
+{
+  "name": "@danifoldi/stylelint-presets",
+  "version": "0.1.0",
+  "description": "Various plug-and-play presets for stylelint",
+  "keywords": ["stylelint preset", "stylelint plugin", "stylelint", "lint", "stylelint config", "scss", "vue", "nuxt", "scss lint"],
+  "author": "DaniFoldi",
+  "license": "MIT",
+  "optionalDependencies": {
+    "postcss": "^8.4.12",
+    "postcss-scss": "^4.0.3",
+    "sass": "^1.50.0",
+    "stylelint": "^14.7.0",
+    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-config-vue": "^1.0.0",
+    "stylelint-high-performance-animation": "^1.6.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0"
+  }
+}
