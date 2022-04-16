@@ -1,5 +1,9 @@
 name: StyleLint
 
+defaults:
+  run:
+    working-directory: scripts
+
 on: # yamllint disable-line rule:truthy
   push:
     branches:
@@ -76,6 +80,7 @@ jobs:
       with:
         node-version: 16
         cache: npm
+        cache-dependency-path: 'stylelint-presets/**/package.json'
 
     - name: Install dependencies
       run: |
@@ -98,7 +103,9 @@ jobs:
       with:
         node-version: 16
         cache: npm
+        cache-dependency-path: 'stylelint-presets/**/package.json'
 
     - uses: JS-DevTools/npm-publish@v1
       with:
+        package: stylelint-presets/package.json
         token: ${{ secrets.NPM_TOKEN }}
