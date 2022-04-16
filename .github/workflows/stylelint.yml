@@ -2,19 +2,19 @@ name: StyleLint
 
 defaults:
   run:
-    working-directory: scripts
+    working-directory: stylelint-presets
 
 on: # yamllint disable-line rule:truthy
   push:
     branches:
     - main
     paths:
-    - 'eslint-presets/**'
+    - 'stylelint-presets/**'
   pull_request:
     branches:
     - main
     paths:
-    - 'eslint-presets/**'
+    - 'stylelint-presets/**'
     types:
     - opened
     - synchronize
