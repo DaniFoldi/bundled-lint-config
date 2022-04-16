@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: github-actions
+  directory: /
+  schedule:
+    interval: daily
+  commit-message:
+    prefix: ":paperclip:"
+- package-ecosystem: npm
+  directory: eslint-presets/
+  schedule:
+    interval: daily
+  commit-message:
+    prefix: ":paperclip:"
+- package-ecosystem: npm
+  directory: stylelint-presets/
+  schedule:
+    interval: daily
+  commit-message:
+    prefix: ":paperclip:"
+- package-ecosystem: pip
+  directory: yamllint-presets/
+  schedule:
+    interval: daily
+  commit-message:
+    prefix: ":paperclip:"
