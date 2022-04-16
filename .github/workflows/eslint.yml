@@ -1,0 +1,111 @@
+name: ESLint
+
+defaults:
+  run:
+    working-directory: eslint-presets
+
+on: # yamllint disable-line rule:truthy
+  push:
+    branches:
+    - main
+    paths:
+    - 'eslint-presets/**'
+  pull_request:
+    branches:
+    - main
+    paths:
+    - 'eslint-presets/**'
+    types:
+    - opened
+    - synchronize
+
+jobs:
+  dependabot-pr:
+    name: Approve and merge Dependabot PRs
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+
+    permissions:
+      pull-requests: write
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Fetch dependabot metadata
+      id: metadata
+      uses: dependabot/fetch-metadata@v1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Approve PR
+      if: steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh pr checkout "${{ github.event.pull_request.html_url }}"
+        if [ "$(gh pr status --json reviewDecision -q .currentBranch.reviewDecision)" != "APPROVED" ];
+        then gh pr review --approve "${{ github.event.pull_request.html_url }}"
+        else echo "PR already approved.";
+        fi
+
+    - name: Merge PR
+      if: steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh pr merge --auto --merge "${{ github.event.pull_request.html_url }}"
+
+  code-analysis:
+    name: Run CodeQL analysis
+    runs-on: ubuntu-latest
+
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: javascript
+
+    - name: Install nodejs
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: npm
+        cache-dependency-path: 'stylelint-presets/**/package.json'
+
+    - name: Install dependencies
+      run: |
+        npm ci --no-progress
+
+    - name: Run CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+
+  npm-publish:
+    name: Publish to NPM
+    runs-on: ubuntu-latest
+    if: contains( join( github.event.commits.*.message, ', ' ), '[ci release]' )
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install nodejs
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: npm
+        cache-dependency-path: 'stylelint-presets/**/package.json'
+
+    - uses: JS-DevTools/npm-publish@v1
+      with:
+        package: eslint-presets/package.json
+        token: ${{ secrets.NPM_TOKEN }}

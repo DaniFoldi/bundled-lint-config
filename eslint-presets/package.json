@@ -15,5 +15,13 @@
     "eslint-plugin-vitest": "0.0.8",
     "eslint-plugin-vue": "^8.6.0",
     "typescript": "^4.6.3"
+  },
+  "bugs": {
+    "url": "https://github.com/DaniFoldi/linters/issues"
+  },
+  "homepage": "https://github.com/DaniFoldi/linters#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniFoldi/linters.git"
   }
 }
