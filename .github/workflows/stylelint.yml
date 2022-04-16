@@ -107,5 +107,6 @@ jobs:
 
     - uses: JS-DevTools/npm-publish@v1
       with:
+        access: public
         package: stylelint-presets/package.json
         token: ${{ secrets.NPM_TOKEN }}
