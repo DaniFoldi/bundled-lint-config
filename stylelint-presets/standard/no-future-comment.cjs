@@ -6,7 +6,7 @@ const messages = stylelint.utils.ruleMessages(ruleName, {
   rejected: 'Unexpected \'$1\' comment: \'$2\''
 })
 const meta = {
-  url: 'https://github.com/DaniFoldi/paintbrush/blob/main/conf/stylelint-comment.cjs'
+  url: 'https://github.com/DaniFoldi/linters/blob/main/stylelint-presets/standard/no-future-comment.cjs'
 }
 
 module.exports = stylelint.createPlugin(
