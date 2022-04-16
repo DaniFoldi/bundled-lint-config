@@ -1,8 +1,8 @@
 module.exports = {
-  extends: [ '@danifoldi/stylelint-presets/scss/stylelint.config.js', '@danifoldi/stylelint-presets/vue/stylelint.config.js' ],
+  extends: [ '@danifoldi/stylelint-presets/scss', '@danifoldi/stylelint-presets/vue' ],
   overrides: [
     {
-      extends: [ '@danifoldi/stylelint-presets/scss/stylelint.config.js' ],
+      extends: [ '@danifoldi/stylelint-presets/scss' ],
       files: [ '**/*.scss', '*.scss' ]
     }
   ]

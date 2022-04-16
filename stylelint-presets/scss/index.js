@@ -1,6 +1,6 @@
 module.exports = {
   customSyntax: 'postcss-scss',
-  extends: [ 'stylelint-config-recommended-scss', '@danifoldi/stylelint-presets/standard/stylelint.config.js' ],
+  extends: [ 'stylelint-config-recommended-scss', '@danifoldi/stylelint-presets/standard' ],
   plugins: [ 'stylelint-order', 'stylelint-high-performance-animation', 'stylelint-scss', '@danifoldi/stylelint-presets/standard/no-future-comment.js' ],
   rules: {
     'at-rule-no-unknown': null,
