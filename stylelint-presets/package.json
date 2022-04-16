@@ -1,6 +1,6 @@
 {
   "name": "@danifoldi/stylelint-presets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Various plug-and-play presets for stylelint",
   "keywords": ["stylelint preset", "stylelint plugin", "stylelint", "lint", "stylelint config", "scss", "vue", "nuxt", "scss lint"],
   "author": "DaniFoldi",
