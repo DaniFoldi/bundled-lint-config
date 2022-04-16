@@ -1,8 +1,7 @@
 module.exports = {
   customSyntax: 'postcss-scss',
-  extends: [ 'stylelint-config-recommended-scss', '../standard/stylelint.config.cjs' ],
-  files: [ '**/*.scss', '*.scss' ],
-  plugins: [ 'stylelint-order', 'stylelint-high-performance-animation', 'stylelint-scss', './no-future-comment.cjs' ],
+  extends: [ 'stylelint-config-recommended-scss', '@danifoldi/stylelint-presets/standard/stylelint.config.js' ],
+  plugins: [ 'stylelint-order', 'stylelint-high-performance-animation', 'stylelint-scss', '@danifoldi/stylelint-presets/standard/no-future-comment.js' ],
   rules: {
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,

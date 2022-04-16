@@ -2,6 +2,7 @@
   "name": "@danifoldi/stylelint-presets",
   "version": "0.1.1",
   "description": "Various plug-and-play presets for stylelint",
+  "main": "standard/index.js",
   "keywords": [
     "stylelint preset",
     "stylelint plugin",

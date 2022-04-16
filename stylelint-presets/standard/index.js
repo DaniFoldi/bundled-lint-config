@@ -1,6 +1,6 @@
 module.exports = {
   ignoreFiles: [ 'node_modules/**' ],
-  plugins: [ 'stylelint-order', 'stylelint-high-performance-animation', './no-future-comment.cjs' ],
+  plugins: [ 'stylelint-order', 'stylelint-high-performance-animation', '@danifoldi/stylelint-presets/no-future-comment.js' ],
   rules: {
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always-single-line',
