@@ -1,6 +1,6 @@
 {
   "name": "@danifoldi/stylelint-presets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Various plug-and-play presets for stylelint",
   "keywords": [
     "stylelint preset",
@@ -15,7 +15,7 @@
   ],
   "author": "DaniFoldi",
   "license": "MIT",
-  "peerDependencies": {
+  "optionalDependencies": {
     "postcss": "^8.4.12",
     "postcss-scss": "^4.0.3",
     "sass": "^1.50.0",
