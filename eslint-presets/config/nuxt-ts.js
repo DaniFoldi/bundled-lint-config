@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    './nuxt.js',
-    './vue-ts.js'
+    'plugin:@danifoldi/eslint-plugin-eslint-presets/nuxt.js',
+    'plugin:@danifoldi/eslint-plugin-eslint-presets/vue-ts.js'
   ],
 }

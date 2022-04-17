@@ -63,3 +63,7 @@ module.exports = {
   extends: [ '@danifoldi/stylelint-presets/paintbrush' ]
 }
 ```
+
+## Contributing
+
+I have not tested all combinations, but they _should_ work. If they don't, feel free to open an issue or PR.

@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    './ts.js',
-    './vue.js'
+    'plugin:@danifoldi/eslint-plugin-eslint-presets/ts.js',
+    'plugin:@danifoldi/eslint-plugin-eslint-presets/vue.js'
   ],
   parserOptions: {
     ecmaFeatures: { jsx: true },
