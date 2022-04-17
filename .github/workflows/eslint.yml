@@ -80,7 +80,7 @@ jobs:
       with:
         node-version: 16
         cache: npm
-        cache-dependency-path: 'stylelint-presets/**/package.json'
+        cache-dependency-path: 'eslint-presets/**/package.json'
 
     - name: Install dependencies
       run: |
@@ -103,7 +103,7 @@ jobs:
       with:
         node-version: 16
         cache: npm
-        cache-dependency-path: 'stylelint-presets/**/package.json'
+        cache-dependency-path: 'eslint-presets/**/package.json'
 
     - uses: JS-DevTools/npm-publish@v1
       with:
