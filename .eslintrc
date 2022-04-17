@@ -1,5 +1,0 @@
-{
-  "extends": [
-    "./eslint-presets/config/standard.js"
-  ]
-}
