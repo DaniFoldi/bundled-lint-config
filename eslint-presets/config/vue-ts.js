@@ -3,6 +3,7 @@ module.exports = {
     'plugin:@danifoldi/eslint-plugin-eslint-presets/ts.js',
     'plugin:@danifoldi/eslint-plugin-eslint-presets/vue.js'
   ],
+  parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 2021,
@@ -10,6 +11,5 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module'
   },
-  parser: 'vue-eslint-parser',
   plugins: [ '@typescript-eslint' ]
 }
