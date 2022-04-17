@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    'plugin:@danifoldi/eslint-presets/ts.js',
-    'plugin:@danifoldi/eslint-presets/vue.js'
+    'plugin:@danifoldi/eslint-presets/ts',
+    'plugin:@danifoldi/eslint-presets/vue'
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {

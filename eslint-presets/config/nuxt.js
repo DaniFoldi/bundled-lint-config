@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'plugin:nuxt/recommended',
-    'plugin:@danifoldi/eslint-presets/vue.js'
+    'plugin:@danifoldi/eslint-presets/vue'
   ],
   globals: {
     definePageMeta: 'readonly',

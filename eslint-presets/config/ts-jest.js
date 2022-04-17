@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'plugin:@danifoldi/eslint-presets/ts.js',
-    'plugin:@danifoldi/eslint-presets/jest.js'
+    'plugin:@danifoldi/eslint-presets/ts',
+    'plugin:@danifoldi/eslint-presets/jest'
   ]
 }

@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'plugin:@danifoldi/eslint-presets/standard.js',
+    'plugin:@danifoldi/eslint-presets/standard',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript'
   ],
