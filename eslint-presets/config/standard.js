@@ -17,10 +17,15 @@ module.exports = {
       }
     },
     {
+      env: { node: true },
       files: [ '**lint**' ],
       rules: {
         'quote-props': [ 'error', 'consistent-as-needed' ]
       }
+    },
+    {
+      env: { node: true },
+      files: [ '**config**.cjs', '**config**.mjs', '**config**.js', '**config**.ts' ]
     },
     {
       files: [ '**lang/**' ],
