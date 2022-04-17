@@ -30,7 +30,13 @@ module.exports = {
     },
     {
       env: { node: true },
-      files: ['*.cjs', '**config**', '**lint**', '**test**' ]
+      files: [ '*lint*' ],
+      parserOptions: {
+        sourceType: 'script'
+      },
+      rules: {
+        'unicorn/prefer-module': 'off'
+      }
     },
     {
       files: [ '*.cjs' ],
