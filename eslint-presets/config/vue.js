@@ -2,7 +2,7 @@ module.exports = {
   env: { 'vue/setup-compiler-macros': true },
   extends: [
     'plugin:@danifoldi/eslint-plugin-eslint-presets/standard.js',
-    'plugin:vue/vue3-recommended',
+    'plugin:vue/vue3-recommended'
   ],
   overrides: [
     {
@@ -31,7 +31,7 @@ module.exports = {
     'vue/brace-style': [ 'error', '1tbs' ],
     'vue/comma-dangle': [ 'warn', 'never' ],
     'vue/comma-spacing': [ 'warn', { after: true, before: false  }],
-    "vue/comment-directive": ["error", { "reportUnusedDisableDirectives": false }],
+    'vue/comment-directive': [ 'error', { 'reportUnusedDisableDirectives': false }],
     'vue/component-api-style': [ 'error', [ 'script-setup', 'composition' ]],
     'vue/component-name-in-template-casing': [ 'error', 'PascalCase' ],
     'vue/custom-event-name-casing': [ 'error', 'kebab-case' ],

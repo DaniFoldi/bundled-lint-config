@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['vitest'],
+  plugins: [ 'vitest' ],
   rules: {
     'vitest/no-skip-test': 'warn',
     'vitest/lower-case-title': 'warn',

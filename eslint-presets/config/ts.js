@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     'plugin:@danifoldi/eslint-plugin-eslint-presets/standard.js',
     'plugin:@typescript-eslint/recommended',
-    'plugin:import/typescript',
+    'plugin:import/typescript'
   ],
   overrides: [
     {
@@ -13,7 +13,7 @@ module.exports = {
       parserOptions: {
         sourceType: 'script'
       }
-    },
+    }
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {

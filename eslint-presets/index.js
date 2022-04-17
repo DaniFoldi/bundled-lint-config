@@ -1,7 +1,7 @@
 module.exports = {
-  //rules: {
+  // rules: {
   //  'custom/no-future-comment': require('@danifoldi/eslint-plugin-eslint-presets/rules/vue-no-future-comment.js')
-  //},
+  // },
   configs: {
     'jest': require('@danifoldi/eslint-plugin-eslint-presets/config/jest.js'),
     'nuxt-ts-vitest': require('@danifoldi/eslint-plugin-eslint-presets/config/nuxt-ts-vitest.js'),

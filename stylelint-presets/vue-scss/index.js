@@ -3,10 +3,8 @@ module.exports = {
   overrides: [
     {
       customSyntax: 'postcss-html',
-      files: ['*.vue', '**/*.vue'],
-      extends: [
-        'stylelint-config-recommended-scss',
-      ],
+      files: [ '*.vue', '**/*.vue' ],
+      extends: [ 'stylelint-config-recommended-scss' ],
       rules: {
         'function-no-unknown': [ true, { ignoreFunctions: [ 'v-bind' ] }],
         'selector-pseudo-element-no-unknown': [ true, { ignorePseudoElements: [ 'v-deep' ] }],
@@ -19,6 +17,6 @@ module.exports = {
     }
   ],
   rules: {
-    'at-rule-no-unknown': null,
+    'at-rule-no-unknown': null
   }
 }

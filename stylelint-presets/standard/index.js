@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['stylelint-config-recommended'],
+  extends: [ 'stylelint-config-recommended' ],
   ignoreFiles: [ 'node_modules/**' ],
   plugins: [ 'stylelint-order', 'stylelint-high-performance-animation', '@danifoldi/stylelint-presets/standard/no-future-comment.js' ],
   rules: {
