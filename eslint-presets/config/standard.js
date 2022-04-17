@@ -23,6 +23,16 @@ module.exports = {
       }
     },
     {
+      files: [ '**lang/**' ],
+      rules: {
+        'unicorn/filename-case': 'off'
+      }
+    },
+    {
+      env: { node: true },
+      files: ['*.cjs', '**config**', '**lint**', '**test**' ]
+    },
+    {
       files: [ '*.cjs' ],
       parserOptions: {
         sourceType: 'script'

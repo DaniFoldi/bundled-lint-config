@@ -31,6 +31,7 @@ module.exports = {
     'vue/brace-style': [ 'error', '1tbs' ],
     'vue/comma-dangle': [ 'warn', 'never' ],
     'vue/comma-spacing': [ 'warn', { after: true, before: false  }],
+    "vue/comment-directive": ["error", { "reportUnusedDisableDirectives": false }],
     'vue/component-api-style': [ 'error', [ 'script-setup', 'composition' ]],
     'vue/component-name-in-template-casing': [ 'error', 'PascalCase' ],
     'vue/custom-event-name-casing': [ 'error', 'kebab-case' ],

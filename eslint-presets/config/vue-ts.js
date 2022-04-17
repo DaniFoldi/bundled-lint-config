@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    './vue.js',
-    './ts.js'
+    './ts.js',
+    './vue.js'
   ],
   parserOptions: {
     ecmaFeatures: { jsx: true },

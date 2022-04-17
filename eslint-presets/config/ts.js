@@ -9,6 +9,9 @@ module.exports = {
       files: [ '*.cjs' ],
       rules: {
         '@typescript-eslint/no-var-requires': 'off'
+      },
+      parserOptions: {
+        sourceType: 'script'
       }
     },
   ],
