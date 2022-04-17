@@ -1,7 +1,7 @@
 module.exports = {
   env: { 'vue/setup-compiler-macros': true },
   extends: [
-    'plugin:@danifoldi/eslint-plugin-eslint-presets/standard.js',
+    'plugin:@danifoldi/eslint-presets/standard.js',
     'plugin:vue/vue3-recommended'
   ],
   overrides: [

@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [ 'plugin:@danifoldi/eslint-plugin-eslint-presets/nuxt-ts-vitest.js' ],
+  extends: [ 'plugin:@danifoldi/eslint-presets/nuxt-ts-vitest.js' ],
   globals: {
     localePath: 'readonly',
     switchLocalePath: 'readonly',
