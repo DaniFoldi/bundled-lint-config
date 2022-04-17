@@ -1,6 +1,6 @@
 {
   "name": "@danifoldi/stylelint-presets",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Various plug-and-play presets for stylelint",
   "main": "standard/index.js",
   "keywords": [
@@ -18,11 +18,12 @@
   "license": "MIT",
   "optionalDependencies": {
     "postcss": "^8.4.12",
+    "postcss-html": "^1.4.1",
     "postcss-scss": "^4.0.3",
     "sass": "^1.50.0",
     "stylelint": "^14.7.0",
+    "stylelint-config-recommended": "^7.0.0",
     "stylelint-config-recommended-scss": "^6.0.0",
-    "stylelint-config-vue": "^1.0.0",
     "stylelint-high-performance-animation": "^1.6.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.2.0"
