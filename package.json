@@ -1,0 +1,26 @@
+{
+  "name": "linters",
+  "version": "1.0.0",
+  "description": "Check https://github.com/DaniFoldi/linters for more details.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .cjs,.js,.mjs,.ts --cache --cache-file .eslintcache --report-unused-disable-directives ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniFoldi/linters.git"
+  },
+  "keywords": [],
+  "author": "DaniFoldi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaniFoldi/linters/issues"
+  },
+  "private": true,
+  "homepage": "https://github.com/DaniFoldi/linters#readme",
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-unicorn": "^42.0.0"
+  }
+}
