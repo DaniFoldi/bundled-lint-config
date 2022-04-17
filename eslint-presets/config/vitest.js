@@ -1,11 +1,11 @@
 module.exports = {
   plugins: ['vitest'],
   rules: {
-    'no-skip-test': 'warn',
-    'lower-case-title': 'warn',
-    'assertion-type': 'warn',
-    'max-nested-describe': 'warn',
-    'no-idential-title': 'warn',
-    'no-conditional-in-test': 'warn'
+    'vitest/no-skip-test': 'warn',
+    'vitest/lower-case-title': 'warn',
+    'vitest/assertion-type': 'warn',
+    'vitest/max-nested-describe': 'warn',
+    'vitest/no-idential-title': 'warn',
+    'vitest/no-conditional-in-test': 'warn'
   }
 }

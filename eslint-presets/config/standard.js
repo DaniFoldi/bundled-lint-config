@@ -123,7 +123,6 @@ module.exports = {
     'prefer-spread': 'warn',
     'prefer-template': 'warn',
     'quotes': [ 'error', 'single' ],
-    'rulesdir/vue-eslint-comment': [ 'warn', { disallow: [ 'todo', 'fixme' ] }],
     'semi': [ 'error', 'never' ],
     'sort-imports': 'off',
     'sort-keys': 'warn',

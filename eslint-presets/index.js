@@ -1,7 +1,7 @@
 module.exports = {
-  rules: {
-    'custom/no-future-comment': require('./rules/vue-no-future-comment.js')
-  },
+  //rules: {
+  //  'custom/no-future-comment': require('./rules/vue-no-future-comment.js')
+  //},
   configs: {
     'jest': require('./config/jest.js'),
     'nuxt-ts-vitest': require('./config/nuxt-ts-vitest.js'),
