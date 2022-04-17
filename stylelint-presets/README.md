@@ -6,7 +6,7 @@ Check https://github.com/DaniFoldi/linters for more details.
 
 ### Standard
 
-`npm i -D stylelint stylelint-config-recommended stylelint-order stylelint-high-performance-animation`
+`npm i -D @danifoldi/stylelint-presets stylelint stylelint-config-recommended stylelint-order stylelint-high-performance-animation`
 
 stylelint.config.(c)js:
 
@@ -18,7 +18,7 @@ module.exports = {
 
 ### Vue
 
-`npm i -D stylelint stylelint-config-recommended stylelint-order stylelint-high-performance-animation postcss postcss-html`
+`npm i -D @danifoldi/stylelint-presets stylelint stylelint-config-recommended stylelint-order stylelint-high-performance-animation postcss postcss-html`
 
 stylelint.config.(c)js:
 
@@ -30,7 +30,7 @@ module.exports = {
 
 ### Scss
 
-`npm i -D stylelint stylelint-config-recommended stylelint-order stylelint-high-performance-animation postcss postcss-scss sass stylelint-config-recommended-scss stylelint-scss`
+`npm i -D @danifoldi/stylelint-presets stylelint stylelint-config-recommended stylelint-order stylelint-high-performance-animation postcss postcss-scss sass stylelint-config-recommended-scss stylelint-scss`
 
 stylelint.config.(c)js:
 
@@ -42,7 +42,7 @@ module.exports = {
 
 ### Vue-scss
 
-`npm i -D stylelint stylelint-config-recommended stylelint-order stylelint-high-performance-animation postcss postcss-html postcss-scss sass stylelint-config-recommended-scss stylelint-scss`
+`npm i -D @danifoldi/stylelint-presets stylelint stylelint-config-recommended stylelint-order stylelint-high-performance-animation postcss postcss-html postcss-scss sass stylelint-config-recommended-scss stylelint-scss`
 
 stylelint.config.(c)js:
 
@@ -54,7 +54,7 @@ module.exports = {
 
 ### Paintbrush
 
-`npm i -D stylelint stylelint-config-recommended stylelint-order stylelint-high-performance-animation postcss postcss-html postcss-scss sass stylelint-config-recommended-scss stylelint-scss`
+`npm i -D @danifoldi/stylelint-presets stylelint stylelint-config-recommended stylelint-order stylelint-high-performance-animation postcss postcss-html postcss-scss sass stylelint-config-recommended-scss stylelint-scss`
 
 stylelint.config.(c)js:
 
