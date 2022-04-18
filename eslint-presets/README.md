@@ -38,7 +38,7 @@ module.exports = {
 ```
 ### Ts
 
-`npm i -D typescript eslint eslint-plugin-import eslint-plugin-unicorn @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+`npm i -D @danifoldi/eslint-plugin-eslint-presets typescript eslint eslint-plugin-import eslint-plugin-unicorn @typescript-eslint/eslint-plugin @typescript-eslint/parser`
 
 .eslintrc.js
 ```js
