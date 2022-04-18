@@ -75,7 +75,7 @@ module.exports = {
     'import/no-unassigned-import': 'error',
     'import/no-unresolved': 'error',
     'import/no-webpack-loader-syntax': 'error',
-    'import/order': [ 'error', {   groups: [ 'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type' ] }],
+    'import/order': [ 'error', { groups: [ 'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type' ] }],
     'indent': [ 'error', 2, { SwitchCase: 1 }],
     'key-spacing': [ 'warn', { afterColon: true, beforeColon: false, mode: 'strict' }],
     'keyword-spacing': [ 'warn', { after: true, before: true  }],
