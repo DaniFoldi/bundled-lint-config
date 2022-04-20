@@ -146,7 +146,7 @@ module.exports = {
     'quotes': [ 'error', 'single' ],
     'semi': [ 'error', 'never' ],
     'sort-imports': 'off',
-    'sort-keys': 'warn',
+    'sort-keys': [ 'warn', 'asc', { caseSensitive: false, minKeys: 5, natural: true }],
     'space-before-function-paren': [ 'error', { anonymous: 'never', asyncArrow: 'always', named: 'never' }],
     'space-in-parens': [ 'warn', 'never' ],
     'space-infix-ops': 'warn',
