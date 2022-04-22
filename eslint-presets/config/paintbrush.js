@@ -3,6 +3,6 @@ module.exports = {
   globals: {
     localePath: 'readonly',
     switchLocalePath: 'readonly',
-    useTheme: 'readonly'
+    useThemeManager: 'readonly'
   }
 }
