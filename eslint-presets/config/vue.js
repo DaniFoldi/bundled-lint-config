@@ -47,7 +47,7 @@ module.exports = {
     'vue/keyword-spacing': [ 'warn', { after: true, before: true  }],
     'vue/max-attributes-per-line': [ 'warn', { multiline: 1, singleline: 3 }],
     'vue/max-len': [
-      'error', {
+      'warn', {
         code: 120,
         ignoreRegExpLiterals: true,
         ignoreStrings: true,
@@ -72,7 +72,7 @@ module.exports = {
     'vue/no-useless-mustaches': [ 'error', { ignoreStringEscape: true }],
     'vue/no-useless-v-bind': 'error',
     'vue/object-curly-newline': [
-      'error',
+      'warn',
       {
         ExportDeclaration: { minProperties: 3, multiline: true },
         ImportDeclaration: 'never'
@@ -87,7 +87,7 @@ module.exports = {
     'vue/prefer-true-attribute-shorthand': [ 'warn', 'always' ],
     'vue/require-emit-validator': 'error',
     'vue/script-indent': [ 'warn', 2, { baseIndent: 1 }],
-    'vue/sort-keys': [ 'warn', 'asc', { caseSensitive: true, natural: true }],
+    'vue/sort-keys': [ 'warn', 'asc', { caseSensitive: true, minKeys: 5, natural: true }],
     'vue/space-in-parens': [ 'warn', 'never' ],
     'vue/space-infix-ops': 'warn',
     'vue/static-class-names-order': 'warn',

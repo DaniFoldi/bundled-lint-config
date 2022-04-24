@@ -80,9 +80,9 @@ module.exports = {
     'key-spacing': [ 'warn', { afterColon: true, beforeColon: false, mode: 'strict' }],
     'keyword-spacing': [ 'warn', { after: true, before: true  }],
     'linebreak-style': [ 'error', 'unix' ],
-    'lines-between-class-members': [ 'error', 'always', { exceptAfterSingleLine: true }],
+    'lines-between-class-members': [ 'warn', 'always', { exceptAfterSingleLine: true }],
     'max-len': [
-      'error', {
+      'warn', {
         code: 120,
         ignoreRegExpLiterals: true,
         ignoreStrings: true,
@@ -131,7 +131,7 @@ module.exports = {
     'no-var': 'error',
     'no-warning-comments': [ 'warn', { location: 'anywhere', terms: [ 'todo', 'fixme' ] }],
     'object-curly-newline': [
-      'error',
+      'warn',
       {
         ExportDeclaration: { minProperties: 3, multiline: true },
         ImportDeclaration: 'never'
@@ -143,8 +143,8 @@ module.exports = {
     'prefer-object-spread': 'warn',
     'prefer-spread': 'warn',
     'prefer-template': 'warn',
-    'quotes': [ 'error', 'single' ],
-    'semi': [ 'error', 'never' ],
+    'quotes': [ 'warn', 'single' ],
+    'semi': [ 'warn', 'never' ],
     'sort-imports': 'off',
     'sort-keys': [ 'warn', 'asc', { caseSensitive: false, minKeys: 5, natural: true }],
     'space-before-function-paren': [ 'error', { anonymous: 'never', asyncArrow: 'always', named: 'never' }],
@@ -152,13 +152,10 @@ module.exports = {
     'space-infix-ops': 'warn',
     'spaced-comment': [ 'warn', 'always', { exceptions: [ '*' ] }],
     'template-curly-spacing': [ 'warn', 'never' ],
+    'unicorn/filename-case': [ 'warn', { cases: { camelCase: true, kebabCase: true } }],
     'unicorn/no-null': 'off',
     'unicorn/numeric-separators-style': [ 'warn', { onlyIfContainsSeparator: true }],
     'unicorn/prevent-abbreviations': 'off',
     'valid-typeof': [ 'error', { requireStringLiterals: true }]
-  },
-  settings: {
-    'html/indent': '+2',
-    'html/report-bad-indent': 'warn'
   }
 }
