@@ -8,13 +8,8 @@ module.exports = {
     {
       files: [ '*.vue', '**/*.vue' ],
       rules: {
-        indent: 'off'
-      }
-    },
-    {
-      files: [ '*.json' ],
-      rules: {
-        'vue/sort-keys': 'off'
+        indent: 'off',
+        'vue/sort-keys': [ 'warn', 'asc', { caseSensitive: true, minKeys: 5, natural: true }],
       }
     }
   ],
@@ -31,11 +26,11 @@ module.exports = {
     'vue/brace-style': [ 'error', '1tbs' ],
     'vue/comma-dangle': [ 'warn', 'never' ],
     'vue/comma-spacing': [ 'warn', { after: true, before: false  }],
-    'vue/comment-directive': [ 'error', { 'reportUnusedDisableDirectives': false }],
+    'vue/comment-directive': [ 'error', { reportUnusedDisableDirectives: false }],
     'vue/component-api-style': [ 'error', [ 'script-setup', 'composition' ]],
     'vue/component-name-in-template-casing': [ 'error', 'PascalCase' ],
     'vue/custom-event-name-casing': [ 'error', 'kebab-case' ],
-    'vue/define-macros-order': [ 'error', { 'order': [ 'defineEmits', 'defineProps' ] }],
+    'vue/define-macros-order': [ 'error', { order: [ 'defineEmits', 'defineProps' ] }],
     'vue/dot-notation': [ 'error', { allowKeywords: true }],
     'vue/eqeqeq': [ 'error', 'always' ],
     'vue/func-call-spacing': [ 'error', 'never' ],
@@ -87,7 +82,6 @@ module.exports = {
     'vue/prefer-true-attribute-shorthand': [ 'warn', 'always' ],
     'vue/require-emit-validator': 'error',
     'vue/script-indent': [ 'warn', 2, { baseIndent: 1 }],
-    'vue/sort-keys': [ 'warn', 'asc', { caseSensitive: true, minKeys: 5, natural: true }],
     'vue/space-in-parens': [ 'warn', 'never' ],
     'vue/space-infix-ops': 'warn',
     'vue/static-class-names-order': 'warn',
