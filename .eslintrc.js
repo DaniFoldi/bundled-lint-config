@@ -4,6 +4,7 @@ module.exports = {
     './eslint-presets/config/node.js'
   ],
   rules: {
-    'unicorn/prefer-module': 'off'
+    'unicorn/prefer-module': 'off',
+    'quote-props': [ 'warn', 'consistent-as-needed' ]
   }
 }

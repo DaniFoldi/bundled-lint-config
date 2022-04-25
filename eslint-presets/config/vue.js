@@ -8,8 +8,8 @@ module.exports = {
     {
       files: [ '*.vue', '**/*.vue' ],
       rules: {
-        indent: 'off',
-        'vue/sort-keys': [ 'warn', 'asc', { caseSensitive: true, minKeys: 5, natural: true }],
+        'indent': 'off',
+        'vue/sort-keys': [ 'warn', 'asc', { caseSensitive: true, minKeys: 5, natural: true }]
       }
     }
   ],
