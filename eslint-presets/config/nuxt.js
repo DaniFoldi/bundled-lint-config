@@ -5,6 +5,7 @@ module.exports = {
   ],
   globals: {
     definePageMeta: 'readonly',
+    resolveComponent: 'readonly',
     useFetch: 'readonly',
     useHead: 'readonly',
     useLazyFetch: 'readonly',
