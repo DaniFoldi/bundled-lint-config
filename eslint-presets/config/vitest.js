@@ -1,4 +1,5 @@
 module.exports = {
+  extends: [ 'plugin:@danifoldi/eslint-presets/standard' ],
   plugins: [ 'vitest' ],
   rules: {
     'vitest/assertion-type': 'warn',
