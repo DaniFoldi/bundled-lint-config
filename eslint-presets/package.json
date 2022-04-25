@@ -13,7 +13,13 @@
     "typescript",
     "vue",
     "nuxt",
-    "typescript lint"
+    "typescript lint",
+    "jest",
+    "vitest",
+    "vue lint",
+    "ts lint",
+    "vue lint",
+    "nuxt lint"
   ],
   "author": "DaniFoldi",
   "license": "MIT",
