@@ -153,6 +153,7 @@ module.exports = {
     'spaced-comment': [ 'warn', 'always', { exceptions: [ '*' ] }],
     'template-curly-spacing': [ 'warn', 'never' ],
     'unicorn/filename-case': [ 'warn', { cases: { camelCase: true, kebabCase: true } }],
+    'unicorn/no-array-callback-reference': 'off',
     'unicorn/no-null': 'off',
     'unicorn/numeric-separators-style': [ 'warn', { onlyIfContainsSeparator: true }],
     'unicorn/prevent-abbreviations': 'off',
