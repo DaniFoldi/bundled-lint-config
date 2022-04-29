@@ -3,7 +3,7 @@ module.exports = {
   overrides: [
     {
       customSyntax: 'postcss-html',
-      extends: [ 'stylelint-config-recommended' ],
+      extends: [ 'stylelint-config-recommended', '@danifoldi/stylelint-presets/standard' ],
       files: [ '*.vue', '**/*.vue' ],
       rules: {
         'function-no-unknown': [ true, { ignoreFunctions: [ 'v-bind' ] }],
