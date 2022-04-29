@@ -22,7 +22,7 @@ module.exports = {
     'declaration-no-important': true,
     'function-name-case': 'lower',
     'function-no-unknown': true,
-    'indentation': 2,
+    'indentation': [ 2, { baseIndentLevel: 1 }],
     'length-zero-no-unit': true,
     'max-empty-lines': 2,
     'max-line-length': 120,
