@@ -31,12 +31,14 @@ module.exports = {
     ],
     '@typescript-eslint/no-unused-vars': [ 'warn' ],
     '@typescript-eslint/prefer-for-of': 'warn',
+    '@typescript-eslint/semi': [ 'error', 'never' ],
     '@typescript-eslint/type-annotation-spacing': [
       'warn', {
         after: true, before: true,
         overrides: { colon: { after: true, before: false } }
       }
     ],
-    'no-unused-vars': 'off'
+    'no-unused-vars': 'off',
+    'semi': [ 'warn', 'never' ]
   }
 }

@@ -66,7 +66,7 @@ module.exports = {
     'func-call-spacing': [ 'error', 'never' ],
     'function-paren-newline': [ 'error', 'multiline' ],
     'import/export': 'error',
-    'import/exports-last': 'error',
+    'import/exports-last': 'warn',
     'import/first': [ 'error', 'absolute-first' ],
     'import/newline-after-import': [ 'error', { count: 2 }],
     'import/no-absolute-path': [ 'error', { amd: false, commonjs: true, esmodule: true }],
@@ -133,8 +133,8 @@ module.exports = {
     'object-curly-newline': [
       'warn',
       {
-        ExportDeclaration: { minProperties: 6, multiline: true },
-        ImportDeclaration: { minProperties: 6, multiline: true }
+        ExportDeclaration: { multiline: true },
+        ImportDeclaration: { multiline: true }
       }
     ],
     'object-curly-spacing': [ 'warn', 'always' ],
