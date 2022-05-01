@@ -7,7 +7,6 @@ module.exports = {
   overrides: [
     {
       files: [ '*.cjs' ],
-
       parserOptions: {
         sourceType: 'script'
       },
@@ -29,9 +28,17 @@ module.exports = {
         singleline: { delimiter: 'semi', requireLast: false }
       }
     ],
+    '@typescript-eslint/member-ordering': [
+      'warn', {
+        interfaces: { order: 'alphabetically' }
+      }
+    ],
     '@typescript-eslint/no-unused-vars': [ 'warn' ],
     '@typescript-eslint/prefer-for-of': 'warn',
+    '@typescript-eslint/prefer-ts-expect-error': 'error',
     '@typescript-eslint/semi': [ 'error', 'never' ],
+    '@typescript-eslint/space-before-blocks': [ 'warn' ],
+    '@typescript-eslint/space-infix-ops': [ 'warn', { int32Hint: false }],
     '@typescript-eslint/type-annotation-spacing': [
       'warn', {
         after: true, before: true,
@@ -39,6 +46,8 @@ module.exports = {
       }
     ],
     'no-unused-vars': 'off',
-    'semi': [ 'warn', 'never' ]
+    'semi': [ 'warn', 'never' ],
+    'space-before-blocks': 'off',
+    'space-infix-ops': 'off'
   }
 }

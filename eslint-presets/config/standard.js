@@ -67,7 +67,7 @@ module.exports = {
     'function-paren-newline': [ 'error', 'multiline' ],
     'import/export': 'error',
     'import/exports-last': 'warn',
-    'import/first': [ 'error', 'absolute-first' ],
+    'import/first': 'error',
     'import/newline-after-import': [ 'error', { count: 2 }],
     'import/no-absolute-path': [ 'error', { amd: false, commonjs: true, esmodule: true }],
     'import/no-duplicates': 'error',
