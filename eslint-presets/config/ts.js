@@ -30,6 +30,7 @@ module.exports = {
     ],
     '@typescript-eslint/member-ordering': [
       'warn', {
+        default: { memberTypes: 'never' },
         interfaces: { order: 'alphabetically' }
       }
     ],
