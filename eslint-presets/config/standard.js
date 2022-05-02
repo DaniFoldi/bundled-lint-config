@@ -159,5 +159,12 @@ module.exports = {
     'unicorn/numeric-separators-style': [ 'warn', { onlyIfContainsSeparator: true }],
     'unicorn/prevent-abbreviations': 'off',
     'valid-typeof': [ 'error', { requireStringLiterals: true }]
+  },
+  settings: {
+    'import/extensions': [
+      '.cjs',
+      '.js',
+      '.mjs'
+    ]
   }
 }

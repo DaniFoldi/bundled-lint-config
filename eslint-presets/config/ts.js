@@ -49,5 +49,13 @@ module.exports = {
     'semi': [ 'warn', 'never' ],
     'space-before-blocks': 'off',
     'space-infix-ops': 'off'
+  },
+  settings: {
+    'import/extensions': [
+      '.cjs',
+      '.js',
+      '.mjs',
+      '.ts'
+    ]
   }
 }
