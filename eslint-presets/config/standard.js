@@ -152,7 +152,7 @@ module.exports = {
     'space-infix-ops': 'warn',
     'spaced-comment': [ 'warn', 'always', { exceptions: [ '*' ] }],
     'template-curly-spacing': [ 'warn', 'never' ],
-    'unicorn/filename-case': [ 'warn', { cases: { camelCase: true, kebabCase: true } }],
+    'unicorn/filename-case': [ 'warn', { cases: { camelCase: true, kebabCase: true, pascalCase: true } }],
     'unicorn/no-array-callback-reference': 'off',
     'unicorn/no-array-reduce': 'off',
     'unicorn/no-null': 'off',
