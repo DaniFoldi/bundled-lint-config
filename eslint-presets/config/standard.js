@@ -154,6 +154,7 @@ module.exports = {
     'template-curly-spacing': [ 'warn', 'never' ],
     'unicorn/filename-case': [ 'warn', { cases: { camelCase: true, kebabCase: true, pascalCase: true } }],
     'unicorn/no-array-callback-reference': 'off',
+    'unicorn/no-array-for-each': 'off',
     'unicorn/no-array-reduce': 'off',
     'unicorn/no-null': 'off',
     'unicorn/numeric-separators-style': [ 'warn', { onlyIfContainsSeparator: true }],
