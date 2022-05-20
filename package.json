@@ -19,7 +19,7 @@
   "private": true,
   "homepage": "https://github.com/DaniFoldi/linters#readme",
   "devDependencies": {
-    "eslint": "^8.13.0",
+    "eslint": "^8.15.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unicorn": "^42.0.0"
   }
