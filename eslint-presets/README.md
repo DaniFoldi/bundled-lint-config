@@ -57,6 +57,28 @@ module.exports = {
 }
 ```
 
+### Comet
+
+`npm i -D @danifoldi/eslint-plugin-eslint-presets typescript eslint eslint-plugin-import eslint-plugin-unicorn @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+
+.eslintrc.js
+```js
+module.exports = {
+  extends: [ 'plugin:@danifoldi/eslint-presets/comet' ]
+}
+```
+
+### Comet-jest
+
+`npm i -D @danifoldi/eslint-plugin-eslint-presets typescript eslint eslint-plugin-import eslint-plugin-unicorn @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-jest`
+
+.eslintrc.js
+```js
+module.exports = {
+  extends: [ 'plugin:@danifoldi/eslint-presets/comet-jest' ]
+}
+```
+
 ### Vue
 
 `npm i -D @danifoldi/eslint-plugin-eslint-presets eslint eslint-plugin-import eslint-plugin-unicorn eslint-plugin-vue`
