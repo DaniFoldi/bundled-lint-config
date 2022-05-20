@@ -29,6 +29,7 @@ module.exports = {
     'vue/comment-directive': [ 'error', { reportUnusedDisableDirectives: false }],
     'vue/component-api-style': [ 'error', [ 'script-setup', 'composition' ]],
     'vue/component-name-in-template-casing': [ 'error', 'PascalCase' ],
+    'vue/component-tags-order': [ 'error', { order: [ 'template', 'script[setup]', 'script:not([setup])', 'style[scoped]', 'style:not([scoped])' ] }],
     'vue/custom-event-name-casing': [ 'error', 'kebab-case' ],
     'vue/define-macros-order': [ 'error', { order: [ 'defineEmits', 'defineProps' ] }],
     'vue/dot-notation': [ 'error', { allowKeywords: true }],
@@ -56,6 +57,7 @@ module.exports = {
     'vue/no-constant-condition': 'error',
     'vue/no-empty-component-block': 'error',
     'vue/no-empty-pattern': 'error',
+    'vue/no-expose-after-await': 'error',
     'vue/no-extra-parens': [ 'error', 'functions' ],
     'vue/no-irregular-whitespace': 'error',
     'vue/no-loss-of-precision': 'error',
@@ -63,6 +65,7 @@ module.exports = {
     'vue/no-sparse-arrays': 'error',
     'vue/no-static-inline-styles': 'error',
     'vue/no-template-target-blank': 'error',
+    'vue/no-use-v-if-with-v-for': 'error',
     'vue/no-useless-concat': 'warn',
     'vue/no-useless-mustaches': [ 'error', { ignoreStringEscape: true }],
     'vue/no-useless-v-bind': 'error',
@@ -78,6 +81,7 @@ module.exports = {
     'vue/order-in-components': 'warn',
     'vue/padding-line-between-blocks': [ 'warn', 'always' ],
     'vue/prefer-import-from-vue': 'error',
+    'vue/prefer-prop-type-boolean-first': 'error',
     'vue/prefer-template': 'warn',
     'vue/prefer-true-attribute-shorthand': [ 'warn', 'always' ],
     'vue/require-emit-validator': 'error',
@@ -86,6 +90,7 @@ module.exports = {
     'vue/space-infix-ops': 'warn',
     'vue/static-class-names-order': 'warn',
     'vue/template-curly-spacing': [ 'warn', 'never' ],
-    'vue/v-on-function-call': 'warn'
+    'vue/v-on-function-call': 'warn',
+    'vue/valid-attribute-name': 'error'
   }
 }
