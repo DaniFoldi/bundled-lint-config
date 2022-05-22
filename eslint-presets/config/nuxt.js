@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    '@danifoldi/eslint-presets/nuxt': true
+  },
   extends: [
     'plugin:nuxt/recommended',
     'plugin:@danifoldi/eslint-presets/vue'
@@ -11,6 +14,7 @@ module.exports = {
       }
     }
   ],
+  plugins: [ '@danifoldi/eslint-presets' ],
   rules: {
     'import/no-unresolved': [ 'error', { ignore: [ '#app', '#assets', '#build', '#config', '#imports', '#storage' ] }]
   }

@@ -19,5 +19,8 @@ module.exports = {
     'vitest': require('@danifoldi/eslint-plugin-eslint-presets/config/vitest.js'),
     'vue': require('@danifoldi/eslint-plugin-eslint-presets/config/vue.js'),
     'vue-ts': require('@danifoldi/eslint-plugin-eslint-presets/config/vue-ts.js')
+  },
+  environments: {
+    nuxt: require('./nuxt-environment')
   }
 }
