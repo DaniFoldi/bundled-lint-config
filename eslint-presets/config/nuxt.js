@@ -3,18 +3,6 @@ module.exports = {
     'plugin:nuxt/recommended',
     'plugin:@danifoldi/eslint-presets/vue'
   ],
-  globals: {
-    definePageMeta: 'readonly',
-    resolveComponent: 'readonly',
-    useFetch: 'readonly',
-    useHead: 'readonly',
-    useLazyFetch: 'readonly',
-    useNuxtApp: 'readonly',
-    useRoute: 'readonly',
-    useRouter: 'readonly',
-    useState: 'readonly',
-    watch: 'readonly'
-  },
   overrides: [
     {
       files: [ 'components/*.vue', 'components/**/*.vue' ],
