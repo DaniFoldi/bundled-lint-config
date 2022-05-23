@@ -85,7 +85,7 @@ module.exports = {
     'vue/prefer-template': 'warn',
     'vue/prefer-true-attribute-shorthand': [ 'warn', 'always' ],
     'vue/require-emit-validator': 'error',
-    'vue/script-indent': [ 'warn', 2, { baseIndent: 1 }],
+    'vue/script-indent': [ 'warn', 2, { baseIndent: 1, switchCase: 1 }],
     'vue/space-in-parens': [ 'warn', 'never' ],
     'vue/space-infix-ops': 'warn',
     'vue/static-class-names-order': 'warn',
