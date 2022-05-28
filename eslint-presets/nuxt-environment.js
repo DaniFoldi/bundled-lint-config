@@ -29,8 +29,7 @@ if (!cache) {
           .map(element => [ element, false ]))
       }
     }
-  } catch (error) {
-    console.error('Failed to load nuxt auto-imports', error)
+  } catch {
     cache = { globals: {} }
   }
 }
