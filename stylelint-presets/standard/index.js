@@ -60,7 +60,7 @@ module.exports = {
     'selector-list-comma-space-before': 'never',
     'selector-pseudo-element-no-unknown': true,
     'selector-type-case': 'lower',
-    'shorthand-property-no-redundant-values': true,
+    'shorthand-property-no-redundant-values': [ true, { severity: 'warning' }],
     'string-quotes': 'single',
     'unit-no-unknown': true,
     'value-keyword-case': 'lower'
