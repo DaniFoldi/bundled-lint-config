@@ -1,6 +1,6 @@
 {
   "name": "@danifoldi/eslint-plugin-eslint-presets",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "description": "Various plug-and-play presets for eslint",
   "main": "index.js",
   "keywords": [
