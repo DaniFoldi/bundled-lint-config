@@ -156,6 +156,10 @@ If you use node.js specific features, you can add the following presets to `exte
 
 They are useless, but if you really want it, add `plugin:@danifoldi/eslint-presets/semi` to `extends`.
 
+## Sorting objects and interfaces
+
+Generally the rules do have a purpose, however if for whatever reason you want to disable them, add `plugin:@danifoldi/eslint-presets/unsorted` or `plugin:@danifoldi/eslint-presets/unsorted-ts` to your `extends` after the normal preset.
+
 ## Contributing
 
 I have not tested all combinations, but they _should_ work. If they don't, feel free to open an issue or PR.
