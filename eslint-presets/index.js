@@ -16,6 +16,8 @@ module.exports = {
     'standard': require('@danifoldi/eslint-plugin-eslint-presets/config/standard.js'),
     'ts': require('@danifoldi/eslint-plugin-eslint-presets/config/ts.js'),
     'ts-jest': require('@danifoldi/eslint-plugin-eslint-presets/config/ts-jest.js'),
+    'unsorted': require('@danifoldi/eslint-plugin-eslint-presets/config/unsorted.ts'),
+    'unsorted-ts': require('@danifoldi/eslint-plugin-eslint-presets/config/unsorted-ts.ts'),
     'vitest': require('@danifoldi/eslint-plugin-eslint-presets/config/vitest.js'),
     'vue': require('@danifoldi/eslint-plugin-eslint-presets/config/vue.js'),
     'vue-ts': require('@danifoldi/eslint-plugin-eslint-presets/config/vue-ts.js')
