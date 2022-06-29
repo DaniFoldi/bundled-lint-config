@@ -1,6 +1,6 @@
 {
   "name": "@danifoldi/eslint-plugin-eslint-presets",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Various plug-and-play presets for eslint",
   "main": "index.js",
   "keywords": [
@@ -24,8 +24,8 @@
   "author": "DaniFoldi",
   "license": "MIT",
   "optionalDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.29.0",
-    "@typescript-eslint/parser": "^5.29.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
     "eslint": "^8.18.0",
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-import": "^2.26.0",
@@ -34,7 +34,8 @@
     "eslint-plugin-unicorn": "^42.0.0",
     "eslint-plugin-vitest": "^0.0.8",
     "eslint-plugin-vue": "^9.1.1",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vue-eslint-parser": "^9.0.3"
   },
   "bugs": {
     "url": "https://github.com/DaniFoldi/linters/issues"
