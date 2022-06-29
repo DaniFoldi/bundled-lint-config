@@ -148,13 +148,13 @@ module.exports = {
 
 ## Node
 
-If you use node.js specific features, you can add the following presets to `extends:
+If you use node.js specific features, you can add one of the following presets to `extends` after the normal preset:
 - `plugin:@danifoldi/eslint-presets/node`
 - `plugin:@danifoldi/eslint-presets/node-cjs`
 
 ## Semicolons
 
-They are useless, but if you really want it, add `plugin:@danifoldi/eslint-presets/semi` to `extends`.
+They are useless, but if you really want it, add `plugin:@danifoldi/eslint-presets/semi` to `extends` after the normal preset.
 
 ## Sorting objects and interfaces
 
