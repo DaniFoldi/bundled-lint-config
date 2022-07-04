@@ -1,7 +1,4 @@
 module.exports = {
-  // rules: {
-  //  'custom/no-future-comment': require('@danifoldi/eslint-plugin-eslint-presets/rules/vue-no-future-comment.js')
-  // },
   configs: {
     'comet': require('@danifoldi/eslint-plugin-eslint-presets/config/comet.js'),
     'comet-jest': require('@danifoldi/eslint-plugin-eslint-presets/config/comet-jest.js'),

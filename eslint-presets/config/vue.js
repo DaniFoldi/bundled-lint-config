@@ -15,7 +15,6 @@ module.exports = {
   ],
   parser: 'vue-eslint-parser',
   rules: {
-    // 'custom/no-future-comment': ['warn', { disallow: [ 'todo', 'fixme' ] }],
     'vue/array-bracket-newline': [ 'warn', { multiline: true }],
     'vue/array-bracket-spacing': [ 'warn', 'always', { arraysInArrays: false, objectsInArrays: false }],
     'vue/arrow-spacing': 'warn',
