@@ -36,7 +36,7 @@ module.exports = {
     'vue/func-call-spacing': [ 'error', 'never' ],
     'vue/html-button-has-type': 'error',
     'vue/html-comment-content-newline': [ 'warn', { multiline: 'ignore', singleline: 'never' }],
-    'vue/html-comment-content-spacing': [ 'warn', 'always', { exceptions: [ '!' ] }],
+    'vue/html-comment-content-spacing': [ 'warn', 'always' ],
     'vue/html-comment-indent': [ 'warn', 2 ],
     'vue/key-spacing': [ 'warn', { afterColon: true, beforeColon: false, mode: 'strict' }],
     'vue/keyword-spacing': [ 'warn', { after: true, before: true  }],
