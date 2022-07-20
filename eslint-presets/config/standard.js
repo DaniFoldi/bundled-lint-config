@@ -10,17 +10,19 @@ module.exports = {
   ignorePatterns: [ 'package-lock.json', 'coverage/', 'dist/', 'node_modules/', 'public/', '.nuxt/', '.output/' ],
   overrides: [
     {
-      files: [ '*.json' ],
-      rules: {
-        'quotes': [ 'error', 'double' ],
-        'sort-keys': 'off'
-      }
-    },
-    {
       env: { node: true },
+      excludedFiles: [ '*.json' ],
       files: [ '**lint**' ],
       rules: {
         'quote-props': [ 'error', 'consistent-as-needed' ]
+      }
+    },
+    {
+      files: [ '*.json' ],
+      rules: {
+        'quote-props': [ 'consistent' ],
+        'quotes': [ 'error', 'double' ],
+        'sort-keys': 'off'
       }
     },
     {
