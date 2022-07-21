@@ -14,14 +14,14 @@ module.exports = {
       excludedFiles: [ '*.json' ],
       files: [ '**lint**' ],
       rules: {
-        'quote-props': [ 'error', 'consistent-as-needed' ]
+        'quote-props': [ 'warn', 'consistent-as-needed' ]
       }
     },
     {
       files: [ '*.json' ],
       rules: {
-        'quote-props': [ 'consistent' ],
-        'quotes': [ 'error', 'double' ],
+        'quote-props': [ 'warn', 'consistent' ],
+        'quotes': [ 'warn', 'double' ],
         'sort-keys': 'off'
       }
     },
