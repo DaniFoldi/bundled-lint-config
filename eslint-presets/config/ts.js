@@ -57,6 +57,11 @@ module.exports = {
       '.js',
       '.mjs',
       '.ts'
-    ]
+    ],
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true
+      }
+    }
   }
 }
