@@ -1,6 +1,6 @@
 {
   "name": "@danifoldi/stylelint-presets",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Various plug-and-play presets for stylelint",
   "main": "standard/index.js",
   "keywords": [
