@@ -43,7 +43,7 @@ module.exports = {
     'no-extra-semicolons': true,
     'no-missing-end-of-source-newline': true,
     'number-leading-zero': 'never',
-    'order/order': [ 'custom-properties', 'declarations', 'at-rules', 'rules' ],
+    'order/order': [ 'dollar-variables', 'custom-properties', 'at-rules', 'declarations', 'rules' ],
     'order/properties-alphabetical-order': true,
     'plugin/no-low-performance-animation-properties': [ true, { ignore: 'paint-properties' }],
     'property-no-unknown': true,
