@@ -17,7 +17,11 @@ module.exports = {
     'unsorted-ts': require('@danifoldi/eslint-plugin-eslint-presets/config/unsorted-ts.js'),
     'vitest': require('@danifoldi/eslint-plugin-eslint-presets/config/vitest.js'),
     'vue': require('@danifoldi/eslint-plugin-eslint-presets/config/vue.js'),
-    'vue-ts': require('@danifoldi/eslint-plugin-eslint-presets/config/vue-ts.js')
+    'vue-ts': require('@danifoldi/eslint-plugin-eslint-presets/config/vue-ts.js'),
+    'react': require('@danifoldi/eslint-plugin-eslint-presets/config/react.js'),
+    'react-ts': require('@danifoldi/eslint-plugin-eslint-presets/config/react-ts.js'),
+    'react-native': require('@danifoldi/eslint-plugin-eslint-presets/config/react-native.js'),
+    'react-native-ts': require('@danifoldi/eslint-plugin-eslint-presets/config/react-native-ts.js')
   },
   environments: {
     nuxt: require('./nuxt-environment')
