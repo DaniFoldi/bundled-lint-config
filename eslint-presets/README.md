@@ -146,6 +146,50 @@ module.exports = {
 }
 ```
 
+### React
+
+`npm i -D @danifoldi/eslint-plugin-eslint-presets eslint eslint-plugin-import eslint-plugin-unicorn eslint-plugin-react eslint-plugin-react-hooks`
+
+.eslintrc.js
+```js
+module.exports = {
+  extends: [ 'plugin:@danifoldi/eslint-presets/react' ]
+}
+```
+
+### React (TS)
+
+`npm i -D @danifoldi/eslint-plugin-eslint-presets typescript eslint eslint-plugin-import eslint-plugin-unicorn @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-react eslint-plugin-react-hooks`
+
+.eslintrc.js
+```js
+module.exports = {
+  extends: [ 'plugin:@danifoldi/eslint-presets/react-ts' ]
+}
+```
+
+### React Native
+
+`npm i -D @danifoldi/eslint-plugin-eslint-presets eslint eslint-plugin-import eslint-plugin-unicorn eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-native`
+
+.eslintrc.js
+```js
+module.exports = {
+  extends: [ 'plugin:@danifoldi/eslint-presets/react-native' ]
+}
+```
+
+### React Native (TS)
+
+`npm i -D @danifoldi/eslint-plugin-eslint-presets typescript eslint eslint-plugin-import eslint-plugin-unicorn @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-native`
+
+.eslintrc.js
+```js
+module.exports = {
+  extends: [ 'plugin:@danifoldi/eslint-presets/react-native-ts' ]
+}
+```
+
 ## Node
 
 If you use node.js specific features, you can add one of the following presets to `extends` after the normal preset:
