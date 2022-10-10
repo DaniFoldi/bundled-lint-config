@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: [ '@typescript-eslint' ],
   rules: {
+    '@typescript-eslint/func-call-spacing': [ 'error', 'never' ],
     '@typescript-eslint/member-delimiter-style': [
       'error', {
         multiline: { delimiter: 'none', requireLast: true },
@@ -46,6 +47,7 @@ module.exports = {
         overrides: { colon: { after: true, before: false } }
       }
     ],
+    'func-call-spacing': 'off',
     'no-unused-vars': 'off',
     'semi': [ 'warn', 'never' ],
     'space-before-blocks': 'off',
