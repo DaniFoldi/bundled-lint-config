@@ -35,7 +35,15 @@ module.exports = {
         interfaces: { order: 'alphabetically' }
       }
     ],
-    '@typescript-eslint/no-unused-vars': [ 'warn' ],
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      {
+        ignoreRestSiblings: true,
+        destructuredArrayIgnorePattern: '^_',
+        argsIgnorePattern: '^_',
+        args: 'after-used'
+      }
+    ],
     '@typescript-eslint/prefer-for-of': 'warn',
     '@typescript-eslint/prefer-ts-expect-error': 'error',
     '@typescript-eslint/semi': [ 'error', 'never' ],
