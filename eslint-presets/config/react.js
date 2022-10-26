@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    browser: true
+  },
   extends: [
     'plugin:@danifoldi/eslint-presets/standard',
     'plugin:react/recommended',
@@ -9,6 +12,6 @@ module.exports = {
   rules: {
     'import/no-unassigned-import': 'off',
     'react-hooks/exhaustive-deps': 'error',
-    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/rules-of-hooks': 'error'
   }
 }
