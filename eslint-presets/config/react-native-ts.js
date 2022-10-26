@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'plugin:@danifoldi/eslint-presets/ts',
-    'plugin:@danifoldi/eslint-presets/react-native',
+    'plugin:@danifoldi/eslint-presets/react-native'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
