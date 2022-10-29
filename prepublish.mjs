@@ -18,8 +18,8 @@ const copyJobs = [
 ]
 
 const versionJobs = {
-  'packages/stylelint-*': '1.0.0',
-  'packages/eslint-*': '1.0.0'
+  'packages/stylelint-*': '0.0.1',
+  'packages/eslint-*': '0.0.1'
 }
 
 for (const job of copyJobs) {

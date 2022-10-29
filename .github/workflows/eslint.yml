@@ -1,20 +1,12 @@
-name: ESLint
-
-defaults:
-  run:
-    working-directory: eslint-presets
+name: Lint and release packages
 
 on: # yamllint disable-line rule:truthy
   push:
     branches:
     - main
-    paths:
-    - 'eslint-presets/**'
   pull_request:
     branches:
     - main
-    paths:
-    - 'eslint-presets/**'
     types:
     - opened
     - synchronize
@@ -22,51 +14,54 @@ on: # yamllint disable-line rule:truthy
 jobs:
   lint-linters:
     name: Lint the linters repository
-    runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: .
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Install nodejs
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
-        cache: npm
-
-    - name: Install dependencies
-      run: |
-        npm ci --no-progress
-
-    - name: Run lint script
+    uses: DaniFoldi/workflows/.github/workflows/npm.yml@main
+    with:
       run: |
         npm run lint
 
-  npm-publish:
-    name: Publish to NPM
+  npm-publish-stylelint:
+    name: Publish stylelint package to npm
     runs-on: ubuntu-latest
     if: contains( join( github.event.commits.*.message, ', ' ), '[ci release]' )
 
     needs:
     - lint-linters
 
+    strategy:
+      matrix:
+        package:
+        - stylelint-paintbrush
+        - stylelint-scss
+        - stylelint-standard
+        - stylelint-vue
+        - stylelint-vue-scss
+
     steps:
     - name: Checkout repository
+      timeout-minutes: 5
       uses: actions/checkout@v3
 
     - name: Install nodejs
+      timeout-minutes: 5
       uses: actions/setup-node@v3
       with:
         node-version: 16
         cache: npm
-        cache-dependency-path: 'eslint-presets/**/package.json'
+        cache-dependency-path: 'package.json'
+
+    - name: Install dependencies
+      timeout-minutes: 5
+      run: |
+        npm ci --no-progress
+
+    - name: Build packages
+      timeout-minutes: 5
+      run: |
+        npm run build
 
     - uses: JS-DevTools/npm-publish@v1
+      timeout-minutes: 5
       with:
         access: public
-        package: eslint-presets/package.json
+        package: ${{ matrix.package }}/package.json
         token: ${{ secrets.NPM_TOKEN }}

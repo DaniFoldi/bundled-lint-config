@@ -20,6 +20,12 @@ Thanks to all authors that created the linter packages, and those that contribut
 - `postcss-html`
 - `postcss-scss`
 
+## Adding a new package
+
+- Add package to `packages/` folder.
+- Add required copy rules to `prepublish.mjs`.
+- Add package to `.github/workflows/main.yml`.
+
 ## Contributing
 
 If you find false positives/false negatives, or combinations that don't work well, feel free to open an issue, or create a PR. 
@@ -39,3 +45,7 @@ This project uses commit messages starting with emoji:
 |:paperclip:             |`:paperclip:`             |for dependencies                           |
 |:octocat:               |`:octocat:`               |for workflows                              |
 |:construction:          |`:construction:`          |for experimental or temporary changes      |
+
+## License
+
+All packages, and this repository are licensed under the MIT license.

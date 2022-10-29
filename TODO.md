@@ -30,3 +30,4 @@
 - hadolint
 - htmllint
 - markdownlint
+- shellcheck
