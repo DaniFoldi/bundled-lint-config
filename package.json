@@ -4,32 +4,25 @@
   "description": "Check https://github.com/DaniFoldi/lint-my-life for more details.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .cjs,.js,.mjs,.ts --cache --cache-file .eslintcache --report-unused-disable-directives .",
-    "build": "node prepublish.mjs"
+    "build": "node prepublish.mjs",
+    "lint": "eslint --ext .cjs,.js,.mjs,.ts --cache --cache-file .eslintcache --report-unused-disable-directives ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DaniFoldi/linters.git"
+    "url": "git+https://github.com/DaniFoldi/lint-my-life.git"
   },
   "keywords": [],
   "author": "DaniFoldi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DaniFoldi/linters/issues"
+    "url": "https://github.com/DaniFoldi/lint-my-life/issues"
   },
   "private": true,
-  "homepage": "https://github.com/DaniFoldi/linters#readme",
+  "homepage": "https://github.com/DaniFoldi/lint-my-life#readme",
   "devDependencies": {
     "eslint": "^8.17.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unicorn": "^42.0.0",
     "globby": "^13.1.2"
-  },
-  "dependencies": {
-    "sass": "^1.55.0",
-    "stylelint": "^14.14.0",
-    "stylelint-high-performance-animation": "^1.6.0",
-    "stylelint-order": "^5.0.0",
-    "stylelint-scss": "^4.3.0"
   }
 }
