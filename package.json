@@ -1,5 +1,5 @@
 {
-  "name": "linters",
+  "name": "lint-my-life",
   "version": "1.0.0",
   "description": "Check https://github.com/DaniFoldi/lint-my-life for more details.",
   "main": "index.js",

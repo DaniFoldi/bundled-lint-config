@@ -6,21 +6,59 @@ updates:
     interval: daily
   commit-message:
     prefix: ":paperclip:"
+
+- package-ecosystem: npm
+  directory: /
+  schedule:
+    interval: daily
+  commit-message:
+    prefix: ":paperclip:"
+
 - package-ecosystem: npm
   directory: eslint-presets/
   schedule:
-    interval: daily
+    interval: weekly
   commit-message:
     prefix: ":paperclip:"
+
 - package-ecosystem: npm
-  directory: stylelint-presets/
+  directory: packages/stylelint-paintbrush/
   schedule:
-    interval: daily
+    interval: weekly
   commit-message:
     prefix: ":paperclip:"
-- package-ecosystem: pip
-  directory: yamllint-presets/
+
+    - package-ecosystem: npm
+  directory: packages/stylelint-scss/
   schedule:
-    interval: daily
+    interval: weekly
+  commit-message:
+    prefix: ":paperclip:"
+
+- package-ecosystem: npm
+  directory: packages/stylelint-standard/
+  schedule:
+    interval: weekly
+  commit-message:
+    prefix: ":paperclip:"
+
+- package-ecosystem: npm
+  directory: packages/stylelint-vue/
+  schedule:
+    interval: weekly
+  commit-message:
+    prefix: ":paperclip:"
+
+- package-ecosystem: npm
+  directory: packages/stylelint-vue-scss/
+  schedule:
+    interval: weekly
+  commit-message:
+    prefix: ":paperclip:"
+
+- package-ecosystem: pip
+  directory: packages/yamllint-standard/
+  schedule:
+    interval: weekly
   commit-message:
     prefix: ":paperclip:"

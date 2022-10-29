@@ -30,11 +30,11 @@ jobs:
     strategy:
       matrix:
         package:
-        - stylelint-paintbrush
-        - stylelint-scss
-        - stylelint-standard
-        - stylelint-vue
-        - stylelint-vue-scss
+        - packages/stylelint-paintbrush
+        - packages/stylelint-scss
+        - packages/stylelint-standard
+        - packages/stylelint-vue
+        - packages/stylelint-vue-scss
 
     steps:
     - name: Checkout repository
