@@ -1,10 +1,30 @@
-# This package is published from a monorepo.
+# Want more linters in your life, but without having to set them up? Welcome
 
-Check https://github.com/DaniFoldi/linters for more details.
+## This package is published from a monorepo
 
-# Contributing
+Check [https://github.com/DaniFoldi/lint-my-life](https://github.com/DaniFoldi/lint-my-life) for more details.
 
-If you find false positives/false negatives, feel free to open an Issue, or create a PR. Please use commit names starting with these emojis:
+## Credits
+
+Thanks to all authors that created the linter packages, and those that contributed to the presets and plugins this library is based on.
+
+- `stylelint`
+- `stylelint-config-recommended`
+- `stylelint-config-standard`
+- `stylelint-config-recommended-scss`
+- `stylelint-config-standard-scss`
+- `stylelint-config-idiomatic-order`
+- `stylelint-high-performance-animation`
+- `stylelint-order`
+- `postcss`
+- `postcss-html`
+- `postcss-scss`
+
+## Contributing
+
+If you find false positives/false negatives, or combinations that don't work well, feel free to open an issue, or create a PR. 
+
+This project uses commit messages starting with emoji:
 
 |Emoji|Prefix|Description|
 |-----|------|-----------|

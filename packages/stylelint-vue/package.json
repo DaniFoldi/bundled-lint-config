@@ -1,0 +1,33 @@
+{
+  "name": "@lint-my-life/stylelint-vue",
+  "version": "1.0.0",
+  "description": "Plug-and-play presets for stylelint",
+  "main": "vue.js",
+  "keywords": [
+    "stylelint preset",
+    "stylelint plugin",
+    "stylelint",
+    "lint",
+    "stylelint config"
+  ],
+  "author": "DaniFoldi",
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^8.4.18",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.5",
+    "sass": "^1.55.0",
+    "stylelint": "^14.14.0",
+    "stylelint-high-performance-animation": "^1.6.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/DaniFoldi/lint-my-life/issues"
+  },
+  "homepage": "https://github.com/DaniFoldi/lint-my-life#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniFoldi/lint-my-life.git"
+  }
+}

@@ -1,6 +1,18 @@
+.idea/
 node_modules/
-
-.idea
 
 .DS_Store
 .eslintcache
+
+packages/*/LICENSE
+packages/*/README.md
+packages/*/standard.js
+!packages/stylelint-standard/standard.js
+packages/*/better-order.js
+!packages/stylelint-standard/better-order.js
+packages/*/vue.js
+!packages/stylelint-vue/vue.js
+packages/*/scss.js
+!packages/stylelint-scss/scss.js
+packages/*/vue-scss.js
+!packages/stylelint-vue-scss/vue-scss.js

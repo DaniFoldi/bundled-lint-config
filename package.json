@@ -1,10 +1,11 @@
 {
   "name": "linters",
   "version": "1.0.0",
-  "description": "Check https://github.com/DaniFoldi/linters for more details.",
+  "description": "Check https://github.com/DaniFoldi/lint-my-life for more details.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .cjs,.js,.mjs,.ts --cache --cache-file .eslintcache --report-unused-disable-directives ."
+    "lint": "eslint --ext .cjs,.js,.mjs,.ts --cache --cache-file .eslintcache --report-unused-disable-directives .",
+    "build": "node prepublish.mjs"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,14 @@
   "devDependencies": {
     "eslint": "^8.17.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-unicorn": "^42.0.0"
+    "eslint-plugin-unicorn": "^42.0.0",
+    "globby": "^13.1.2"
+  },
+  "dependencies": {
+    "sass": "^1.55.0",
+    "stylelint": "^14.14.0",
+    "stylelint-high-performance-animation": "^1.6.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.3.0"
   }
 }
