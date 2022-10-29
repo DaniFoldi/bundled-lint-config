@@ -15,12 +15,9 @@
   "dependencies": {
     "postcss": "^8.4.18",
     "postcss-html": "^1.5.0",
-    "postcss-scss": "^4.0.5",
-    "sass": "^1.55.0",
     "stylelint": "^14.14.0",
     "stylelint-high-performance-animation": "^1.6.0",
-    "stylelint-order": "^5.0.0",
-    "stylelint-scss": "^4.3.0"
+    "stylelint-order": "^5.0.0"
   },
   "bugs": {
     "url": "https://github.com/DaniFoldi/lint-my-life/issues"

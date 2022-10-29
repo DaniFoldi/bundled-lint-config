@@ -10,11 +10,11 @@ const copyJobs = [
   [ 'README.md', 'packages/*' ],
   [ 'packages/stylelint-standard/standard.js', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
   [ 'packages/stylelint-standard/better-order.js', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
-  [ 'packages/stylelint-vue-scss/vue-scss.js', 'packages/stylelint-paintbrush' ],
-  [ 'packages/stylelint-vue/vue.js', 'packages/stylelint-vue-scss' ],
-  [ 'packages/stylelint-vue/vue.js', 'packages/stylelint-paintbrush' ],
-  [ 'packages/stylelint-scss/scss.js', 'packages/stylelint-vue-scss' ],
-  [ 'packages/stylelint-scss/scss.js', 'packages/stylelint-paintbrush' ]
+  [ 'packages/stylelint-vue-scss/vue-scss.js', 'packages/stylelint-paintbrush/vue-scss.js' ],
+  [ 'packages/stylelint-vue/vue.js', 'packages/stylelint-vue-scss/vue.js' ],
+  [ 'packages/stylelint-vue/vue.js', 'packages/stylelint-paintbrush/vue.js' ],
+  [ 'packages/stylelint-scss/scss.js', 'packages/stylelint-vue-scss/scss.js' ],
+  [ 'packages/stylelint-scss/scss.js', 'packages/stylelint-paintbrush/scss.js' ]
 ]
 
 const versionJobs = {
@@ -23,8 +23,13 @@ const versionJobs = {
 }
 
 for (const job of copyJobs) {
-  for (const destination of await globby(job[1], globbyOptions)) {
+  const destinations = await globby(job[1], globbyOptions)
+  for (const destination of destinations) {
+    console.log(job, destination, destination + basename(job[0]))
     await copyFile(job[0], destination.endsWith('/') ? destination + basename(job[0]) : destination)
+  }
+  if (destinations.length === 0) {
+    await copyFile(job[0], job[1])
   }
 }
 
