@@ -1,0 +1,38 @@
+{
+  "name": "@lint-my-life/eslint-plugin-comet",
+  "version": "1.8.3",
+  "description": "Plug-and-play presets for eslint",
+  "main": "comet.js",
+  "keywords": [
+    "eslint preset",
+    "eslintconfig",
+    "eslint",
+    "lint",
+    "eslint config"
+  ],
+  "author": "DaniFoldi",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.26.0",
+    "eslint-import-resolver-typescript": "^3.3.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-unicorn": "^44.0.2",
+    "eslint-plugin-vue": "^9.7.0",
+    "typescript": "^4.7.4",
+    "vue-eslint-parser": "^9.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/DaniFoldi/lint-my-life/issues"
+  },
+  "homepage": "https://github.com/DaniFoldi/lint-my-life#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniFoldi/lint-my-life.git"
+  },
+  "dependencies": {
+    
+  }
+}

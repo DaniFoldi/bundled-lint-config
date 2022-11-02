@@ -19,6 +19,9 @@ Thanks to all authors that created the linter packages, and those that contribut
 - `postcss`
 - `postcss-html`
 - `postcss-scss`
+- `eslint`
+- `eslint-plugin-import`
+- `eslint-plugin-unicorn`
 
 ## Adding a new package
 

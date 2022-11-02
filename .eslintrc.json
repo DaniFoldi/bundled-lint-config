@@ -1,7 +1,7 @@
 {
   "extends": [
-    "./eslint-presets/config/standard.js",
-    "./eslint-presets/config/node.js"
+    "./packages/eslint-plugin-standard/standard.js",
+    "./packages/eslint-plugin-node-cjs/node-cjs.js"
   ],
   "rules": {
     "unicorn/prefer-module": "off",

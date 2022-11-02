@@ -4,7 +4,7 @@
   "description": "Check https://github.com/DaniFoldi/lint-my-life for more details.",
   "main": "index.js",
   "scripts": {
-    "build": "node prepublish.mjs",
+    "build": "node update.mjs && node prepublish.mjs",
     "lint": "eslint --ext .cjs,.js,.mjs,.ts --cache --cache-file .eslintcache --report-unused-disable-directives ."
   },
   "repository": {
