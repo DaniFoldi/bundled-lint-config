@@ -12,7 +12,7 @@
   ],
   "author": "DaniFoldi",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
     "eslint": "^8.26.0",
@@ -31,6 +31,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DaniFoldi/lint-my-life.git"
-  },
-  "dependencies": {}
+  }
 }
