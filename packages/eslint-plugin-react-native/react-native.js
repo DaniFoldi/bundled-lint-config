@@ -2,9 +2,7 @@ module.exports = {
   env: {
     'react-native/react-native': true
   },
-  extends: [
-    './react.js'
-  ],
+  extends: [ './react.js' ],
   plugins: [ 'react', 'react-hooks', 'react-native' ],
   rules: {
     'import/no-unassigned-import': 'off',

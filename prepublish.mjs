@@ -14,21 +14,20 @@ const copyJobs = [
   [ 'packages/stylelint-vue/vue.js', [ 'packages/stylelint-vue-scss', 'packages/stylelint-paintbrush' ]],
   [ 'packages/stylelint-scss/scss.js', [ 'packages/stylelint-vue-scss', 'packages/stylelint-paintbrush' ]],
   [ 'packages/eslint-plugin-standard/standard.js', [ 'packages/eslint-plugin-*', '!packages/eslint-plugin-standard' ]],
-  [ 'packages/eslint-plugin-ts/ts.js', ['packages/eslint-plugin-comet', 'packages/eslint-plugin-*-ts'] ],
-  ['packages/eslint-plugin-vue/vue.js', 'packages/eslint-plugin-vue/vue-ts.js' ],
-  ['packages/eslint-plugin-unsorted/unsorted.js', 'packages/eslint-plugin-unsorted-ts/unsorted.js' ],
+  [ 'packages/eslint-plugin-ts/ts.js', [ 'packages/eslint-plugin-comet', 'packages/eslint-plugin-*-ts' ]],
+  [ 'packages/eslint-plugin-vue/vue.js', 'packages/eslint-plugin-vue/vue-ts.js' ],
+  [ 'packages/eslint-plugin-unsorted/unsorted.js', 'packages/eslint-plugin-unsorted-ts/unsorted.js' ],
   [ 'packages/eslint-plugin-node/node.js', 'packages/eslint-plugin-node-cjs/node.js' ],
-  ['packages/eslint-plugin-vitest/vitest.js', 'packages/eslint-plugin-paintbrush/vitest.js' ],
-  ['packages/eslint-plugin-vue-ts/vue-ts.js', 'packages/eslint-plugin-paintbrush/vue-ts.js' ],
-  ['packages/eslint-plugin-nuxt/nuxt.js', 'packages/eslint-plugin-paintbrush/nuxt.js' ],
-  ['packages/eslint-plugin-react/react.js', 'packages/eslint-plugin-react-*' ],
-  ['packages/eslint-plugin-react-native/react-native.js', 'packages/eslint-plugin-react-native-ts/react-native.js' ]
+  [ 'packages/eslint-plugin-vitest/vitest.js', 'packages/eslint-plugin-paintbrush/vitest.js' ],
+  [ 'packages/eslint-plugin-vue-ts/vue-ts.js', 'packages/eslint-plugin-paintbrush/vue-ts.js' ],
+  [ 'packages/eslint-plugin-nuxt/nuxt.js', 'packages/eslint-plugin-paintbrush/nuxt.js' ],
+  [ 'packages/eslint-plugin-react/react.js', 'packages/eslint-plugin-react-*' ],
+  [ 'packages/eslint-plugin-react-native/react-native.js', 'packages/eslint-plugin-react-native-ts/react-native.js' ]
 ]
-const esStyleLint = ['packages/eslint-*', 'packages/stylelint-*']
+const esStyleLint = [ 'packages/eslint-*', 'packages/stylelint-*' ]
 
 const packageJsonJobs = {
-  'packages/stylelint-*': { 
-    version: '1.0.0',
+  'packages/stylelint-*': { version: '1.0.0',
     description: 'Plug-and-play presets for stylelint',
     keywords: [
       'stylelint preset',
