@@ -12,7 +12,7 @@ For any of the presets below, you can install them with one command:
 npm install @lint-my-life/preset
 ```
 
-Add this to your `.eslintrc` for eslint (omit `eslint-plugin-`):
+Add this to your `.eslintrc` for eslint (omit `eslint-config-`):
 
 ```json
 {
@@ -30,19 +30,19 @@ Add this to your `.stylelintrc` for stylelint:
 
 Presets:
 
-- `eslint-plugin-standard`
-- `eslint-plugin-ts`
-- `eslint-plugin-react`
-- `eslint-plugin-react-ts`
-- `eslint-plugin-react-native`
-- `eslint-plugin-react-native-ts`
-- `eslint-plugin-vue`
-- `eslint-plugin-vue-ts`
-- `eslint-plugin-nuxt`
-- `eslint-plugin-jest`
-- `eslint-plugin-vitest`
-- `eslint-plugin-paintbrush`
-- `eslint-plugin-comet`
+- `eslint-config-standard`
+- `eslint-config-ts`
+- `eslint-config-react`
+- `eslint-config-react-ts`
+- `eslint-config-react-native`
+- `eslint-config-react-native-ts`
+- `eslint-config-vue`
+- `eslint-config-vue-ts`
+- `eslint-config-nuxt`
+- `eslint-config-jest`
+- `eslint-config-vitest`
+- `eslint-config-paintbrush`
+- `eslint-config-comet`
 - `stylelint-standard`
 - `stylelint-scss`
 - `stylelint-paintbrush`
@@ -51,11 +51,11 @@ Presets:
 
 Addons:
 
-- `eslint-plugin-semi`
-- `eslint-plugin-unsorted`
-- `eslint-plugin-unsorted-ts`
-- `eslint-plugin-node`
-- `eslint-plugin-node-cjs`
+- `eslint-config-semi`
+- `eslint-config-unsorted`
+- `eslint-config-unsorted-ts`
+- `eslint-config-node`
+- `eslint-config-node-cjs`
 
 Install and append these after the preset.
 
@@ -107,19 +107,19 @@ Thanks to all authors that created the linter packages, and those that contribut
 - `postcss-html`
 - `postcss-scss`
 - `eslint`
-- `eslint-plugin-import`
-- `eslint-plugin-unicorn`
-- `eslint-plugin-react`
-- `eslint-plugin-react-hooks`
-- `eslint-plugin-react-native`
+- `eslint-config-import`
+- `eslint-config-unicorn`
+- `eslint-config-react`
+- `eslint-config-react-hooks`
+- `eslint-config-react-native`
 - `eslint-import-resolver-typescript`
-- `eslint-plugin-html`
-- `eslint-plugin-vue`
-- `eslint-plugin-nuxt`
-- `eslint-plugin-jest`
-- `eslint-plugin-vitest`
+- `eslint-config-html`
+- `eslint-config-vue`
+- `eslint-config-nuxt`
+- `eslint-config-jest`
+- `eslint-config-vitest`
 - `vue-eslint-parser`
-- `@typescript-eslint/eslint-plugin`
+- `@typescript-eslint/eslint-config`
 - `@typescript-eslint/parser`
 - `typescript`
 - `yamllint`

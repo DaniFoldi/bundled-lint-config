@@ -1,5 +1,5 @@
 {
-  "name": "@lint-my-life/eslint-plugin-jest",
+  "name": "@lint-my-life/eslint-config-jest",
   "version": "0.1.0",
   "description": "Plug-and-play presets for eslint",
   "main": "jest.js",

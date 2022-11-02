@@ -1,5 +1,5 @@
 {
-  "name": "@lint-my-life/eslint-plugin-node-cjs",
+  "name": "@lint-my-life/eslint-config-node-cjs",
   "version": "0.1.0",
   "description": "Plug-and-play presets for eslint",
   "main": "node-cjs.js",

@@ -31,6 +31,25 @@ jobs:
     strategy:
       matrix:
         package:
+        - packages/eslint-config-comet
+        - packages/eslint-config-jest
+        - packages/eslint-config-node
+        - packages/eslint-config-node-cjs
+        - packages/eslint-config-nuxt
+        - packages/eslint-config-paintbrush
+        - packages/eslint-config-react
+        - packages/eslint-config-react-native
+        - packages/eslint-config-react-native-ts
+        - packages/eslint-config-react-ts
+        - packages/eslint-config-semi
+        - packages/eslint-config-standard
+        - packages/eslint-config-ts
+        - packages/eslint-config-unsorted
+        - packages/eslint-config-unsorted-ts
+        - packages/eslint-config-vitest
+        - packages/eslint-config-vue
+        - packages/eslint-config-vue-ts
+
         - packages/stylelint-paintbrush
         - packages/stylelint-scss
         - packages/stylelint-standard

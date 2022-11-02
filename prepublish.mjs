@@ -15,19 +15,19 @@ const copyJobs = [
   [ 'packages/stylelint-vue/vue.js', 'packages/stylelint-paintbrush/vue.js' ],
   [ 'packages/stylelint-scss/scss.js', 'packages/stylelint-vue-scss/scss.js' ],
   [ 'packages/stylelint-scss/scss.js', 'packages/stylelint-paintbrush/scss.js' ],
-  [ 'packages/eslint-plugin-standard/standard.js', [ 'packages/eslint-plugin-*', '!packages/eslint-plugin-standard' ]],
-  [ 'packages/eslint-plugin-ts/ts.js', 'packages/eslint-plugin-*-ts' ],
-  [ 'packages/eslint-plugin-ts/ts.js', 'packages/eslint-plugin-comet/ts.js' ],
-  [ 'packages/eslint-plugin-vue/vue.js', 'packages/eslint-plugin-vue-ts/vue.js' ],
-  [ 'packages/eslint-plugin-vue/vue.js', 'packages/eslint-plugin-nuxt/vue.js' ],
-  [ 'packages/eslint-plugin-vue/vue.js', 'packages/eslint-plugin-paintbrush/vue.js' ],
-  [ 'packages/eslint-plugin-unsorted/unsorted.js', 'packages/eslint-plugin-unsorted-ts/unsorted.js' ],
-  [ 'packages/eslint-plugin-node/node.js', 'packages/eslint-plugin-node-cjs/node.js' ],
-  [ 'packages/eslint-plugin-vitest/vitest.js', 'packages/eslint-plugin-paintbrush/vitest.js' ],
-  [ 'packages/eslint-plugin-vue-ts/vue-ts.js', 'packages/eslint-plugin-paintbrush/vue-ts.js' ],
-  [ 'packages/eslint-plugin-nuxt/nuxt.js', 'packages/eslint-plugin-paintbrush/nuxt.js' ],
-  [ 'packages/eslint-plugin-react/react.js', 'packages/eslint-plugin-react-*' ],
-  [ 'packages/eslint-plugin-react-native/react-native.js', 'packages/eslint-plugin-react-native-ts/react-native.js' ]
+  [ 'packages/eslint-config-standard/standard.js', [ 'packages/eslint-config-*', '!packages/eslint-config-standard' ]],
+  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-*-ts' ],
+  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-comet/ts.js' ],
+  [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-vue-ts/vue.js' ],
+  [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-nuxt/vue.js' ],
+  [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-paintbrush/vue.js' ],
+  [ 'packages/eslint-config-unsorted/unsorted.js', 'packages/eslint-config-unsorted-ts/unsorted.js' ],
+  [ 'packages/eslint-config-node/node.js', 'packages/eslint-config-node-cjs/node.js' ],
+  [ 'packages/eslint-config-vitest/vitest.js', 'packages/eslint-config-paintbrush/vitest.js' ],
+  [ 'packages/eslint-config-vue-ts/vue-ts.js', 'packages/eslint-config-paintbrush/vue-ts.js' ],
+  [ 'packages/eslint-config-nuxt/nuxt.js', 'packages/eslint-config-paintbrush/nuxt.js' ],
+  [ 'packages/eslint-config-react/react.js', 'packages/eslint-config-react-*' ],
+  [ 'packages/eslint-config-react-native/react-native.js', 'packages/eslint-config-react-native-ts/react-native.js' ]
 ]
 
 const packageJsonJobs = {
@@ -84,7 +84,7 @@ for (const job of Object.entries(packageJsonJobs)) {
     const packageJson = {
       ...JSON.parse(await readFile(join(destination, 'package.json'))),
       name: `@lint-my-life/${name}`,
-      main: `${name.replace('eslint-plugin-', '').replace('stylelint-', '')}.js`,
+      main: `${name.replace('eslint-config-', '').replace('stylelint-', '')}.js`,
       ...job[1]
     }
     await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)

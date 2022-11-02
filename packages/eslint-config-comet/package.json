@@ -1,5 +1,5 @@
 {
-  "name": "@lint-my-life/eslint-plugin-comet",
+  "name": "@lint-my-life/eslint-config-comet",
   "version": "0.1.0",
   "description": "Plug-and-play presets for eslint",
   "main": "comet.js",
