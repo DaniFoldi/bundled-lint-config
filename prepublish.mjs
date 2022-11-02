@@ -1,5 +1,5 @@
 import { copyFile, readFile, writeFile } from 'node:fs/promises'
-import { basename } from 'node:path'
+import { basename, dirname, join } from 'node:path'
 import { globby } from 'globby'
 
 
@@ -11,10 +11,13 @@ const copyJobs = [
   [ 'packages/stylelint-standard/standard.js', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
   [ 'packages/stylelint-standard/better-order.js', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
   [ 'packages/stylelint-vue-scss/vue-scss.js', 'packages/stylelint-paintbrush/vue-scss.js' ],
-  [ 'packages/stylelint-vue/vue.js', [ 'packages/stylelint-vue-scss', 'packages/stylelint-paintbrush' ]],
-  [ 'packages/stylelint-scss/scss.js', [ 'packages/stylelint-vue-scss', 'packages/stylelint-paintbrush' ]],
+  [ 'packages/stylelint-vue/vue.js', 'packages/stylelint-vue-scss/vue.js' ],
+  [ 'packages/stylelint-vue/vue.js', 'packages/stylelint-paintbrush/vue.js' ],
+  [ 'packages/stylelint-scss/scss.js', 'packages/stylelint-vue-scss/scss.js' ],
+  [ 'packages/stylelint-scss/scss.js', 'packages/stylelint-paintbrush/scss.js' ],
   [ 'packages/eslint-plugin-standard/standard.js', [ 'packages/eslint-plugin-*', '!packages/eslint-plugin-standard' ]],
-  [ 'packages/eslint-plugin-ts/ts.js', [ 'packages/eslint-plugin-comet', 'packages/eslint-plugin-*-ts' ]],
+  [ 'packages/eslint-plugin-ts/ts.js', 'packages/eslint-plugin-*-ts' ],
+  [ 'packages/eslint-plugin-ts/ts.js', 'packages/eslint-plugin-comet/ts.js' ],
   [ 'packages/eslint-plugin-vue/vue.js', 'packages/eslint-plugin-vue/vue-ts.js' ],
   [ 'packages/eslint-plugin-unsorted/unsorted.js', 'packages/eslint-plugin-unsorted-ts/unsorted.js' ],
   [ 'packages/eslint-plugin-node/node.js', 'packages/eslint-plugin-node-cjs/node.js' ],
@@ -27,7 +30,8 @@ const copyJobs = [
 const esStyleLint = [ 'packages/eslint-*', 'packages/stylelint-*' ]
 
 const packageJsonJobs = {
-  'packages/stylelint-*': { version: '1.0.0',
+  'packages/stylelint-*': {
+    version: '0.1.0',
     description: 'Plug-and-play presets for stylelint',
     keywords: [
       'stylelint preset',
@@ -35,9 +39,10 @@ const packageJsonJobs = {
       'stylelint',
       'lint',
       'stylelint config'
-    ] },
+    ]
+  },
   'packages/eslint-*': {
-    version: '0.0.1',
+    version: '0.1.0',
     description: 'Plug-and-play presets for eslint',
     keywords: [
       'eslint preset',
@@ -74,14 +79,13 @@ for (const job of copyJobs) {
 
 for (const job of Object.entries(packageJsonJobs)) {
   for (const destination of await globby(job[0], globbyOptions)) {
-    const name = destination.split('/').pop().replace('eslint-plugin-', '').replace('stylelint-', '')
-    console.log(destination)
+    const name = basename(dirname(destination)).replace('eslint-plugin-', '').replace('stylelint-', '')
     const packageJson = {
-      ...JSON.parse(await readFile(`${destination}/package.json`)),
+      ...JSON.parse(await readFile(join(destination, 'package.json'))),
       name: `@lint-my-life/${name}`,
       main: `${name}.js`,
       ...job[1]
     }
-    await writeFile(`${destination}/package.json`, JSON.stringify(packageJson, null, 2))
+    await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
   }
 }

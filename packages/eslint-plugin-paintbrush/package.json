@@ -12,25 +12,26 @@
   ],
   "author": "DaniFoldi",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
-    "eslint": "^8.26.0",
+    "eslint": "^8.18.0",
     "eslint-import-resolver-typescript": "^3.3.0",
+    "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-unicorn": "^44.0.2",
-    "eslint-plugin-vue": "^9.7.0",
+    "eslint-plugin-vitest": "0.0.11",
+    "eslint-plugin-vue": "^9.1.1",
     "typescript": "^4.7.4",
-    "vue-eslint-parser": "^9.1.0"
+    "vue-eslint-parser": "^9.0.3"
   },
   "bugs": {
-    "url": "https://github.com/DaniFoldi/lint-my-life/issues"
+    "url": "https://github.com/DaniFoldi/linters/issues"
   },
-  "homepage": "https://github.com/DaniFoldi/lint-my-life#readme",
+  "homepage": "https://github.com/DaniFoldi/linters#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DaniFoldi/lint-my-life.git"
-  },
-  "dependencies": {}
+    "url": "git+https://github.com/DaniFoldi/linters.git"
+  }
 }
