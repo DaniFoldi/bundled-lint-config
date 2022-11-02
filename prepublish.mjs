@@ -11,12 +11,12 @@ const copyJobs = [
   [ 'packages/stylelint-standard/standard.js', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
   [ 'packages/stylelint-standard/better-order.js', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
   [ 'packages/stylelint-vue-scss/vue-scss.js', 'packages/stylelint-paintbrush/vue-scss.js' ],
-  [ 'packages/stylelint-vue/vue.js', [ 'packages/stylelint-vue-scss/vue.js', 'packages/stylelint-paintbrush/vue.js' ]],
-  [ 'packages/stylelint-scss/scss.js', [ 'packages/stylelint-vue-scss/scss.js', 'packages/stylelint-paintbrush/scss.js' ]],
+  [ 'packages/stylelint-vue/vue.js', [ 'packages/stylelint-vue-scss', 'packages/stylelint-paintbrush' ]],
+  [ 'packages/stylelint-scss/scss.js', [ 'packages/stylelint-vue-scss', 'packages/stylelint-paintbrush' ]],
   [ 'packages/eslint-plugin-standard/standard.js', [ 'packages/eslint-plugin-*', '!packages/eslint-plugin-standard' ]],
-  [ 'packages/eslint-plugin-ts/ts.js', ['packages/eslint-plugin-comet/ts.js', 'packages/eslint-plugin-*-ts/ts.js'] ],
+  [ 'packages/eslint-plugin-ts/ts.js', ['packages/eslint-plugin-comet', 'packages/eslint-plugin-*-ts'] ],
   ['packages/eslint-plugin-vue/vue.js', 'packages/eslint-plugin-vue/vue-ts.js' ],
-  ['packages/eslint-plugin-unsorted-ts/unsorted.js', 'packages/eslint-plugin-unsorted-ts/unsorted.js' ],
+  ['packages/eslint-plugin-unsorted/unsorted.js', 'packages/eslint-plugin-unsorted-ts/unsorted.js' ],
   [ 'packages/eslint-plugin-node/node.js', 'packages/eslint-plugin-node-cjs/node.js' ],
   ['packages/eslint-plugin-vitest/vitest.js', 'packages/eslint-plugin-paintbrush/vitest.js' ],
   ['packages/eslint-plugin-vue-ts/vue-ts.js', 'packages/eslint-plugin-paintbrush/vue-ts.js' ],
@@ -76,6 +76,7 @@ for (const job of copyJobs) {
 for (const job of Object.entries(packageJsonJobs)) {
   for (const destination of await globby(job[0], globbyOptions)) {
     const name = destination.split('/').pop().replace('eslint-plugin-', '').replace('stylelint-', '')
+    console.log(destination)
     const packageJson = {
       ...JSON.parse(await readFile(`${destination}/package.json`)),
       name: `@lint-my-life/${name}`,
