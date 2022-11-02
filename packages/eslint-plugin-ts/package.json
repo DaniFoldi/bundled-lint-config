@@ -1,12 +1,11 @@
 {
   "name": "@lint-my-life/eslint-plugin-ts",
-  "version": "1.8.3",
+  "version": "0.1.0",
   "description": "Plug-and-play presets for eslint",
   "main": "ts.js",
   "keywords": [
     "eslint preset",
-    "eslint plugin",
-    "eslintplugin",
+    "eslintconfig",
     "eslint",
     "lint",
     "eslint config"

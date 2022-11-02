@@ -1,8 +1,8 @@
 {
-  "name": "@lint-my-life/eslint-plugin-comet",
-  "version": "1.8.3",
+  "name": "@lint-my-life/eslint-plugin-jest",
+  "version": "0.1.0",
   "description": "Plug-and-play presets for eslint",
-  "main": "comet.js",
+  "main": "jest.js",
   "keywords": [
     "eslint preset",
     "eslintconfig",

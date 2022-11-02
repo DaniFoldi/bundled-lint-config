@@ -27,7 +27,6 @@ const copyJobs = [
   [ 'packages/eslint-plugin-react/react.js', 'packages/eslint-plugin-react-*' ],
   [ 'packages/eslint-plugin-react-native/react-native.js', 'packages/eslint-plugin-react-native-ts/react-native.js' ]
 ]
-const esStyleLint = [ 'packages/eslint-*', 'packages/stylelint-*' ]
 
 const packageJsonJobs = {
   'packages/stylelint-*': {
@@ -52,7 +51,7 @@ const packageJsonJobs = {
       'eslint config'
     ]
   },
-  [esStyleLint]: {
+  '{packages/eslint-*,packages/stylelint-*}': {
     author: 'DaniFoldi',
     license: 'MIT',
     bugs: {
@@ -79,11 +78,11 @@ for (const job of copyJobs) {
 
 for (const job of Object.entries(packageJsonJobs)) {
   for (const destination of await globby(job[0], globbyOptions)) {
-    const name = basename(dirname(destination)).replace('eslint-plugin-', '').replace('stylelint-', '')
+    const name = basename(destination)
     const packageJson = {
       ...JSON.parse(await readFile(join(destination, 'package.json'))),
       name: `@lint-my-life/${name}`,
-      main: `${name}.js`,
+      main: `${name.replace('eslint-plugin-', '').replace('stylelint-', '')}.js`,
       ...job[1]
     }
     await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)

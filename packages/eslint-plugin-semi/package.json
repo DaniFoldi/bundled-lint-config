@@ -1,8 +1,8 @@
 {
-  "name": "@lint-my-life/eslint-plugin-node-cjs",
-  "version": "1.8.3",
+  "name": "@lint-my-life/eslint-plugin-semi",
+  "version": "0.1.0",
   "description": "Plug-and-play presets for eslint",
-  "main": "node-cjs.js",
+  "main": "semi.js",
   "keywords": [
     "eslint preset",
     "eslintconfig",

@@ -1,25 +1,14 @@
 {
-  "name": "@danifoldi/eslint-plugin-eslint-presets",
-  "version": "1.8.3",
-  "description": "Various plug-and-play presets for eslint",
-  "main": "index.js",
+  "name": "@lint-my-life/eslint-plugin-react-native",
+  "version": "0.1.0",
+  "description": "Plug-and-play presets for eslint",
+  "main": "react-native.js",
   "keywords": [
     "eslint preset",
-    "eslint plugin",
-    "eslintplugin",
+    "eslintconfig",
     "eslint",
     "lint",
-    "eslint config",
-    "typescript",
-    "vue",
-    "nuxt",
-    "typescript lint",
-    "jest",
-    "vitest",
-    "vue lint",
-    "ts lint",
-    "vue lint",
-    "nuxt lint"
+    "eslint config"
   ],
   "author": "DaniFoldi",
   "license": "MIT",
@@ -32,11 +21,11 @@
     "eslint-plugin-unicorn": "^44.0.2"
   },
   "bugs": {
-    "url": "https://github.com/DaniFoldi/linters/issues"
+    "url": "https://github.com/DaniFoldi/lint-my-life/issues"
   },
-  "homepage": "https://github.com/DaniFoldi/linters#readme",
+  "homepage": "https://github.com/DaniFoldi/lint-my-life#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DaniFoldi/linters.git"
+    "url": "git+https://github.com/DaniFoldi/lint-my-life.git"
   }
 }

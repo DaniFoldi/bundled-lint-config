@@ -1,8 +1,8 @@
 {
-  "name": "@lint-my-life/packages",
+  "name": "@lint-my-life/eslint-plugin-nuxt",
   "version": "0.1.0",
   "description": "Plug-and-play presets for eslint",
-  "main": "packages.js",
+  "main": "nuxt.js",
   "keywords": [
     "eslint preset",
     "eslintconfig",
