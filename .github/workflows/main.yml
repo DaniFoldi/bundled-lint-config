@@ -17,6 +17,7 @@ jobs:
     uses: DaniFoldi/workflows/.github/workflows/npm.yml@main
     with:
       run: |
+        node prepublish.mjs
         npm run lint
 
   npm-publish-stylelint:

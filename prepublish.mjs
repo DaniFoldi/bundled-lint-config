@@ -1,5 +1,5 @@
 import { copyFile, readFile, writeFile } from 'node:fs/promises'
-import { basename, dirname, join } from 'node:path'
+import { basename, join } from 'node:path'
 import { globby } from 'globby'
 
 
