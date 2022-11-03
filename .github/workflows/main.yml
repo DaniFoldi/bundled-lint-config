@@ -20,8 +20,8 @@ jobs:
         node prepublish.mjs
         npm run lint
 
-  npm-publish-stylelint:
-    name: Publish stylelint package to npm
+  npm-publish:
+    name: Publish package to npm
     runs-on: ubuntu-latest
     if: contains( join( github.event.commits.*.message, ', ' ), '[ci release]' )
 
