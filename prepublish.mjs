@@ -33,7 +33,7 @@ const copyJobs = [
 
 const packageJsonJobs = {
   'packages/stylelint-*': {
-    version: '0.1.0',
+    version: '0.1.1',
     description: 'Plug-and-play presets for stylelint',
     keywords: [
       'stylelint preset',
@@ -53,6 +53,9 @@ const packageJsonJobs = {
       'lint',
       'eslint config'
     ]
+  },
+  'packages-eslint-config-paintbrush': {
+    version: '0.1.1'
   },
   '{packages/eslint-*,packages/stylelint-*}': {
     author: 'DaniFoldi',
