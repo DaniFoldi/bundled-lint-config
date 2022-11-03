@@ -18,6 +18,7 @@ const copyJobs = [
   [ 'packages/eslint-config-standard/standard.js', [ 'packages/eslint-config-*', '!packages/eslint-config-standard' ]],
   [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-*-ts' ],
   [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-comet/ts.js' ],
+  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-paintbrush/ts.js' ],
   [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-vue-ts/vue.js' ],
   [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-nuxt/vue.js' ],
   [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-paintbrush/vue.js' ],
