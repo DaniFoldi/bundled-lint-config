@@ -1,7 +1,7 @@
 module.exports = {
   customSyntax: 'postcss-scss',
   extends: [ './standard.js' ],
-  plugins: [ 'stylelint-high-performance-animation', 'stylelint-scss' ],
+  plugins: [ 'stylelint-order', 'stylelint-high-performance-animation', 'stylelint-scss' ],
   rules: {
     'annotation-no-unknown': [
       true,
