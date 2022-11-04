@@ -54,7 +54,7 @@ const packageJsonJobs = {
       'eslint config'
     ]
   },
-  'packages-eslint-config-paintbrush': {
+  'packages/eslint-config-paintbrush': {
     version: '0.1.1'
   },
   '{packages/eslint-*,packages/stylelint-*}': {
