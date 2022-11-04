@@ -1,4 +1,4 @@
-import { copyFile, readFile, writeFile } from 'node:fs/promises'
+import { copyFile, readFile, stat, writeFile } from 'node:fs/promises'
 import { basename, join } from 'node:path'
 import { globby } from 'globby'
 
@@ -83,6 +83,21 @@ for (const job of copyJobs) {
 }
 
 for (const job of Object.entries(packageJsonJobs)) {
+  try {
+    if (await stat(job[0])) {
+      const destination = job[0]
+      const name = basename(destination)
+      const packageJson = {
+        ...JSON.parse(await readFile(join(destination, 'package.json'))),
+        name: `@lint-my-life/${name}`,
+        main: `${name.replace('eslint-config-', '').replace('stylelint-', '')}.js`,
+        ...job[1]
+      }
+      await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
+      continue
+    }
+  } catch {}
+
   for (const destination of await globby(job[0], globbyOptions)) {
     const name = basename(destination)
     const packageJson = {

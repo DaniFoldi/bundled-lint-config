@@ -1,6 +1,6 @@
 {
   "name": "@lint-my-life/stylelint-standard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Plug-and-play presets for stylelint",
   "main": "standard.js",
   "keywords": [
