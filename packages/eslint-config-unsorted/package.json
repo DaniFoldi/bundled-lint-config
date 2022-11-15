@@ -27,7 +27,7 @@
     "eslint-plugin-unicorn": "^44.0.2",
     "eslint-plugin-vitest": "^0.0.18",
     "eslint-plugin-vue": "^9.7.0",
-    "typescript": "^4.8.4",
+    "typescript": "^4.9.3",
     "vue-eslint-parser": "^9.1.0"
   },
   "bugs": {
