@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "postcss": "^8.4.19",
-    "postcss-scss": "^4.0.5",
+    "postcss-scss": "^4.0.6",
     "sass": "^1.56.1",
     "stylelint": "^14.15.0",
     "stylelint-high-performance-animation": "^1.6.0",
