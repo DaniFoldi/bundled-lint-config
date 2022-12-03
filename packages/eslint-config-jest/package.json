@@ -21,7 +21,7 @@
     "url": "git+https://github.com/DaniFoldi/lint-my-life.git"
   },
   "dependencies": {
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^27.1.6",
     "eslint-plugin-unicorn": "^44.0.2"

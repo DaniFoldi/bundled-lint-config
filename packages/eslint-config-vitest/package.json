@@ -13,7 +13,7 @@
   "author": "DaniFoldi",
   "license": "MIT",
   "dependencies": {
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unicorn": "^44.0.2",
     "eslint-plugin-vitest": "^0.0.20"
