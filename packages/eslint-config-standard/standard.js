@@ -184,9 +184,12 @@ module.exports = {
     'unicorn/no-array-callback-reference': 'off',
     'unicorn/no-array-for-each': 'off',
     'unicorn/no-array-reduce': 'off',
+    'unicorn/no-negated-condition': [ 'warn' ],
+    'unicorn/no-typeof-undefined': [ 'warn' ],
     'unicorn/no-null': 'off',
     'unicorn/numeric-separators-style': [ 'warn', { onlyIfContainsSeparator: true }],
     'unicorn/prevent-abbreviations': 'off',
+    'unicorn/switch-case-braces': ['warn', 'avoid'],
     'use-isnan': 'error',
     'valid-typeof': [ 'error', { requireStringLiterals: true }]
   },
