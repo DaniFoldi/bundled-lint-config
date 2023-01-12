@@ -14,9 +14,9 @@
   "license": "MIT",
   "dependencies": {
     "eslint": "^8.31.0",
-    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import": "^2.27.4",
     "eslint-plugin-unicorn": "^45.0.2",
-    "eslint-plugin-vitest": "^0.0.25"
+    "eslint-plugin-vitest": "^0.0.29"
   },
   "bugs": {
     "url": "https://github.com/DaniFoldi/lint-my-life/issues"
