@@ -1,5 +1,7 @@
 # Want more linters in your life, but without having to set them up? Welcome
 
+_Note: I will shortly refactor the packages to follow a standard + addon structure._
+
 ## This package is published from a monorepo
 
 Check [https://github.com/DaniFoldi/lint-my-life](https://github.com/DaniFoldi/lint-my-life) for more details.
