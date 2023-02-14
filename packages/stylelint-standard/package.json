@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "stylelint": "^14.16.1",
-    "stylelint-high-performance-animation": "^1.7.0",
+    "stylelint-high-performance-animation": "^1.8.0",
     "stylelint-order": "^6.0.2"
   },
   "bugs": {
