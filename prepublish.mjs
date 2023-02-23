@@ -44,7 +44,7 @@ const packageJsonJobs = {
     ]
   },
   'packages/eslint-*': {
-    version: '0.1.4',
+    version: '0.1.5',
     description: 'Plug-and-play presets for eslint',
     keywords: [
       'eslint preset',
