@@ -60,7 +60,7 @@ module.exports = {
     'function-paren-newline': [ 'warn', 'multiline' ],
     'getter-return': 'error',
     'import/export': 'warn',
-    'import/exports-last': 'warn',
+    'import/exports-last': 'off',
     'import/first': 'error',
     'import/newline-after-import': [ 'warn', { count: 2 }],
     'import/no-absolute-path': [ 'error', { amd: false, commonjs: true, esmodule: true }],
@@ -156,7 +156,6 @@ module.exports = {
     'no-useless-concat': 'warn',
     'no-useless-escape': 'warn',
     'no-var': 'error',
-    'no-warning-comments': [ 'warn', { location: 'anywhere', terms: [ 'todo', 'fixme' ] }],
     'no-with': 'error',
     'object-curly-newline': [
       'warn',
