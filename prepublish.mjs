@@ -44,7 +44,7 @@ const packageJsonJobs = {
     ]
   },
   'packages/eslint-*': {
-    version: '0.1.5',
+    version: '0.1.6',
     description: 'Plug-and-play presets for eslint',
     keywords: [
       'eslint preset',
@@ -65,9 +65,6 @@ const packageJsonJobs = {
       type: 'git',
       url: 'git+https://github.com/DaniFoldi/lint-my-life.git'
     }
-  },
-  'packages/eslint-config-vitest': {
-    version: '0.1.5'
   }
 }
 
