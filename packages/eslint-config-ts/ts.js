@@ -29,12 +29,6 @@ module.exports = {
         singleline: { delimiter: 'semi', requireLast: false }
       }
     ],
-    '@typescript-eslint/member-ordering': [
-      'warn', {
-        default: { memberTypes: 'never' },
-        interfaces: { order: 'alphabetically' }
-      }
-    ],
     '@typescript-eslint/no-unused-vars': [
       'warn',
       {
