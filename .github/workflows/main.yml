@@ -44,8 +44,6 @@ jobs:
         - packages/eslint-config-semi
         - packages/eslint-config-standard
         - packages/eslint-config-ts
-        - packages/eslint-config-unsorted
-        - packages/eslint-config-unsorted-ts
         - packages/eslint-config-vitest
         - packages/eslint-config-vue
         - packages/eslint-config-vue-ts
