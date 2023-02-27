@@ -22,7 +22,6 @@ const copyJobs = [
   [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-vue-ts/vue.js' ],
   [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-nuxt/vue.js' ],
   [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-paintbrush/vue.js' ],
-  [ 'packages/eslint-config-unsorted/unsorted.js', 'packages/eslint-config-unsorted-ts/unsorted.js' ],
   [ 'packages/eslint-config-node/node.js', 'packages/eslint-config-node-cjs/node.js' ],
   [ 'packages/eslint-config-vitest/vitest.js', 'packages/eslint-config-paintbrush/vitest.js' ],
   [ 'packages/eslint-config-vue-ts/vue-ts.js', 'packages/eslint-config-paintbrush/vue-ts.js' ],
@@ -44,7 +43,7 @@ const packageJsonJobs = {
     ]
   },
   'packages/eslint-*': {
-    version: '0.1.6',
+    version: '0.2.0',
     description: 'Plug-and-play presets for eslint',
     keywords: [
       'eslint preset',

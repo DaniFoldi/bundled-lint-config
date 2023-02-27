@@ -1,6 +1,6 @@
 {
   "name": "@lint-my-life/eslint-config-node",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "Plug-and-play presets for eslint",
   "main": "node.js",
   "keywords": [
