@@ -1,6 +1,6 @@
 {
   "name": "@lint-my-life/eslint-config-vitest",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Plug-and-play presets for eslint",
   "main": "vitest.js",
   "keywords": [

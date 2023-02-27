@@ -64,6 +64,9 @@ const packageJsonJobs = {
       type: 'git',
       url: 'git+https://github.com/DaniFoldi/lint-my-life.git'
     }
+  },
+  'packages/eslint-config-vitest': {
+    version: '0.2.1'
   }
 }
 
