@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    './ts.js',
-    './react-native.js'
+    './react-native.js',
+    './ts.js'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {

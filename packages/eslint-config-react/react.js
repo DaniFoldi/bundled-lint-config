@@ -12,6 +12,7 @@ module.exports = {
   rules: {
     'import/no-unassigned-import': 'off',
     'react-hooks/exhaustive-deps': 'error',
-    'react-hooks/rules-of-hooks': 'error'
+    'react-hooks/rules-of-hooks': 'error',
+    'unicorn/no-useless-undefined': 'off'
   }
 }
