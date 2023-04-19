@@ -13,7 +13,7 @@
   "author": "DaniFoldi",
   "license": "MIT",
   "dependencies": {
-    "postcss": "^8.4.22",
+    "postcss": "^8.4.23",
     "postcss-html": "^1.5.0",
     "stylelint": "^15.5.0",
     "stylelint-high-performance-animation": "^1.8.0",
