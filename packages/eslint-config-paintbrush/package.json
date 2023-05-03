@@ -24,7 +24,7 @@
     "eslint-plugin-vitest": "0.1.4",
     "eslint-plugin-vue": "^9.11.0",
     "typescript": "^5.0.4",
-    "vue-eslint-parser": "^9.1.1"
+    "vue-eslint-parser": "^9.2.0"
   },
   "bugs": {
     "url": "https://github.com/DaniFoldi/lint-my-life/issues"
