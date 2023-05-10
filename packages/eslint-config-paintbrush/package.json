@@ -22,7 +22,7 @@
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-unicorn": "^46.0.1",
     "eslint-plugin-vitest": "0.2.2",
-    "eslint-plugin-vue": "^9.11.1",
+    "eslint-plugin-vue": "^9.12.0",
     "typescript": "^5.0.4",
     "vue-eslint-parser": "^9.2.1"
   },
