@@ -13,7 +13,7 @@
   "author": "DaniFoldi",
   "license": "MIT",
   "dependencies": {
-    "stylelint": "^15.6.1",
+    "stylelint": "^15.6.2",
     "stylelint-high-performance-animation": "^1.8.0",
     "stylelint-order": "^6.0.3"
   },
