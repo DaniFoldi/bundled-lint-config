@@ -19,7 +19,7 @@
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-unicorn": "^46.0.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.3"
   },
   "bugs": {
     "url": "https://github.com/DaniFoldi/lint-my-life/issues"
