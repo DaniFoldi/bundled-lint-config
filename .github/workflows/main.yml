@@ -77,7 +77,7 @@ jobs:
       run: |
         npm run build
 
-    - uses: JS-DevTools/npm-publish@v1
+    - uses: JS-DevTools/npm-publish@v2
       timeout-minutes: 5
       with:
         access: public
