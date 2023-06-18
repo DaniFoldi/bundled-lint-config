@@ -23,6 +23,6 @@
     "eslint": "^8.43.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-unicorn": "^47.0.0",
-    "globby": "^13.1.4"
+    "globby": "^13.2.0"
   }
 }
