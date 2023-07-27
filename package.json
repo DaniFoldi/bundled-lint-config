@@ -27,7 +27,7 @@
     "globby": "^13.2.2"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.22.5",
-    "@babel/preset-env": "^7.22.5"
+    "@babel/eslint-parser": "^7.22.9",
+    "@babel/preset-env": "^7.22.9"
   }
 }
