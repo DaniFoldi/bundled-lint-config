@@ -1,10 +1,9 @@
-module.exports = {
-  env: {
-    'react-native/react-native': true
-  },
-  extends: [ './react.js' ],
-  plugins: [ 'react', 'react-hooks', 'react-native' ],
-  rules: {
+import { mainRuleset as reactMain } from './react.js'
+import reactNative from 'eslint-plugin-react-native'
+
+
+export function mainRuleset(rules = {}, plugins = {}) {
+  return { ...reactMain({
     'import/no-unassigned-import': 'off',
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
@@ -14,6 +13,12 @@ module.exports = {
     'react-native/no-single-element-style-arrays': 'warn',
     'react-native/no-unused-styles': 'warn',
     'react-native/sort-styles': 'off',
-    'react-native/split-platform-components': 'error'
-  }
+    'react-native/split-platform-components': 'error',
+    ...rules
+  }, {
+    reactNative,
+    ...plugins
+  }) }
 }
+
+export default [ mainRuleset() ]

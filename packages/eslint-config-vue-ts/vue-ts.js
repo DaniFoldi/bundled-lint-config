@@ -1,15 +1,19 @@
-module.exports = {
-  extends: [
-    './ts.js',
-    './vue.js'
-  ],
-  parser: 'vue-eslint-parser',
-  parserOptions: {
-    ecmaFeatures: { jsx: true },
-    ecmaVersion: 'latest',
-    extraFileExtensions: [ '.vue' ],
-    parser: '@typescript-eslint/parser',
-    sourceType: 'module'
-  },
-  plugins: [ '@typescript-eslint' ]
-}
+import { mainRuleset as tsMain } from './ts.js'
+import { mainRuleset as vueMain } from './vue.js'
+import parser from '@typescript-eslint/parser'
+import typescriptEslint from '@typescript-eslint/plugin'
+
+export default [
+  {
+    ...tsMain(),
+    ...vueMain(),
+    parserOptions: {
+      ecmaFeatures: { jsx: true },
+      ecmaVersion: 'latest',
+      extraFileExtensions: [ '.vue' ],
+      parser: parser,
+      sourceType: 'module'
+    },
+    plugins: { typescriptEslint }
+  }
+]

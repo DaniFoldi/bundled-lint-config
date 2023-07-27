@@ -32,14 +32,11 @@ jobs:
       matrix:
         package:
         - packages/eslint-config-comet
-        - packages/eslint-config-jest
         - packages/eslint-config-node
-        - packages/eslint-config-node-cjs
         - packages/eslint-config-react
         - packages/eslint-config-react-native
         - packages/eslint-config-react-native-ts
         - packages/eslint-config-react-ts
-        - packages/eslint-config-semi
         - packages/eslint-config-standard
         - packages/eslint-config-ts
         - packages/eslint-config-vitest
@@ -60,7 +57,7 @@ jobs:
       timeout-minutes: 5
       uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: 20
         cache: npm
         cache-dependency-path: 'package.json'
 
