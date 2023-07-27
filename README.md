@@ -14,12 +14,10 @@ For any of the presets below, you can install them with one command:
 npm install @lint-my-life/preset
 ```
 
-Add this to your `.eslintrc` for eslint (omit `eslint-config-`):
+Add this to your `eslint.config.js` for eslint (omit `eslint-config-`):
 
-```json
-{
-  "extends": [ "@lint-my-life/preset" ]
-}
+```js
+export default from '@lint-my-life/preset'
 ```
 
 Add this to your `.stylelintrc` for stylelint:
