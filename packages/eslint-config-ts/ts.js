@@ -1,5 +1,5 @@
 import { cjsRuleset as cjsStandard, mainRuleset as mainStandard } from './standard.js'
-import typescriptEslint from '@typescipt-eslint/eslint-plugin'
+import typescriptEslint from '@typescript-eslint/eslint-plugin'
 
 
 export function mainRuleset(rules = {}, plugins = {}) {
