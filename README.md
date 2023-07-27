@@ -17,7 +17,7 @@ npm install @lint-my-life/preset
 Add this to your `eslint.config.js` for eslint (omit `eslint-config-`):
 
 ```js
-export default from '@lint-my-life/preset'
+export * from '@lint-my-life/preset'
 ```
 
 Add this to your `.stylelintrc` for stylelint:

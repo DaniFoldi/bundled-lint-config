@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "node update.mjs && node prepublish.mjs",
+    "build": "node update.js && node prepublish.js",
     "lint": "eslint --cache --cache-file .eslintcache ."
   },
   "repository": {
