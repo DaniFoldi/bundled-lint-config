@@ -35,8 +35,6 @@ jobs:
         - packages/eslint-config-jest
         - packages/eslint-config-node
         - packages/eslint-config-node-cjs
-        - packages/eslint-config-nuxt
-        - packages/eslint-config-paintbrush
         - packages/eslint-config-react
         - packages/eslint-config-react-native
         - packages/eslint-config-react-native-ts
@@ -48,7 +46,6 @@ jobs:
         - packages/eslint-config-vue
         - packages/eslint-config-vue-ts
 
-        - packages/stylelint-paintbrush
         - packages/stylelint-scss
         - packages/stylelint-standard
         - packages/stylelint-vue
