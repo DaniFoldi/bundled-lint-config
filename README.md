@@ -40,8 +40,6 @@ Presets:
 - `eslint-config-react-native-ts`
 - `eslint-config-vue`
 - `eslint-config-vue-ts`
-- `eslint-config-nuxt`
-- `eslint-config-jest`
 - `eslint-config-vitest`
 - `eslint-config-paintbrush`
 - `eslint-config-comet`
@@ -54,10 +52,7 @@ Presets:
 Addons:
 
 - `eslint-config-semi`
-- `eslint-config-unsorted`
-- `eslint-config-unsorted-ts`
 - `eslint-config-node`
-- `eslint-config-node-cjs`
 
 Install and append these after the preset.
 
@@ -117,8 +112,6 @@ Thanks to all authors that created the linter packages, and those that contribut
 - `eslint-import-resolver-typescript`
 - `eslint-config-html`
 - `eslint-config-vue`
-- `eslint-config-nuxt`
-- `eslint-config-jest`
 - `eslint-config-vitest`
 - `vue-eslint-parser`
 - `@typescript-eslint/eslint-config`

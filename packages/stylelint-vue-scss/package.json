@@ -1,6 +1,6 @@
 {
   "name": "@lint-my-life/stylelint-vue-scss",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Plug-and-play presets for stylelint",
   "main": "vue-scss.js",
   "keywords": [

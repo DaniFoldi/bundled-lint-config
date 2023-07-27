@@ -1,6 +1,6 @@
 {
   "name": "@lint-my-life/eslint-config-ts",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Plug-and-play presets for eslint",
   "main": "ts.js",
   "keywords": [
@@ -28,5 +28,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DaniFoldi/lint-my-life.git"
-  }
+  },
+  "type": "module"
 }

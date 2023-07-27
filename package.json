@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Check https://github.com/DaniFoldi/lint-my-life for more details.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "node update.mjs && node prepublish.mjs",
-    "lint": "eslint --ext .cjs,.js,.mjs,.ts --cache --cache-file .eslintcache --report-unused-disable-directives ."
+    "lint": "eslint --cache --cache-file .eslintcache ."
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,9 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-unicorn": "^47.0.0",
     "globby": "^13.2.2"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.22.5",
+    "@babel/preset-env": "^7.22.5"
   }
 }

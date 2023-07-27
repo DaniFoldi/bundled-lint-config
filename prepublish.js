@@ -8,31 +8,21 @@ const globbyOptions = { onlyFiles: false, markDirectories: true }
 const copyJobs = [
   [ 'LICENSE', 'packages/*' ],
   [ 'README.md', 'packages/*' ],
-  [ 'packages/stylelint-standard/standard.js', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
-  [ 'packages/stylelint-standard/better-order.js', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
-  [ 'packages/stylelint-vue-scss/vue-scss.js', 'packages/stylelint-paintbrush/vue-scss.js' ],
-  [ 'packages/stylelint-vue/vue.js', 'packages/stylelint-vue-scss/vue.js' ],
-  [ 'packages/stylelint-vue/vue.js', 'packages/stylelint-paintbrush/vue.js' ],
-  [ 'packages/stylelint-scss/scss.js', 'packages/stylelint-vue-scss/scss.js' ],
-  [ 'packages/stylelint-scss/scss.js', 'packages/stylelint-paintbrush/scss.js' ],
+  [ 'packages/stylelint-standard/standard.cjs', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
+  [ 'packages/stylelint-standard/better-order.cjs', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
+  [ 'packages/stylelint-vue/vue.cjs', 'packages/stylelint-vue-scss/vue.cjs' ],
+  [ 'packages/stylelint-scss/scss.cjs', 'packages/stylelint-vue-scss/scss.cjs' ],
   [ 'packages/eslint-config-standard/standard.js', [ 'packages/eslint-config-*', '!packages/eslint-config-standard' ]],
   [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-*-ts' ],
   [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-comet/ts.js' ],
-  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-paintbrush/ts.js' ],
   [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-vue-ts/vue.js' ],
-  [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-nuxt/vue.js' ],
-  [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-paintbrush/vue.js' ],
-  [ 'packages/eslint-config-node/node.js', 'packages/eslint-config-node-cjs/node.js' ],
-  [ 'packages/eslint-config-vitest/vitest.js', 'packages/eslint-config-paintbrush/vitest.js' ],
-  [ 'packages/eslint-config-vue-ts/vue-ts.js', 'packages/eslint-config-paintbrush/vue-ts.js' ],
-  [ 'packages/eslint-config-nuxt/nuxt.js', 'packages/eslint-config-paintbrush/nuxt.js' ],
   [ 'packages/eslint-config-react/react.js', 'packages/eslint-config-react-*' ],
   [ 'packages/eslint-config-react-native/react-native.js', 'packages/eslint-config-react-native-ts/react-native.js' ]
 ]
 
 const packageJsonJobs = {
   'packages/stylelint-*': {
-    version: '0.1.1',
+    version: '0.2.0',
     description: 'Plug-and-play presets for stylelint',
     keywords: [
       'stylelint preset',
@@ -43,7 +33,7 @@ const packageJsonJobs = {
     ]
   },
   'packages/eslint-*': {
-    version: '0.2.2',
+    version: '0.3.0',
     description: 'Plug-and-play presets for eslint',
     keywords: [
       'eslint preset',
@@ -51,7 +41,8 @@ const packageJsonJobs = {
       'eslint',
       'lint',
       'eslint config'
-    ]
+    ],
+    type: 'module'
   },
   '{packages/eslint-*,packages/stylelint-*}': {
     author: 'DaniFoldi',
