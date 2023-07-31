@@ -17,7 +17,7 @@
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-unicorn": "^47.0.0",
-    "eslint-plugin-vue": "^9.16.0",
+    "eslint-plugin-vue": "^9.16.1",
     "vue-eslint-parser": "^9.3.1"
   },
   "bugs": {
