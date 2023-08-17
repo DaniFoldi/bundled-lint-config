@@ -15,7 +15,7 @@
   "dependencies": {
     "postcss": "^8.4.28",
     "postcss-scss": "^4.0.7",
-    "sass": "^1.65.1",
+    "sass": "^1.66.0",
     "stylelint": "^15.10.2",
     "stylelint-high-performance-animation": "^1.9.0",
     "stylelint-order": "^6.0.3",
