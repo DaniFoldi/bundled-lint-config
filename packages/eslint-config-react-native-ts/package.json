@@ -23,7 +23,7 @@
     "eslint-plugin-react-native": "^4.0.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-unicorn": "^47.0.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "bugs": {
     "url": "https://github.com/DaniFoldi/lint-my-life/issues"
