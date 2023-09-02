@@ -16,7 +16,7 @@
     "eslint": "^8.48.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-unicorn": "^47.0.0",
-    "eslint-plugin-vitest": "^0.3.0"
+    "eslint-plugin-vitest": "^0.3.1"
   },
   "bugs": {
     "url": "https://github.com/DaniFoldi/lint-my-life/issues"
