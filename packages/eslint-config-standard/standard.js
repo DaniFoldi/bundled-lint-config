@@ -1,7 +1,7 @@
 import unicorn from 'eslint-plugin-unicorn'
 
 
-export function mainRuleset(rules = {}) {
+export function mainRuleset(rules = {}, plugins = {}) {
   return {
     ignores: [ 'package.json', 'package-lock.json', 'coverage/', 'dist/', 'node_modules/' ],
     languageOptions: {
@@ -12,7 +12,8 @@ export function mainRuleset(rules = {}) {
       reportUnusedDisableDirectives: true
     },
     plugins: {
-      unicorn
+      unicorn,
+      ...plugins
     },
     rules: {
       'array-bracket-newline': [

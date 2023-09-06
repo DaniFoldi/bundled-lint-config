@@ -1,5 +1,6 @@
 import { cjsRuleset as cjsStandard, mainRuleset as mainStandard } from './standard.js'
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
+import typescriptEslintParser from '@typescript-eslint/parser'
 
 
 export function mainRuleset(rules = {}, plugins = {}) {
@@ -76,13 +77,17 @@ export function mainRuleset(rules = {}, plugins = {}) {
       'prefer-rest-params': 'error',
       'prefer-spread': 'error',
       ...rules
+    }, {
+      '@typescript-eslint': typescriptEslint,
+      ...plugins
     }),
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module'
-    },
-    plugins: { typescriptEslint, ...plugins }
+    languageOptions: {
+      parser: typescriptEslintParser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module'
+      }
+    }
   }
 }
 
