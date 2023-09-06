@@ -66,9 +66,9 @@ export function mainRuleset(rules = {}, plugins = {}) {
         'astro/jsx-a11y/role-supports-aria-props': 'warn',
         'astro/jsx-a11y/scope': 'warn',
         'astro/jsx-a11y/tabindex-no-positive': 'warn',
-        
+
         // *--- EXTENSION RULES ---*
-        'astro/semi': 'warn',
+        'astro/semi': [ 'warn', 'never' ],
         ...rules
       },
       { vitest, ...plugins }
