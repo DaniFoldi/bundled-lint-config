@@ -31,6 +31,7 @@ jobs:
     strategy:
       matrix:
         package:
+        - packages/eslint-config-astro
         - packages/eslint-config-comet
         - packages/eslint-config-react
         - packages/eslint-config-react-native

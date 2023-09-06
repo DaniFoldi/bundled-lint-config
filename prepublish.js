@@ -13,9 +13,8 @@ const copyJobs = [
   [ 'packages/stylelint-vue/vue.cjs', 'packages/stylelint-vue-scss/vue.cjs' ],
   [ 'packages/stylelint-scss/scss.cjs', 'packages/stylelint-vue-scss/scss.cjs' ],
   [ 'packages/eslint-config-standard/standard.js', [ 'packages/eslint-config-*', '!packages/eslint-config-standard' ]],
-  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-*-ts' ],
-  [ 'packages/eslint-config-vitest/vitest.js', 'packages/eslint-config-comet/vitest.js' ],
-  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-vitest/ts.js', 'packages/eslint-config-comet/ts.js' ],
+  [ 'packages/eslint-config-vitest/vitest.js', [ 'packages/eslint-config-comet/vitest.js', 'packages/eslint-config-astro/astro.js' ]],
+  [ 'packages/eslint-config-ts/ts.js', [ 'packages/eslint-config-*-ts', 'packages/eslint-config-vitest/ts.js', 'packages/eslint-config-comet/ts.js', 'packages/eslint-config-astro/ts.js' ]],
   [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-vue-ts/vue.js' ],
   [ 'packages/eslint-config-react/react.js', 'packages/eslint-config-react-*' ],
   [ 'packages/eslint-config-react-native/react-native.js', 'packages/eslint-config-react-native-ts/react-native.js' ]
