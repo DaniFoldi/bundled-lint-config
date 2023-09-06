@@ -1,6 +1,6 @@
 {
   "name": "@lint-my-life/eslint-config-react-ts",
-  "version": "0.4.0",
+  "version": "0.4.2",
   "description": "Plug-and-play presets for eslint",
   "main": "react-ts.js",
   "keywords": [
