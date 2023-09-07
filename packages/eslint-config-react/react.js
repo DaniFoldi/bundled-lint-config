@@ -2,6 +2,8 @@ import { mainRuleset as mainStandard } from './standard.js'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import globals from 'globals'
+
 
 export function mainRuleset(rules = {}, plugins = {}) {
   return {
@@ -37,6 +39,10 @@ export function mainRuleset(rules = {}, plugins = {}) {
       enumerable: false,
       parserOptions: {
         jsxPragma: null
+      },
+      globals: {
+        ...globals.es2021,
+        ...globals.browser
       }
     },
     plugins: { react, reactHooks, reactRefresh, ...plugins },

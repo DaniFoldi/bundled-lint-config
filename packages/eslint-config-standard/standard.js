@@ -1,4 +1,5 @@
 import unicorn from 'eslint-plugin-unicorn'
+import globals from 'globals'
 
 
 export function mainRuleset(rules = {}, plugins = {}) {
@@ -6,7 +7,10 @@ export function mainRuleset(rules = {}, plugins = {}) {
     ignores: [ 'package.json', 'package-lock.json', 'coverage/', 'dist/', 'node_modules/' ],
     languageOptions: {
       ecmaVersion: 'latest',
-      sourceType: 'module'
+      sourceType: 'module',
+      globals: {
+        ...globals.es2021
+      }
     },
     linterOptions: {
       reportUnusedDisableDirectives: true
@@ -490,7 +494,7 @@ export function cjsRuleset(rules = {}) {
     files: [ '**/*.cjs' ],
     languageOptions: {
       globals: {
-        module: 'writable'
+        ...globals.commonjs
       },
       sourceType: 'script'
     },

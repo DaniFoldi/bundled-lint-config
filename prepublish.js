@@ -37,7 +37,7 @@ const packageJsonJobs = {
     ]
   },
   'packages/eslint-*': {
-    version: '0.4.2',
+    version: '0.4.4',
     description: 'Plug-and-play presets for eslint',
     keywords: [
       'eslint preset',
@@ -47,9 +47,6 @@ const packageJsonJobs = {
       'eslint config'
     ],
     type: 'module'
-  },
-  'packages/eslint-config-astro': {
-    version: '0.4.3'
   },
   '{packages/eslint-*,packages/stylelint-*}': {
     author: 'DaniFoldi',
