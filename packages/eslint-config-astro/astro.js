@@ -2,6 +2,7 @@ import vitest from 'eslint-plugin-vitest'
 import { mainRuleset as vitestMain } from './vitest.js'
 import typescriptEslintParser from '@typescript-eslint/parser'
 import astroEslintParser from 'astro-eslint-parser'
+import { es2020 } from 'globals'
 
 
 export function mainRuleset(rules = {}, plugins = {}) {
@@ -73,11 +74,12 @@ export function mainRuleset(rules = {}, plugins = {}) {
       },
       { vitest, ...plugins }
     ),
-    globals: {
-      Astro: false,
-      Fragment: false
-    },
     languageOptions: {
+      globals: {
+        ...es2020,
+        Astro: false,
+        Fragment: false
+      },
       parser: astroEslintParser,
       parserOptions: {
         parser: typescriptEslintParser,
