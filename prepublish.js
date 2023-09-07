@@ -48,6 +48,9 @@ const packageJsonJobs = {
     ],
     type: 'module'
   },
+  'packages/eslint-config-astro': {
+    version: '0.4.5'
+  },
   '{packages/eslint-*,packages/stylelint-*}': {
     author: 'DaniFoldi',
     license: 'MIT',

@@ -1,4 +1,4 @@
-import vitest from 'eslint-plugin-vitest'
+import astro from 'eslint-plugin-astro'
 import { mainRuleset as vitestMain } from './vitest.js'
 import typescriptEslintParser from '@typescript-eslint/parser'
 import astroEslintParser from 'astro-eslint-parser'
@@ -72,7 +72,7 @@ export function mainRuleset(rules = {}, plugins = {}) {
         'astro/semi': [ 'warn', 'never' ],
         ...rules
       },
-      { vitest, ...plugins }
+      { astro, ...plugins }
     ),
     languageOptions: {
       globals: {
