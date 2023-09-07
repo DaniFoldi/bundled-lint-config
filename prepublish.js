@@ -15,9 +15,9 @@ const copyJobs = [
   [ 'packages/eslint-config-standard/standard.js', [ 'packages/eslint-config-*', '!packages/eslint-config-standard' ]],
   [ 'packages/eslint-config-vitest/vitest.js', 'packages/eslint-config-astro/vitest.js' ],
   [ 'packages/eslint-config-vitest/vitest.js', 'packages/eslint-config-comet/vitest.js' ],
-  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-*-ts'],
+  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-*-ts' ],
   [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-vitest/ts.js' ],
-  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-comet/ts.js', ],
+  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-comet/ts.js' ],
   [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-astro/ts.js' ],
   [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-vue-ts/vue.js' ],
   [ 'packages/eslint-config-react/react.js', 'packages/eslint-config-react-*' ],
@@ -49,7 +49,7 @@ const packageJsonJobs = {
     type: 'module'
   },
   'packages/eslint-config-astro': {
-    version: '0.4.3',
+    version: '0.4.3'
   },
   '{packages/eslint-*,packages/stylelint-*}': {
     author: 'DaniFoldi',
