@@ -2,14 +2,7 @@ name: Lint and release packages
 
 on: # yamllint disable-line rule:truthy
   push:
-    branches:
-    - main
-  pull_request:
-    branches:
-    - main
-    types:
-    - opened
-    - synchronize
+    branches: [ main ]
 
 jobs:
   lint-linters:
