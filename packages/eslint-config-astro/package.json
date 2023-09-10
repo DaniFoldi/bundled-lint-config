@@ -1,6 +1,6 @@
 {
   "name": "@lint-my-life/eslint-config-astro",
-  "version": "0.4.2",
+  "version": "0.4.6",
   "description": "Plug-and-play presets for eslint",
   "main": "astro.js",
   "keywords": [

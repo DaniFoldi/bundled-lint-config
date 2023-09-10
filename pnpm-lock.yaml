@@ -4,6 +4,17 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  validate-npm-package-license: workspace:validate-npm-package-license@1.0.0
+
+patchedDependencies:
+  normalize-package-data@2.5.0:
+    hash: u6pujhfvmz7n4olwc4nsgqimcy
+    path: patches/normalize-package-data@2.5.0.patch
+  normalize-package-data@3.0.3:
+    hash: 2whhwaaf4o2itaoevii7zryzey
+    path: patches/normalize-package-data@3.0.3.patch
+
 importers:
 
   .:
@@ -11,6 +22,8 @@ importers:
       globby:
         specifier: ^13.2.2
         version: 13.2.2
+
+  packages/empty-validate-npm-package-license: {}
 
   packages/eslint-config-astro:
     dependencies:
@@ -2855,7 +2868,7 @@ packages:
       decamelize-keys: 1.1.1
       hard-rejection: 2.1.0
       minimist-options: 4.1.0
-      normalize-package-data: 3.0.3
+      normalize-package-data: 3.0.3(patch_hash=2whhwaaf4o2itaoevii7zryzey)
       read-pkg-up: 8.0.0
       redent: 4.0.0
       trim-newlines: 4.1.1
@@ -2939,24 +2952,26 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
-  /normalize-package-data@2.5.0:
+  /normalize-package-data@2.5.0(patch_hash=u6pujhfvmz7n4olwc4nsgqimcy):
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
     dependencies:
       hosted-git-info: 2.8.9
       resolve: 1.22.4
       semver: 5.7.2
-      validate-npm-package-license: 3.0.4
+      validate-npm-package-license: link:packages/empty-validate-npm-package-license
     dev: false
+    patched: true
 
-  /normalize-package-data@3.0.3:
+  /normalize-package-data@3.0.3(patch_hash=2whhwaaf4o2itaoevii7zryzey):
     resolution: {integrity: sha512-p2W1sgqij3zMMyRC067Dg16bfzVH+w7hyegmpIvZ4JNjqtGOVAIvLmjBx3yP7YTe9vKJgkoNOPjwQGogDoMXFA==}
     engines: {node: '>=10'}
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.13.0
       semver: 7.5.4
-      validate-npm-package-license: 3.0.4
+      validate-npm-package-license: link:packages/empty-validate-npm-package-license
     dev: false
+    patched: true
 
   /normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -3337,7 +3352,7 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       '@types/normalize-package-data': 2.4.1
-      normalize-package-data: 2.5.0
+      normalize-package-data: 2.5.0(patch_hash=u6pujhfvmz7n4olwc4nsgqimcy)
       parse-json: 5.2.0
       type-fest: 0.6.0
     dev: false
@@ -3347,7 +3362,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@types/normalize-package-data': 2.4.1
-      normalize-package-data: 3.0.3
+      normalize-package-data: 3.0.3(patch_hash=2whhwaaf4o2itaoevii7zryzey)
       parse-json: 5.2.0
       type-fest: 1.4.0
     dev: false
@@ -3569,28 +3584,6 @@ packages:
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
-    dev: false
-
-  /spdx-correct@3.2.0:
-    resolution: {integrity: sha512-kN9dJbvnySHULIluDHy32WHRUu3Og7B9sbY7tsFLctQkIqnMh3hErYgdMjTYuqmcXX+lK5T1lnUt3G7zNswmZA==}
-    dependencies:
-      spdx-expression-parse: 3.0.1
-      spdx-license-ids: 3.0.13
-    dev: false
-
-  /spdx-exceptions@2.3.0:
-    resolution: {integrity: sha512-/tTrYOC7PPI1nUAgx34hUpqXuyJG+DTHJTnIULG4rDygi4xu/tfgmq1e1cIRwRzwZgo4NLySi+ricLkZkw4i5A==}
-    dev: false
-
-  /spdx-expression-parse@3.0.1:
-    resolution: {integrity: sha512-cbqHunsQWnJNE6KhVSMsMeH5H/L9EpymbzqTQ3uLwNCLZ1Q481oWaofqH7nO6V07xlXwY6PhQdQ2IedWx/ZK4Q==}
-    dependencies:
-      spdx-exceptions: 2.3.0
-      spdx-license-ids: 3.0.13
-    dev: false
-
-  /spdx-license-ids@3.0.13:
-    resolution: {integrity: sha512-XkD+zwiqXHikFZm4AX/7JSCXA98U5Db4AFd5XUg/+9UNtnH75+Z9KxtpYiJZx36mUDVOwH83pl7yvCer6ewM3w==}
     dev: false
 
   /stackback@0.0.2:
@@ -3993,13 +3986,6 @@ packages:
 
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
-    dev: false
-
-  /validate-npm-package-license@3.0.4:
-    resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
-    dependencies:
-      spdx-correct: 3.2.0
-      spdx-expression-parse: 3.0.1
     dev: false
 
   /vite-node@0.34.4(@types/node@20.6.0):
