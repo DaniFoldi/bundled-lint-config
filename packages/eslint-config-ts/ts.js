@@ -86,7 +86,10 @@ export function mainRuleset(rules = {}, plugins = {}) {
       parser: typescriptEslintParser,
       parserOptions: {
         ecmaVersion: 'latest',
-        sourceType: 'module'
+        sourceType: 'module',
+        globals: {
+          ...globals.es2021
+        }
       }
     }
   }

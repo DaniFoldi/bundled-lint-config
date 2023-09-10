@@ -7,11 +7,32 @@ on: # yamllint disable-line rule:truthy
 jobs:
   lint-linters:
     name: Lint the linters repository
-    uses: DaniFoldi/workflows/.github/workflows/npm.yml@main
-    with:
-      run: |
-        node prepublish.js
-        npm run lint
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      timeout-minutes: 5
+      uses: actions/checkout@v4
+
+    - name: Install nodejs
+      timeout-minutes: 5
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20
+        cache: pnpm
+        cache-dependency-path: 'package.json'
+
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 8
+
+    - name: Install dependencies
+      timeout-minutes: 5
+      run: pnpm i
+
+    - name: Lint repository
+      timeout-minutes: 5
+      run: pnpm lint
 
   npm-publish:
     name: Publish package to npm
@@ -51,18 +72,20 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 20
-        cache: npm
+        cache: pnpm
         cache-dependency-path: 'package.json'
+
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 8
 
     - name: Install dependencies
       timeout-minutes: 5
-      run: |
-        npm ci --no-progress
+      run: pnpm i
 
     - name: Build packages
       timeout-minutes: 5
-      run: |
-        npm run build
+      run: pnpm build
 
     - uses: JS-DevTools/npm-publish@v2
       timeout-minutes: 5
