@@ -67,17 +67,16 @@ jobs:
       timeout-minutes: 5
       uses: actions/checkout@v4
 
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 8
+
     - name: Install nodejs
       timeout-minutes: 5
       uses: actions/setup-node@v3
       with:
         node-version: 20
         cache: pnpm
-        cache-dependency-path: 'package.json'
-
-    - uses: pnpm/action-setup@v2
-      with:
-        version: 8
 
     - name: Install dependencies
       timeout-minutes: 5
