@@ -5,15 +5,13 @@
     "test": "vitest",
     "build": "pnpm run \"/^build:.*/\"",
     "build:mjs": "esbuild --bundle src/index.ts --outfile=dist/index.js --format=esm --platform=node --sourcemap=linked --packages=external",
-    "build:cjs": "esbuild --bundle src/index.ts --outfile=dist/index.cjs --format=cjs --platform=node --sourcemap=linked --packages=external",
-    "build:dts": "tsc src/index.ts"
+    "build:cjs": "esbuild --bundle src/index.ts --outfile=dist/index.cjs --format=cjs --platform=node --sourcemap=linked --packages=external"
   },
   "type": "module",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     }
   },
   "files": [
