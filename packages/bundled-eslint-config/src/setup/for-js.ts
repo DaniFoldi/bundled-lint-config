@@ -1,6 +1,6 @@
 import brettz9EslintPlugin from '@brettz9/eslint-plugin'
 import eslintPluginCasePolice from 'eslint-plugin-case-police'
-import * as eslintPluginImport from 'eslint-plugin-import'
+import * as eslintPluginImport from 'eslint-plugin-i'
 import eslintPluginJsdoc from 'eslint-plugin-jsdoc'
 import eslintPluginPii from 'eslint-plugin-pii'
 import eslintPluginPromise from 'eslint-plugin-promise'
