@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "emitDeclarationOnly": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/index.ts"]
+}

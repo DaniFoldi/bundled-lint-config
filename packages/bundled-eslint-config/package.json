@@ -1,0 +1,76 @@
+{
+  "name": "@lint-my-life/bundled-eslint-config",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "vitest",
+    "build": "pnpm run \"/^build:.*/\"",
+    "build:mjs": "esbuild --bundle src/index.ts --outfile=dist/index.js --format=esm --platform=node --sourcemap=linked --packages=external",
+    "build:cjs": "esbuild --bundle src/index.ts --outfile=dist/index.cjs --format=cjs --platform=node --sourcemap=linked --packages=external",
+    "build:dts": "tsc src/index.ts"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.19.2",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.4"
+  },
+  "dependencies": {
+    "@brettz9/eslint-plugin": "^1.0.4",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "astro-eslint-parser": "^0.15.0",
+    "defu": "^6.1.2",
+    "eslint-define-config": "^1.23.0",
+    "eslint-plugin-astro": "^0.29.0",
+    "eslint-plugin-case-police": "^0.6.1",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsdoc": "^46.6.0",
+    "eslint-plugin-pii": "^1.0.2",
+    "eslint-plugin-playwright": "^0.16.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native": "^4.1.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-security": "^1.7.1",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "eslint-plugin-vitest": "^0.3.1",
+    "eslint-plugin-vue": "^9.17.0",
+    "globals": "^13.21.0",
+    "vue-eslint-parser": "^9.3.1"
+  },
+  "main": "dist/index.js",
+  "description": "A preset for ESLint",
+  "keywords": [
+    "eslint",
+    "eslint preset",
+    "preset",
+    "typescript eslint preset",
+    "typescript-eslint",
+    "vue eslint preset",
+    "astro eslint preset",
+    "vitest eslint preset",
+    "react eslint preset"
+  ],
+  "author": "DaniFoldi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaniFoldi/lint-my-life/issues"
+  },
+  "homepage": "https://github.com/DaniFoldi/lint-my-life#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniFoldi/lint-my-life.git"
+  }
+}

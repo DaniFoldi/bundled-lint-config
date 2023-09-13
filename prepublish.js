@@ -11,17 +11,7 @@ const copyJobs = [
   [ 'packages/stylelint-standard/standard.cjs', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
   [ 'packages/stylelint-standard/better-order.cjs', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
   [ 'packages/stylelint-vue/vue.cjs', 'packages/stylelint-vue-scss/vue.cjs' ],
-  [ 'packages/stylelint-scss/scss.cjs', 'packages/stylelint-vue-scss/scss.cjs' ],
-  [ 'packages/eslint-config-standard/standard.js', [ 'packages/eslint-config-*', '!packages/eslint-config-standard' ]],
-  [ 'packages/eslint-config-vitest/vitest.js', 'packages/eslint-config-astro/vitest.js' ],
-  [ 'packages/eslint-config-vitest/vitest.js', 'packages/eslint-config-comet/vitest.js' ],
-  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-*-ts' ],
-  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-vitest/ts.js' ],
-  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-comet/ts.js' ],
-  [ 'packages/eslint-config-ts/ts.js', 'packages/eslint-config-astro/ts.js' ],
-  [ 'packages/eslint-config-vue/vue.js', 'packages/eslint-config-vue-ts/vue.js' ],
-  [ 'packages/eslint-config-react/react.js', 'packages/eslint-config-react-*' ],
-  [ 'packages/eslint-config-react-native/react-native.js', 'packages/eslint-config-react-native-ts/react-native.js' ]
+  [ 'packages/stylelint-scss/scss.cjs', 'packages/stylelint-vue-scss/scss.cjs' ]
 ]
 
 const packageJsonJobs = {
@@ -36,19 +26,23 @@ const packageJsonJobs = {
       'stylelint config'
     ]
   },
-  'packages/eslint-*': {
-    version: '0.4.6',
-    description: 'Plug-and-play presets for eslint',
+  'packages/bundled-eslint-config': {
+    type: 'module',
+    version: '0.1.0',
+    description: 'A preset for ESLint',
     keywords: [
-      'eslint preset',
-      'eslintconfig',
       'eslint',
-      'lint',
-      'eslint config'
-    ],
-    type: 'module'
+      'eslint preset',
+      'preset',
+      'typescript eslint preset',
+      'typescript-eslint',
+      'vue eslint preset',
+      'astro eslint preset',
+      'vitest eslint preset',
+      'react eslint preset'
+    ]
   },
-  '{packages/eslint-*,packages/stylelint-*}': {
+  '{packages/stylelint-*,packages/bundled-eslint-config}': {
     author: 'DaniFoldi',
     license: 'MIT',
     bugs: {
@@ -78,23 +72,29 @@ for (const job of Object.entries(packageJsonJobs)) {
     if (await stat(job[0])) {
       const destination = job[0]
       const name = basename(destination)
-      const packageJson = {
-        ...JSON.parse(await readFile(join(destination, 'package.json'))),
-        name: `@lint-my-life/${name}`,
-        main: `${name.replace('eslint-config-', '').replace('stylelint-', '')}.js`,
-        ...job[1]
+      if (name === 'bundled-eslint-config') {
+        const packageJson = {
+          ...JSON.parse(await readFile(join(destination, 'package.json'))),
+          name: 'bundled-eslint-config',
+          main: 'dist/index.js'
+        }
+        await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
+      } else {
+        const packageJson = {
+          ...JSON.parse(await readFile(join(destination, 'package.json'))),
+          name: `@lint-my-life/${name}`,
+          main: `${name.replace('eslint-config-', '').replace('stylelint-', '')}.js`,
+          ...job[1]
+        }
+        await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
       }
-      await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
       continue
     }
   } catch {}
 
   for (const destination of await globby(job[0], globbyOptions)) {
-    const name = basename(destination)
     const packageJson = {
       ...JSON.parse(await readFile(join(destination, 'package.json'))),
-      name: `@lint-my-life/${name}`,
-      main: `${name.replace('eslint-config-', '').replace('stylelint-', '')}.js`,
       ...job[1]
     }
     await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
