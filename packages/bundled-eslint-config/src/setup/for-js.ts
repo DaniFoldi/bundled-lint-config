@@ -82,7 +82,7 @@ export const jsRules: Rules = {
   'case-police/string-check': 'warn',
   'jsdoc/check-access': 'warn',
   'jsdoc/check-alignment': 'warn',
-  'jsdoc/check-examples': 'warn',
+  'jsdoc/check-examples': 'off',
   'jsdoc/check-indentation': 'warn',
   'jsdoc/check-line-alignment': 'warn',
   'jsdoc/check-param-names': 'warn',
