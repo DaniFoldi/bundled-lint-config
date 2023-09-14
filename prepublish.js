@@ -76,7 +76,8 @@ for (const job of Object.entries(packageJsonJobs)) {
         const packageJson = {
           ...JSON.parse(await readFile(join(destination, 'package.json'))),
           name: 'bundled-eslint-config',
-          main: 'dist/index.js'
+          main: 'dist/index.js',
+          ...job[1]
         }
         await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
       } else {
