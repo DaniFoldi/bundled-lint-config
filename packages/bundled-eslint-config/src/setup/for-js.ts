@@ -159,7 +159,7 @@ export const jsRules: Rules = {
   'security/detect-buffer-noassert': 'error',
   'security/detect-child-process': 'error',
   'security/detect-disable-mustache-escape': 'error',
-  'security/detect-object-injection': 'error',
+  'security/detect-object-injection': 'off',
   'security/detect-new-buffer': 'error',
   'security/detect-bidi-characters': 'error',
   'array-bracket-newline': [
