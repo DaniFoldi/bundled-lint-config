@@ -369,6 +369,7 @@ export const jsRules: Rules = {
     'functions'
   ],
   'no-extra-semi': 'error',
+  'no-object-constructor': 'error',
   'no-fallthrough': 'error',
   'no-floating-decimal': 'error',
   'no-func-assign': 'error',
