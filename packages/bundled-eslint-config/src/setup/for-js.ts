@@ -327,6 +327,7 @@ export const jsRules: Rules = {
     'warn',
     {
       'code': 120,
+      'comments': 180,
       'ignoreRegExpLiterals': true,
       'ignoreStrings': true,
       'ignoreTemplateLiterals': true,

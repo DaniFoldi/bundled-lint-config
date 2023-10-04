@@ -60,7 +60,7 @@ export const tsRules: Rules = {
   '@typescript-eslint/triple-slash-reference': 'error',
   '@typescript-eslint/func-call-spacing': [ 'error', 'never' ],
   '@typescript-eslint/member-delimiter-style': [
-    'error', {
+    'warn', {
       multiline: { delimiter: 'none', requireLast: true },
       singleline: { delimiter: 'semi', requireLast: false }
     }
@@ -76,7 +76,7 @@ export const tsRules: Rules = {
   ],
   '@typescript-eslint/prefer-for-of': 'warn',
   '@typescript-eslint/prefer-ts-expect-error': 'error',
-  '@typescript-eslint/semi': [ 'error', 'never' ],
+  '@typescript-eslint/semi': [ 'warn', 'never' ],
   '@typescript-eslint/space-before-blocks': [ 'warn' ],
   '@typescript-eslint/space-infix-ops': [ 'warn', { int32Hint: false }],
   '@typescript-eslint/type-annotation-spacing': [
@@ -86,7 +86,7 @@ export const tsRules: Rules = {
     }
   ],
   'func-call-spacing': 'off',
-  'semi': [ 'warn', 'never' ],
+  'semi': 'off',
   'space-before-blocks': 'off',
   'space-infix-ops': 'off',
   'constructor-super': 'off',
