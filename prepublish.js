@@ -20,7 +20,7 @@ const packageJsonJobs = {
     description: 'Plug-and-play presets for stylelint',
     keywords: [
       'stylelint preset',
-      'stylelintconfig',
+      'stylelint config',
       'stylelint',
       'lint',
       'stylelint config'
