@@ -12,4 +12,6 @@ export const nodeGlobals: Globals = {
 
 export const nodePlugins: Plugins = {}
 
-export const nodeRules: Rules = {}
+export const nodeRules: Rules = {
+  'unicorn/no-process-exit': 'off'
+}
