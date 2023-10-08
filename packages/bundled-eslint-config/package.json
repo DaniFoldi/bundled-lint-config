@@ -28,7 +28,7 @@
     "@typescript-eslint/parser": "^6.7.4",
     "astro-eslint-parser": "^0.16.0",
     "defu": "^6.1.2",
-    "eslint-define-config": "^1.23.0",
+    "eslint-define-config": "^1.24.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-astro": "^0.29.1",
     "eslint-plugin-case-police": "^0.6.1",
@@ -48,7 +48,7 @@
     "eslint-plugin-vitest": "^0.3.2",
     "eslint-plugin-vue": "^9.17.0",
     "globals": "^13.23.0",
-    "vue-eslint-parser": "^9.3.1"
+    "vue-eslint-parser": "^9.3.2"
   },
   "main": "dist/index.js",
   "description": "A preset for ESLint",

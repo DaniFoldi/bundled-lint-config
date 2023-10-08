@@ -33,8 +33,8 @@ importers:
         specifier: ^6.1.2
         version: 6.1.2
       eslint-define-config:
-        specifier: ^1.23.0
-        version: 1.23.0
+        specifier: ^1.24.0
+        version: 1.24.0
       eslint-import-resolver-typescript:
         specifier: ^3.6.1
         version: 3.6.1(@typescript-eslint/parser@6.7.4)(eslint-plugin-import@2.28.1)(eslint@8.50.0)
@@ -93,8 +93,8 @@ importers:
         specifier: ^13.23.0
         version: 13.23.0
       vue-eslint-parser:
-        specifier: ^9.3.1
-        version: 9.3.1(eslint@8.50.0)
+        specifier: ^9.3.2
+        version: 9.3.2(eslint@8.50.0)
     devDependencies:
       esbuild:
         specifier: ^0.19.4
@@ -1926,9 +1926,9 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /eslint-define-config@1.23.0:
-    resolution: {integrity: sha512-4mMyu0JuBkQHsCtR+42irIQdFLmLIW+pMAVcyOV/gZRL4O1R8iuH0eMG3oL3Cbi1eo9fDAfT5CIHVHgdyxcf6w==}
-    engines: {node: ^16.13.0 || >=18.0.0, npm: '>=7.0.0', pnpm: '>= 8.6.0'}
+  /eslint-define-config@1.24.0:
+    resolution: {integrity: sha512-RCuWIiz5gWwmzXCt8FVXoDYLjwlLzI/WB9q0YIcqVnTlc9GQXwiKDjRBFNHtYIywnBIOhj/cuwSEUE8eWVLCfQ==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0', pnpm: '>= 8.6.0'}
     dev: false
 
   /eslint-import-resolver-node@0.3.9:
@@ -2287,7 +2287,7 @@ packages:
       nth-check: 2.1.1
       postcss-selector-parser: 6.0.13
       semver: 7.5.4
-      vue-eslint-parser: 9.3.1(eslint@8.50.0)
+      vue-eslint-parser: 9.3.2(eslint@8.50.0)
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
       - supports-color
@@ -4682,8 +4682,8 @@ packages:
       - supports-color
       - terser
 
-  /vue-eslint-parser@9.3.1(eslint@8.50.0):
-    resolution: {integrity: sha512-Clr85iD2XFZ3lJ52/ppmUDG/spxQu6+MAeHXjjyI4I1NUYZ9xmenQp4N0oaHJhrA8OOxltCVxMRfANGa70vU0g==}
+  /vue-eslint-parser@9.3.2(eslint@8.50.0):
+    resolution: {integrity: sha512-q7tWyCVaV9f8iQyIA5Mkj/S6AoJ9KBN8IeUSf3XEmBrOtxOZnfTg5s4KClbZBCK3GtnT/+RyCLZyDHuZwTuBjg==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
