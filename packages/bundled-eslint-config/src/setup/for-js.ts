@@ -41,7 +41,12 @@ export const jsSettings: Settings = {
   }*/
 }
 
+export const jsGlobals: Globals = {
+  ...globals.es2021
+}
+
 export const jsLanguageOptions: LanguageOptions = {
+  globals: jsGlobals,
   parserOptions: {
     ecmaVersion: 2023,
     sourceType: 'module',
@@ -51,16 +56,11 @@ export const jsLanguageOptions: LanguageOptions = {
   }
 }
 
-export const jsGlobals: Globals = {
-  ...globals.es2021
-}
-
 export const jsPlugins: Plugins = {
   '@brettz9': brettz9EslintPlugin,
   'case-police': eslintPluginCasePolice,
   import: eslintPluginImport,
   jsdoc: eslintPluginJsdoc,
-  pii: eslintPluginPii,
   promise: eslintPluginPromise,
   security: eslintPluginSecurity,
   unicorn: eslintPluginUnicorn

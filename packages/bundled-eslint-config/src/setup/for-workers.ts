@@ -5,10 +5,12 @@ import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util
 
 export const workersSettings: Settings = {}
 
-export const workersLanguageOptions: LanguageOptions = {}
-
 export const workersGlobals: Globals = {
   ...globals['shared-node-browser']
+}
+
+export const workersLanguageOptions: LanguageOptions = {
+  globals: workersGlobals
 }
 
 export const workersPlugins: Plugins = {}

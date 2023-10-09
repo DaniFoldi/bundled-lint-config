@@ -20,7 +20,10 @@ export const tsSettings: Settings = {
   ]
 }
 
+export const tsGlobals: Globals = {}
+
 export const tsLanguageOptions: LanguageOptions = {
+  globals: tsGlobals,
   parser,
   parserOptions: {
     ecmaVersion: 2023,
@@ -31,8 +34,6 @@ export const tsLanguageOptions: LanguageOptions = {
     project: true
   }
 }
-
-export const tsGlobals: Globals = {}
 
 export const tsPlugins: Plugins = {
   '@typescript-eslint': typescriptEslintPlugin

@@ -4,9 +4,11 @@ import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util
 
 export const reactNativeSettings: Settings = {}
 
-export const reactNativeLanguageOptions: LanguageOptions = {}
-
 export const reactNativeGlobals: Globals = {}
+
+export const reactNativeLanguageOptions: LanguageOptions = {
+  globals: reactNativeGlobals
+}
 
 export const reactNativePlugins: Plugins = {
   'react-native': eslintPluginReactNative

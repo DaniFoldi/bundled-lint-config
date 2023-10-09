@@ -6,9 +6,11 @@ import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util
 
 export const reactSettings: Settings = {}
 
-export const reactLanguageOptions: LanguageOptions = {}
-
 export const reactGlobals: Globals = {}
+
+export const reactLanguageOptions: LanguageOptions = {
+  globals: reactGlobals
+}
 
 export const reactPlugins: Plugins = {
   react: eslintPluginReact,

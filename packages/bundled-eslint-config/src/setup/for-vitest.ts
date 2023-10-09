@@ -4,9 +4,11 @@ import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util
 
 export const vitestSettings: Settings = {}
 
-export const vitestLanguageOptions: LanguageOptions = {}
-
 export const vitestGlobals: Globals = {}
+
+export const vitestLanguageOptions: LanguageOptions = {
+  globals: vitestGlobals
+}
 
 export const vitestPlugins: Plugins = {
   vitest: eslintPluginVitest

@@ -7,7 +7,10 @@ import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util
 
 export const vueSettings: Settings = {}
 
+export const vueGlobals: Globals = {}
+
 export const vueLanguageOptions: LanguageOptions = {
+  globals: vueGlobals,
   parser: vueEslintParser,
   parserOptions: {
     ecmaFeatures: { jsx: true },
@@ -17,8 +20,6 @@ export const vueLanguageOptions: LanguageOptions = {
     sourceType: 'module'
   }
 }
-
-export const vueGlobals: Globals = {}
 
 export const vuePlugins: Plugins = {
   vue: eslintPluginVue

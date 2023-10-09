@@ -8,7 +8,13 @@ import type { Globals, Plugins, LanguageOptions, Rules, Settings } from '../util
 
 export const astroSettings: Settings = {}
 
+export const astroGlobals: Globals = {
+  Astro: false,
+  Fragment: false
+}
+
 export const astroLanguageOptions: LanguageOptions = {
+  globals: astroGlobals,
   parser,
   parserOptions: {
     ecmaVersion: 2023,
@@ -19,11 +25,6 @@ export const astroLanguageOptions: LanguageOptions = {
     parser: typescriptEslintParser,
     extraFileExtensions: [ '.astro' ]
   }
-}
-
-export const astroGlobals: Globals = {
-  Astro: false,
-  Fragment: false
 }
 
 export const astroPlugins: Plugins = {
