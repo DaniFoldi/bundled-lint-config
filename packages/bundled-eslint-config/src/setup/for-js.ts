@@ -2,7 +2,6 @@ import brettz9EslintPlugin from '@brettz9/eslint-plugin'
 import eslintPluginCasePolice from 'eslint-plugin-case-police'
 import * as eslintPluginImport from 'eslint-plugin-i'
 import eslintPluginJsdoc from 'eslint-plugin-jsdoc'
-import eslintPluginPii from 'eslint-plugin-pii'
 import eslintPluginPromise from 'eslint-plugin-promise'
 import eslintPluginSecurity from 'eslint-plugin-security'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
@@ -133,9 +132,6 @@ export const jsRules: Rules = {
   'jsdoc/tag-lines': 'warn',
   'jsdoc/text-escaping': 'off',
   'jsdoc/valid-types': 'warn',
-  'pii/no-email': 'warn',
-  'pii/no-ip': 'warn',
-  'pii/no-phone-number': 'warn',
   'promise/param-names': 'warn',
   'promise/no-return-wrap': 'warn',
   'promise/always-return': 'warn',

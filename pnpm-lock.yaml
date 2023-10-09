@@ -53,9 +53,6 @@ importers:
       eslint-plugin-jsx-a11y:
         specifier: ^6.7.1
         version: 6.7.1(eslint@8.50.0)
-      eslint-plugin-pii:
-        specifier: ^1.0.2
-        version: 1.0.2(eslint@8.50.0)
       eslint-plugin-playwright:
         specifier: ^0.16.0
         version: 0.16.0(eslint@8.50.0)
@@ -2126,18 +2123,6 @@ packages:
       semver: 6.3.1
     dev: false
 
-  /eslint-plugin-pii@1.0.2(eslint@8.50.0):
-    resolution: {integrity: sha512-UKOpjAxd2aGDfykeICHi6yceZOQD4KXTX25A/PLq1HCgkFRudRTvGkRzuDYZoI6oLj8TjHsEiHnDxkoapFKX4Q==}
-    engines: {node: '>=0.10.0'}
-    peerDependencies:
-      eslint: '>=4.19.1'
-    dependencies:
-      escape-string-regexp: 4.0.0
-      eslint: 8.50.0
-      ignore: 5.2.4
-      requireindex: 1.1.0
-    dev: false
-
   /eslint-plugin-playwright@0.16.0(eslint@8.50.0):
     resolution: {integrity: sha512-DcHpF0SLbNeh9MT4pMzUGuUSnJ7q5MWbP8sSEFIMS6j7Ggnduq8ghNlfhURgty4c1YFny7Ge9xYTO1FSAoV2Vw==}
     peerDependencies:
@@ -3877,11 +3862,6 @@ packages:
   /require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
-    dev: false
-
-  /requireindex@1.1.0:
-    resolution: {integrity: sha512-LBnkqsDE7BZKvqylbmn7lTIVdpx4K/QCduRATpO5R+wtPmky/a8pN1bO2D6wXppn1497AJF9mNjqAXr6bdl9jg==}
-    engines: {node: '>=0.10.5'}
     dev: false
 
   /resolve-from@4.0.0:
