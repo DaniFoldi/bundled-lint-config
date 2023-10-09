@@ -475,7 +475,13 @@ export const jsRules: Rules = {
     'warn',
     'always',
     {
-      'exceptions': [ '*' ]
+      'line': {
+        'markers': ['/']
+      },
+      'block': {
+        'markers': ['!', '*'],
+        'balanced': true
+      }
     }
   ],
   'template-curly-spacing': [
