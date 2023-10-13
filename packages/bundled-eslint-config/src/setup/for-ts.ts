@@ -1,5 +1,4 @@
 import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
-// @ts-expect-error package types are borked
 import * as parser from '@typescript-eslint/parser'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 

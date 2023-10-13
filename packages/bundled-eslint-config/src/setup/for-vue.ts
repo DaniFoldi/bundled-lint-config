@@ -1,4 +1,3 @@
-// @ts-expect-error package types are borked
 import * as parser from '@typescript-eslint/parser'
 import eslintPluginVue from 'eslint-plugin-vue'
 import vueEslintParser from 'vue-eslint-parser'
@@ -16,6 +15,7 @@ export const vueLanguageOptions: LanguageOptions = {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 'latest',
     extraFileExtensions: [ '.vue' ],
+    // @ts-expect-error types are borked
     parser: parser,
     sourceType: 'module'
   }

@@ -1,4 +1,3 @@
-// @ts-expect-error package types are borked
 import * as typescriptEslintParser from '@typescript-eslint/parser'
 import * as parser from 'astro-eslint-parser'
 import eslintPluginAstro from 'eslint-plugin-astro'
@@ -22,6 +21,7 @@ export const astroLanguageOptions: LanguageOptions = {
     ecmaFeatures: {
       jsx: true
     },
+    // @ts-expect-error types are borked
     parser: typescriptEslintParser,
     extraFileExtensions: [ '.astro' ]
   }
