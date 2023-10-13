@@ -38,7 +38,8 @@ export const jsSettings: Settings = {
         '.tsx'
       ]
     }
-  }*/
+  }
+  */
 }
 
 export const jsGlobals: Globals = {
@@ -476,10 +477,10 @@ export const jsRules: Rules = {
     'always',
     {
       'line': {
-        'markers': ['/']
+        'markers': [ '/' ]
       },
       'block': {
-        'markers': ['!', '*'],
+        'markers': [ '!', '*' ],
         'balanced': true
       }
     }

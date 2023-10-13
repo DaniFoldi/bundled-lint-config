@@ -16,7 +16,7 @@ export const vitestPlugins: Plugins = {
 
 export const vitestRules: Rules = {
   'vitest/consistent-test-filename': 'warn',
-  'vitest/consistent-test-it': ['warn', { fn: 'it', withinDescribe: 'it' }],
+  'vitest/consistent-test-it': [ 'warn', { fn: 'it', withinDescribe: 'it' }],
   'vitest/expect-expect': 'warn',
   'vitest/max-expects': 'warn',
   'vitest/max-nested-describe': 'warn',

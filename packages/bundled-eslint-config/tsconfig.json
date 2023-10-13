@@ -6,7 +6,10 @@
     "declarationMap": true,
     "outDir": "dist",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "module": "es2022",
+    "target": "es2020",
+    "moduleResolution": "bundler"
   },
   "include": ["src/index.ts"]
 }

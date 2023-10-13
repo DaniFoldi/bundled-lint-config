@@ -3,9 +3,7 @@
   "version": "0.1.5",
   "scripts": {
     "test": "vitest",
-    "build": "pnpm run \"/^build:.*/\"",
-    "build:mjs": "esbuild --bundle src/index.ts --outfile=dist/index.js --format=esm --platform=node --sourcemap=linked --packages=external",
-    "build:cjs": "esbuild --bundle src/index.ts --outfile=dist/index.cjs --format=cjs --platform=node --sourcemap=linked --packages=external"
+    "build": "esbuild --bundle src/index.ts --outfile=dist/index.js --format=esm --platform=node --sourcemap=linked --packages=external"
   },
   "type": "module",
   "exports": {
@@ -18,6 +16,7 @@
     "dist"
   ],
   "devDependencies": {
+    "@types/node": "^20.8.5",
     "esbuild": "^0.19.4",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"

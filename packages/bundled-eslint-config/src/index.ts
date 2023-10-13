@@ -10,7 +10,7 @@ import { tsRules, tsPlugins, tsLanguageOptions, tsSettings } from './setup/for-t
 import { vitestRules, vitestPlugins, vitestLanguageOptions, vitestSettings } from './setup/for-vitest'
 import { vueLanguageOptions, vuePlugins, vueRules, vueSettings } from './setup/for-vue'
 import { workersLanguageOptions, workersPlugins, workersRules, workersSettings } from './setup/for-workers'
-import { linterOptions } from './util'
+import { linterOptions, hasFile } from './util'
 
 
 const ignores = {
@@ -55,7 +55,7 @@ const vuePreset = {
 } satisfies FlatESLintConfigItem
 
 const workersPreset = {
-  files: [ '**/*worker*/**/*.?(m)(j|t)s' ],
+  files: [ await hasFile('wrangler.toml') ? '**/*.?(m)(j|t)s' : '**/*worker*/**/*.?(m)(j|t)s' ],
   linterOptions,
   rules: workersRules,
   plugins: workersPlugins,
@@ -73,7 +73,7 @@ const reactPreset = {
 } satisfies FlatESLintConfigItem
 
 const reactNativePreset = {
-  files: [ '**/*app*/**/*.?(c|m)(j|t)sx' ],
+  files: [ await hasFile('app.json') ? '**/*.?(c|m)(j|t)sx' : '**/*app*/**/*.?(c|m)(j|t)sx' ],
   linterOptions,
   rules: reactNativeRules,
   plugins: reactNativePlugins,
