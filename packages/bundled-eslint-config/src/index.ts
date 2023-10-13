@@ -55,7 +55,7 @@ const vuePreset = {
 } satisfies FlatESLintConfigItem
 
 const workersPreset = {
-  files: [ await hasFile('wrangler.toml') ? '**/*.?(m)(j|t)s' : '**/*worker*/**/*.?(m)(j|t)s' ],
+  files: [ await hasFile('wrangler.toml') ? '**/*.?(m)@(j|t)s' : '**/*worker*/**/*.?(m)@(j|t)s' ],
   linterOptions,
   rules: workersRules,
   plugins: workersPlugins,
@@ -64,7 +64,7 @@ const workersPreset = {
 } satisfies FlatESLintConfigItem
 
 const reactPreset = {
-  files: [ '**/*.?(c|m)(j|t)sx' ],
+  files: [ '**/*.?(c|m)@(j|t)sx' ],
   linterOptions,
   rules: reactRules,
   plugins: reactPlugins,
@@ -73,7 +73,7 @@ const reactPreset = {
 } satisfies FlatESLintConfigItem
 
 const reactNativePreset = {
-  files: [ await hasFile('app.json') ? '**/*.?(c|m)(j|t)sx' : '**/*app*/**/*.?(c|m)(j|t)sx' ],
+  files: [ await hasFile('app.json') ? '**/*.?(c|m)@(j|t)sx' : '**/*app*/**/*.?(c|m)@(j|t)sx' ],
   linterOptions,
   rules: reactNativeRules,
   plugins: reactNativePlugins,
@@ -82,7 +82,7 @@ const reactNativePreset = {
 } satisfies FlatESLintConfigItem
 
 const nodePreset = {
-  files: [ '**/scripts/**/*', '**/*.config.?(c|m)(j|t)s' ],
+  files: [ '**/scripts/**/*', '**/*.config.?(c|m)@(j|t)s' ],
   linterOptions,
   rules: nodeRules,
   plugins: nodePlugins,
@@ -91,7 +91,7 @@ const nodePreset = {
 } satisfies FlatESLintConfigItem
 
 const vitestPreset = {
-  files: [ '**/test?(s)/**/*', '**/*.test.?(c|m)(j|t)s?x' ],
+  files: [ '**/test?(s)/**/*', '**/*.test.?(c|m)@(j|t)s?(x)' ],
   linterOptions,
   rules: vitestRules,
   plugins: vitestPlugins,
