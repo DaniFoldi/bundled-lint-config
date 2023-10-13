@@ -1,4 +1,5 @@
 import { defu } from 'defu'
+import gitignore from 'eslint-config-flat-gitignore'
 import { FlatESLintConfig, FlatESLintConfigItem, defineFlatConfig } from 'eslint-define-config'
 import { astroRules, astroPlugins, astroLanguageOptions, astroSettings } from './setup/for-astro'
 import { jsLanguageOptions, jsPlugins, jsRules, jsSettings } from './setup/for-js'
@@ -103,6 +104,7 @@ type Overrides = Partial<Record<Preset, Partial<FlatESLintConfig>>>
 
 export function config(overrides: Overrides = {}, newItems: FlatESLintConfig[] = []): FlatESLintConfig[] {
   return defineFlatConfig([
+    gitignore(),
     ignores,
     defu(overrides.js, jsPreset),
     defu(overrides.ts, tsPreset),
