@@ -104,7 +104,7 @@ type Overrides = Partial<Record<Preset, Partial<FlatESLintConfig>>>
 
 export function config(overrides: Overrides = {}, newItems: FlatESLintConfig[] = []): FlatESLintConfig[] {
   return defineFlatConfig([
-    gitignore(),
+    gitignore({ strict: false }),
     ignores,
     defu(overrides.js, jsPreset),
     defu(overrides.ts, tsPreset),
