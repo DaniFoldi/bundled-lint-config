@@ -1,15 +1,4 @@
 {
-  "compilerOptions": {
-    "emitDeclarationOnly": true,
-    "skipLibCheck": true,
-    "declaration": true,
-    "declarationMap": true,
-    "outDir": "dist",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "module": "es2022",
-    "target": "es2020",
-    "moduleResolution": "bundler"
-  },
-  "include": ["src/index.ts"]
+  "extends": "some-tsconfig-preset/node",
+  "include": ["src/**/*"]
 }
