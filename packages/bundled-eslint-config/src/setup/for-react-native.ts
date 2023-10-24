@@ -1,3 +1,4 @@
+// @ts-expect-error package has no types
 import eslintPluginReactNative from 'eslint-plugin-react-native'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 

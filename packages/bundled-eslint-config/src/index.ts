@@ -1,6 +1,6 @@
 import { defu } from 'defu'
 import gitignore from 'eslint-config-flat-gitignore'
-import { FlatESLintConfig, FlatESLintConfigItem, defineFlatConfig } from 'eslint-define-config'
+import { defineFlatConfig } from 'eslint-define-config'
 import { astroRules, astroPlugins, astroLanguageOptions, astroSettings } from './setup/for-astro'
 import { jsLanguageOptions, jsPlugins, jsRules, jsSettings } from './setup/for-js'
 import { nodeRules, nodePlugins, nodeLanguageOptions, nodeSettings } from './setup/for-node'
@@ -11,6 +11,7 @@ import { vitestRules, vitestPlugins, vitestLanguageOptions, vitestSettings } fro
 import { vueLanguageOptions, vuePlugins, vueRules, vueSettings } from './setup/for-vue'
 import { workersLanguageOptions, workersPlugins, workersRules, workersSettings } from './setup/for-workers'
 import { linterOptions, hasFile } from './util'
+import type { FlatESLintConfig, FlatESLintConfigItem } from 'eslint-define-config'
 
 
 const ignores = {

@@ -1,5 +1,8 @@
+// @ts-expect-error package has no types
 import eslintPluginReact from 'eslint-plugin-react'
+// @ts-expect-error package has no types
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
+// @ts-expect-error package has no types
 import eslintPluginReactRefresh from 'eslint-plugin-react-refresh'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
