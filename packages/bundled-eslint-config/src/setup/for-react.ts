@@ -7,7 +7,9 @@ import eslintPluginReactRefresh from 'eslint-plugin-react-refresh'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
 
-export const reactSettings: Settings = {}
+export const reactSettings: Settings = {
+  version: 'detect'
+}
 
 export const reactGlobals: Globals = {}
 
