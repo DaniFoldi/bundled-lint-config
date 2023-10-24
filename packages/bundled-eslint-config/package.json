@@ -3,6 +3,7 @@
   "version": "0.1.5",
   "scripts": {
     "test": "vitest",
+    "typecheck": "tsc",
     "build": "esbuild --bundle src/index.ts --outfile=dist/index.js --format=esm --platform=node --sourcemap=linked --packages=external"
   },
   "type": "module",
@@ -18,6 +19,7 @@
   "devDependencies": {
     "@types/node": "^20.8.8",
     "esbuild": "^0.19.5",
+    "some-tsconfig-preset": "^1.3.0",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
   },
