@@ -612,8 +612,8 @@ export const jsRules: Rules = {
   'unicorn/require-array-join-separator': 'error',
   'unicorn/require-number-to-fixed-digits-argument': 'error',
   'unicorn/string-content': 'off',
-  'unicorn/template-indent': 'error',
-  'unicorn/text-encoding-identifier-case': 'error',
+  'unicorn/template-indent': 'warn',
+  'unicorn/text-encoding-identifier-case': 'warn',
   'unicorn/throw-new-error': 'error',
   'use-isnan': 'error',
   'valid-typeof': [
