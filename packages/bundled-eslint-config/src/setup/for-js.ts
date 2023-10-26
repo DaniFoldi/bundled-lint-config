@@ -227,7 +227,7 @@ export const jsRules: Rules = {
   ],
   'getter-return': 'error',
   'import/no-unresolved': 'error',
-  'import/named': 'error',
+  'import/named': 'off',
   'import/namespace': 'error',
   'import/default': 'error',
   'import/no-named-as-default': 'warn',
