@@ -78,7 +78,7 @@ export const jsRules: Rules = {
   '@brettz9/no-this-in-static': 'error',
   '@brettz9/no-use-ignored-vars': 'warn',
   '@brettz9/no-useless-rest-spread': 'warn',
-  '@brettz9/prefer-for-of': 'warn',
+  '@brettz9/prefer-for-of': 'off',
   'case-police/string-check': 'warn',
   'jsdoc/check-access': 'warn',
   'jsdoc/check-alignment': 'warn',
