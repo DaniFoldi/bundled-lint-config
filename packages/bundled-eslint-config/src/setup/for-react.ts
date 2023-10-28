@@ -8,7 +8,9 @@ import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util
 
 
 export const reactSettings: Settings = {
-  version: 'detect'
+  react: {
+    version: 'detect'
+  }
 }
 
 export const reactGlobals: Globals = {}
