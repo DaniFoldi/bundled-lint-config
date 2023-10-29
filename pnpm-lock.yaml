@@ -72,8 +72,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0(eslint@8.52.0)
       eslint-plugin-react-refresh:
-        specifier: ^0.4.3
-        version: 0.4.3(eslint@8.52.0)
+        specifier: ^0.4.4
+        version: 0.4.4(eslint@8.52.0)
       eslint-plugin-security:
         specifier: ^1.7.1
         version: 1.7.1
@@ -133,8 +133,8 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3(stylelint@15.11.0)
       stylelint-scss:
-        specifier: ^5.2.1
-        version: 5.2.1(stylelint@15.11.0)
+        specifier: ^5.3.0
+        version: 5.3.0(stylelint@15.11.0)
 
   packages/stylelint-standard:
     dependencies:
@@ -190,8 +190,8 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3(stylelint@15.11.0)
       stylelint-scss:
-        specifier: ^5.2.1
-        version: 5.2.1(stylelint@15.11.0)
+        specifier: ^5.3.0
+        version: 5.3.0(stylelint@15.11.0)
 
 packages:
 
@@ -2123,8 +2123,8 @@ packages:
       eslint-plugin-react-native-globals: 0.1.2
     dev: false
 
-  /eslint-plugin-react-refresh@0.4.3(eslint@8.52.0):
-    resolution: {integrity: sha512-Hh0wv8bUNY877+sI0BlCUlsS0TYYQqvzEwJsJJPM2WF4RnTStSnSR3zdJYa2nPOJgg3UghXi54lVyMSmpCalzA==}
+  /eslint-plugin-react-refresh@0.4.4(eslint@8.52.0):
+    resolution: {integrity: sha512-eD83+65e8YPVg6603Om2iCIwcQJf/y7++MWm4tACtEswFLYMwxwVWAfwN+e19f5Ad/FOyyNg9Dfi5lXhH3Y3rA==}
     peerDependencies:
       eslint: '>=7'
     dependencies:
@@ -4180,8 +4180,8 @@ packages:
       stylelint: 15.11.0
     dev: false
 
-  /stylelint-scss@5.2.1(stylelint@15.11.0):
-    resolution: {integrity: sha512-ZoTJUM85/qqpQHfEppjW/St//8s6p9Qsg8deWlYlr56F9iUgC9vXeIDQvH4odkRRJLTLFQzYMALSOFCQ3MDkgw==}
+  /stylelint-scss@5.3.0(stylelint@15.11.0):
+    resolution: {integrity: sha512-Sc7S1uWqStMc99NREsHNxpxHHFRvjo2pWILNl/UCwWO8PxhODK8qbJH0GHWIALxl6BD5rwJL4cSm4jk36hi6fg==}
     peerDependencies:
       stylelint: ^14.5.1 || ^15.0.0
     dependencies:
