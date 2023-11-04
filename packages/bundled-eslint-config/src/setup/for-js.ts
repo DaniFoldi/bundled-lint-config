@@ -1,4 +1,5 @@
 import brettz9EslintPlugin from '@brettz9/eslint-plugin'
+import eslintPluginStylisticJs from '@stylistic/eslint-plugin-js'
 import eslintPluginCasePolice from 'eslint-plugin-case-police'
 import * as eslintPluginImport from 'eslint-plugin-i'
 import eslintPluginJsdoc from 'eslint-plugin-jsdoc'
@@ -64,7 +65,8 @@ export const jsPlugins: Plugins = {
   jsdoc: eslintPluginJsdoc,
   promise: eslintPluginPromise,
   security: eslintPluginSecurity,
-  unicorn: eslintPluginUnicorn
+  unicorn: eslintPluginUnicorn,
+  '@stylistic/js': eslintPluginStylisticJs
 }
 
 // Github
@@ -159,13 +161,13 @@ export const jsRules: Rules = {
   'security/detect-object-injection': 'off',
   'security/detect-new-buffer': 'error',
   'security/detect-bidi-characters': 'error',
-  'array-bracket-newline': [
+  '@stylistic/js/array-bracket-newline': [
     'warn',
     {
       'multiline': true
     }
   ],
-  'array-bracket-spacing': [
+  '@stylistic/js/array-bracket-spacing': [
     'warn',
     'always',
     {
@@ -173,42 +175,46 @@ export const jsRules: Rules = {
       'objectsInArrays': false
     }
   ],
-  'arrow-parens': [
+  '@stylistic/js/arrow-parens': [
     'warn',
     'as-needed'
   ],
-  'arrow-spacing': 'warn',
-  'block-spacing': [
+  '@stylistic/js/arrow-spacing': 'warn',
+  '@stylistic/js/block-spacing': [
     'warn',
     'always'
   ],
-  'brace-style': [
+  '@stylistic/js/brace-style': [
     'error',
     '1tbs'
   ],
-  'comma-dangle': [
+  '@stylistic/js/comma-dangle': [
     'warn',
     'never'
   ],
-  'comma-spacing': [
+  '@stylistic/js/comma-spacing': [
     'warn',
     {
       'after': true,
       'before': false
     }
   ],
-  'comma-style': [
+  '@stylistic/js/comma-style': [
     'warn',
     'last'
   ],
   'constructor-super': 'error',
+  '@stylistic/js/dot-location': [
+    'warn',
+    'property'
+  ],
   'dot-notation': [
     'error',
     {
       'allowKeywords': true
     }
   ],
-  'eol-last': [
+  '@stylistic/js/eol-last': [
     'error',
     'always'
   ],
@@ -217,11 +223,11 @@ export const jsRules: Rules = {
     'always'
   ],
   'for-direction': 'error',
-  'func-call-spacing': [
+  '@stylistic/js/func-call-spacing': [
     'warn',
     'never'
   ],
-  'function-paren-newline': [
+  '@stylistic/js/function-paren-newline': [
     'warn',
     'multiline'
   ],
@@ -287,14 +293,14 @@ export const jsRules: Rules = {
       warnOnUnassignedImports: true
     }
   ],
-  'indent': [
+  '@stylistic/js/indent': [
     'warn',
     2,
     {
       'SwitchCase': 1
     }
   ],
-  'key-spacing': [
+  '@stylistic/js/key-spacing': [
     'warn',
     {
       'afterColon': true,
@@ -302,25 +308,25 @@ export const jsRules: Rules = {
       'mode': 'strict'
     }
   ],
-  'keyword-spacing': [
+  '@stylistic/js/keyword-spacing': [
     'warn',
     {
       'after': true,
       'before': true
     }
   ],
-  'linebreak-style': [
+  '@stylistic/js/linebreak-style': [
     'error',
     'unix'
   ],
-  'lines-between-class-members': [
+  '@stylistic/js/lines-between-class-members': [
     'warn',
     'always',
     {
       'exceptAfterSingleLine': true
     }
   ],
-  'max-len': [
+  '@stylistic/js/max-len': [
     'warn',
     {
       'code': 120,
@@ -332,12 +338,15 @@ export const jsRules: Rules = {
       'ignoreUrls': true
     }
   ],
+  '@stylistic/js/max-statements-per-line': 'warn',
+  '@stylistic/js/new-parens': 'warn',
   'no-alert': 'error',
   'no-async-promise-executor': 'error',
   'no-case-declarations': 'error',
   'no-class-assign': 'error',
   'no-compare-neg-zero': 'error',
   'no-cond-assign': 'error',
+  '@stylistic/js/no-confusing-arrow': 'warn',
   'no-const-assign': 'error',
   'no-constant-condition': 'error',
   'no-control-regex': 'error',
@@ -362,14 +371,14 @@ export const jsRules: Rules = {
   'no-extend-native': 'error',
   'no-extra-bind': 'error',
   'no-extra-boolean-cast': 'warn',
-  'no-extra-parens': [
+  '@stylistic/js/no-extra-parens': [
     'warn',
     'functions'
   ],
   'no-extra-semi': 'error',
   'no-object-constructor': 'error',
   'no-fallthrough': 'error',
-  'no-floating-decimal': 'error',
+  '@stylistic/js/no-floating-decimal': 'warn',
   'no-func-assign': 'error',
   'no-global-assign': 'error',
   'no-implied-eval': 'error',
@@ -381,8 +390,10 @@ export const jsRules: Rules = {
   'no-lonely-if': 'warn',
   'no-loss-of-precision': 'error',
   'no-misleading-character-class': 'error',
-  'no-mixed-spaces-and-tabs': 'error',
-  'no-multiple-empty-lines': [
+  '@stylistic/js/no-mixed-operators': 'warn',
+  '@stylistic/js/no-mixed-spaces-and-tabs': 'warn',
+  '@stylistic/js/no-multi-spaces': 'warn',
+  '@stylistic/js/no-multiple-empty-lines': [
     'warn',
     {
       'max': 2,
@@ -400,10 +411,10 @@ export const jsRules: Rules = {
   'no-setter-return': 'error',
   'no-shadow-restricted-names': 'error',
   'no-sparse-arrays': 'error',
-  'no-tabs': 'error',
+  '@stylistic/js/no-tabs': 'warn',
   'no-template-curly-in-string': 'warn',
   'no-this-before-super': 'error',
-  'no-trailing-spaces': 'warn',
+  '@stylistic/js/no-trailing-spaces': 'warn',
   'no-undef': [
     'error',
     {
@@ -424,7 +435,8 @@ export const jsRules: Rules = {
   'no-useless-escape': 'warn',
   'no-var': 'error',
   'no-with': 'error',
-  'object-curly-newline': [
+  '@stylistic/js/no-whitespace-before-property': 'warn',
+  '@stylistic/js/object-curly-newline': [
     'warn',
     {
       'ExportDeclaration': {
@@ -435,13 +447,17 @@ export const jsRules: Rules = {
       }
     }
   ],
-  'object-curly-spacing': [
+  '@stylistic/js/object-curly-spacing': [
     'warn',
     'always'
   ],
-  'operator-linebreak': [
+  '@stylistic/js/operator-linebreak': [
     'warn',
     'before'
+  ],
+  '@stylistic/js/padded-blocks': [
+    'warn',
+    'never'
   ],
   'prefer-const': 'warn',
   'prefer-object-spread': 'warn',
@@ -452,14 +468,15 @@ export const jsRules: Rules = {
     'single'
   ],
   'require-yield': 'error',
-  'rest-spread-spacing': 'warn',
-  'semi': [
+  '@stylistic/js/rest-spread-spacing': 'warn',
+  '@stylistic/js/semi': [
     'warn',
     'never'
   ],
   'sort-imports': 'off',
   'sort-keys': 'off',
-  'space-before-function-paren': [
+  '@stylistic/js/space-before-blocks': 'warn',
+  '@stylistic/js/space-before-function-paren': [
     'error',
     {
       'anonymous': 'never',
@@ -467,12 +484,12 @@ export const jsRules: Rules = {
       'named': 'never'
     }
   ],
-  'space-in-parens': [
+  '@stylistic/js/space-in-parens': [
     'warn',
     'never'
   ],
-  'space-infix-ops': 'warn',
-  'spaced-comment': [
+  '@stylistic/js/space-infix-ops': 'warn',
+  '@stylistic/js/spaced-comment': [
     'warn',
     'always',
     {
@@ -485,10 +502,11 @@ export const jsRules: Rules = {
       }
     }
   ],
-  'template-curly-spacing': [
+  '@stylistic/js/template-curly-spacing': [
     'warn',
     'never'
   ],
+  '@stylistic/js/template-tag-spacing': 'warn',
   'unicorn/filename-case': [
     'warn',
     {
