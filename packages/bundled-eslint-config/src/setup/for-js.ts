@@ -223,7 +223,7 @@ export const jsRules: Rules = {
     'always'
   ],
   'for-direction': 'error',
-  '@stylistic/js/func-call-spacing': [
+  '@stylistic/js/function-call-spacing': [
     'warn',
     'never'
   ],
@@ -521,7 +521,7 @@ export const jsRules: Rules = {
   'unicorn/no-array-for-each': 'off',
   'unicorn/no-array-method-this-argument': 'off',
   'unicorn/no-array-reduce': 'off',
-  'no-negated-condition': 'warn',
+  'no-negated-condition': 'off',
   'no-nested-ternary': 'off',
   'unicorn/no-null': 'off',
   'unicorn/no-typeof-undefined': 'warn',
