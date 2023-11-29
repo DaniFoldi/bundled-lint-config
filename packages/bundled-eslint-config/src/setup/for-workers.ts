@@ -3,7 +3,9 @@ import globals from 'globals'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
 
-export const workersSettings: Settings = {}
+export const workersSettings: Settings = {
+  'import/core-modules': [ 'cloudflare:email', 'cloudflare:sockets' ]
+}
 
 export const workersGlobals: Globals = {
   ...globals['shared-node-browser']

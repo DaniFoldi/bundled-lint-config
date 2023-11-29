@@ -5,7 +5,9 @@ import eslintPluginAstro from 'eslint-plugin-astro'
 import type { Globals, Plugins, LanguageOptions, Rules, Settings } from '../util'
 
 
-export const astroSettings: Settings = {}
+export const astroSettings: Settings = {
+  'import/core-modules': [ 'astro:assets', 'astro:content', 'astro:middleware' ]
+}
 
 export const astroGlobals: Globals = {
   Astro: false,
