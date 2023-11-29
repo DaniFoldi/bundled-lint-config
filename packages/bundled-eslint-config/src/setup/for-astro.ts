@@ -6,7 +6,7 @@ import type { Globals, Plugins, LanguageOptions, Rules, Settings } from '../util
 
 
 export const astroSettings: Settings = {
-  'import/core-modules': [ 'astro:assets', 'astro:content', 'astro:middleware' ]
+  'import/core-modules': [ 'astro:assets', 'astro:components', 'astro:content', 'astro:middleware', 'astro:transitions' ]
 }
 
 export const astroGlobals: Globals = {
