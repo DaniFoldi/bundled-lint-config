@@ -114,5 +114,7 @@ export const tsRules: Rules = {
   'prefer-rest-params': 'error',
   'prefer-spread': 'error',
   '@stylistic/plus/type-generic-spacing': 'warn',
-  '@stylistic/plus/type-named-tuple-spacing': 'warn'
+  '@stylistic/plus/type-named-tuple-spacing': 'warn',
+  '@typescript-eslint/restrict-plus-operands': 'error',
+  '@typescript-eslint/no-useless-template-literals': 'warn'
 }
