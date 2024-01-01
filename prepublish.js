@@ -28,7 +28,7 @@ const packageJsonJobs = {
   },
   'packages/bundled-eslint-config': {
     type: 'module',
-    version: '0.2.16',
+    version: '0.2.17',
     description: 'A preset for ESLint',
     keywords: [
       'eslint',
@@ -59,9 +59,11 @@ const packageJsonJobs = {
 
 for (const job of copyJobs) {
   const destinations = await globby(job[1], globbyOptions)
+
   for (const destination of destinations) {
     await copyFile(job[0], destination.endsWith('/') ? destination + basename(job[0]) : destination)
   }
+
   if (destinations.length === 0) {
     await copyFile(job[0], job[1])
   }
@@ -87,6 +89,7 @@ for (const job of Object.entries(packageJsonJobs)) {
           main: `${name.replace('eslint-config-', '').replace('stylelint-', '')}.js`,
           ...job[1]
         }
+
         await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
       }
       continue

@@ -461,9 +461,26 @@ export const jsRules: Rules = {
     'warn',
     'before'
   ],
-  '@stylistic/js/padded-blocks': [
+  '@stylistic/js/padding-line-between-statements': [
     'warn',
-    'never'
+    { blankLine: 'always', prev: '*', next: 'return' },
+    { blankLine: 'always', prev: '*', next: 'function' },
+    { blankLine: 'always', prev: '*', next: 'iife' },
+    { blankLine: 'always', prev: '*', next: 'const' },
+    { blankLine: 'always', prev: '*', next: 'class' },
+    { blankLine: 'always', prev: '*', next: 'do' },
+    { blankLine: 'always', prev: '*', next: 'for' },
+    { blankLine: 'always', prev: '*', next: 'throw' },
+    { blankLine: 'always', prev: '*', next: 'try' },
+    { blankLine: 'always', prev: '*', next: 'while' },
+    { blankLine: 'always', prev: '*', next: 'switch' },
+    { blankLine: 'any', prev: 'const', next: 'const' },
+    { blankLine: 'always', prev: '*', next: 'let' },
+    { blankLine: 'any', prev: 'let', next: 'let' },
+    { blankLine: 'always', prev: '*', next: 'export' },
+    { blankLine: 'any', prev: 'export', next: 'export' },
+    { blankLine: 'always', prev: 'block-like', next: '*' },
+    { blankLine: 'always', prev: 'multiline-block-like', next: '*' }
   ],
   'prefer-const': 'warn',
   'prefer-object-spread': 'warn',
