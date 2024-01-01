@@ -1,3 +1,5 @@
+import eslintPluginStylisticPlus from '@stylistic/eslint-plugin-plus'
+import eslintPluginStylisticTs from '@stylistic/eslint-plugin-ts'
 import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
 import * as parser from '@typescript-eslint/parser'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
@@ -35,7 +37,9 @@ export const tsLanguageOptions: LanguageOptions = {
 }
 
 export const tsPlugins: Plugins = {
-  '@typescript-eslint': typescriptEslintPlugin
+  '@typescript-eslint': typescriptEslintPlugin,
+  '@stylistic/ts': eslintPluginStylisticTs,
+  '@stylistic/plus': eslintPluginStylisticPlus
 }
 
 export const tsRules: Rules = {
@@ -59,7 +63,7 @@ export const tsRules: Rules = {
   '@typescript-eslint/prefer-as-const': 'error',
   '@typescript-eslint/triple-slash-reference': 'error',
   '@typescript-eslint/func-call-spacing': [ 'error', 'never' ],
-  '@typescript-eslint/member-delimiter-style': [
+  '@stylistic/ts/member-delimiter-style': [
     'warn', {
       multiline: { delimiter: 'none', requireLast: true },
       singleline: { delimiter: 'semi', requireLast: false }
@@ -76,10 +80,10 @@ export const tsRules: Rules = {
   ],
   '@typescript-eslint/prefer-for-of': 'warn',
   '@typescript-eslint/prefer-ts-expect-error': 'error',
-  '@typescript-eslint/semi': [ 'warn', 'never' ],
-  '@typescript-eslint/space-before-blocks': [ 'warn' ],
-  '@typescript-eslint/space-infix-ops': [ 'warn', { int32Hint: false }],
-  '@typescript-eslint/type-annotation-spacing': [
+  '@stylistic/ts/semi': [ 'warn', 'never' ],
+  '@stylistic/ts/space-before-blocks': [ 'warn' ],
+  '@stylistic/ts/space-infix-ops': [ 'warn', { int32Hint: false }],
+  '@stylistic/ts/type-annotation-spacing': [
     'warn', {
       after: true, before: true,
       overrides: { colon: { after: true, before: false } }
@@ -108,5 +112,7 @@ export const tsRules: Rules = {
   'no-var': 'error',
   'prefer-const': 'error',
   'prefer-rest-params': 'error',
-  'prefer-spread': 'error'
+  'prefer-spread': 'error',
+  '@stylistic/plus/type-generic-spacing': 'warn',
+  '@stylistic/plus/type-named-tuple-spacing': 'warn'
 }
