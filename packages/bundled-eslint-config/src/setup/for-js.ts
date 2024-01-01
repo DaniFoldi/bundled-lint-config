@@ -1,5 +1,6 @@
 import brettz9EslintPlugin from '@brettz9/eslint-plugin'
 import eslintPluginStylisticJs from '@stylistic/eslint-plugin-js'
+import eslintPluginStylisticPlus from '@stylistic/eslint-plugin-plus'
 import eslintPluginCasePolice from 'eslint-plugin-case-police'
 import * as eslintPluginImport from 'eslint-plugin-i'
 import eslintPluginJsdoc from 'eslint-plugin-jsdoc'
@@ -66,7 +67,8 @@ export const jsPlugins: Plugins = {
   promise: eslintPluginPromise,
   security: eslintPluginSecurity,
   unicorn: eslintPluginUnicorn,
-  '@stylistic/js': eslintPluginStylisticJs
+  '@stylistic/js': eslintPluginStylisticJs,
+  '@stylistic/plus': eslintPluginStylisticPlus
 }
 
 // Github
@@ -294,6 +296,13 @@ export const jsRules: Rules = {
     }
   ],
   '@stylistic/js/indent': [
+    'warn',
+    2,
+    {
+      'SwitchCase': 1
+    }
+  ],
+  '@stylistic/plus/indent-binary-ops': [
     'warn',
     2,
     {

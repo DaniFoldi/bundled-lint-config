@@ -25,6 +25,7 @@ export const astroLanguageOptions: LanguageOptions = {
     },
     // @ts-expect-error types are borked
     parser: typescriptEslintParser,
+    // processor: "astro/client-side-ts"
     extraFileExtensions: [ '.astro' ]
   }
 }
@@ -94,5 +95,6 @@ export const astroRules: Rules = {
   'astro/jsx-a11y/tabindex-no-positive': 'warn',
 
   // *--- EXTENSION RULES ---*
-  'astro/semi': [ 'warn', 'never' ]
+  'astro/semi': [ 'warn', 'never' ],
+  'semi': 'off'
 }
