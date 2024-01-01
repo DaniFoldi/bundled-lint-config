@@ -38,7 +38,7 @@ export const vueRules: Rules = {
   'vue/block-tag-newline': [ 'warn', { maxEmptyLines: 0, multiline: 'always', singleline: 'always' }],
   'vue/brace-style': [ 'warn', '1tbs' ],
   'vue/comma-dangle': [ 'warn', 'never' ],
-  'vue/comma-spacing': [ 'warn', { after: true, before: false  }],
+  'vue/comma-spacing': [ 'warn', { after: true, before: false }],
   'vue/comment-directive': [ 'error', { reportUnusedDisableDirectives: false }],
   'vue/component-api-style': [ 'error', [ 'script-setup', 'composition' ]],
   'vue/component-name-in-template-casing': [ 'warn', 'PascalCase' ],
@@ -53,7 +53,7 @@ export const vueRules: Rules = {
   'vue/html-comment-content-spacing': [ 'warn', 'always' ],
   'vue/html-comment-indent': [ 'warn', 2 ],
   'vue/key-spacing': [ 'warn', { afterColon: true, beforeColon: false, mode: 'strict' }],
-  'vue/keyword-spacing': [ 'warn', { after: true, before: true  }],
+  'vue/keyword-spacing': [ 'warn', { after: true, before: true }],
   'vue/max-attributes-per-line': [ 'warn', { multiline: 1, singleline: 3 }],
   'vue/max-len': [
     'warn', {

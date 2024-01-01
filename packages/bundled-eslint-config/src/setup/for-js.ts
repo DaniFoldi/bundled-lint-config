@@ -304,10 +304,7 @@ export const jsRules: Rules = {
   ],
   '@stylistic/plus/indent-binary-ops': [
     'warn',
-    2,
-    {
-      'SwitchCase': 1
-    }
+    2
   ],
   '@stylistic/js/key-spacing': [
     'warn',
