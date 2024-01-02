@@ -246,7 +246,7 @@ export const jsRules: Rules = {
   'import/no-named-as-default': 'warn',
   'import/no-named-as-default-member': 'warn',
   'import/no-mutable-exports': 'warn',
-  'import/consistent-type-specifier-style': [ 'warn', 'prefer-top-level' ],
+  'import/consistent-type-specifier-style': 'off',
   'import/no-extraneous-dependencies': 'warn',
   'import/no-amd': 'warn',
   'import/no-commonjs': 'warn',
@@ -275,31 +275,12 @@ export const jsRules: Rules = {
       'esmodule': true
     }
   ],
-  'import/no-duplicates': 'warn',
+  'import/no-duplicates': [ 'warn', { 'prefer-inline': true }],
   'import/no-deprecated': 'warn',
   'import/no-named-default': 'error',
   'import/no-unassigned-import': 'off',
   'import/no-webpack-loader-syntax': 'error',
-  'import/order': [
-    'warn',
-    {
-      'groups': [
-        'builtin',
-        'external',
-        'internal',
-        'parent',
-        'sibling',
-        'index',
-        'object',
-        'type'
-      ],
-      alphabetize: {
-        order: 'asc',
-        caseInsensitive: true
-      },
-      warnOnUnassignedImports: true
-    }
-  ],
+  'import/order': 'off',
   '@stylistic/js/indent': [
     'warn',
     2,
