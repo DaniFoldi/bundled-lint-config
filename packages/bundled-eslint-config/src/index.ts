@@ -11,12 +11,12 @@ import { vitestRules, vitestPlugins, vitestLanguageOptions, vitestSettings } fro
 import { vueLanguageOptions, vuePlugins, vueRules, vueSettings } from './setup/for-vue'
 import { workersLanguageOptions, workersPlugins, workersRules, workersSettings } from './setup/for-workers'
 import { linterOptions, hasFile } from './util'
-import type { FlatESLintConfig, FlatESLintConfigItem } from 'eslint-define-config'
+import type { FlatESLintConfig } from 'eslint-define-config'
 
 
 const ignores = {
   ignores: [ '**/coverage/**', '**/dist/**' ]
-} satisfies FlatESLintConfigItem
+} satisfies FlatESLintConfig
 
 const jsPreset = {
   files: [ '**/*.{?(c|m)@(j|t)s?(x),vue,astro}' ],
@@ -25,7 +25,7 @@ const jsPreset = {
   plugins: jsPlugins,
   languageOptions: jsLanguageOptions,
   settings: jsSettings
-} satisfies FlatESLintConfigItem
+} satisfies FlatESLintConfig
 
 const tsPreset = {
   files: [ '**/*.{?(c|m)@(j|t)s?(x),vue,astro}' ],
@@ -35,7 +35,7 @@ const tsPreset = {
   plugins: tsPlugins,
   languageOptions: tsLanguageOptions,
   settings: tsSettings
-} satisfies FlatESLintConfigItem
+} satisfies FlatESLintConfig
 
 const astroPreset = {
   files: [ '**/*.astro' ],
@@ -44,7 +44,7 @@ const astroPreset = {
   plugins: astroPlugins,
   languageOptions: astroLanguageOptions,
   settings: astroSettings
-} satisfies FlatESLintConfigItem
+} satisfies FlatESLintConfig
 
 const vuePreset = {
   files: [ '**/*.vue' ],
@@ -53,7 +53,7 @@ const vuePreset = {
   plugins: vuePlugins,
   languageOptions: vueLanguageOptions,
   settings: vueSettings
-} satisfies FlatESLintConfigItem
+} satisfies FlatESLintConfig
 
 const workersPreset = {
   files: [ await hasFile('wrangler.toml') ? '**/*.?(m)@(j|t)s' : '**/*worker*/**/*.?(m)@(j|t)s' ],
@@ -62,7 +62,7 @@ const workersPreset = {
   plugins: workersPlugins,
   languageOptions: workersLanguageOptions,
   settings: workersSettings
-} satisfies FlatESLintConfigItem
+} satisfies FlatESLintConfig
 
 const reactPreset = {
   files: [ '**/*.?(c|m)@(j|t)sx' ],
@@ -71,7 +71,7 @@ const reactPreset = {
   plugins: reactPlugins,
   languageOptions: reactLanguageOptions,
   settings: reactSettings
-} satisfies FlatESLintConfigItem
+} satisfies FlatESLintConfig
 
 const reactNativePreset = {
   files: [ await hasFile('app.json') ? '**/*.?(c|m)@(j|t)sx' : '**/*app*/**/*.?(c|m)@(j|t)sx' ],
@@ -80,7 +80,7 @@ const reactNativePreset = {
   plugins: reactNativePlugins,
   languageOptions: reactNativeLanguageOptions,
   settings: reactNativeSettings
-} satisfies FlatESLintConfigItem
+} satisfies FlatESLintConfig
 
 const nodePreset = {
   files: [ '**/scripts/**/*', '**/*.config.?(c|m)@(j|t)s' ],
@@ -89,7 +89,7 @@ const nodePreset = {
   plugins: nodePlugins,
   languageOptions: nodeLanguageOptions,
   settings: nodeSettings
-} satisfies FlatESLintConfigItem
+} satisfies FlatESLintConfig
 
 const vitestPreset = {
   files: [ '**/test?(s)/**/*', '**/*.test.?(c|m)@(j|t)s?(x)' ],
@@ -98,7 +98,7 @@ const vitestPreset = {
   plugins: vitestPlugins,
   languageOptions: vitestLanguageOptions,
   settings: vitestSettings
-} satisfies FlatESLintConfigItem
+} satisfies FlatESLintConfig
 
 type Preset = 'js' | 'ts' | 'astro' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'vitest'
 type Overrides = Partial<Record<Preset, Partial<FlatESLintConfig>>>

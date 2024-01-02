@@ -1,11 +1,16 @@
+// @ts-expect-error: No types
 import brettz9EslintPlugin from '@brettz9/eslint-plugin'
 import eslintPluginStylisticJs from '@stylistic/eslint-plugin-js'
 import eslintPluginStylisticPlus from '@stylistic/eslint-plugin-plus'
 import eslintPluginCasePolice from 'eslint-plugin-case-police'
+// @ts-expect-error: No types
 import * as eslintPluginImport from 'eslint-plugin-i'
 import eslintPluginJsdoc from 'eslint-plugin-jsdoc'
+// @ts-expect-error: No types
 import eslintPluginPromise from 'eslint-plugin-promise'
+// @ts-expect-error: No types
 import eslintPluginSecurity from 'eslint-plugin-security'
+// @ts-expect-error: No types
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import globals from 'globals'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'

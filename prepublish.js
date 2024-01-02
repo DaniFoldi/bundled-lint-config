@@ -92,6 +92,7 @@ for (const job of Object.entries(packageJsonJobs)) {
 
         await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
       }
+
       continue
     }
   } catch {}
