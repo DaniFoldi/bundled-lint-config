@@ -1,58 +1,28 @@
-# Want more linters in your life, but without having to set them up? Welcome
-
-_Note: I will shortly refactor the packages to follow a standard + addon structure._
-
-## This package is published from a monorepo
+# An eslint config
+that you might not like, but that's not the point.
 
 Check [https://github.com/DaniFoldi/lint-my-life](https://github.com/DaniFoldi/lint-my-life) for more details.
 
-## Usage
+## Usage (eslint)
 
 For any of the presets below, you can install them with one command:
 
 ```bash
-npm install @lint-my-life/preset
+npm install -D bundled-eslint-config eslint
 ```
 
-Add this to your `eslint.config.js` for eslint (omit `eslint-config-`):
+Add this to your `eslint.config.js`:
 
 ```js
-export * from '@lint-my-life/preset'
+export { default } from 'bundled-eslint-config'
 ```
 
-Add this to your `.stylelintrc` for stylelint:
+Any ruleset can be extended, and new rulesets can be added, however those are not considered to be a part of the stable API, so they are not documented. Look at index.ts for details.
 
-```json
-{
-  "extends": [ "@lint-my-life/preset" ]
-}
-```
+## Usage (stylelint)
 
-Presets:
+_TODO_
 
-- `eslint-config-standard`
-- `eslint-config-ts`
-- `eslint-config-react`
-- `eslint-config-react-ts`
-- `eslint-config-react-native`
-- `eslint-config-react-native-ts`
-- `eslint-config-vue`
-- `eslint-config-vue-ts`
-- `eslint-config-vitest`
-- `eslint-config-paintbrush`
-- `eslint-config-comet`
-- `stylelint-standard`
-- `stylelint-scss`
-- `stylelint-paintbrush`
-- `stylelint-vue`
-- `stylelint-vue-scss`
-
-Addons:
-
-- `eslint-config-semi`
-- `eslint-config-node`
-
-Install and append these after the preset.
 
 ## Running with GitHub Actions
 
@@ -86,37 +56,6 @@ Add these steps to lint your repository:
           npm run lint:js
 ```
 
-## Credits
-
-Thanks to all authors that created the linter packages, and those that contributed to the presets and plugins this library is based on.
-
-- `stylelint`
-- `stylelint-config-recommended`
-- `stylelint-config-standard`
-- `stylelint-config-recommended-scss`
-- `stylelint-config-standard-scss`
-- `stylelint-config-idiomatic-order`
-- `stylelint-high-performance-animation`
-- `stylelint-order`
-- `postcss`
-- `postcss-html`
-- `postcss-scss`
-- `eslint`
-- `eslint-config-import`
-- `eslint-config-unicorn`
-- `eslint-config-react`
-- `eslint-config-react-hooks`
-- `eslint-config-react-native`
-- `eslint-import-resolver-typescript`
-- `eslint-config-html`
-- `eslint-config-vue`
-- `eslint-config-vitest`
-- `vue-eslint-parser`
-- `@typescript-eslint/eslint-config`
-- `@typescript-eslint/parser`
-- `typescript`
-- `yamllint`
-
 ## Adding a new package
 
 - Add package to `packages/` folder.
@@ -125,7 +64,7 @@ Thanks to all authors that created the linter packages, and those that contribut
 
 ## Contributing
 
-If you find false positives/false negatives, or combinations that don't work well, feel free to open an issue, or create a PR. 
+If you find false positives/false negatives, or combinations that don't work well, feel free to open an issue, or create a PR.
 
 This project uses commit messages starting with emoji:
 
@@ -147,6 +86,8 @@ This project uses commit messages starting with emoji:
 
 Yes, some of the rules/presets are opinionated. No, I will not create addons for the one rule you want to change (eg. `"quotes'`). They are not better in any way.
 
+The point of such a preset is to have _some_ default that all contributors can agree on, so they can move on to more important things.
+
 ## License
 
-All packages, and this repository are licensed under the MIT license.
+All packages in this repository are licensed under the MIT license.
