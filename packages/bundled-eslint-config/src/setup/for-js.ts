@@ -288,10 +288,6 @@ export const jsRules: Rules = {
       'SwitchCase': 1
     }
   ],
-  '@stylistic/plus/indent-binary-ops': [
-    'warn',
-    2
-  ],
   '@stylistic/js/key-spacing': [
     'warn',
     {
@@ -452,7 +448,6 @@ export const jsRules: Rules = {
     { blankLine: 'always', prev: '*', next: 'return' },
     { blankLine: 'always', prev: '*', next: 'function' },
     { blankLine: 'always', prev: '*', next: 'iife' },
-    { blankLine: 'always', prev: '*', next: 'const' },
     { blankLine: 'always', prev: '*', next: 'class' },
     { blankLine: 'always', prev: '*', next: 'do' },
     { blankLine: 'always', prev: '*', next: 'for' },
@@ -460,9 +455,14 @@ export const jsRules: Rules = {
     { blankLine: 'always', prev: '*', next: 'try' },
     { blankLine: 'always', prev: '*', next: 'while' },
     { blankLine: 'always', prev: '*', next: 'switch' },
+
+    { blankLine: 'always', prev: '*', next: 'const' },
     { blankLine: 'any', prev: 'const', next: 'const' },
+    { blankLine: 'any', prev: 'let', next: 'const' },
     { blankLine: 'always', prev: '*', next: 'let' },
     { blankLine: 'any', prev: 'let', next: 'let' },
+    { blankLine: 'any', prev: 'const', next: 'let' },
+
     { blankLine: 'always', prev: '*', next: 'export' },
     { blankLine: 'any', prev: 'export', next: 'export' },
     { blankLine: 'always', prev: 'block-like', next: '*' },
