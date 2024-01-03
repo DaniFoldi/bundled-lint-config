@@ -60,8 +60,8 @@ importers:
         specifier: ^2.29.1
         version: 2.29.1(@typescript-eslint/parser@6.17.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
       eslint-plugin-jsdoc:
-        specifier: ^47.0.2
-        version: 47.0.2(eslint@8.56.0)
+        specifier: ^48.0.2
+        version: 48.0.2(eslint@8.56.0)
       eslint-plugin-jsx-a11y:
         specifier: ^6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -1995,9 +1995,9 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-jsdoc@47.0.2(eslint@8.56.0):
-    resolution: {integrity: sha512-sIq81Pv+yrhhwY0m1JH79rdZRgDNunehv3S0Yv0UfewpoeJyPkODFn2o4o20nofVoI2tjku9/QBcCYUmmeWFXA==}
-    engines: {node: '>=16'}
+  /eslint-plugin-jsdoc@48.0.2(eslint@8.56.0):
+    resolution: {integrity: sha512-CBFl5Jc7+jlV36RwDm+PQ8Uw5r28pn2/uW/OaB+Gw5bFwn4Py/1eYMZ3hGf9S4meUFZ/sRvS+hVif2mRAp6WqQ==}
+    engines: {node: '>=18'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
     dependencies:
@@ -3999,7 +3999,7 @@ packages:
     resolution: {integrity: sha512-kN9dJbvnySHULIluDHy32WHRUu3Og7B9sbY7tsFLctQkIqnMh3hErYgdMjTYuqmcXX+lK5T1lnUt3G7zNswmZA==}
     dependencies:
       spdx-expression-parse: 3.0.1
-      spdx-license-ids: 3.0.13
+      spdx-license-ids: 3.0.16
     dev: false
 
   /spdx-exceptions@2.3.0:
@@ -4010,7 +4010,7 @@ packages:
     resolution: {integrity: sha512-cbqHunsQWnJNE6KhVSMsMeH5H/L9EpymbzqTQ3uLwNCLZ1Q481oWaofqH7nO6V07xlXwY6PhQdQ2IedWx/ZK4Q==}
     dependencies:
       spdx-exceptions: 2.3.0
-      spdx-license-ids: 3.0.13
+      spdx-license-ids: 3.0.16
     dev: false
 
   /spdx-expression-parse@4.0.0:
@@ -4018,10 +4018,6 @@ packages:
     dependencies:
       spdx-exceptions: 2.3.0
       spdx-license-ids: 3.0.16
-    dev: false
-
-  /spdx-license-ids@3.0.13:
-    resolution: {integrity: sha512-XkD+zwiqXHikFZm4AX/7JSCXA98U5Db4AFd5XUg/+9UNtnH75+Z9KxtpYiJZx36mUDVOwH83pl7yvCer6ewM3w==}
     dev: false
 
   /spdx-license-ids@3.0.16:
