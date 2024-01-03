@@ -17,7 +17,7 @@
     "dist"
   ],
   "devDependencies": {
-    "@eslint-types/typescript-eslint": "^6.16.0",
+    "@eslint-types/typescript-eslint": "^6.17.0",
     "@eslint-types/unicorn": "^50.0.1",
     "@types/node": "^20.10.6",
     "esbuild": "^0.19.11",
@@ -27,9 +27,9 @@
   },
   "dependencies": {
     "@brettz9/eslint-plugin": "^1.0.4",
-    "@stylistic/eslint-plugin-js": "^1.5.1",
-    "@stylistic/eslint-plugin-plus": "^1.5.1",
-    "@stylistic/eslint-plugin-ts": "^1.5.1",
+    "@stylistic/eslint-plugin-js": "^1.5.3",
+    "@stylistic/eslint-plugin-plus": "^1.5.3",
+    "@stylistic/eslint-plugin-ts": "^1.5.3",
     "@typescript-eslint/eslint-plugin": "^6.17.0",
     "@typescript-eslint/parser": "^6.17.0",
     "astro-eslint-parser": "^0.16.0",
@@ -42,7 +42,7 @@
     "eslint-plugin-i": "^2.29.1",
     "eslint-plugin-jsdoc": "^47.0.2",
     "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-playwright": "^0.20.0",
+    "eslint-plugin-playwright": "^0.21.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",

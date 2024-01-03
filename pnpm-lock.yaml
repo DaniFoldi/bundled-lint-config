@@ -21,14 +21,14 @@ importers:
         specifier: ^1.0.4
         version: 1.0.4(eslint@8.56.0)
       '@stylistic/eslint-plugin-js':
-        specifier: ^1.5.1
-        version: 1.5.1(eslint@8.56.0)
+        specifier: ^1.5.3
+        version: 1.5.3(eslint@8.56.0)
       '@stylistic/eslint-plugin-plus':
-        specifier: ^1.5.1
-        version: 1.5.1(eslint@8.56.0)(typescript@5.3.3)
+        specifier: ^1.5.3
+        version: 1.5.3(eslint@8.56.0)(typescript@5.3.3)
       '@stylistic/eslint-plugin-ts':
-        specifier: ^1.5.1
-        version: 1.5.1(eslint@8.56.0)(typescript@5.3.3)
+        specifier: ^1.5.3
+        version: 1.5.3(eslint@8.56.0)(typescript@5.3.3)
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.17.0
         version: 6.17.0(@typescript-eslint/parser@6.17.0)(eslint@8.56.0)(typescript@5.3.3)
@@ -66,8 +66,8 @@ importers:
         specifier: ^6.8.0
         version: 6.8.0(eslint@8.56.0)
       eslint-plugin-playwright:
-        specifier: ^0.20.0
-        version: 0.20.0(eslint@8.56.0)
+        specifier: ^0.21.0
+        version: 0.21.0(eslint@8.56.0)
       eslint-plugin-promise:
         specifier: ^6.1.1
         version: 6.1.1(eslint@8.56.0)
@@ -106,8 +106,8 @@ importers:
         version: 9.3.2(eslint@8.56.0)
     devDependencies:
       '@eslint-types/typescript-eslint':
-        specifier: ^6.16.0
-        version: 6.16.0
+        specifier: ^6.17.0
+        version: 6.17.0
       '@eslint-types/unicorn':
         specifier: ^50.0.1
         version: 50.0.1
@@ -504,8 +504,8 @@ packages:
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: false
 
-  /@eslint-types/typescript-eslint@6.16.0:
-    resolution: {integrity: sha512-gLmHCSeeNtHfWJtAO5pBr4hD0aV60GyPDKJQm2JxlBJBoytJoKezan4Ak7FE9BsewaB+W3JQwsllspirHbHKLw==}
+  /@eslint-types/typescript-eslint@6.17.0:
+    resolution: {integrity: sha512-fPwdc27nXbsn69obhmOujFMxheimgs+Hf0iHCyq0s1w48iPpd0PgA/UvAs/PRUY/H9GYvrZDSvBTxtHLqnzb3A==}
     dev: true
 
   /@eslint-types/unicorn@50.0.1:
@@ -730,8 +730,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /@stylistic/eslint-plugin-js@1.5.1(eslint@8.56.0):
-    resolution: {integrity: sha512-iZF0rF+uOhAmOJYOJx1Yvmm3CZ1uz9n0SRd9dpBYHA3QAvfABUORh9LADWwZCigjHJkp2QbCZelGFJGwGz7Siw==}
+  /@stylistic/eslint-plugin-js@1.5.3(eslint@8.56.0):
+    resolution: {integrity: sha512-XlKnm82fD7Sw9kQ6FFigE0tobvptNBXZWsdfoKmUyK7bNxHsAHOFT8zJGY3j3MjZ0Fe7rLTu86hX/vOl0bRRdQ==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       eslint: '>=8.40.0'
@@ -743,8 +743,8 @@ packages:
       espree: 9.6.1
     dev: false
 
-  /@stylistic/eslint-plugin-plus@1.5.1(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-yxkFHsUgoqEf/j1Og0FGkpEmeQoqx0CMmtgoyZGr34hka0ElCy9fRpsFkLcwx60SfiHXspbvs2YUMXiWIffnjg==}
+  /@stylistic/eslint-plugin-plus@1.5.3(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-fuOBySbH4dbfY4Dwvu+zg5y+e0lALHTyQske5+a2zNC8Ejnx4rFlVjYOmaVFtxFhTD4V0vM7o21Ozci0igcxKg==}
     peerDependencies:
       eslint: '*'
     dependencies:
@@ -755,13 +755,13 @@ packages:
       - typescript
     dev: false
 
-  /@stylistic/eslint-plugin-ts@1.5.1(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-oXM1V7Jp8G9+udxQTy+Igo79LR2e5HXiWqlA/3v+/PAqWxniR9nJqJSBjtQKJTPsGplDqn/ASpHUOETP4EI/4A==}
+  /@stylistic/eslint-plugin-ts@1.5.3(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-/gUEqGo0gpFeu220YmC0788VliKnmTaAz4pI82KA5cUuCp6OzEhGlrNkb1eevMwH0RRgyND20HJxOYvEGlwu+w==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       eslint: '>=8.40.0'
     dependencies:
-      '@stylistic/eslint-plugin-js': 1.5.1(eslint@8.56.0)
+      '@stylistic/eslint-plugin-js': 1.5.3(eslint@8.56.0)
       '@typescript-eslint/utils': 6.17.0(eslint@8.56.0)(typescript@5.3.3)
       eslint: 8.56.0
     transitivePeerDependencies:
@@ -2040,8 +2040,8 @@ packages:
       object.fromentries: 2.0.7
     dev: false
 
-  /eslint-plugin-playwright@0.20.0(eslint@8.56.0):
-    resolution: {integrity: sha512-JWTSwUyPPipSOm6AK8z78bQXtKRCykvhSGUewcmZuxstSZ5oGsykW2JaRXJQ2IIfzKJToCBeKD2ISc8Li8qVEQ==}
+  /eslint-plugin-playwright@0.21.0(eslint@8.56.0):
+    resolution: {integrity: sha512-Y6qwguE9L6LB1JCsnPKaHbo+Z4X8/MngD82N0NkwiZ0ch0UVc4Oc2ZqmxanFxftIddnvwtNNlzUezglLlzUzKA==}
     peerDependencies:
       eslint: '>=7'
       eslint-plugin-jest: '>=25'
