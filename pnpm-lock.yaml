@@ -51,7 +51,7 @@ importers:
         specifier: ^3.6.1
         version: 3.6.1(@typescript-eslint/parser@6.19.0)(eslint-plugin-import@2.29.1)(eslint@8.56.0)
       eslint-plugin-astro:
-        specifier: ^0.31.2
+        specifier: ^0.31.3
         version: 0.31.3(eslint@8.56.0)
       eslint-plugin-case-police:
         specifier: ^0.6.1

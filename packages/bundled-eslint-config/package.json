@@ -37,7 +37,7 @@
     "eslint-config-flat-gitignore": "^0.1.2",
     "eslint-define-config": "^2.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-astro": "^0.31.2",
+    "eslint-plugin-astro": "^0.31.3",
     "eslint-plugin-case-police": "^0.6.1",
     "eslint-plugin-i": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.0.2",
