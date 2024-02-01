@@ -222,7 +222,7 @@ export const jsRules: Rules = {
     }
   ],
   '@stylistic/js/eol-last': [
-    'error',
+    'warn',
     'always'
   ],
   'eqeqeq': [
