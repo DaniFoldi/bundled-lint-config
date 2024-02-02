@@ -130,26 +130,26 @@ importers:
   packages/stylelint-scss:
     dependencies:
       postcss:
-        specifier: ^8.4.32
-        version: 8.4.32
+        specifier: ^8.4.33
+        version: 8.4.33
       postcss-scss:
         specifier: ^4.0.9
-        version: 4.0.9(postcss@8.4.32)
+        version: 4.0.9(postcss@8.4.33)
       sass:
-        specifier: ^1.69.5
-        version: 1.69.5
+        specifier: ^1.70.0
+        version: 1.70.0
       stylelint:
         specifier: ^15.11.0
         version: 15.11.0
       stylelint-high-performance-animation:
-        specifier: ^1.9.0
-        version: 1.9.0(stylelint@15.11.0)
+        specifier: ^1.10.0
+        version: 1.10.0(stylelint@15.11.0)
       stylelint-order:
-        specifier: ^6.0.3
-        version: 6.0.3(stylelint@15.11.0)
+        specifier: ^6.0.4
+        version: 6.0.4(stylelint@15.11.0)
       stylelint-scss:
-        specifier: ^5.3.1
-        version: 5.3.1(stylelint@15.11.0)
+        specifier: ^5.3.2
+        version: 5.3.2(stylelint@15.11.0)
 
   packages/stylelint-standard:
     dependencies:
@@ -3691,15 +3691,6 @@ packages:
     resolution: {integrity: sha512-HvExULSwLqHLgUy1rl3ANIqCsvMS0WHss2UOsXhXnQaZ9VCc2oBvIpXrl00IUFT5ZDITME0o6oiXeiHr2SAIfw==}
     dev: false
 
-  /postcss-safe-parser@6.0.0(postcss@8.4.32):
-    resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
-    engines: {node: '>=12.0'}
-    peerDependencies:
-      postcss: ^8.3.3
-    dependencies:
-      postcss: 8.4.32
-    dev: false
-
   /postcss-safe-parser@6.0.0(postcss@8.4.33):
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
     engines: {node: '>=12.0'}
@@ -3741,14 +3732,6 @@ packages:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
-    dev: false
-
-  /postcss-sorting@8.0.2(postcss@8.4.32):
-    resolution: {integrity: sha512-M9dkSrmU00t/jK7rF6BZSZauA5MAaBW4i5EnJXspMwt4iqTh/L9j6fgMnbElEOfyRyfLfVbIHj/R52zHzAPe1Q==}
-    peerDependencies:
-      postcss: ^8.4.20
-    dependencies:
-      postcss: 8.4.32
     dev: false
 
   /postcss-sorting@8.0.2(postcss@8.4.33):
@@ -4289,8 +4272,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0
     dependencies:
-      postcss: 8.4.32
-      postcss-sorting: 8.0.2(postcss@8.4.32)
+      postcss: 8.4.33
+      postcss-sorting: 8.0.2(postcss@8.4.33)
       stylelint: 15.11.0
     dev: false
 
@@ -4362,9 +4345,9 @@ packages:
       micromatch: 4.0.5
       normalize-path: 3.0.0
       picocolors: 1.0.0
-      postcss: 8.4.32
+      postcss: 8.4.33
       postcss-resolve-nested-selector: 0.1.1
-      postcss-safe-parser: 6.0.0(postcss@8.4.32)
+      postcss-safe-parser: 6.0.0(postcss@8.4.33)
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
