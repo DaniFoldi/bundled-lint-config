@@ -17,13 +17,13 @@
     "dist"
   ],
   "devDependencies": {
-    "@eslint-types/typescript-eslint": "^6.18.1",
+    "@eslint-types/typescript-eslint": "^6.19.1",
     "@eslint-types/unicorn": "^50.0.1",
-    "@types/node": "^20.11.5",
-    "esbuild": "^0.19.11",
+    "@types/node": "^20.11.10",
+    "esbuild": "^0.20.0",
     "some-tsconfig-preset": "^1.5.0",
     "typescript": "^5.3.3",
-    "vitest": "^1.2.0"
+    "vitest": "^1.2.2"
   },
   "dependencies": {
     "@brettz9/eslint-plugin": "^1.0.4",
