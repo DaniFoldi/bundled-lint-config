@@ -112,7 +112,7 @@ importers:
         specifier: ^50.0.1
         version: 50.0.1
       '@types/node':
-        specifier: ^20.11.10
+        specifier: ^20.11.16
         version: 20.11.16
       esbuild:
         specifier: ^0.20.0
