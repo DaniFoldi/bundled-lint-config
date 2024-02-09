@@ -98,6 +98,7 @@ export const vueRules: Rules = {
   'vue/prefer-template': 'warn',
   'vue/prefer-true-attribute-shorthand': [ 'warn', 'always' ],
   'vue/require-emit-validator': 'error',
+  'vue/require-explicit-slots': 'error',
   'vue/script-indent': [ 'warn', 2, { baseIndent: 1, switchCase: 1 }],
   'vue/space-in-parens': [ 'warn', 'never' ],
   'vue/space-infix-ops': 'warn',

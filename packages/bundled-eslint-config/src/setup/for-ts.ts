@@ -116,5 +116,7 @@ export const tsRules: Rules = {
   '@stylistic/plus/type-generic-spacing': 'warn',
   '@stylistic/plus/type-named-tuple-spacing': 'warn',
   '@typescript-eslint/restrict-plus-operands': 'error',
-  '@typescript-eslint/no-useless-template-literals': 'warn'
+  '@typescript-eslint/no-useless-template-literals': 'warn',
+  '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
+  '@typescript-eslint/prefer-find': 'warn'
 }
