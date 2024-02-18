@@ -46,11 +46,7 @@ jobs:
       matrix:
         package:
         - packages/bundled-eslint-config
-
-        - packages/stylelint-scss
-        - packages/stylelint-standard
-        - packages/stylelint-vue
-        - packages/stylelint-vue-scss
+        - packages/bundled-stylelint-config
 
     steps:
     - name: Checkout repository
