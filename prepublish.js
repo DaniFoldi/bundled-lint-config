@@ -22,7 +22,8 @@ const packageJsonJobs = {
       'stylelint preset',
       'stylelint config',
       'stylelint',
-      'lint'
+      'lint',
+      'stylelint scss preset'
     ]
   },
   'packages/bundled-eslint-config': {

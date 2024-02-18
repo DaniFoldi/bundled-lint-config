@@ -138,6 +138,9 @@ importers:
       stylelint-config-idiomatic-order:
         specifier: ^10.0.0
         version: 10.0.0(stylelint@16.2.1)
+      stylelint-high-performance-animation:
+        specifier: ^1.10.0
+        version: 1.10.0(stylelint@16.2.1)
     devDependencies:
       '@types/node':
         specifier: ^20.11.19
@@ -151,42 +154,6 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
-
-  packages/stylelint-scss:
-    dependencies:
-      postcss:
-        specifier: ^8.4.33
-        version: 8.4.33
-      postcss-scss:
-        specifier: ^4.0.9
-        version: 4.0.9(postcss@8.4.33)
-      sass:
-        specifier: ^1.70.0
-        version: 1.70.0
-      stylelint:
-        specifier: ^15.11.0
-        version: 15.11.0
-      stylelint-high-performance-animation:
-        specifier: ^1.10.0
-        version: 1.10.0(stylelint@15.11.0)
-      stylelint-order:
-        specifier: ^6.0.4
-        version: 6.0.4(stylelint@15.11.0)
-      stylelint-scss:
-        specifier: ^5.3.2
-        version: 5.3.2(stylelint@15.11.0)
-
-  packages/stylelint-standard:
-    dependencies:
-      stylelint:
-        specifier: ^15.11.0
-        version: 15.11.0
-      stylelint-high-performance-animation:
-        specifier: ^1.10.0
-        version: 1.10.0(stylelint@15.11.0)
-      stylelint-order:
-        specifier: ^6.0.4
-        version: 6.0.4(stylelint@15.11.0)
 
   packages/stylelint-vue:
     dependencies:
@@ -3509,6 +3476,7 @@ packages:
   /lilconfig@3.1.0:
     resolution: {integrity: sha512-p3cz0JV5vw/XeouBU3Ldnp+ZkBjE+n8ydJ4mcwBrOiXXPqNlrzGBqWs9X4MWF7f+iKUBu794Y8Hh8yawiJbCjw==}
     engines: {node: '>=14'}
+    deprecated: This version contains a security issue. Please upgrade to 3.1.1 or later.
     dev: false
 
   /lines-and-columns@1.2.4:
@@ -4661,6 +4629,15 @@ packages:
     dependencies:
       postcss-value-parser: 4.2.0
       stylelint: 15.11.0
+    dev: false
+
+  /stylelint-high-performance-animation@1.10.0(stylelint@16.2.1):
+    resolution: {integrity: sha512-YzNI+E6taN8pwgaM0INazRg4tw23VA17KNMKUVdOeohpnpSyJLBnLVT9NkRcaCFLodK/67smS5VZK+Qe4Ohrvw==}
+    peerDependencies:
+      stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+    dependencies:
+      postcss-value-parser: 4.2.0
+      stylelint: 16.2.1(typescript@5.3.3)
     dev: false
 
   /stylelint-order@6.0.4(stylelint@15.11.0):
