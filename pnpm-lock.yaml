@@ -197,8 +197,8 @@ importers:
         specifier: ^6.0.4
         version: 6.0.4(stylelint@15.11.0)
       stylelint-scss:
-        specifier: ^5.3.2
-        version: 5.3.2(stylelint@15.11.0)
+        specifier: ^6.1.0
+        version: 6.1.0(stylelint@15.11.0)
 
 packages:
 
@@ -4660,10 +4660,11 @@ packages:
       stylelint: 16.2.1(typescript@5.3.3)
     dev: false
 
-  /stylelint-scss@5.3.2(stylelint@15.11.0):
-    resolution: {integrity: sha512-4LzLaayFhFyneJwLo0IUa8knuIvj+zF0vBFueQs4e3tEaAMIQX8q5th8ziKkgOavr6y/y9yoBe+RXN/edwLzsQ==}
+  /stylelint-scss@6.1.0(stylelint@15.11.0):
+    resolution: {integrity: sha512-kCfK8TQzthGwb4vaZniZgxRsVbCM4ZckmT1b/H5m4FU3I8Dz0id9llKsy1NMp3XXqC8+OPD4rVKtUbSxXlJb5g==}
+    engines: {node: '>=18.12.0'}
     peerDependencies:
-      stylelint: ^14.5.1 || ^15.0.0
+      stylelint: ^16.0.2
     dependencies:
       known-css-properties: 0.29.0
       postcss-media-query-parser: 0.2.3
