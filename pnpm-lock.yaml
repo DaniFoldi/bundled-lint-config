@@ -130,8 +130,8 @@ importers:
   packages/bundled-stylelint-config:
     dependencies:
       '@stylistic/stylelint-plugin':
-        specifier: ^2.0.0
-        version: 2.0.0(stylelint@16.2.1)
+        specifier: ^2.1.0
+        version: 2.1.0(stylelint@16.2.1)
       stylelint:
         specifier: ^16.2.1
         version: 16.2.1(typescript@5.3.3)
@@ -1005,8 +1005,8 @@ packages:
       - typescript
     dev: false
 
-  /@stylistic/stylelint-plugin@2.0.0(stylelint@16.2.1):
-    resolution: {integrity: sha512-dHKuT6PGd1WGZLOTuozAM7GdQzdmlmnFXYzvV1jYJXXpcCpV/OJ3+n8TXpMkoOeKHpJydY43EOoZTO1W/FOA4Q==}
+  /@stylistic/stylelint-plugin@2.1.0(stylelint@16.2.1):
+    resolution: {integrity: sha512-mUZEW9uImHSbXeyzbFmHb8WPBv56UTaEnWL/3dGdAiJ54C+8GTfDwDVdI6gbqT9wV7zynkPu7tCXc5746H9mZQ==}
     engines: {node: ^18.12 || >=20.9}
     peerDependencies:
       stylelint: ^16.0.2
