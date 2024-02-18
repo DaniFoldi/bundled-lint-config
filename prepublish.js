@@ -15,15 +15,14 @@ const copyJobs = [
 ]
 
 const packageJsonJobs = {
-  'packages/stylelint-*': {
-    version: '0.2.0',
-    description: 'Plug-and-play presets for stylelint',
+  'packages/bundled-stylelint-config': {
+    version: '0.1.0',
+    description: 'A preset for stylelint',
     keywords: [
       'stylelint preset',
       'stylelint config',
       'stylelint',
-      'lint',
-      'stylelint config'
+      'lint'
     ]
   },
   'packages/bundled-eslint-config': {
@@ -42,7 +41,7 @@ const packageJsonJobs = {
       'react eslint preset'
     ]
   },
-  '{packages/stylelint-*,packages/bundled-eslint-config}': {
+  '{packages/*}': {
     author: 'DaniFoldi',
     license: 'MIT',
     bugs: {
