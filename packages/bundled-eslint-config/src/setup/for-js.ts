@@ -337,7 +337,7 @@ export const jsRules: Rules = {
   'no-class-assign': 'error',
   'no-compare-neg-zero': 'error',
   'no-cond-assign': 'error',
-  '@stylistic/js/no-confusing-arrow': 'warn',
+  '@stylistic/js/no-confusing-arrow': 'off',
   'no-const-assign': 'error',
   'no-constant-condition': 'error',
   'no-control-regex': 'error',
@@ -348,7 +348,7 @@ export const jsRules: Rules = {
   'no-dupe-else-if': 'error',
   'no-dupe-keys': 'error',
   'no-duplicate-case': 'error',
-  'no-else-return': 'warn',
+  'no-else-return': 'off',
   'no-empty': [
     'warn',
     {

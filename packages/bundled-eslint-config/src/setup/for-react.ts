@@ -52,5 +52,6 @@ export const reactRules: Rules = {
   'react/require-render-return': 'error',
   'react-hooks/exhaustive-deps': 'error',
   'react-hooks/rules-of-hooks': 'warn',
-  'unicorn/no-useless-undefined': 'off'
+  'unicorn/no-useless-undefined': 'off',
+  '@stylistic/js/no-extra-parens': 'off'
 }

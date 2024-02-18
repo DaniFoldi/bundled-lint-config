@@ -4,7 +4,7 @@ import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util
 
 
 export const workersSettings: Settings = {
-  'import/core-modules': [ 'cloudflare:email', 'cloudflare:sockets' ]
+  'import/core-modules': [ 'cloudflare:email', 'cloudflare:sockets', 'cloudflare:workers' ]
 }
 
 export const workersGlobals: Globals = {

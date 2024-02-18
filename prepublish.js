@@ -28,7 +28,7 @@ const packageJsonJobs = {
   },
   'packages/bundled-eslint-config': {
     type: 'module',
-    version: '0.2.21',
+    version: '0.2.22',
     description: 'A preset for ESLint',
     keywords: [
       'eslint',
