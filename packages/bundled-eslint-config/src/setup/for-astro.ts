@@ -1,4 +1,4 @@
-import * as typescriptEslintParser from '@typescript-eslint/parser'
+import typescriptEslint from 'typescript-eslint'
 import * as parser from 'astro-eslint-parser'
 import eslintPluginAstro from 'eslint-plugin-astro'
 // import {processor} from 'eslint-plugin-astro/processor'
@@ -24,7 +24,7 @@ export const astroLanguageOptions: LanguageOptions = {
       jsx: true
     },
     // @ts-expect-error types are borked
-    parser: typescriptEslintParser,
+    parser: typescriptEslint.parser,
     // processor: "astro/client-side-ts"
     extraFileExtensions: [ '.astro' ]
   }

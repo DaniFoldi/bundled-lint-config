@@ -1,4 +1,4 @@
-import * as parser from '@typescript-eslint/parser'
+import typescriptEslint from 'typescript-eslint'
 // @ts-expect-error package has no types
 import eslintPluginVue from 'eslint-plugin-vue'
 import vueEslintParser from 'vue-eslint-parser'
@@ -17,7 +17,7 @@ export const vueLanguageOptions: LanguageOptions = {
     ecmaVersion: 'latest',
     extraFileExtensions: [ '.vue' ],
     // @ts-expect-error types are borked
-    parser: parser,
+    parser: typescriptEslint.parser,
     sourceType: 'module'
   }
 }

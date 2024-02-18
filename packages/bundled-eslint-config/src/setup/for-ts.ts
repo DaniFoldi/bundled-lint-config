@@ -1,7 +1,6 @@
 import eslintPluginStylisticPlus from '@stylistic/eslint-plugin-plus'
 import eslintPluginStylisticTs from '@stylistic/eslint-plugin-ts'
-import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
-import * as parser from '@typescript-eslint/parser'
+import typescriptEslint from 'typescript-eslint'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
 
@@ -25,7 +24,7 @@ export const tsGlobals: Globals = {}
 
 export const tsLanguageOptions: LanguageOptions = {
   globals: tsGlobals,
-  parser,
+  parser: typescriptEslint.parser,
   parserOptions: {
     ecmaVersion: 2023,
     sourceType: 'module',
@@ -37,7 +36,8 @@ export const tsLanguageOptions: LanguageOptions = {
 }
 
 export const tsPlugins: Plugins = {
-  '@typescript-eslint': typescriptEslintPlugin,
+  // @ts-expect-error Configs types are broken
+  '@typescript-eslint': typescriptEslint.plugin,
   '@stylistic/ts': eslintPluginStylisticTs,
   '@stylistic/plus': eslintPluginStylisticPlus
 }
