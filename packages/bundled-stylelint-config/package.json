@@ -30,6 +30,7 @@
   "dependencies": {
     "@stylistic/stylelint-plugin": "^2.0.0",
     "stylelint": "^16.2.1",
-    "stylelint-config-idiomatic-order": "^10.0.0"
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "stylelint-high-performance-animation": "^1.10.0"
   }
 }
