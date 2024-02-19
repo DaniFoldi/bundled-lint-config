@@ -129,6 +129,12 @@ importers:
       '@stylistic/stylelint-plugin':
         specifier: ^2.1.0
         version: 2.1.0(stylelint@16.2.1)
+      find-up:
+        specifier: ^7.0.0
+        version: 7.0.0
+      parse-gitignore:
+        specifier: ^2.0.0
+        version: 2.0.0
       postcss:
         specifier: ^8.4.35
         version: 8.4.35

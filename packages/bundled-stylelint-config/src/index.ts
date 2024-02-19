@@ -1,16 +1,51 @@
 import type { Config } from 'stylelint'
+import { order } from './stylelint-idiomatic-order'
+import fs from 'node:fs'
+import { findUpSync } from 'find-up'
+// @ts-expect-error no types
+import parse from 'parse-gitignore'
 
+
+function ignored() {
+  const ignores: string[] = []
+
+  const file = findUpSync('.gitignore')
+
+  if (!file || !fs.existsSync(file)) {
+    return []
+  }
+
+  let content = ''
+
+  try {
+    content = fs.readFileSync(file, 'utf8')
+  } catch {
+    return []
+  }
+
+  const parsed = parse(`${content}\n`)
+  const globs = parsed.globs()
+
+  for (const glob of globs) {
+    if (glob.type === 'ignore')
+      ignores.push(...glob.patterns)
+    else if (glob.type === 'unignore')
+      ignores.push(...glob.patterns.map((pattern: string) => `!${pattern}`))
+  }
+
+  return ignores
+}
 
 export default <Config>{
   reportDescriptionlessDisables: true,
   reportNeedlessDisables: true,
   reportInvalidScopeDisables: true,
-  extends: [ 'stylelint-config-idiomatic-order' ],
+  ignoreFiles: [ 'node_modules/**', ...ignored() ],
   plugins: [ '@stylistic/stylelint-plugin', 'stylelint-order', 'stylelint-high-performance-animation' ],
   overrides: [
     {
       customSyntax: 'postcss-scss',
-      files: [ '*.scss' ],
+      files: [ '*.scss', '**/*.scss' ],
       plugins: [ '@stylistic/stylelint-plugin', 'stylelint-order', 'stylelint-high-performance-animation', 'stylelint-scss' ],
       rules: {
         'annotation-no-unknown': [
@@ -142,7 +177,7 @@ export default <Config>{
         ignore: [ 'consecutive-duplicates-with-different-values' ]
       }
     ],
-    'declaration-block-no-redundant-longhand-properties': [ true, { severity: 'warning' }],
+    'declaration-block-no-redundant-longhand-properties': [ true, { severity: 'warning', disableFix: true }],
     'declaration-block-no-shorthand-property-overrides': true,
     '@stylistic/declaration-block-semicolon-newline-after': [ 'always-multi-line', { severity: 'warning' }],
     '@stylistic/declaration-block-semicolon-newline-before': [ 'never-multi-line', { severity: 'warning' }],
@@ -195,10 +230,10 @@ export default <Config>{
     '@stylistic/media-feature-parentheses-space-inside': [ 'never', { severity: 'warning' }],
     '@stylistic/media-feature-range-operator-space-after': [ 'always', { severity: 'warning' }],
     '@stylistic/media-feature-range-operator-space-before': [ 'always', { severity: 'warning' }],
-    'media-query-list-comma-newline-after': [ 'always-multi-line', { severity: 'warning' }],
-    'media-query-list-comma-newline-before': [ 'always-multi-line', { severity: 'warning' }],
-    'media-query-list-comma-space-after': [ 'always-single-line', { severity: 'warning' }],
-    'media-query-list-comma-space-before': [ 'never', { severity: 'warning' }],
+    '@stylistic/media-query-list-comma-newline-after': [ 'always-multi-line', { severity: 'warning' }],
+    '@stylistic/media-query-list-comma-newline-before': [ 'always-multi-line', { severity: 'warning' }],
+    '@stylistic/media-query-list-comma-space-after': [ 'always-single-line', { severity: 'warning' }],
+    '@stylistic/media-query-list-comma-space-before': [ 'never', { severity: 'warning' }],
     'named-grid-areas-no-invalid': true,
     'no-descending-specificity': true,
     'no-duplicate-at-import-rules': true,
@@ -215,6 +250,7 @@ export default <Config>{
     'number-max-precision': [ 4, { severity: 'warning' }],
     '@stylistic/number-no-trailing-zeros': [ true, { severity: 'warning' }],
     'order/order': [ 'dollar-variables', 'custom-properties', 'at-rules', 'declarations', 'rules' ],
+    'order/properties-order': [ order, { unspecified: 'bottomAlphabetical' }],
     'plugin/no-low-performance-animation-properties': [ true, { ignore: 'paint-properties' }],
     '@stylistic/property-case': 'lower',
     'property-no-unknown': true,

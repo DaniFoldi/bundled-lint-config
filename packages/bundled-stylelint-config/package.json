@@ -29,6 +29,8 @@
   },
   "dependencies": {
     "@stylistic/stylelint-plugin": "^2.1.0",
+    "find-up": "^7.0.0",
+    "parse-gitignore": "^2.0.0",
     "postcss": "^8.4.35",
     "postcss-scss": "^4.0.9",
     "stylelint": "^16.2.1",
