@@ -235,7 +235,7 @@ export default <Config>{
     '@stylistic/media-query-list-comma-space-after': [ 'always-single-line', { severity: 'warning' }],
     '@stylistic/media-query-list-comma-space-before': [ 'never', { severity: 'warning' }],
     'named-grid-areas-no-invalid': true,
-    'no-descending-specificity': true,
+    'no-descending-specificity': null,
     'no-duplicate-at-import-rules': true,
     'no-duplicate-selectors': true,
     '@stylistic/no-empty-first-line': [ true, { severity: 'warning' }],
