@@ -63,7 +63,7 @@ export default <Config>{
           }
         ],
         'at-rule-no-unknown': null,
-        'block-closing-brace-newline-after': [ 'always', { ignoreAtRules: [ 'if', 'else' ] }],
+        '@stylistic/block-closing-brace-newline-after': [ 'always', { ignoreAtRules: [ 'if', 'else' ] }],
         'comment-no-empty': null,
         'function-no-unknown': null,
         'import-notation': 'string',
@@ -82,7 +82,7 @@ export default <Config>{
         'scss/at-if-closing-brace-newline-after': 'always-last-in-chain',
         'scss/at-if-closing-brace-space-after': 'always-intermediate',
         'scss/at-if-no-null': true,
-        'scss/at-import-no-partial-leading-underscore': true,
+        'scss/load-no-partial-leading-underscore': true,
         'scss/at-import-partial-extension': 'never',
         'scss/at-mixin-argumentless-call-parentheses': 'never',
         'scss/at-mixin-parentheses-space-before': 'never',
