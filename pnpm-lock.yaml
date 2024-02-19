@@ -129,6 +129,12 @@ importers:
       '@stylistic/stylelint-plugin':
         specifier: ^2.1.0
         version: 2.1.0(stylelint@16.2.1)
+      postcss:
+        specifier: ^8.4.35
+        version: 8.4.35
+      postcss-scss:
+        specifier: ^4.0.9
+        version: 4.0.9(postcss@8.4.35)
       stylelint:
         specifier: ^16.2.1
         version: 16.2.1(typescript@5.3.3)

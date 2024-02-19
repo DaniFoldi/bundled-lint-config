@@ -1,6 +1,6 @@
 {
   "name": "bundled-stylelint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "dist/index.js",
   "type": "module",
@@ -29,6 +29,8 @@
   },
   "dependencies": {
     "@stylistic/stylelint-plugin": "^2.1.0",
+    "postcss": "^8.4.35",
+    "postcss-scss": "^4.0.9",
     "stylelint": "^16.2.1",
     "stylelint-config-idiomatic-order": "^10.0.0",
     "stylelint-high-performance-animation": "^1.10.0",
