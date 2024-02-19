@@ -12,7 +12,7 @@ const copyJobs = [
 
 const packageJsonJobs = {
   'packages/bundled-stylelint-config': {
-    version: '0.1.0',
+    version: '0.1.1',
     description: 'A preset for stylelint',
     keywords: [
       'stylelint preset',
@@ -69,25 +69,12 @@ for (const job of Object.entries(packageJsonJobs)) {
   try {
     if (await stat(job[0])) {
       const destination = job[0]
-      const name = basename(destination)
-      if (name === 'bundled-eslint-config') {
-        const packageJson = {
-          ...JSON.parse(await readFile(join(destination, 'package.json'))),
-          name: 'bundled-eslint-config',
-          main: 'dist/index.js',
-          ...job[1]
-        }
-        await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
-      } else {
-        const packageJson = {
-          ...JSON.parse(await readFile(join(destination, 'package.json'))),
-          name: `@lint-my-life/${name}`,
-          main: `${name.replace('eslint-config-', '').replace('stylelint-', '')}.js`,
-          ...job[1]
-        }
-
-        await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
+      const packageJson = {
+        ...JSON.parse(await readFile(join(destination, 'package.json'))),
+        ...job[1]
       }
+      await writeFile(join(destination, 'package.json'), `${JSON.stringify(packageJson, null, 2)}\n`)
+
 
       continue
     }
