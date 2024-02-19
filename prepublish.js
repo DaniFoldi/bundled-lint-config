@@ -7,11 +7,7 @@ const globbyOptions = { onlyFiles: false, markDirectories: true }
 
 const copyJobs = [
   [ 'LICENSE', 'packages/*' ],
-  [ 'README.md', 'packages/*' ],
-  [ 'packages/stylelint-standard/standard.cjs', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
-  [ 'packages/stylelint-standard/better-order.cjs', [ 'packages/stylelint-*', '!packages/stylelint-standard' ]],
-  [ 'packages/stylelint-vue/vue.cjs', 'packages/stylelint-vue-scss/vue.cjs' ],
-  [ 'packages/stylelint-scss/scss.cjs', 'packages/stylelint-vue-scss/scss.cjs' ]
+  [ 'README.md', 'packages/*' ]
 ]
 
 const packageJsonJobs = {
