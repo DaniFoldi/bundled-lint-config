@@ -19,7 +19,7 @@
   "devDependencies": {
     "@eslint-types/typescript-eslint": "^7.0.2",
     "@eslint-types/unicorn": "^51.0.1",
-    "@types/node": "^20.11.20",
+    "@types/node": "^20.11.24",
     "esbuild": "^0.20.1",
     "some-tsconfig-preset": "^1.5.0",
     "typescript": "^5.3.3",
