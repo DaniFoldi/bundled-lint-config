@@ -28,7 +28,7 @@ export const reactPlugins: Plugins = {
 export const reactRules: Rules = {
   'import/no-unassigned-import': 'off',
   'react-refresh/only-export-components': 'warn',
-  'react/display-name': 'error',
+  // 'react/display-name': 'error',
   'react/jsx-key': 'error',
   'react/jsx-no-comment-textnodes': 'error',
   'react/jsx-no-duplicate-props': 'error',
