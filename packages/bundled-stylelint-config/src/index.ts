@@ -250,7 +250,7 @@ export default <Config>{
     'number-max-precision': [ 4, { severity: 'warning' }],
     '@stylistic/number-no-trailing-zeros': [ true, { severity: 'warning' }],
     'order/order': [ 'dollar-variables', 'custom-properties', 'at-rules', 'declarations', 'rules' ],
-    'order/properties-order': [ order, { unspecified: 'bottomAlphabetical' }],
+    'order/properties-order': [ order, { unspecified: 'bottomAlphabetical', severity: 'warning' }],
     'plugin/no-low-performance-animation-properties': [ true, { ignore: 'paint-properties' }],
     '@stylistic/property-case': 'lower',
     'property-no-unknown': true,
