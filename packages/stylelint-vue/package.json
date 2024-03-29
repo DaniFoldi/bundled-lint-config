@@ -13,9 +13,9 @@
   "author": "DaniFoldi",
   "license": "MIT",
   "dependencies": {
-    "postcss": "^8.4.35",
+    "postcss": "^8.4.38",
     "postcss-html": "^1.6.0",
-    "stylelint": "^16.2.1",
+    "stylelint": "^16.3.1",
     "stylelint-high-performance-animation": "^1.10.0",
     "stylelint-order": "^6.0.4"
   },
