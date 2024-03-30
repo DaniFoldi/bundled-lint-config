@@ -170,20 +170,20 @@ importers:
   packages/stylelint-vue:
     dependencies:
       postcss:
-        specifier: ^8.4.35
-        version: 8.4.35
+        specifier: ^8.4.38
+        version: 8.4.38
       postcss-html:
         specifier: ^1.6.0
         version: 1.6.0
       stylelint:
-        specifier: ^16.2.1
-        version: 16.2.1
+        specifier: ^16.3.1
+        version: 16.3.1(typescript@5.4.3)
       stylelint-high-performance-animation:
         specifier: ^1.10.0
-        version: 1.10.0(stylelint@16.2.1)
+        version: 1.10.0(stylelint@16.3.1)
       stylelint-order:
         specifier: ^6.0.4
-        version: 6.0.4(stylelint@16.2.1)
+        version: 6.0.4(stylelint@16.3.1)
 
   packages/stylelint-vue-scss:
     dependencies:
