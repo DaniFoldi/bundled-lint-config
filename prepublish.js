@@ -12,7 +12,7 @@ const copyJobs = [
 
 const packageJsonJobs = {
   'packages/bundled-stylelint-config': {
-    version: '0.1.6',
+    version: '0.1.7',
     description: 'A preset for stylelint',
     keywords: [
       'stylelint preset',
@@ -24,7 +24,7 @@ const packageJsonJobs = {
   },
   'packages/bundled-eslint-config': {
     type: 'module',
-    version: '0.2.24',
+    version: '0.2.25',
     description: 'A preset for ESLint',
     keywords: [
       'eslint',
