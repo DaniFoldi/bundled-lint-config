@@ -1,6 +1,6 @@
 import eslintPluginStylisticPlus from '@stylistic/eslint-plugin-plus'
 import eslintPluginStylisticTs from '@stylistic/eslint-plugin-ts'
-import typescriptEslint from 'typescript-eslint'
+import {parser} from 'typescript-eslint'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
 
@@ -24,7 +24,7 @@ export const tsGlobals: Globals = {}
 
 export const tsLanguageOptions: LanguageOptions = {
   globals: tsGlobals,
-  parser: typescriptEslint.parser,
+  parser,
   parserOptions: {
     ecmaVersion: 2023,
     sourceType: 'module',

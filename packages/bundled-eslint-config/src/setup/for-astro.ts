@@ -1,5 +1,5 @@
-import typescriptEslint from 'typescript-eslint'
-import * as parser from 'astro-eslint-parser'
+import {parser} from 'typescript-eslint'
+import * as astroParser from 'astro-eslint-parser'
 import eslintPluginAstro from 'eslint-plugin-astro'
 // import {processor} from 'eslint-plugin-astro/processor'
 import type { Globals, Plugins, LanguageOptions, Rules, Settings } from '../util'
@@ -16,7 +16,7 @@ export const astroGlobals: Globals = {
 
 export const astroLanguageOptions: LanguageOptions = {
   globals: astroGlobals,
-  parser,
+  parser: astroParser,
   parserOptions: {
     ecmaVersion: 2023,
     sourceType: 'module',
@@ -24,7 +24,7 @@ export const astroLanguageOptions: LanguageOptions = {
       jsx: true
     },
     // @ts-expect-error types are borked
-    parser: typescriptEslint.parser,
+    parser,
     // processor: "astro/client-side-ts"
     extraFileExtensions: [ '.astro' ]
   }

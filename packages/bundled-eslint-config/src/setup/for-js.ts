@@ -564,7 +564,7 @@ export const jsRules: Rules = {
   'unicorn/escape-case': 'error',
   'unicorn/expiring-todo-comments': 'warn',
   'unicorn/explicit-length-check': 'warn',
-  'unicorn/import-style': 'error',
+  'unicorn/import-style': 'off',
   'unicorn/new-for-builtins': 'error',
   'unicorn/no-abusive-eslint-disable': 'error',
   'unicorn/no-array-push-push': 'error',
