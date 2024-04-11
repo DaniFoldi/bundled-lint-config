@@ -11,7 +11,6 @@ import eslintPluginPromise from 'eslint-plugin-promise'
 // @ts-expect-error: No types
 import eslintPluginSecurity from 'eslint-plugin-security'
 // @ts-expect-error: No types
-import eslintPluginTailwindcss from 'eslint-plugin-tailwindcss'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import globals from 'globals'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
@@ -74,14 +73,10 @@ export const jsPlugins: Plugins = {
   security: eslintPluginSecurity,
   unicorn: eslintPluginUnicorn,
   '@stylistic/js': eslintPluginStylisticJs,
-  '@stylistic/plus': eslintPluginStylisticPlus,
-  tailwindcss: eslintPluginTailwindcss
+  '@stylistic/plus': eslintPluginStylisticPlus
 }
 
 export const jsRules: Rules = {
-  'tailwindcss/classnames-order': 'warn',
-  'tailwindcss/enforces-shorthand': 'warn',
-  'tailwindcss/no-contradicting-classname': 'warn',
   '@brettz9/arrow-parens': 'off',
   '@brettz9/block-scoped-var': 'off',
   '@brettz9/no-instanceof-array': 'error',
