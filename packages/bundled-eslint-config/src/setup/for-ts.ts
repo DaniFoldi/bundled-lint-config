@@ -1,6 +1,6 @@
 import eslintPluginStylisticPlus from '@stylistic/eslint-plugin-plus'
 import eslintPluginStylisticTs from '@stylistic/eslint-plugin-ts'
-import {parser} from 'typescript-eslint'
+import { parser, plugin } from 'typescript-eslint'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
 
@@ -37,7 +37,7 @@ export const tsLanguageOptions: LanguageOptions = {
 
 export const tsPlugins: Plugins = {
   // @ts-expect-error Configs types are broken
-  '@typescript-eslint': typescriptEslint.plugin,
+  '@typescript-eslint': plugin,
   '@stylistic/ts': eslintPluginStylisticTs,
   '@stylistic/plus': eslintPluginStylisticPlus
 }
