@@ -85,7 +85,7 @@ importers:
         version: 52.0.0(eslint@8.56.0)
       eslint-plugin-vitest:
         specifier: ^0.5.3
-        version: 0.5.3(eslint@8.56.0)(typescript@5.4.5)(vitest@1.5.0(@types/node@20.12.7)(sass@1.72.0))
+        version: 0.5.3(eslint@8.56.0)(typescript@5.4.5)(vitest@1.5.0(@types/node@20.12.7)(sass@1.75.0))
       eslint-plugin-vue:
         specifier: ^9.25.0
         version: 9.25.0(eslint@8.56.0)
@@ -119,7 +119,7 @@ importers:
         version: 5.4.5
       vitest:
         specifier: ^1.5.0
-        version: 1.5.0(@types/node@20.12.7)(sass@1.72.0)
+        version: 1.5.0(@types/node@20.12.7)(sass@1.75.0)
 
   packages/bundled-stylelint-config:
     dependencies:
@@ -194,8 +194,8 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9(postcss@8.4.38)
       sass:
-        specifier: ^1.72.0
-        version: 1.72.0
+        specifier: ^1.75.0
+        version: 1.75.0
       stylelint:
         specifier: ^16.3.1
         version: 16.3.1(typescript@5.4.5)
@@ -2335,8 +2335,8 @@ packages:
   safe-regex@2.1.1:
     resolution: {integrity: sha512-rx+x8AMzKb5Q5lQ95Zoi6ZbJqwCLkqi3XuJXp5P3rT8OEc6sZCJG5AE5dU3lsgRr/F4Bs31jSlVN+j5KrsGu9A==}
 
-  sass@1.72.0:
-    resolution: {integrity: sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA==}
+  sass@1.75.0:
+    resolution: {integrity: sha512-ShMYi3WkrDWxExyxSZPst4/okE9ts46xZmJDSawJQrnte7M1V9fScVB+uNXOVKRBt0PggHOwoZcn8mYX4trnBw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -4098,12 +4098,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-vitest@0.5.3(eslint@8.56.0)(typescript@5.4.5)(vitest@1.5.0(@types/node@20.12.7)(sass@1.72.0)):
+  eslint-plugin-vitest@0.5.3(eslint@8.56.0)(typescript@5.4.5)(vitest@1.5.0(@types/node@20.12.7)(sass@1.75.0)):
     dependencies:
       '@typescript-eslint/utils': 7.7.0(eslint@8.56.0)(typescript@5.4.5)
       eslint: 8.56.0
     optionalDependencies:
-      vitest: 1.5.0(@types/node@20.12.7)(sass@1.72.0)
+      vitest: 1.5.0(@types/node@20.12.7)(sass@1.75.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -5071,7 +5071,7 @@ snapshots:
     dependencies:
       regexp-tree: 0.1.27
 
-  sass@1.72.0:
+  sass@1.75.0:
     dependencies:
       chokidar: 3.6.0
       immutable: 4.3.4
@@ -5446,13 +5446,13 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-node@1.5.0(@types/node@20.12.7)(sass@1.72.0):
+  vite-node@1.5.0(@types/node@20.12.7)(sass@1.75.0):
     dependencies:
       cac: 6.7.14
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.1.3(@types/node@20.12.7)(sass@1.72.0)
+      vite: 5.1.3(@types/node@20.12.7)(sass@1.75.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5463,7 +5463,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.1.3(@types/node@20.12.7)(sass@1.72.0):
+  vite@5.1.3(@types/node@20.12.7)(sass@1.75.0):
     dependencies:
       esbuild: 0.19.12
       postcss: 8.4.38
@@ -5471,9 +5471,9 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.12.7
       fsevents: 2.3.3
-      sass: 1.72.0
+      sass: 1.75.0
 
-  vitest@1.5.0(@types/node@20.12.7)(sass@1.72.0):
+  vitest@1.5.0(@types/node@20.12.7)(sass@1.75.0):
     dependencies:
       '@vitest/expect': 1.5.0
       '@vitest/runner': 1.5.0
@@ -5492,8 +5492,8 @@ snapshots:
       strip-literal: 2.0.0
       tinybench: 2.6.0
       tinypool: 0.8.4
-      vite: 5.1.3(@types/node@20.12.7)(sass@1.72.0)
-      vite-node: 1.5.0(@types/node@20.12.7)(sass@1.72.0)
+      vite: 5.1.3(@types/node@20.12.7)(sass@1.75.0)
+      vite-node: 1.5.0(@types/node@20.12.7)(sass@1.75.0)
       why-is-node-running: 2.2.2
     optionalDependencies:
       '@types/node': 20.12.7
