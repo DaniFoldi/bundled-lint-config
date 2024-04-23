@@ -14,7 +14,7 @@ import { linterOptions, hasFile } from './util'
 
 
 const ignores = {
-  ignores: [ '**/coverage/**', '**/dist/**' ]
+  ignores: [ '**/coverage/**', '**/dist/**', '**/*wasm-bindgen/**' ]
 } satisfies FlatESLintConfig
 
 const jsPreset = {
