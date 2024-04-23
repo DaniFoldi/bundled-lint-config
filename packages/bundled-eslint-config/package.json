@@ -18,7 +18,7 @@
   ],
   "devDependencies": {
     "@eslint-types/typescript-eslint": "^7.5.0",
-    "@eslint-types/unicorn": "^51.0.1",
+    "@eslint-types/unicorn": "^52.0.0",
     "@types/node": "^20.12.7",
     "esbuild": "^0.20.2",
     "some-tsconfig-preset": "^1.5.0",
