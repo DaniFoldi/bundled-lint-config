@@ -30,7 +30,7 @@
     "@stylistic/eslint-plugin-js": "^1.7.2",
     "@stylistic/eslint-plugin-plus": "^1.7.2",
     "@stylistic/eslint-plugin-ts": "^1.7.2",
-    "astro-eslint-parser": "^0.17.0",
+    "astro-eslint-parser": "^1.0.1",
     "defu": "^6.1.4",
     "eslint-config-flat-gitignore": "^0.1.5",
     "eslint-define-config": "^2.1.0",
