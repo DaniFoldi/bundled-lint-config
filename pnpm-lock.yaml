@@ -124,8 +124,8 @@ importers:
   packages/bundled-stylelint-config:
     dependencies:
       '@stylistic/stylelint-plugin':
-        specifier: ^2.1.1
-        version: 2.1.1(stylelint@16.4.0(typescript@5.4.5))
+        specifier: ^2.1.2
+        version: 2.1.2(stylelint@16.4.0(typescript@5.4.5))
       find-up:
         specifier: ^7.0.0
         version: 7.0.0
@@ -701,8 +701,8 @@ packages:
     peerDependencies:
       eslint: '>=8.40.0'
 
-  '@stylistic/stylelint-plugin@2.1.1':
-    resolution: {integrity: sha512-xqHTmQZN7EbnFDW7jw0rAsdFNO4IRqvXhrh3qhUlIwF/x09Zm7kgs/ADktHxsTJYcw346PpGihsB0t4pZhpeHw==}
+  '@stylistic/stylelint-plugin@2.1.2':
+    resolution: {integrity: sha512-JsSqu0Y3vsX+PBl+DwULxC0cIv9C1yIcq1MXkx7pBOGtTqU26a75I8MPYMiEYvrsXgsKLi65xVgy1iLVSZquJA==}
     engines: {node: ^18.12 || >=20.9}
     peerDependencies:
       stylelint: ^16.0.2
@@ -3136,7 +3136,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@stylistic/stylelint-plugin@2.1.1(stylelint@16.4.0(typescript@5.4.5))':
+  '@stylistic/stylelint-plugin@2.1.2(stylelint@16.4.0(typescript@5.4.5))':
     dependencies:
       '@csstools/css-parser-algorithms': 2.6.1(@csstools/css-tokenizer@2.2.4)
       '@csstools/css-tokenizer': 2.2.4
