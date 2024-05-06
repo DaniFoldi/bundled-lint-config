@@ -176,7 +176,7 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0
       stylelint:
-        specifier: ^16.4.0
+        specifier: ^16.5.0
         version: 16.5.0(typescript@5.4.5)
       stylelint-high-performance-animation:
         specifier: ^1.10.0
