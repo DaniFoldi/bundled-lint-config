@@ -5,7 +5,8 @@ Check [https://github.com/DaniFoldi/lint-my-life](https://github.com/DaniFoldi/l
 
 ## Usage (eslint)
 
-For any of the presets below, you can install them with one command:
+The eslint preset now comes with all plugins pre-configured.
+Currently, it requires eslint 8.x.x.
 
 ```bash
 npm install -D bundled-eslint-config eslint
