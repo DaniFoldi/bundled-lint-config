@@ -48,7 +48,7 @@ const vuePreset = {
   files: [ '**/*.vue' ],
   linterOptions,
   rules: {...jsRules, ...tsRules, ...vueRules},
-  plugins: vuePlugins,
+  plugins: {...jsPlugins, ...tsPlugins, ...vuePlugins},
   languageOptions: vueLanguageOptions,
   settings: vueSettings
 } satisfies FlatESLintConfig
