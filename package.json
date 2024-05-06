@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "node update.js && node prepublish.js",
-    "lint": "pnpm -r build && eslint --cache ."
+    "prelint": "pnpm -r build",
+    "lint": "eslint --cache ."
   },
   "repository": {
     "type": "git",

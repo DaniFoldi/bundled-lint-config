@@ -1,6 +1,6 @@
 {
   "name": "bundled-eslint-config",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "scripts": {
     "test": "vitest",
     "typecheck": "tsc",
@@ -53,6 +53,9 @@
     "globals": "^15.1.0",
     "typescript-eslint": "^7.8.0",
     "vue-eslint-parser": "^9.4.2"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0"
   },
   "main": "dist/index.js",
   "description": "A preset for ESLint",
