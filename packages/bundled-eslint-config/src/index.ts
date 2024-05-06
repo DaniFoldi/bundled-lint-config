@@ -18,7 +18,7 @@ const ignores = {
 } satisfies FlatESLintConfig
 
 const jsPreset = {
-  files: [ '**/*.{?(c|m)@(j|t)s?(x)}' ],
+  files: [ '**/*.{?(c|m)js?(x)}' ],
   linterOptions,
   rules: jsRules,
   plugins: jsPlugins,
@@ -27,11 +27,10 @@ const jsPreset = {
 } satisfies FlatESLintConfig
 
 const tsPreset = {
-  files: [ '**/*.{?(c|m)@(j|t)s?(x)}' ],
-  ignores: [ '**/*.?(c|m)js?(x)' ],
+  files: [ '**/*.{?(c|m)ts?(x)}' ],
   linterOptions,
-  rules: tsRules,
-  plugins: tsPlugins,
+  rules: {...jsRules, ...tsRules},
+  plugins: {...jsPlugins, ...tsPlugins},
   languageOptions: tsLanguageOptions,
   settings: tsSettings
 } satisfies FlatESLintConfig
@@ -40,7 +39,7 @@ const astroPreset = {
   files: [ '**/*.astro' ],
   linterOptions,
   rules: {...jsRules, ...tsRules, ...astroRules},
-  plugins: astroPlugins,
+  plugins: {...jsPlugins, ...tsPlugins, ...astroPlugins},
   languageOptions: astroLanguageOptions,
   settings: astroSettings
 } satisfies FlatESLintConfig
