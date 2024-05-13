@@ -1,3 +1,5 @@
+/* eslint-disable unicorn/prefer-spread */
+
 function trbl(prefix) {
   const rules = []
 

@@ -18,7 +18,7 @@ const ignores = {
 } satisfies FlatESLintConfig
 
 const jsPreset = {
-  files: [ '**/*.{?(c|m)js?(x)}' ],
+  files: [ '**/*.?(c|m)js?(x)' ],
   linterOptions,
   rules: jsRules,
   plugins: jsPlugins,
@@ -27,30 +27,30 @@ const jsPreset = {
 } satisfies FlatESLintConfig
 
 const tsPreset = {
-  files: [ '**/*.{?(c|m)ts?(x)}' ],
+  files: [ '**/*.?(c|m)ts?(x)' ],
   linterOptions,
-  rules: {...jsRules, ...tsRules},
-  plugins: {...jsPlugins, ...tsPlugins},
+  rules: { ...jsRules, ...tsRules },
+  plugins: { ...jsPlugins, ...tsPlugins },
   languageOptions: tsLanguageOptions,
-  settings: tsSettings
+  settings: { ...jsSettings, ...tsSettings }
 } satisfies FlatESLintConfig
 
 const astroPreset = {
   files: [ '**/*.astro' ],
   linterOptions,
-  rules: {...jsRules, ...tsRules, ...astroRules},
-  plugins: {...jsPlugins, ...tsPlugins, ...astroPlugins},
+  rules: { ...jsRules, ...tsRules, ...astroRules },
+  plugins: { ...jsPlugins, ...tsPlugins, ...astroPlugins },
   languageOptions: astroLanguageOptions,
-  settings: astroSettings
+  settings: { ...jsSettings, ...tsSettings, ...astroSettings }
 } satisfies FlatESLintConfig
 
 const vuePreset = {
   files: [ '**/*.vue' ],
   linterOptions,
-  rules: {...jsRules, ...tsRules, ...vueRules},
-  plugins: {...jsPlugins, ...tsPlugins, ...vuePlugins},
+  rules: { ...jsRules, ...tsRules, ...vueRules },
+  plugins: { ...jsPlugins, ...tsPlugins, ...vuePlugins },
   languageOptions: vueLanguageOptions,
-  settings: vueSettings
+  settings: { ...jsSettings, ...tsSettings, ...vueSettings }
 } satisfies FlatESLintConfig
 
 const workersPreset = {

@@ -94,7 +94,7 @@ export const jsRules: Rules = {
   'jsdoc/check-param-names': 'warn',
   'jsdoc/check-property-names': 'warn',
   'jsdoc/check-syntax': 'off',
-  'jsdoc/check-tag-names': ['warn', { definedTags: ['tag'] }],
+  'jsdoc/check-tag-names': [ 'warn', { definedTags: [ 'tag' ] }],
   'jsdoc/check-types': 'warn',
   'jsdoc/check-values': 'warn',
   'jsdoc/empty-tags': 'warn',

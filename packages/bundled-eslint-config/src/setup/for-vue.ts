@@ -18,6 +18,7 @@ export const vueLanguageOptions: LanguageOptions = {
     extraFileExtensions: [ '.vue' ],
     // @ts-expect-error types are borked
     parser: typescriptEslint.parser,
+    project: true,
     sourceType: 'module'
   }
 }
