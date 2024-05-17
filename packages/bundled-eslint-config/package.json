@@ -55,7 +55,7 @@
     "vue-eslint-parser": "^9.4.2"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0"
+    "eslint": "^8.57.0"
   },
   "main": "dist/index.js",
   "description": "A preset for ESLint",
