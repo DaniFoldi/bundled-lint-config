@@ -22,7 +22,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.12.11",
+    "@types/node": "^20.13.0",
     "esbuild": "^0.21.2",
     "some-tsconfig-preset": "^1.5.0",
     "typescript": "^5.4.5"
