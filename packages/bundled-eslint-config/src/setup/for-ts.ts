@@ -81,7 +81,16 @@ export const tsRules: Rules = {
   '@typescript-eslint/prefer-for-of': 'warn',
   '@typescript-eslint/prefer-ts-expect-error': 'error',
   '@stylistic/ts/semi': [ 'warn', 'never' ],
-  '@stylistic/ts/space-before-blocks': [ 'warn' ],
+  '@stylistic/ts/space-before-blocks': 'warn',
+  '@stylistic/js/space-before-function-paren': 'off',
+  '@stylistic/ts/space-before-function-paren': [
+    'error',
+    {
+      'anonymous': 'never',
+      'asyncArrow': 'always',
+      'named': 'never'
+    }
+  ],
   '@stylistic/ts/space-infix-ops': [ 'warn', { int32Hint: false }],
   '@stylistic/ts/type-annotation-spacing': [
     'warn', {
