@@ -358,7 +358,7 @@ export const jsRules: Rules = {
   'no-extra-boolean-cast': 'warn',
   '@stylistic/js/no-extra-parens': [
     'warn',
-    'all',
+    'functions',
     {
       'nestedBinaryExpressions': false
     }
