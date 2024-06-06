@@ -128,7 +128,7 @@ importers:
     dependencies:
       '@stylistic/stylelint-plugin':
         specifier: ^2.1.2
-        version: 2.1.2(stylelint@16.5.0)
+        version: 2.1.2(stylelint@16.6.1)
       find-up:
         specifier: ^7.0.0
         version: 7.0.0
@@ -142,17 +142,17 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9(postcss@8.4.38)
       stylelint:
-        specifier: ^16.5.0
-        version: 16.5.0(typescript@5.4.5)
+        specifier: ^16.6.1
+        version: 16.6.1(typescript@5.4.5)
       stylelint-config-idiomatic-order:
         specifier: ^10.0.0
-        version: 10.0.0(stylelint@16.5.0)
+        version: 10.0.0(stylelint@16.6.1)
       stylelint-high-performance-animation:
         specifier: ^1.10.0
-        version: 1.10.0(stylelint@16.5.0)
+        version: 1.10.0(stylelint@16.6.1)
       stylelint-scss:
-        specifier: ^6.3.0
-        version: 6.3.0(stylelint@16.5.0)
+        specifier: ^6.3.1
+        version: 6.3.1(stylelint@16.6.1)
     devDependencies:
       '@types/node':
         specifier: ^20.13.0
@@ -177,7 +177,7 @@ importers:
         version: 1.7.0
       stylelint:
         specifier: ^16.5.0
-        version: 16.5.0(typescript@5.4.5)
+        version: 16.5.0
       stylelint-high-performance-animation:
         specifier: ^1.10.0
         version: 1.10.0(stylelint@16.5.0)
@@ -201,7 +201,7 @@ importers:
         version: 1.77.4
       stylelint:
         specifier: ^16.6.1
-        version: 16.6.1
+        version: 16.6.1(typescript@5.4.5)
       stylelint-high-performance-animation:
         specifier: ^1.10.0
         version: 1.10.0(stylelint@16.6.1)
@@ -1013,7 +1013,7 @@ packages:
       - typescript
     dev: false
 
-  /@stylistic/stylelint-plugin@2.1.2(stylelint@16.5.0):
+  /@stylistic/stylelint-plugin@2.1.2(stylelint@16.6.1):
     resolution: {integrity: sha512-JsSqu0Y3vsX+PBl+DwULxC0cIv9C1yIcq1MXkx7pBOGtTqU26a75I8MPYMiEYvrsXgsKLi65xVgy1iLVSZquJA==}
     engines: {node: ^18.12 || >=20.9}
     peerDependencies:
@@ -1026,7 +1026,7 @@ packages:
       postcss-selector-parser: 6.0.16
       postcss-value-parser: 4.2.0
       style-search: 0.1.0
-      stylelint: 16.5.0(typescript@5.4.5)
+      stylelint: 16.6.1(typescript@5.4.5)
     dev: false
 
   /@types/eslint@8.56.10:
@@ -4755,14 +4755,14 @@ packages:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
     dev: false
 
-  /stylelint-config-idiomatic-order@10.0.0(stylelint@16.5.0):
+  /stylelint-config-idiomatic-order@10.0.0(stylelint@16.6.1):
     resolution: {integrity: sha512-gJjT1nwhgnHS52+mRn+5Iw6keZIPRN4W+vbzct9Elb+tWOo61jC/CzXzAJHvvOYQZqUYItfs2aQ8fU5hnCvuGg==}
     engines: {node: '>=12'}
     peerDependencies:
       stylelint: '>=11'
     dependencies:
-      stylelint: 16.5.0(typescript@5.4.5)
-      stylelint-order: 6.0.4(stylelint@16.5.0)
+      stylelint: 16.6.1(typescript@5.4.5)
+      stylelint-order: 6.0.4(stylelint@16.6.1)
     dev: false
 
   /stylelint-high-performance-animation@1.10.0(stylelint@16.5.0):
@@ -4771,7 +4771,7 @@ packages:
       stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       postcss-value-parser: 4.2.0
-      stylelint: 16.5.0(typescript@5.4.5)
+      stylelint: 16.5.0
     dev: false
 
   /stylelint-high-performance-animation@1.10.0(stylelint@16.6.1):
@@ -4780,7 +4780,7 @@ packages:
       stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       postcss-value-parser: 4.2.0
-      stylelint: 16.6.1
+      stylelint: 16.6.1(typescript@5.4.5)
     dev: false
 
   /stylelint-order@6.0.4(stylelint@16.5.0):
@@ -4790,7 +4790,7 @@ packages:
     dependencies:
       postcss: 8.4.38
       postcss-sorting: 8.0.2(postcss@8.4.38)
-      stylelint: 16.5.0(typescript@5.4.5)
+      stylelint: 16.5.0
     dev: false
 
   /stylelint-order@6.0.4(stylelint@16.6.1):
@@ -4800,21 +4800,7 @@ packages:
     dependencies:
       postcss: 8.4.38
       postcss-sorting: 8.0.2(postcss@8.4.38)
-      stylelint: 16.6.1
-    dev: false
-
-  /stylelint-scss@6.3.0(stylelint@16.5.0):
-    resolution: {integrity: sha512-8OSpiuf1xC7f8kllJsBOFAOYp/mR/C1FXMVeOFjtJPw+AFvEmC93FaklHt7MlOqU4poxuQ1TkYMyfI0V+1SxjA==}
-    engines: {node: '>=18.12.0'}
-    peerDependencies:
-      stylelint: ^16.0.2
-    dependencies:
-      known-css-properties: 0.30.0
-      postcss-media-query-parser: 0.2.3
-      postcss-resolve-nested-selector: 0.1.1
-      postcss-selector-parser: 6.0.16
-      postcss-value-parser: 4.2.0
-      stylelint: 16.5.0(typescript@5.4.5)
+      stylelint: 16.6.1(typescript@5.4.5)
     dev: false
 
   /stylelint-scss@6.3.0(stylelint@16.6.1):
@@ -4828,10 +4814,24 @@ packages:
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.0.16
       postcss-value-parser: 4.2.0
-      stylelint: 16.6.1
+      stylelint: 16.6.1(typescript@5.4.5)
     dev: false
 
-  /stylelint@16.5.0(typescript@5.4.5):
+  /stylelint-scss@6.3.1(stylelint@16.6.1):
+    resolution: {integrity: sha512-w/czBoWUZxJNk5fBRPODcXSN4qcPv3WHjTSSpFovVY+TE3MZTMR0yRlbmaDYrm8tTWHvpwQAuEBZ0lk2wwkboQ==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      stylelint: ^16.0.2
+    dependencies:
+      known-css-properties: 0.31.0
+      postcss-media-query-parser: 0.2.3
+      postcss-resolve-nested-selector: 0.1.1
+      postcss-selector-parser: 6.1.0
+      postcss-value-parser: 4.2.0
+      stylelint: 16.6.1(typescript@5.4.5)
+    dev: false
+
+  /stylelint@16.5.0:
     resolution: {integrity: sha512-IlCBtVrG+qTy3v+tZTk50W8BIomjY/RUuzdrDqdnlCYwVuzXtPbiGfxYqtyYAyOMcb+195zRsuHn6tgfPmFfbw==}
     engines: {node: '>=18.12.0'}
     hasBin: true
@@ -4880,7 +4880,7 @@ packages:
       - typescript
     dev: false
 
-  /stylelint@16.6.1:
+  /stylelint@16.6.1(typescript@5.4.5):
     resolution: {integrity: sha512-yNgz2PqWLkhH2hw6X9AweV9YvoafbAD5ZsFdKN9BvSDVwGvPh+AUIrn7lYwy1S7IHmtFin75LLfX1m0D2tHu8Q==}
     engines: {node: '>=18.12.0'}
     hasBin: true
@@ -5209,7 +5209,7 @@ packages:
     dependencies:
       browserslist: 4.23.0
       escalade: 3.1.2
-      picocolors: 1.0.0
+      picocolors: 1.0.1
     dev: false
 
   /uri-js@4.4.1:
