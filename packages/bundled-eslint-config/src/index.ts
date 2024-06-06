@@ -72,7 +72,7 @@ const reactPreset = {
 } satisfies FlatESLintConfig
 
 const reactNativePreset = {
-  files: [ await hasFile('app.json') ? '**/*.?(c|m)@(j|t)sx' : '**/*app*/**/*.?(c|m)@(j|t)sx' ],
+  files: [ (await hasFile('app.json') || await hasFile('app.config.js')) ? '**/*.?(c|m)@(j|t)sx' : '**/*app*/**/*.?(c|m)@(j|t)sx' ],
   linterOptions,
   rules: reactNativeRules,
   plugins: reactNativePlugins,
