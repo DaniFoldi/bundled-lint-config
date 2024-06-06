@@ -176,14 +176,14 @@ importers:
         specifier: ^1.7.0
         version: 1.7.0
       stylelint:
-        specifier: ^16.5.0
-        version: 16.5.0(typescript@5.4.5)
+        specifier: ^16.6.1
+        version: 16.6.1
       stylelint-high-performance-animation:
         specifier: ^1.10.0
-        version: 1.10.0(stylelint@16.5.0)
+        version: 1.10.0(stylelint@16.6.1)
       stylelint-order:
         specifier: ^6.0.4
-        version: 6.0.4(stylelint@16.5.0)
+        version: 6.0.4(stylelint@16.6.1)
 
   packages/stylelint-vue-scss:
     dependencies:
@@ -5209,7 +5209,7 @@ packages:
     dependencies:
       browserslist: 4.23.0
       escalade: 3.1.2
-      picocolors: 1.0.0
+      picocolors: 1.0.1
     dev: false
 
   /uri-js@4.4.1:
