@@ -62,7 +62,6 @@ export const tsRules: Rules = {
   '@typescript-eslint/no-var-requires': 'error',
   '@typescript-eslint/prefer-as-const': 'error',
   '@typescript-eslint/triple-slash-reference': 'error',
-  '@typescript-eslint/func-call-spacing': [ 'error', 'never' ],
   '@stylistic/ts/member-delimiter-style': [
     'warn', {
       multiline: { delimiter: 'none', requireLast: true },
@@ -79,8 +78,7 @@ export const tsRules: Rules = {
     }
   ],
   '@typescript-eslint/prefer-for-of': 'warn',
-  '@typescript-eslint/prefer-ts-expect-error': 'error',
-  '@stylistic/ts/semi': [ 'warn', 'never' ],
+  '@stylistic/js/space-before-blocks': 'off',
   '@stylistic/ts/space-before-blocks': 'warn',
   '@stylistic/js/space-before-function-paren': 'off',
   '@stylistic/ts/space-before-function-paren': [
@@ -91,6 +89,7 @@ export const tsRules: Rules = {
       'named': 'never'
     }
   ],
+  '@stylistic/js/space-infix-ops': 'off',
   '@stylistic/ts/space-infix-ops': [ 'warn', { int32Hint: false }],
   '@stylistic/ts/type-annotation-spacing': [
     'warn', {
@@ -98,10 +97,16 @@ export const tsRules: Rules = {
       overrides: { colon: { after: true, before: false } }
     }
   ],
-  'func-call-spacing': 'off',
-  'semi': 'off',
-  'space-before-blocks': 'off',
-  'space-infix-ops': 'off',
+  '@stylistic/js/function-call-spacing': 'off',
+  '@stylistic/ts/function-call-spacing': [
+    'warn',
+    'never'
+  ],
+  '@stylistic/js/semi': 'off',
+  '@stylistic/ts/semi': [
+    'warn',
+    'never'
+  ],
   'constructor-super': 'off',
   'getter-return': 'off',
   'no-const-assign': 'off',
@@ -125,7 +130,7 @@ export const tsRules: Rules = {
   '@stylistic/plus/type-generic-spacing': 'warn',
   '@stylistic/plus/type-named-tuple-spacing': 'warn',
   '@typescript-eslint/restrict-plus-operands': 'error',
-  '@typescript-eslint/no-useless-template-literals': 'warn',
+  '@typescript-eslint/no-unnecessary-template-expression': 'warn',
   '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
   '@typescript-eslint/prefer-find': 'warn'
 }

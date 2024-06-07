@@ -503,7 +503,7 @@ export const jsRules: Rules = {
     'warn',
     'never'
   ],
-  '@stylistic/js/space-infix-ops': 'warn',
+  '@stylistic/js/space-infix-ops': [ 'warn', { int32Hint: false }],
   '@stylistic/js/spaced-comment': [
     'warn',
     'always',

@@ -26,7 +26,6 @@ export const vitestRules: Rules = {
   'vitest/no-conditional-in-test': 'error',
   'vitest/no-conditional-tests': 'error',
   'vitest/no-disabled-tests': 'warn',
-  'vitest/no-done-callback': 'warn',
   'vitest/no-duplicate-hooks': 'off',
   'vitest/no-focused-tests': 'error',
   'vitest/no-hooks': 'off',
