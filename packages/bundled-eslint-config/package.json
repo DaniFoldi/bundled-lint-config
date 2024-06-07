@@ -1,6 +1,6 @@
 {
   "name": "bundled-eslint-config",
-  "version": "0.3.0",
+  "version": "0.3.5",
   "scripts": {
     "test": "vitest",
     "typecheck": "tsc",
@@ -19,7 +19,7 @@
   "devDependencies": {
     "@eslint-types/typescript-eslint": "^7.5.0",
     "@eslint-types/unicorn": "^52.0.0",
-    "@types/node": "^20.13.0",
+    "@types/node": "^20.14.2",
     "esbuild": "^0.21.4",
     "some-tsconfig-preset": "^1.5.0",
     "typescript": "^5.4.5",
@@ -38,7 +38,7 @@
     "eslint-plugin-astro": "^1.2.0",
     "eslint-plugin-case-police": "^0.6.1",
     "eslint-plugin-i": "^2.29.1",
-    "eslint-plugin-jsdoc": "^48.2.7",
+    "eslint-plugin-jsdoc": "^48.2.9",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-playwright": "^1.6.2",
     "eslint-plugin-promise": "^6.2.0",
@@ -50,8 +50,8 @@
     "eslint-plugin-unicorn": "^53.0.0",
     "eslint-plugin-vitest": "^0.5.4",
     "eslint-plugin-vue": "^9.26.0",
-    "globals": "^15.3.0",
-    "typescript-eslint": "^7.11.0",
+    "globals": "^15.4.0",
+    "typescript-eslint": "^7.12.0",
     "vue-eslint-parser": "^9.4.3"
   },
   "peerDependencies": {
