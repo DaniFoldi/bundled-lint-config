@@ -3,8 +3,8 @@ import brettz9EslintPlugin from '@brettz9/eslint-plugin'
 import eslintPluginStylisticJs from '@stylistic/eslint-plugin-js'
 import eslintPluginStylisticPlus from '@stylistic/eslint-plugin-plus'
 import eslintPluginCasePolice from 'eslint-plugin-case-police'
-// @ts-expect-error: No types
-import * as eslintPluginImport from 'eslint-plugin-i'
+// @ ts-expect-error: No types
+// import eslintPluginImport from 'eslint-plugin-import'
 import eslintPluginJsdoc from 'eslint-plugin-jsdoc'
 // @ts-expect-error: No types
 import eslintPluginPromise from 'eslint-plugin-promise'
@@ -14,6 +14,7 @@ import eslintPluginSecurity from 'eslint-plugin-security'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import globals from 'globals'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
+import { fixupPluginRules } from '@eslint/compat'
 
 
 export const jsSettings: Settings = {
@@ -65,9 +66,11 @@ export const jsLanguageOptions: LanguageOptions = {
 }
 
 export const jsPlugins: Plugins = {
-  '@brettz9': brettz9EslintPlugin,
+  '@brettz9': fixupPluginRules(brettz9EslintPlugin),
+  // @ts-expect-error weird types
   'case-police': eslintPluginCasePolice,
-  import: eslintPluginImport,
+  // @ ts-expect-error weird types
+  // import: fixupPluginRules(eslintPluginImport),
   jsdoc: eslintPluginJsdoc,
   promise: eslintPluginPromise,
   security: eslintPluginSecurity,
@@ -236,6 +239,7 @@ export const jsRules: Rules = {
     'multiline'
   ],
   'getter-return': 'error',
+  /*
   'import/no-unresolved': 'error',
   'import/named': 'off',
   'import/namespace': 'error',
@@ -278,6 +282,7 @@ export const jsRules: Rules = {
   'import/no-unassigned-import': 'off',
   'import/no-webpack-loader-syntax': 'error',
   'import/order': 'off',
+  */
   '@stylistic/js/indent': [
     'warn',
     2,

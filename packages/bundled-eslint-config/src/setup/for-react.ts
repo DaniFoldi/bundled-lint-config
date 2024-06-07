@@ -26,7 +26,7 @@ export const reactPlugins: Plugins = {
 }
 
 export const reactRules: Rules = {
-  'import/no-unassigned-import': 'off',
+  //'import/no-unassigned-import': 'off',
   'react-refresh/only-export-components': 'warn',
   // 'react/display-name': 'error',
   'react/jsx-key': 'error',
