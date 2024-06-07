@@ -153,7 +153,7 @@ export const jsRules: Rules = {
   'promise/no-new-statics': 'warn',
   'promise/no-return-in-finally': 'warn',
   'promise/valid-params': 'warn',
-  'promise/no-multiple-resolved': 'warn',
+  // 'promise/no-multiple-resolved': 'warn',
   'security/detect-unsafe-regex': 'error',
   'security/detect-non-literal-regexp': 'error',
   'security/detect-non-literal-require': 'off',
