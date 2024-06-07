@@ -28,7 +28,6 @@ export const vuePlugins: Plugins = {
 }
 
 export const vueRules: Rules = {
-  'indent': 'off',
   'vue/sort-keys': [ 'warn', 'asc', { caseSensitive: true, minKeys: 5, natural: true }],
   'vue/array-bracket-newline': [ 'warn', { multiline: true }],
   'vue/array-bracket-spacing': [ 'warn', 'always', { arraysInArrays: false, objectsInArrays: false }],

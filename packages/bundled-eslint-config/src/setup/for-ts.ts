@@ -107,6 +107,10 @@ export const tsRules: Rules = {
     'warn',
     'never'
   ],
+  '@stylistic/js/no-extra-semi': 'off',
+  '@stylistic/ts/no-extra-semi': 'warn',
+  '@stylistic/js/quotes': 'off',
+  '@stylistic/ts/quotes': [ 'warn', 'single' ],
   'constructor-super': 'off',
   'getter-return': 'off',
   'no-const-assign': 'off',

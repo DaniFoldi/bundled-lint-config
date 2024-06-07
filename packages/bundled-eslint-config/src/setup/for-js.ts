@@ -365,7 +365,7 @@ export const jsRules: Rules = {
     'warn',
     'functions'
   ],
-  'no-extra-semi': 'error',
+  '@stylistic/js/no-extra-semi': 'warn',
   'no-object-constructor': 'error',
   'no-fallthrough': 'error',
   '@stylistic/js/no-floating-decimal': 'warn',
@@ -483,10 +483,7 @@ export const jsRules: Rules = {
   'prefer-object-spread': 'warn',
   'prefer-spread': 'warn',
   'prefer-template': 'warn',
-  'quotes': [
-    'warn',
-    'single'
-  ],
+  '@stylistic/js/quotes': [ 'warn', 'single' ],
   'require-yield': 'error',
   '@stylistic/js/rest-spread-spacing': 'warn',
   '@stylistic/js/semi': [
