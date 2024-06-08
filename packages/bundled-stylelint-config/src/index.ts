@@ -177,7 +177,7 @@ export default <Config>{
         ignore: [ 'consecutive-duplicates-with-different-values' ]
       }
     ],
-    'declaration-block-no-redundant-longhand-properties': [ true, { severity: 'warning', disableFix: true }],
+    'declaration-block-no-redundant-longhand-properties': [ true, { severity: 'warning', disableFix: true, ignoreLonghands: [ 'grid-template-areas', 'grid-template-columns', 'grid-template-rows' ] }],
     'declaration-block-no-shorthand-property-overrides': true,
     '@stylistic/declaration-block-semicolon-newline-after': [ 'always-multi-line', { severity: 'warning' }],
     '@stylistic/declaration-block-semicolon-newline-before': [ 'never-multi-line', { severity: 'warning' }],
@@ -186,7 +186,7 @@ export default <Config>{
     'declaration-block-single-line-max-declarations': [ 1, { severity: 'warning' }],
     '@stylistic/declaration-block-trailing-semicolon': [ 'always', { severity: 'warning' }],
     '@stylistic/declaration-colon-newline-after': [ 'always-multi-line', { severity: 'warning' }],
-    '@stylistic/declaration-colon-space-after': [ 'always', { severity: 'warning' }],
+    '@stylistic/declaration-colon-space-after': [ 'always-single-line', { severity: 'warning' }],
     '@stylistic/declaration-colon-space-before': [ 'never', { severity: 'warning' }],
     'declaration-empty-line-before': [
       'always',
