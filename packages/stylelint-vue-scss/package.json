@@ -16,11 +16,11 @@
     "postcss": "^8.4.38",
     "postcss-html": "^1.7.0",
     "postcss-scss": "^4.0.9",
-    "sass": "^1.77.4",
+    "sass": "^1.77.6",
     "stylelint": "^16.6.1",
     "stylelint-high-performance-animation": "^1.10.0",
     "stylelint-order": "^6.0.4",
-    "stylelint-scss": "^6.3.1"
+    "stylelint-scss": "^6.3.2"
   },
   "bugs": {
     "url": "https://github.com/DaniFoldi/lint-my-life/issues"
