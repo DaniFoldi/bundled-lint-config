@@ -154,8 +154,8 @@ importers:
         specifier: ^1.10.0
         version: 1.10.0(stylelint@16.6.1(typescript@5.5.2))
       stylelint-scss:
-        specifier: ^6.3.1
-        version: 6.3.1(stylelint@16.6.1(typescript@5.5.2))
+        specifier: ^6.3.2
+        version: 6.3.2(stylelint@16.6.1(typescript@5.5.2))
     devDependencies:
       '@types/node':
         specifier: ^20.14.9
@@ -2494,6 +2494,12 @@ packages:
 
   stylelint-scss@6.3.1:
     resolution: {integrity: sha512-w/czBoWUZxJNk5fBRPODcXSN4qcPv3WHjTSSpFovVY+TE3MZTMR0yRlbmaDYrm8tTWHvpwQAuEBZ0lk2wwkboQ==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      stylelint: ^16.0.2
+
+  stylelint-scss@6.3.2:
+    resolution: {integrity: sha512-pNk9mXOVKkQtd+SROPC9io8ISSgX+tOVPhFdBE+LaKQnJMLdWPbGKAGYv4Wmf/RrnOjkutunNTN9kKMhkdE5qA==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.0.2
@@ -5198,6 +5204,15 @@ snapshots:
       stylelint: 16.6.1(typescript@5.5.2)
 
   stylelint-scss@6.3.1(stylelint@16.6.1(typescript@5.5.2)):
+    dependencies:
+      known-css-properties: 0.31.0
+      postcss-media-query-parser: 0.2.3
+      postcss-resolve-nested-selector: 0.1.1
+      postcss-selector-parser: 6.1.0
+      postcss-value-parser: 4.2.0
+      stylelint: 16.6.1(typescript@5.5.2)
+
+  stylelint-scss@6.3.2(stylelint@16.6.1(typescript@5.5.2)):
     dependencies:
       known-css-properties: 0.31.0
       postcss-media-query-parser: 0.2.3
