@@ -57,8 +57,8 @@ importers:
         specifier: ^0.6.1
         version: 0.6.1(eslint@9.5.0)(typescript@5.5.2)
       eslint-plugin-import-x:
-        specifier: ^0.5.1
-        version: 0.5.1(eslint@9.5.0)(typescript@5.5.2)
+        specifier: ^0.5.2
+        version: 0.5.3(eslint@9.5.0)(typescript@5.5.2)
       eslint-plugin-jsdoc:
         specifier: ^48.5.0
         version: 48.5.0(eslint@9.5.0)
@@ -1394,8 +1394,8 @@ packages:
   eslint-plugin-case-police@0.6.1:
     resolution: {integrity: sha512-SNyZBjc39CwoNSOl3aiu5EsuHYXOIaPDraMsgLQmcH8CbEhllyOMkmV9kuSNHjjtM8iYRHsiBs1WEFw3/9qkoQ==}
 
-  eslint-plugin-import-x@0.5.1:
-    resolution: {integrity: sha512-2JK8bbFOLes+gG6tgdnM8safCxMAj4u2wjX8X1BRFPfnY7Ct2hFYESoIcVwABX/DDcdpQFLGtKmzbNEWJZD9iQ==}
+  eslint-plugin-import-x@0.5.3:
+    resolution: {integrity: sha512-hJ/wkMcsLQXAZL3+txXIDpbW5cqwdm1rLTqV4VRY03aIbzE3zWE7rPZKW6Gzf7xyl1u3V1iYC6tOG77d9NF4GQ==}
     engines: {node: '>=16'}
     peerDependencies:
       eslint: ^8.56.0 || ^9.0.0-0
@@ -2465,6 +2465,9 @@ packages:
 
   spdx-license-ids@3.0.18:
     resolution: {integrity: sha512-xxRs31BqRYHwiMzudOrpSiHtZ8i/GeionCBDSilhYRj+9gIcI8wCZTlXZKu9vZIVqViP3dcp9qE5G6AlIaD+TQ==}
+
+  stable-hash@0.0.4:
+    resolution: {integrity: sha512-LjdcbuBeLcdETCrPn9i8AYAZ1eCtu4ECAWtP7UleOiZ9LzVxRzzUZEoZ8zB24nhkQnDWyET0I+3sWokSDS3E7g==}
 
   stackback@0.0.2:
     resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
@@ -4093,9 +4096,9 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-import-x@0.5.1(eslint@9.5.0)(typescript@5.5.2):
+  eslint-plugin-import-x@0.5.3(eslint@9.5.0)(typescript@5.5.2):
     dependencies:
-      '@typescript-eslint/utils': 7.12.0(eslint@9.5.0)(typescript@5.5.2)
+      '@typescript-eslint/utils': 7.14.1(eslint@9.5.0)(typescript@5.5.2)
       debug: 4.3.5
       doctrine: 3.0.0
       eslint: 9.5.0
@@ -4104,6 +4107,7 @@ snapshots:
       is-glob: 4.0.3
       minimatch: 9.0.4
       semver: 7.6.2
+      stable-hash: 0.0.4
       tslib: 2.6.3
     transitivePeerDependencies:
       - supports-color
@@ -5252,6 +5256,8 @@ snapshots:
       spdx-license-ids: 3.0.18
 
   spdx-license-ids@3.0.18: {}
+
+  stable-hash@0.0.4: {}
 
   stackback@0.0.2: {}
 
