@@ -96,8 +96,8 @@ importers:
         specifier: ^9.26.0
         version: 9.26.0(eslint@9.5.0)
       globals:
-        specifier: ^15.6.0
-        version: 15.6.0
+        specifier: ^15.7.0
+        version: 15.8.0
       typescript-eslint:
         specifier: ^7.14.1
         version: 7.14.1(eslint@9.5.0)(typescript@5.5.2)
@@ -1685,8 +1685,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@15.6.0:
-    resolution: {integrity: sha512-UzcJi88Hw//CurUIRa9Jxb0vgOCcuD/MNjwmXp633cyaRKkCWACkoqHCtfZv43b1kqXGg/fpOa8bwgacCeXsVg==}
+  globals@15.8.0:
+    resolution: {integrity: sha512-VZAJ4cewHTExBWDHR6yptdIBlx9YSSZuwojj9Nt5mBRXQzrKakDsVKQ1J63sklLvzAJm0X5+RpO4i3Y2hcOnFw==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -4083,7 +4083,7 @@ snapshots:
       astro-eslint-parser: 1.0.2(typescript@5.5.2)
       eslint: 9.5.0
       eslint-compat-utils: 0.5.1(eslint@9.5.0)
-      globals: 15.6.0
+      globals: 15.8.0
       postcss: 8.4.38
       postcss-selector-parser: 6.1.0
     transitivePeerDependencies:
@@ -4505,7 +4505,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@15.6.0: {}
+  globals@15.8.0: {}
 
   globalthis@1.0.4:
     dependencies:

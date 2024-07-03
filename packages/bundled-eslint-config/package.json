@@ -51,7 +51,7 @@
     "eslint-plugin-unicorn": "^53.0.0",
     "eslint-plugin-vitest": "^0.5.4",
     "eslint-plugin-vue": "^9.26.0",
-    "globals": "^15.6.0",
+    "globals": "^15.7.0",
     "typescript-eslint": "^7.14.1",
     "vue-eslint-parser": "^9.4.3"
   },
