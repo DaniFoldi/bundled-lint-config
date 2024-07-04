@@ -540,6 +540,7 @@ export const jsRules: Rules = {
   'unicorn/no-array-reduce': 'off',
   'no-negated-condition': 'off',
   'no-nested-ternary': 'off',
+  'unicorn/no-negation-in-equality-check': 'warn',
   'unicorn/no-null': 'off',
   'unicorn/no-typeof-undefined': 'warn',
   'unicorn/numeric-separators-style': [
