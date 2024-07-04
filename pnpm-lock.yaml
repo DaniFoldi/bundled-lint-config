@@ -57,7 +57,7 @@ importers:
         specifier: ^0.6.1
         version: 0.6.1(eslint@9.5.0)(typescript@5.5.2)
       eslint-plugin-import-x:
-        specifier: ^0.5.2
+        specifier: ^0.5.3
         version: 0.5.3(eslint@9.5.0)(typescript@5.5.2)
       eslint-plugin-jsdoc:
         specifier: ^48.5.0
