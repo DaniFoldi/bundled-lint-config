@@ -18,8 +18,8 @@ importers:
   packages/bundled-eslint-config:
     dependencies:
       '@brettz9/eslint-plugin':
-        specifier: ^1.0.4
-        version: 1.0.4(eslint@9.6.0)
+        specifier: ^2.0.1
+        version: 2.0.1(eslint@9.6.0)
       '@eslint/compat':
         specifier: ^1.1.0
         version: 1.1.0
@@ -232,8 +232,8 @@ packages:
     resolution: {integrity: sha512-C/BaXcnnvBCmHTpz/VGZ8jgtE2aYlW4hxDhseJAWZb7gqGM/qtCK6iZUb0TyKFf7BOUsBH7Q7fkRsDRhg1XklQ==}
     engines: {node: '>=6.9.0'}
 
-  '@brettz9/eslint-plugin@1.0.4':
-    resolution: {integrity: sha512-BDKec0j1PbKhX6RNuEehwr65yUAo/zALbrJ5aogAZnrafrFfPvstI6osQr0NYZKFVoxWLCDwShPIcuKYvOc/GA==}
+  '@brettz9/eslint-plugin@2.0.1':
+    resolution: {integrity: sha512-9onS6Dwnnh3qjsNK8khSdlrbhux0FKCztzkAFBxxWJjUWsrQEQTdZ1AKt39ivjQp2Sa0bjnSaXpCo7hmDM4tyw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       eslint: '>=7.20.0'
@@ -2879,7 +2879,7 @@ snapshots:
       chalk: 2.4.2
       js-tokens: 4.0.0
 
-  '@brettz9/eslint-plugin@1.0.4(eslint@9.6.0)':
+  '@brettz9/eslint-plugin@2.0.1(eslint@9.6.0)':
     dependencies:
       eslint: 9.6.0
 
