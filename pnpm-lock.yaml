@@ -24,13 +24,13 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
       '@stylistic/eslint-plugin-js':
-        specifier: ^2.6.0
+        specifier: ^2.6.1
         version: 2.6.1(eslint@9.6.0)
       '@stylistic/eslint-plugin-plus':
-        specifier: ^2.6.0
+        specifier: ^2.6.1
         version: 2.6.1(eslint@9.6.0)(typescript@5.5.4)
       '@stylistic/eslint-plugin-ts':
-        specifier: ^2.6.0
+        specifier: ^2.6.1
         version: 2.6.1(eslint@9.6.0)(typescript@5.5.4)
       astro-eslint-parser:
         specifier: ^1.0.2
@@ -60,7 +60,7 @@ importers:
         specifier: ^0.5.3
         version: 0.5.3(eslint@9.6.0)(typescript@5.5.4)
       eslint-plugin-jsdoc:
-        specifier: ^48.10.2
+        specifier: ^48.11.0
         version: 48.11.0(eslint@9.6.0)
       eslint-plugin-jsx-a11y:
         specifier: ^6.9.0
@@ -96,8 +96,8 @@ importers:
         specifier: ^9.27.0
         version: 9.27.0(eslint@9.6.0)
       globals:
-        specifier: ^15.8.0
-        version: 15.8.0
+        specifier: ^15.9.0
+        version: 15.9.0
       typescript-eslint:
         specifier: ^7.18.0
         version: 7.18.0(eslint@9.6.0)(typescript@5.5.4)
@@ -1780,8 +1780,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@15.8.0:
-    resolution: {integrity: sha512-VZAJ4cewHTExBWDHR6yptdIBlx9YSSZuwojj9Nt5mBRXQzrKakDsVKQ1J63sklLvzAJm0X5+RpO4i3Y2hcOnFw==}
+  globals@15.9.0:
+    resolution: {integrity: sha512-SmSKyLLKFbSr6rptvP8izbyxJL4ILwqO9Jg23UA0sDlGlu58V59D1//I3vlc0KJphVdUR7vMjHIplYnzBxorQA==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -4277,7 +4277,7 @@ snapshots:
       astro-eslint-parser: 1.0.2(typescript@5.5.4)
       eslint: 9.6.0
       eslint-compat-utils: 0.5.1(eslint@9.6.0)
-      globals: 15.8.0
+      globals: 15.9.0
       postcss: 8.4.39
       postcss-selector-parser: 6.1.0
     transitivePeerDependencies:
@@ -4326,7 +4326,7 @@ snapshots:
       '@es-joy/jsdoccomment': 0.46.0
       are-docs-informative: 0.0.2
       comment-parser: 1.4.1
-      debug: 4.3.5
+      debug: 4.3.6
       escape-string-regexp: 4.0.0
       eslint: 9.6.0
       espree: 10.1.0
@@ -4712,7 +4712,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@15.8.0: {}
+  globals@15.9.0: {}
 
   globalthis@1.0.4:
     dependencies:
