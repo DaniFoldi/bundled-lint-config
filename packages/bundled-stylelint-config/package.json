@@ -37,11 +37,11 @@
     "@stylistic/stylelint-plugin": "^3.0.0",
     "find-up": "^7.0.0",
     "parse-gitignore": "^2.0.0",
-    "postcss": "^8.4.40",
+    "postcss": "^8.4.41",
     "postcss-scss": "^4.0.9",
     "stylelint": "^16.8.1",
     "stylelint-config-idiomatic-order": "^10.0.0",
     "stylelint-high-performance-animation": "^1.10.0",
-    "stylelint-scss": "^6.4.1"
+    "stylelint-scss": "^6.5.0"
   }
 }
