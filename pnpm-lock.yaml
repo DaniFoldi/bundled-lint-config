@@ -191,14 +191,14 @@ importers:
   packages/stylelint-vue-scss:
     dependencies:
       postcss:
-        specifier: ^8.4.40
-        version: 8.4.40
+        specifier: ^8.4.41
+        version: 8.4.41
       postcss-html:
         specifier: ^1.7.0
         version: 1.7.0
       postcss-scss:
         specifier: ^4.0.9
-        version: 4.0.9(postcss@8.4.40)
+        version: 4.0.9(postcss@8.4.41)
       sass:
         specifier: ^1.77.8
         version: 1.77.8
@@ -212,8 +212,8 @@ importers:
         specifier: ^6.0.4
         version: 6.0.4(stylelint@16.8.1(typescript@5.5.4))
       stylelint-scss:
-        specifier: ^6.4.1
-        version: 6.4.1(stylelint@16.8.1(typescript@5.5.4))
+        specifier: ^6.5.0
+        version: 6.5.0(stylelint@16.8.1(typescript@5.5.4))
 
 packages:
 
