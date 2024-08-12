@@ -31,7 +31,7 @@ export const tsLanguageOptions: LanguageOptions = {
     ecmaFeatures: {
       jsx: true
     },
-    project: true
+    projectService: true
   }
 }
 
@@ -43,8 +43,6 @@ export const tsPlugins: Plugins = {
 }
 
 export const tsRules: Rules = {
-  '@typescript-eslint/ban-ts-comment': 'error',
-  '@typescript-eslint/ban-types': 'error',
   'no-array-constructor': 'off',
   '@typescript-eslint/no-array-constructor': 'error',
   '@typescript-eslint/no-duplicate-enum-values': 'error',
@@ -59,7 +57,6 @@ export const tsRules: Rules = {
   '@typescript-eslint/no-unnecessary-type-constraint': 'error',
   '@typescript-eslint/no-unsafe-declaration-merging': 'error',
   'no-unused-vars': 'off',
-  '@typescript-eslint/no-var-requires': 'error',
   '@typescript-eslint/prefer-as-const': 'error',
   '@typescript-eslint/triple-slash-reference': 'error',
   '@stylistic/ts/member-delimiter-style': [
@@ -78,6 +75,11 @@ export const tsRules: Rules = {
     }
   ],
   '@typescript-eslint/prefer-for-of': 'warn',
+  '@typescript-eslint/ban-ts-comment': 'error',
+  '@typescript-eslint/no-empty-object-type': 'error',
+  '@typescript-eslint/no-unsafe-function-type': 'error',
+  '@typescript-eslint/no-wrapper-object-types': 'error',
+  '@typescript-eslint/no-require-imports': 'error',
   '@stylistic/js/space-before-blocks': 'off',
   '@stylistic/ts/space-before-blocks': 'warn',
   '@stylistic/js/space-before-function-paren': 'off',
