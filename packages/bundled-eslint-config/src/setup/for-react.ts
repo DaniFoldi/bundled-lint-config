@@ -5,6 +5,7 @@ import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
 // @ts-expect-error package has no types
 import eslintPluginReactRefresh from 'eslint-plugin-react-refresh'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
+import { fixupPluginRules } from '@eslint/compat'
 
 
 export const reactSettings: Settings = {
@@ -21,7 +22,7 @@ export const reactLanguageOptions: LanguageOptions = {
 
 export const reactPlugins: Plugins = {
   react: eslintPluginReact,
-  'react-hooks': eslintPluginReactHooks,
+  'react-hooks': fixupPluginRules(eslintPluginReactHooks),
   'react-refresh': eslintPluginReactRefresh
 }
 
