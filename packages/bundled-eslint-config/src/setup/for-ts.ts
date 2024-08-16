@@ -76,7 +76,12 @@ export const tsRules: Rules = {
   ],
   '@typescript-eslint/prefer-for-of': 'warn',
   '@typescript-eslint/ban-ts-comment': 'error',
-  '@typescript-eslint/no-empty-object-type': 'error',
+  '@typescript-eslint/no-empty-object-type': [
+    'error',
+    {
+      allowInterfaces: 'always'
+    }
+  ],
   '@typescript-eslint/no-unsafe-function-type': 'error',
   '@typescript-eslint/no-wrapper-object-types': 'error',
   '@typescript-eslint/no-require-imports': 'error',
