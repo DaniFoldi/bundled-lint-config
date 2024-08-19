@@ -17,7 +17,7 @@
     "postcss-html": "^1.7.0",
     "postcss-scss": "^4.0.9",
     "sass": "^1.77.8",
-    "stylelint": "^16.8.1",
+    "stylelint": "^16.8.2",
     "stylelint-high-performance-animation": "^1.10.0",
     "stylelint-order": "^6.0.4",
     "stylelint-scss": "^6.5.0"
