@@ -46,7 +46,7 @@ export const tsPlugins: Plugins = {
 }
 
 export const tsRules: Rules = {
-  '@typescript-eslint/no-deprecated': 'warn',
+  // '@typescript-eslint/no-deprecated': 'warn',
   'no-array-constructor': 'off',
   '@typescript-eslint/no-array-constructor': 'error',
   '@typescript-eslint/no-duplicate-enum-values': 'error',
