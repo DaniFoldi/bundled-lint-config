@@ -28,9 +28,9 @@
   "dependencies": {
     "@brettz9/eslint-plugin": "^3.0.0",
     "@eslint/compat": "^1.1.1",
-    "@stylistic/eslint-plugin-js": "^2.6.5",
-    "@stylistic/eslint-plugin-plus": "^2.6.5",
-    "@stylistic/eslint-plugin-ts": "^2.6.5",
+    "@stylistic/eslint-plugin-js": "^2.7.1",
+    "@stylistic/eslint-plugin-plus": "^2.7.1",
+    "@stylistic/eslint-plugin-ts": "^2.7.1",
     "astro-eslint-parser": "^1.0.2",
     "defu": "^6.1.4",
     "eslint-config-flat-gitignore": "^0.1.8",
