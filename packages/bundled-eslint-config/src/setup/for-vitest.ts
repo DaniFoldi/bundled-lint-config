@@ -1,4 +1,4 @@
-import eslintPluginVitest from 'eslint-plugin-vitest'
+import eslintPluginVitest from '@vitest/eslint-plugin'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
 
