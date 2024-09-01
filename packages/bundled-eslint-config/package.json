@@ -33,7 +33,7 @@
     "@stylistic/eslint-plugin-ts": "^2.7.1",
     "astro-eslint-parser": "^1.0.2",
     "defu": "^6.1.4",
-    "eslint-config-flat-gitignore": "^0.1.8",
+    "eslint-config-flat-gitignore": "^0.3.0",
     "eslint-define-config": "^2.1.0",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-astro": "^1.2.3",
