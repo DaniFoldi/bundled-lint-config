@@ -19,9 +19,9 @@ export const jsSettings: Settings = {
   'import/parsers': {
     espree: [ '.js', '.cjs', '.mjs', '.jsx' ]
   },
-  'import/resolver': {
+  /* 'import/resolver': {
     typescript: true
-  },
+  }, */
   'import/extensions': [
     '.cjs',
     '.js',

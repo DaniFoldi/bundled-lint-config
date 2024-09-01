@@ -9,6 +9,9 @@ export const tsSettings: Settings = {
     '@typescript-eslint/parser': [ '.ts', '.tsx' ],
     espree: [ '.js', '.cjs', '.mjs', '.jsx' ]
   },
+  'import/resolver': {
+    typescript: true
+  },
   'import/external-module-folders': [ 'node_modules', 'node_modules/@types' ],
   'import/extensions': [
     '.cjs',
