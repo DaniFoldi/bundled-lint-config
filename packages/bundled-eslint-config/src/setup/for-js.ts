@@ -3,7 +3,7 @@ import eslintPluginStylisticJs from '@stylistic/eslint-plugin-js'
 import eslintPluginStylisticPlus from '@stylistic/eslint-plugin-plus'
 import eslintPluginCasePolice from 'eslint-plugin-case-police'
 // @ ts-expect-error: No types
-import eslintPluginImport from 'eslint-plugin-import-x'
+// import eslintPluginImport from 'eslint-plugin-import-x'
 import eslintPluginJsdoc from 'eslint-plugin-jsdoc'
 // @ts-expect-error: No types
 import eslintPluginPromise from 'eslint-plugin-promise'
@@ -68,7 +68,7 @@ export const jsPlugins: Plugins = {
   // @ts-expect-error weird types
   'case-police': eslintPluginCasePolice,
   // @ts-expect-error weird types
-  import: eslintPluginImport,
+  // import: eslintPluginImport,
   jsdoc: eslintPluginJsdoc,
   promise: eslintPluginPromise,
   security: eslintPluginSecurity,
@@ -238,7 +238,7 @@ export const jsRules: Rules = {
   ],
   'getter-return': 'error',
   // 'import/no-unresolved': 'error',
-  'import/named': 'off',
+  /* 'import/named': 'off',
   'import/namespace': 'error',
   'import/default': 'error',
   'import/no-named-as-default': 'warn',
@@ -278,7 +278,7 @@ export const jsRules: Rules = {
   'import/no-named-default': 'error',
   'import/no-unassigned-import': 'off',
   'import/no-webpack-loader-syntax': 'error',
-  'import/order': 'off',
+  'import/order': 'off', */
   '@stylistic/js/indent': [
     'warn',
     2,
