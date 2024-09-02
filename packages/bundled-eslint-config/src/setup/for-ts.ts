@@ -88,7 +88,7 @@ export const tsRules: Rules = {
   ],
   '@typescript-eslint/no-unsafe-function-type': 'error',
   '@typescript-eslint/no-wrapper-object-types': 'error',
-  '@typescript-eslint/no-require-imports': 'error',
+  '@typescript-eslint/no-require-imports': 'off',
   '@stylistic/js/space-before-blocks': 'off',
   '@stylistic/ts/space-before-blocks': 'warn',
   '@stylistic/js/space-before-function-paren': 'off',
