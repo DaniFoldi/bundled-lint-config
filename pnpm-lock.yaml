@@ -173,7 +173,7 @@ importers:
   packages/stylelint-vue:
     dependencies:
       postcss:
-        specifier: ^8.4.42
+        specifier: ^8.4.44
         version: 8.4.44
       postcss-html:
         specifier: ^1.7.0
@@ -2294,10 +2294,6 @@ packages:
 
   postcss@8.4.39:
     resolution: {integrity: sha512-0vzE+lAiG7hZl1/9I8yzKLx3aR9Xbof3fBHKunvMfOCYAtMhrsnccJY2iTURb9EZd5+pLuiNV9/c/GZJOHsgIw==}
-    engines: {node: ^10 || ^12 || >=14}
-
-  postcss@8.4.41:
-    resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.4.44:
@@ -5004,10 +5000,6 @@ snapshots:
     dependencies:
       postcss: 8.4.44
 
-  postcss-scss@4.0.9(postcss@8.4.41):
-    dependencies:
-      postcss: 8.4.41
-
   postcss-scss@4.0.9(postcss@8.4.44):
     dependencies:
       postcss: 8.4.44
@@ -5029,12 +5021,6 @@ snapshots:
   postcss-value-parser@4.2.0: {}
 
   postcss@8.4.39:
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.0.1
-      source-map-js: 1.2.0
-
-  postcss@8.4.41:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.1
