@@ -173,7 +173,7 @@ importers:
   packages/stylelint-vue:
     dependencies:
       postcss:
-        specifier: ^8.4.42
+        specifier: ^8.4.44
         version: 8.4.44
       postcss-html:
         specifier: ^1.7.0
