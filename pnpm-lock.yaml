@@ -34,7 +34,7 @@ importers:
         version: 2.7.2(eslint@9.9.1)(typescript@5.5.4)
       '@vitest/eslint-plugin':
         specifier: ^1.1.0
-        version: 1.1.0(@typescript-eslint/utils@8.3.0(eslint@9.9.1)(typescript@5.5.4))(eslint@9.9.1)(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.2)(sass@1.77.8))
+        version: 1.1.0(@typescript-eslint/utils@8.3.0(eslint@9.9.1)(typescript@5.5.4))(eslint@9.9.1)(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.2)(sass@1.78.0))
       astro-eslint-parser:
         specifier: ^1.0.2
         version: 1.0.2(typescript@5.5.4)
@@ -125,7 +125,7 @@ importers:
         version: 5.5.4
       vitest:
         specifier: ^2.0.5
-        version: 2.0.5(@types/node@22.5.2)(sass@1.77.8)
+        version: 2.0.5(@types/node@22.5.2)(sass@1.78.0)
 
   packages/bundled-stylelint-config:
     dependencies:
@@ -191,7 +191,7 @@ importers:
   packages/stylelint-vue-scss:
     dependencies:
       postcss:
-        specifier: ^8.4.42
+        specifier: ^8.4.44
         version: 8.4.44
       postcss-html:
         specifier: ^1.7.0
@@ -200,8 +200,8 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9(postcss@8.4.44)
       sass:
-        specifier: ^1.77.8
-        version: 1.77.8
+        specifier: ^1.78.0
+        version: 1.78.0
       stylelint:
         specifier: ^16.9.0
         version: 16.9.0(typescript@5.5.4)
@@ -2296,10 +2296,6 @@ packages:
     resolution: {integrity: sha512-0vzE+lAiG7hZl1/9I8yzKLx3aR9Xbof3fBHKunvMfOCYAtMhrsnccJY2iTURb9EZd5+pLuiNV9/c/GZJOHsgIw==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.4.41:
-    resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==}
-    engines: {node: ^10 || ^12 || >=14}
-
   postcss@8.4.44:
     resolution: {integrity: sha512-Aweb9unOEpQ3ezu4Q00DPvvM2ZTUitJdNKeP/+uQgr1IBIqu574IaZoURId7BKtWMREwzKa9OgzPzezWGPWFQw==}
     engines: {node: ^10 || ^12 || >=14}
@@ -2395,8 +2391,8 @@ packages:
   safe-regex@2.1.1:
     resolution: {integrity: sha512-rx+x8AMzKb5Q5lQ95Zoi6ZbJqwCLkqi3XuJXp5P3rT8OEc6sZCJG5AE5dU3lsgRr/F4Bs31jSlVN+j5KrsGu9A==}
 
-  sass@1.77.8:
-    resolution: {integrity: sha512-4UHg6prsrycW20fqLGPShtEvo/WyHRVRHwOP4DzkUrObWoWI05QBSfzU71TVB7PFaL104TwNaHpjlWXAZbQiNQ==}
+  sass@1.78.0:
+    resolution: {integrity: sha512-AaIqGSrjo5lA2Yg7RvFZrlXDBCp3nV4XP73GrLGvdRWWwk+8H3l0SDvq/5bA4eF+0RFPLuWUk3E+P1U/YqnpsQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3336,13 +3332,13 @@ snapshots:
       '@typescript-eslint/types': 8.3.0
       eslint-visitor-keys: 3.4.3
 
-  '@vitest/eslint-plugin@1.1.0(@typescript-eslint/utils@8.3.0(eslint@9.9.1)(typescript@5.5.4))(eslint@9.9.1)(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.2)(sass@1.77.8))':
+  '@vitest/eslint-plugin@1.1.0(@typescript-eslint/utils@8.3.0(eslint@9.9.1)(typescript@5.5.4))(eslint@9.9.1)(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.2)(sass@1.78.0))':
     dependencies:
       eslint: 9.9.1
     optionalDependencies:
       '@typescript-eslint/utils': 8.3.0(eslint@9.9.1)(typescript@5.5.4)
       typescript: 5.5.4
-      vitest: 2.0.5(@types/node@22.5.2)(sass@1.77.8)
+      vitest: 2.0.5(@types/node@22.5.2)(sass@1.78.0)
 
   '@vitest/expect@2.0.5':
     dependencies:
@@ -5004,10 +5000,6 @@ snapshots:
     dependencies:
       postcss: 8.4.44
 
-  postcss-scss@4.0.9(postcss@8.4.41):
-    dependencies:
-      postcss: 8.4.41
-
   postcss-scss@4.0.9(postcss@8.4.44):
     dependencies:
       postcss: 8.4.44
@@ -5029,12 +5021,6 @@ snapshots:
   postcss-value-parser@4.2.0: {}
 
   postcss@8.4.39:
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.0.1
-      source-map-js: 1.2.0
-
-  postcss@8.4.41:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.1
@@ -5165,7 +5151,7 @@ snapshots:
     dependencies:
       regexp-tree: 0.1.27
 
-  sass@1.77.8:
+  sass@1.78.0:
     dependencies:
       chokidar: 3.6.0
       immutable: 4.3.6
@@ -5535,13 +5521,13 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-node@2.0.5(@types/node@22.5.2)(sass@1.77.8):
+  vite-node@2.0.5(@types/node@22.5.2)(sass@1.78.0):
     dependencies:
       cac: 6.7.14
       debug: 4.3.6
       pathe: 1.1.2
       tinyrainbow: 1.2.0
-      vite: 5.2.13(@types/node@22.5.2)(sass@1.77.8)
+      vite: 5.2.13(@types/node@22.5.2)(sass@1.78.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5552,7 +5538,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.2.13(@types/node@22.5.2)(sass@1.77.8):
+  vite@5.2.13(@types/node@22.5.2)(sass@1.78.0):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.44
@@ -5560,9 +5546,9 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.5.2
       fsevents: 2.3.3
-      sass: 1.77.8
+      sass: 1.78.0
 
-  vitest@2.0.5(@types/node@22.5.2)(sass@1.77.8):
+  vitest@2.0.5(@types/node@22.5.2)(sass@1.78.0):
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@vitest/expect': 2.0.5
@@ -5580,8 +5566,8 @@ snapshots:
       tinybench: 2.8.0
       tinypool: 1.0.0
       tinyrainbow: 1.2.0
-      vite: 5.2.13(@types/node@22.5.2)(sass@1.77.8)
-      vite-node: 2.0.5(@types/node@22.5.2)(sass@1.77.8)
+      vite: 5.2.13(@types/node@22.5.2)(sass@1.78.0)
+      vite-node: 2.0.5(@types/node@22.5.2)(sass@1.78.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.5.2
