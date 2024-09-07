@@ -191,14 +191,14 @@ importers:
   packages/stylelint-vue-scss:
     dependencies:
       postcss:
-        specifier: ^8.4.44
-        version: 8.4.44
+        specifier: ^8.4.45
+        version: 8.4.45
       postcss-html:
         specifier: ^1.7.0
         version: 1.7.0
       postcss-scss:
         specifier: ^4.0.9
-        version: 4.0.9(postcss@8.4.44)
+        version: 4.0.9(postcss@8.4.45)
       sass:
         specifier: ^1.78.0
         version: 1.78.0
@@ -2298,6 +2298,10 @@ packages:
 
   postcss@8.4.44:
     resolution: {integrity: sha512-Aweb9unOEpQ3ezu4Q00DPvvM2ZTUitJdNKeP/+uQgr1IBIqu574IaZoURId7BKtWMREwzKa9OgzPzezWGPWFQw==}
+    engines: {node: ^10 || ^12 || >=14}
+
+  postcss@8.4.45:
+    resolution: {integrity: sha512-7KTLTdzdZZYscUc65XmjFiB73vBhBfbPztCYdUNvlaso9PrzjzcmjqBPR0lNGkcVlcO4BjiO5rK/qNz+XAen1Q==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -5004,6 +5008,10 @@ snapshots:
     dependencies:
       postcss: 8.4.44
 
+  postcss-scss@4.0.9(postcss@8.4.45):
+    dependencies:
+      postcss: 8.4.45
+
   postcss-selector-parser@6.1.0:
     dependencies:
       cssesc: 3.0.0
@@ -5027,6 +5035,12 @@ snapshots:
       source-map-js: 1.2.0
 
   postcss@8.4.44:
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.1
+      source-map-js: 1.2.0
+
+  postcss@8.4.45:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.1
@@ -5541,7 +5555,7 @@ snapshots:
   vite@5.2.13(@types/node@22.5.2)(sass@1.78.0):
     dependencies:
       esbuild: 0.20.2
-      postcss: 8.4.44
+      postcss: 8.4.45
       rollup: 4.18.0
     optionalDependencies:
       '@types/node': 22.5.2
