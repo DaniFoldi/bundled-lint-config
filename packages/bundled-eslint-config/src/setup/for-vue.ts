@@ -65,6 +65,7 @@ export const vueRules: Rules = {
       ignoreUrls: true
     }
   ],
+  '@stylistic/js/max-len': 'off',
   'vue/multi-word-component-names': 'off',
   'vue/no-child-content': 'error',
   'vue/no-constant-condition': 'warn',
