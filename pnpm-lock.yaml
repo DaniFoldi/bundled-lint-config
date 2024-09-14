@@ -191,14 +191,14 @@ importers:
   packages/stylelint-vue-scss:
     dependencies:
       postcss:
-        specifier: ^8.4.45
-        version: 8.4.45
+        specifier: ^8.4.47
+        version: 8.4.47
       postcss-html:
         specifier: ^1.7.0
         version: 1.7.0
       postcss-scss:
         specifier: ^4.0.9
-        version: 4.0.9(postcss@8.4.45)
+        version: 4.0.9(postcss@8.4.47)
       sass:
         specifier: ^1.78.0
         version: 1.78.0
@@ -212,8 +212,8 @@ importers:
         specifier: ^6.0.4
         version: 6.0.4(stylelint@16.9.0(typescript@5.6.2))
       stylelint-scss:
-        specifier: ^6.5.1
-        version: 6.5.1(stylelint@16.9.0(typescript@5.6.2))
+        specifier: ^6.6.0
+        version: 6.6.0(stylelint@16.9.0(typescript@5.6.2))
 
 packages:
 
@@ -2594,6 +2594,12 @@ packages:
 
   stylelint-scss@6.5.1:
     resolution: {integrity: sha512-ZLqdqihm6uDYkrsOeD6YWb+stZI8Wn92kUNDhE4M+g9g1aCnRv0JlOrttFiAJJwaNzpdQgX3YJb5vDQXVuO9Ww==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      stylelint: ^16.0.2
+
+  stylelint-scss@6.6.0:
+    resolution: {integrity: sha512-aK2Rdt41Jt9Gv/ClMN5BYhP7xR3IEoRMDKpJkIDI9frZQ6KkxeLishusxs2JtEGZdJWXvPoBOhswNxj3gx8L/g==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.0.2
@@ -5072,6 +5078,10 @@ snapshots:
     dependencies:
       postcss: 8.4.45
 
+  postcss-scss@4.0.9(postcss@8.4.47):
+    dependencies:
+      postcss: 8.4.47
+
   postcss-selector-parser@6.1.0:
     dependencies:
       cssesc: 3.0.0
@@ -5404,6 +5414,17 @@ snapshots:
       stylelint: 16.9.0(typescript@5.6.2)
 
   stylelint-scss@6.5.1(stylelint@16.9.0(typescript@5.6.2)):
+    dependencies:
+      css-tree: 2.3.1
+      is-plain-object: 5.0.0
+      known-css-properties: 0.34.0
+      postcss-media-query-parser: 0.2.3
+      postcss-resolve-nested-selector: 0.1.6
+      postcss-selector-parser: 6.1.2
+      postcss-value-parser: 4.2.0
+      stylelint: 16.9.0(typescript@5.6.2)
+
+  stylelint-scss@6.6.0(stylelint@16.9.0(typescript@5.6.2)):
     dependencies:
       css-tree: 2.3.1
       is-plain-object: 5.0.0
