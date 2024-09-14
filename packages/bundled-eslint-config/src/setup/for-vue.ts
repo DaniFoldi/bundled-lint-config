@@ -100,6 +100,7 @@ export const vueRules: Rules = {
   'vue/require-emit-validator': 'error',
   'vue/require-explicit-slots': 'error',
   'vue/script-indent': [ 'warn', 2, { baseIndent: 1, switchCase: 1 }],
+  '@stylistic/js/indent': 'off',
   'vue/space-in-parens': [ 'warn', 'never' ],
   'vue/space-infix-ops': 'warn',
   'vue/static-class-names-order': 'warn',
