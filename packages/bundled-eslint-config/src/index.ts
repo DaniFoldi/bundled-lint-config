@@ -11,6 +11,8 @@ import { vitestRules, vitestPlugins, vitestLanguageOptions, vitestSettings } fro
 import { vueLanguageOptions, vuePlugins, vueRules, vueSettings } from './setup/for-vue'
 import { workersLanguageOptions, workersPlugins, workersRules, workersSettings } from './setup/for-workers'
 import { linterOptions, hasFile } from './util'
+import { processors as vueProcessors } from 'eslint-plugin-vue'
+import { processors as astroProcessors } from 'eslint-plugin-astro'
 
 
 const ignores = {
@@ -41,7 +43,8 @@ const astroPreset = {
   rules: { ...jsRules, ...tsRules, ...astroRules },
   plugins: { ...jsPlugins, ...tsPlugins, ...astroPlugins },
   languageOptions: astroLanguageOptions,
-  settings: { ...jsSettings, ...tsSettings, ...astroSettings }
+  settings: { ...jsSettings, ...tsSettings, ...astroSettings },
+  processor: astroProcessors.astro
 } satisfies FlatESLintConfig
 
 const vuePreset = {
@@ -50,7 +53,8 @@ const vuePreset = {
   rules: { ...jsRules, ...tsRules, ...vueRules },
   plugins: { ...jsPlugins, ...tsPlugins, ...vuePlugins },
   languageOptions: vueLanguageOptions,
-  settings: { ...jsSettings, ...tsSettings, ...vueSettings }
+  settings: { ...jsSettings, ...tsSettings, ...vueSettings },
+  processor: vueProcessors.vue
 } satisfies FlatESLintConfig
 
 const workersPreset = {

@@ -39,7 +39,7 @@ export const vueRules: Rules = {
   'vue/brace-style': [ 'warn', '1tbs' ],
   'vue/comma-dangle': [ 'warn', 'never' ],
   'vue/comma-spacing': [ 'warn', { after: true, before: false }],
-  'vue/comment-directive': [ 'error', { reportUnusedDisableDirectives: false }],
+  'vue/comment-directive': [ 'error', { reportUnusedDisableDirectives: true }],
   'vue/component-api-style': [ 'error', [ 'script-setup', 'composition' ]],
   'vue/component-name-in-template-casing': [ 'warn', 'PascalCase' ],
   'vue/block-order': [ 'warn', { order: [ 'template', 'script[setup]', 'script:not([setup])', 'style:not([scoped])', 'style[scoped]' ] }],
