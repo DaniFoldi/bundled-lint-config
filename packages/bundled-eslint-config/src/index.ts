@@ -11,7 +11,7 @@ import { vitestRules, vitestPlugins, vitestLanguageOptions, vitestSettings } fro
 import { vueLanguageOptions, vuePlugins, vueRules, vueSettings } from './setup/for-vue'
 import { workersLanguageOptions, workersPlugins, workersRules, workersSettings } from './setup/for-workers'
 import { linterOptions, hasFile } from './util'
-import { processors as vueProcessors } from 'eslint-plugin-vue'
+import eslintPluginVue from 'eslint-plugin-vue'
 import { processors as astroProcessors } from 'eslint-plugin-astro'
 
 
@@ -54,7 +54,7 @@ const vuePreset = {
   plugins: { ...jsPlugins, ...tsPlugins, ...vuePlugins },
   languageOptions: vueLanguageOptions,
   settings: { ...jsSettings, ...tsSettings, ...vueSettings },
-  processor: vueProcessors.vue
+  processor: eslintPluginVue.processors.vue
 } satisfies FlatESLintConfig
 
 const workersPreset = {
