@@ -112,7 +112,7 @@ importers:
         specifier: ^52.0.0
         version: 52.0.0
       '@types/node':
-        specifier: ^22.5.4
+        specifier: ^22.5.5
         version: 22.5.5
       esbuild:
         specifier: ^0.23.1
