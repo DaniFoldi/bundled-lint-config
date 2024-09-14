@@ -19,10 +19,10 @@
   "devDependencies": {
     "@eslint-types/typescript-eslint": "^7.5.0",
     "@eslint-types/unicorn": "^52.0.0",
-    "@types/node": "^22.5.1",
+    "@types/node": "^22.5.4",
     "esbuild": "^0.23.1",
     "some-tsconfig-preset": "^1.5.0",
-    "typescript": "^5.5.4",
+    "typescript": "^5.6.2",
     "vitest": "^2.0.5"
   },
   "dependencies": {
