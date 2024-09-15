@@ -33,7 +33,7 @@ export const vueRules: Rules = {
   'vue/array-bracket-spacing': [ 'warn', 'always', { arraysInArrays: false, objectsInArrays: false }],
   'vue/arrow-spacing': 'warn',
   'vue/attributes-order': [ 'warn', { alphabetical: true }],
-  'vue/block-lang': [ 'error', { script: { lang: 'ts' }, style: { lang: 'scss' } }],
+  'vue/block-lang': [ 'error', { script: { lang: 'ts' } }],
   'vue/block-spacing': [ 'warn', 'always' ],
   'vue/block-tag-newline': [ 'warn', { maxEmptyLines: 0, multiline: 'always', singleline: 'always' }],
   'vue/brace-style': [ 'warn', '1tbs' ],
