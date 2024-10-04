@@ -3,7 +3,7 @@ import eslintPluginStylisticJs from '@stylistic/eslint-plugin-js'
 import eslintPluginStylisticPlus from '@stylistic/eslint-plugin-plus'
 import eslintPluginCasePolice from 'eslint-plugin-case-police'
 // @ ts-expect-error: No types
-// import eslintPluginImport from 'eslint-plugin-import-x'
+import eslintPluginImport from 'eslint-plugin-import-x'
 import eslintPluginJsdoc from 'eslint-plugin-jsdoc'
 // @ts-expect-error: No types
 import eslintPluginPromise from 'eslint-plugin-promise'
@@ -16,24 +16,19 @@ import { fixupPluginRules } from '@eslint/compat'
 
 
 export const jsSettings: Settings = {
-  'import/parsers': {
-    espree: [ '.js', '.cjs', '.mjs', '.jsx' ]
-  },
-  /* 'import/resolver': {
-    typescript: true
-  }, */
   'import/extensions': [
     '.cjs',
     '.js',
     '.jsx',
     '.mjs'
-  ]
-  /*
+  ],
   'import/external-module-folders': [ 'node_modules', 'node_modules/@types' ],
   'import/parsers': {
+    espree: [ '.js', '.cjs', '.mjs', '.jsx' ],
     '@typescript-eslint/parser': [ '.ts', '.tsx' ]
   },
   'import/resolver': {
+    typescript: true,
     'node': {
       'extensions': [
         '.cjs',
@@ -45,7 +40,6 @@ export const jsSettings: Settings = {
       ]
     }
   }
-  */
 }
 
 export const jsGlobals: Globals = {
