@@ -13,6 +13,7 @@ import { workersLanguageOptions, workersPlugins, workersRules, workersSettings }
 import { linterOptions, hasFile } from './util'
 import eslintPluginVue from 'eslint-plugin-vue'
 import { processors as astroProcessors } from 'eslint-plugin-astro'
+import globals from 'globals'
 
 
 const ignores = {
@@ -44,7 +45,7 @@ const astroPreset = {
   plugins: { ...jsPlugins, ...tsPlugins, ...astroPlugins },
   languageOptions: astroLanguageOptions,
   settings: { ...jsSettings, ...tsSettings, ...astroSettings },
-  processor: astroProcessors.astro
+  processor: astroProcessors['client-side-ts']
 } satisfies FlatESLintConfig
 
 const vuePreset = {
@@ -102,7 +103,7 @@ const vitestPreset = {
   settings: vitestSettings
 } satisfies FlatESLintConfig
 
-type Preset = 'js' | 'ts' | 'astro' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'vitest'
+type Preset = 'js' | 'ts' | 'astro' | 'astroClient' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'vitest'
 type Overrides = Partial<Record<Preset, Partial<FlatESLintConfig>>>
 
 export function config(overrides: Overrides = {}, newItems: FlatESLintConfig[] = []): FlatESLintConfig[] {
@@ -112,6 +113,12 @@ export function config(overrides: Overrides = {}, newItems: FlatESLintConfig[] =
     defu(overrides.js, jsPreset),
     defu(overrides.ts, tsPreset),
     defu(overrides.astro, astroPreset),
+    defu(overrides.astroClient, {
+      files: [ '**/*.astro/*.ts', '*.astro/*.ts' ],
+      languageOptions: {
+        globals: globals.browser
+      }
+    }, tsPreset),
     defu(overrides.vue, vuePreset),
     defu(overrides.workers, workersPreset),
     defu(overrides.react, reactPreset),

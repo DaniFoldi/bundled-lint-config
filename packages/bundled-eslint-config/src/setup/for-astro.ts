@@ -1,7 +1,6 @@
 import { parser } from 'typescript-eslint'
 import * as astroParser from 'astro-eslint-parser'
 import eslintPluginAstro from 'eslint-plugin-astro'
-// import {processor} from 'eslint-plugin-astro/processor'
 import type { Globals, Plugins, LanguageOptions, Rules, Settings } from '../util'
 
 
@@ -26,7 +25,6 @@ export const astroLanguageOptions: LanguageOptions = {
     // @ts-expect-error types are borked
     parser,
     project: true,
-    // processor: "astro/client-side-ts"
     extraFileExtensions: [ '.astro' ]
   }
 }
