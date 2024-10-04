@@ -559,6 +559,8 @@ export const jsRules: Rules = {
   'unicorn/import-style': 'off',
   'unicorn/new-for-builtins': 'error',
   'unicorn/no-abusive-eslint-disable': 'error',
+  'unicorn/prefer-math-min-max': 'warn',
+  'unicorn/prefer-global-this': 'warn',
   'unicorn/no-array-push-push': 'error',
   'unicorn/no-console-spaces': 'error',
   'unicorn/no-document-cookie': 'error',
