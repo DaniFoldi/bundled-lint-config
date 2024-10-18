@@ -154,8 +154,8 @@ importers:
         specifier: ^1.10.0
         version: 1.10.0(stylelint@16.10.0(typescript@5.6.2))
       stylelint-scss:
-        specifier: ^6.7.0
-        version: 6.7.0(stylelint@16.10.0(typescript@5.6.2))
+        specifier: ^6.8.1
+        version: 6.8.1(stylelint@16.10.0(typescript@5.6.2))
     devDependencies:
       '@types/node':
         specifier: ^20.16.11
@@ -2147,6 +2147,9 @@ packages:
   mdn-data@2.10.0:
     resolution: {integrity: sha512-qq7C3EtK3yJXMwz1zAab65pjl+UhohqMOctTgcqjLOWABqmwj+me02LSsCuEUxnst9X1lCBpoE0WArGKgdGDzw==}
 
+  mdn-data@2.11.1:
+    resolution: {integrity: sha512-Hdx3wmyqPFrhd6YHVuSkUK2eIGAcxR0xlndcgZqjA68yMJTbfXrjJwbgsBOsNjI7LnBIVUQnmyMVSdi/ob0GpQ==}
+
   meow@13.2.0:
     resolution: {integrity: sha512-pxQJQzB6djGPXh08dacEloMFopsOqGVRKFPYvPOt9XDZ1HasbgDZA74CJGreSU4G3Ak7EFJGoiH2auq+yXISgA==}
     engines: {node: '>=18'}
@@ -2629,6 +2632,12 @@ packages:
 
   stylelint-scss@6.7.0:
     resolution: {integrity: sha512-RFIa2A+pVWS5wjNT+whtK7wsbZEWazyqesCuSaPbPlZ8lh2TujwVJSnCYJijg6ChZzwI8pZPRZS1L6A9aCbXDg==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      stylelint: ^16.0.2
+
+  stylelint-scss@6.8.1:
+    resolution: {integrity: sha512-al+5eRb72bKrFyVAY+CLWKUMX+k+wsDCgyooSfhISJA2exqnJq1PX1iIIpdrvhu3GtJgNJZl9/BIW6EVSMCxdg==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.0.2
@@ -4949,6 +4958,8 @@ snapshots:
 
   mdn-data@2.10.0: {}
 
+  mdn-data@2.11.1: {}
+
   meow@13.2.0: {}
 
   merge2@1.4.1: {}
@@ -5462,6 +5473,18 @@ snapshots:
       css-tree: 2.3.1
       is-plain-object: 5.0.0
       known-css-properties: 0.34.0
+      postcss-media-query-parser: 0.2.3
+      postcss-resolve-nested-selector: 0.1.6
+      postcss-selector-parser: 6.1.2
+      postcss-value-parser: 4.2.0
+      stylelint: 16.10.0(typescript@5.6.2)
+
+  stylelint-scss@6.8.1(stylelint@16.10.0(typescript@5.6.2)):
+    dependencies:
+      css-tree: 3.0.0
+      is-plain-object: 5.0.0
+      known-css-properties: 0.34.0
+      mdn-data: 2.11.1
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.6
       postcss-selector-parser: 6.1.2
