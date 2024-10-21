@@ -17,7 +17,7 @@ import globals from 'globals'
 
 
 const ignores = {
-  ignores: [ '**/coverage/**', '**/dist/**', '**/*wasm-bindgen/**' ]
+  ignores: [ '**/coverage/**', '**/dist/**', '**/*wasm-bindgen/**', '**/public/**' ]
 } satisfies FlatESLintConfig
 
 const jsPreset = {
