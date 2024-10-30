@@ -184,7 +184,7 @@ export const jsRules: Rules = {
     'always'
   ],
   '@stylistic/js/brace-style': [
-    'error',
+    'warn',
     '1tbs'
   ],
   '@stylistic/js/comma-dangle': [
@@ -484,7 +484,7 @@ export const jsRules: Rules = {
   'sort-keys': 'off',
   '@stylistic/js/space-before-blocks': 'warn',
   '@stylistic/js/space-before-function-paren': [
-    'error',
+    'warn',
     {
       'anonymous': 'never',
       'asyncArrow': 'always',
