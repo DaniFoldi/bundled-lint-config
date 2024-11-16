@@ -548,7 +548,7 @@ export const jsRules: Rules = {
   'unicorn/empty-brace-spaces': 'warn',
   'unicorn/error-message': 'error',
   'unicorn/escape-case': 'error',
-  'unicorn/expiring-todo-comments': 'warn',
+  'unicorn/expiring-todo-comments': 'off',
   'unicorn/explicit-length-check': 'warn',
   'unicorn/import-style': 'off',
   'unicorn/new-for-builtins': 'error',
