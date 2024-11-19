@@ -14,6 +14,7 @@ import { linterOptions, hasFile } from './util'
 import eslintPluginVue from 'eslint-plugin-vue'
 import { processors as astroProcessors } from 'eslint-plugin-astro'
 import globals from 'globals'
+import { playwrightRules, playwrightPlugins, playwrightLanguageOptions, playwrightSettings } from './setup/for-playwright'
 
 
 const ignores = {
@@ -95,7 +96,7 @@ const nodePreset = {
 } satisfies FlatESLintConfig
 
 const vitestPreset = {
-  files: [ '**/test?(s)/**/*', '**/*.test.?(c|m)@(j|t)s?(x)' ],
+  files: [ '**/test?(s)/**/*' ],
   linterOptions,
   rules: vitestRules,
   plugins: vitestPlugins,
@@ -103,7 +104,16 @@ const vitestPreset = {
   settings: vitestSettings
 } satisfies FlatESLintConfig
 
-type Preset = 'js' | 'ts' | 'astro' | 'astroClient' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'vitest'
+const playwrightPreset = {
+  files: [ '**/e2e/**/*' ],
+  linterOptions,
+  rules: playwrightRules,
+  plugins: playwrightPlugins,
+  languageOptions: playwrightLanguageOptions,
+  settings: playwrightSettings
+} satisfies FlatESLintConfig
+
+type Preset = 'js' | 'ts' | 'astro' | 'astroClient' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'vitest' | 'playwright'
 type Overrides = Partial<Record<Preset, Partial<FlatESLintConfig>>>
 
 export function config(overrides: Overrides = {}, newItems: FlatESLintConfig[] = []): FlatESLintConfig[] {
@@ -125,6 +135,7 @@ export function config(overrides: Overrides = {}, newItems: FlatESLintConfig[] =
     defu(overrides.reactNative, reactNativePreset),
     defu(overrides.node, nodePreset),
     defu(overrides.vitest, vitestPreset),
+    defu(overrides.playwright, playwrightPreset),
     ...newItems
   ])
 }

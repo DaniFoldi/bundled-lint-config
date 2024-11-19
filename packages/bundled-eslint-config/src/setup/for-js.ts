@@ -62,7 +62,7 @@ export const jsPlugins: Plugins = {
   // @ts-expect-error weird types
   'case-police': eslintPluginCasePolice,
   // @ts-expect-error weird types
-  // import: eslintPluginImport,
+  import: eslintPluginImport,
   jsdoc: eslintPluginJsdoc,
   promise: eslintPluginPromise,
   security: eslintPluginSecurity,
