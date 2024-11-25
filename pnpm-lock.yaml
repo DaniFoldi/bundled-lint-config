@@ -42,7 +42,7 @@ importers:
         specifier: ^6.1.4
         version: 6.1.4
       eslint:
-        specifier: ^9.13.0
+        specifier: ^9.15.0
         version: 9.15.0
       eslint-config-flat-gitignore:
         specifier: ^0.3.0
