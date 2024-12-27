@@ -20,7 +20,7 @@
     "@eslint-types/typescript-eslint": "^7.5.0",
     "@eslint-types/unicorn": "^52.0.0",
     "@types/node": "^22.10.0",
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.24.2",
     "some-tsconfig-preset": "^1.5.0",
     "typescript": "^5.7.2",
     "vitest": "^2.1.6"
