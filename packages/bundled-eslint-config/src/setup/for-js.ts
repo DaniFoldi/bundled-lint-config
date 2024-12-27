@@ -389,7 +389,7 @@ export const jsRules: Rules = {
       'maxEOF': 0
     }
   ],
-  'no-new-symbol': 'error',
+  'no-new-native-nonconstructor': 'error',
   'no-nonoctal-decimal-escape': 'error',
   'no-obj-calls': 'error',
   'no-octal': 'error',

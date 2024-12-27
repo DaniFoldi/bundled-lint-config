@@ -18,10 +18,14 @@ import { playwrightRules, playwrightPlugins, playwrightLanguageOptions, playwrig
 
 
 const ignores = {
+  // @ts-expect-error define-config types are old
+  name: 'ignored',
   ignores: [ '**/coverage/**', '**/dist/**', '**/*wasm-bindgen/**', '**/public/**' ]
 } satisfies FlatESLintConfig
 
 const jsPreset = {
+  // @ts-expect-error define-config types are old
+  name: 'js',
   files: [ '**/*.?(c|m)js?(x)' ],
   linterOptions,
   rules: jsRules,
@@ -31,6 +35,8 @@ const jsPreset = {
 } satisfies FlatESLintConfig
 
 const tsPreset = {
+  // @ts-expect-error define-config types are old
+  name: 'ts',
   files: [ '**/*.?(c|m)ts?(x)' ],
   linterOptions,
   rules: { ...jsRules, ...tsRules },
@@ -40,6 +46,8 @@ const tsPreset = {
 } satisfies FlatESLintConfig
 
 const astroPreset = {
+  // @ts-expect-error define-config types are old
+  name: 'astro',
   files: [ '**/*.astro' ],
   linterOptions,
   rules: { ...jsRules, ...tsRules, ...astroRules },
@@ -50,6 +58,8 @@ const astroPreset = {
 } satisfies FlatESLintConfig
 
 const vuePreset = {
+  // @ts-expect-error define-config types are old
+  name: 'vue',
   files: [ '**/*.vue' ],
   linterOptions,
   rules: { ...jsRules, ...tsRules, ...vueRules },
@@ -60,7 +70,9 @@ const vuePreset = {
 } satisfies FlatESLintConfig
 
 const workersPreset = {
-  files: [ await hasFile('wrangler.toml') ? '**/*.?(m)@(j|t)s' : '**/*worker*/**/*.?(m)@(j|t)s' ],
+  // @ts-expect-error define-config types are old
+  name: 'workers',
+  files: [ (await hasFile('wrangler.toml') || await hasFile('wrangler.json')) ? '**/*.?(m)@(j|t)s' : '**/*worker*/**/*.?(m)@(j|t)s' ],
   linterOptions,
   rules: workersRules,
   plugins: workersPlugins,
@@ -69,6 +81,8 @@ const workersPreset = {
 } satisfies FlatESLintConfig
 
 const reactPreset = {
+  // @ts-expect-error define-config types are old
+  name: 'react',
   files: [ '**/*.?(c|m)@(j|t)sx' ],
   linterOptions,
   rules: reactRules,
@@ -78,6 +92,8 @@ const reactPreset = {
 } satisfies FlatESLintConfig
 
 const reactNativePreset = {
+  // @ts-expect-error define-config types are old
+  name: 'react-native',
   files: [ (await hasFile('app.json') || await hasFile('app.config.js')) ? '**/*.?(c|m)@(j|t)sx' : '**/*app*/**/*.?(c|m)@(j|t)sx' ],
   linterOptions,
   rules: reactNativeRules,
@@ -87,6 +103,8 @@ const reactNativePreset = {
 } satisfies FlatESLintConfig
 
 const nodePreset = {
+  // @ts-expect-error define-config types are old
+  name: 'node',
   files: [ '**/scripts/**/*', '**/*.config.?(c|m)@(j|t)s' ],
   linterOptions,
   rules: nodeRules,
@@ -96,6 +114,8 @@ const nodePreset = {
 } satisfies FlatESLintConfig
 
 const vitestPreset = {
+  // @ts-expect-error define-config types are old
+  name: 'vitest',
   files: [ '**/test?(s)/**/*' ],
   linterOptions,
   rules: vitestRules,
@@ -105,6 +125,8 @@ const vitestPreset = {
 } satisfies FlatESLintConfig
 
 const playwrightPreset = {
+  // @ts-expect-error define-config types are old
+  name: 'playwright',
   files: [ '**/e2e/**/*' ],
   linterOptions,
   rules: playwrightRules,
