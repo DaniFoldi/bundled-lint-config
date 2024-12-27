@@ -42,5 +42,5 @@ export const playwrightRules: Rules = {
   'playwright/valid-describe-callback': 'error',
   'playwright/valid-expect': 'error',
   'playwright/valid-expect-in-promise': 'error',
-  'playwright/valid-title': 'error',
+  'playwright/valid-title': 'error'
 }
