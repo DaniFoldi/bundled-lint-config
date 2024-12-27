@@ -232,6 +232,7 @@ export const jsRules: Rules = {
   ],
   'getter-return': 'error',
   // 'import/no-unresolved': 'error',
+  /*
   'import/named': 'off',
   'import/namespace': 'error',
   'import/default': 'error',
@@ -273,6 +274,7 @@ export const jsRules: Rules = {
   'import/no-unassigned-import': 'off',
   'import/no-webpack-loader-syntax': 'error',
   'import/order': 'off',
+  */
   '@stylistic/js/indent': [
     'warn',
     2,
