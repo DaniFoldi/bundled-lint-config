@@ -21,8 +21,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0(eslint@9.17.0)
       '@eslint/compat':
-        specifier: ^1.2.4
-        version: 1.2.4(eslint@9.17.0)
+        specifier: ^1.2.5
+        version: 1.2.5(eslint@9.17.0)
       '@stylistic/eslint-plugin-js':
         specifier: ^2.12.1
         version: 2.12.1(eslint@9.17.0)
@@ -575,8 +575,8 @@ packages:
   '@eslint-types/unicorn@52.0.0':
     resolution: {integrity: sha512-1+Om/IekT0AwlPiARvhbtKsSgVMu3ZAtP99YCzhHkDSnF5f8sQegh8/3ZmMhlCnKipa7/x8qEC7Bn4rbaagnSA==}
 
-  '@eslint/compat@1.2.4':
-    resolution: {integrity: sha512-S8ZdQj/N69YAtuqFt7653jwcvuUj131+6qGLUyDqfDg1OIoBQ66OCuXC473YQfO2AaxITTutiRQiDwoo7ZLYyg==}
+  '@eslint/compat@1.2.5':
+    resolution: {integrity: sha512-5iuG/StT+7OfvhoBHPlmxkPA9om6aDUFgmD4+mWKAGsYt4vCe8rypneG03AuseyRHBmcCLXQtIH5S26tIoggLg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^9.10.0
@@ -3142,7 +3142,7 @@ snapshots:
 
   '@eslint-types/unicorn@52.0.0': {}
 
-  '@eslint/compat@1.2.4(eslint@9.17.0)':
+  '@eslint/compat@1.2.5(eslint@9.17.0)':
     optionalDependencies:
       eslint: 9.17.0
 
@@ -4216,7 +4216,7 @@ snapshots:
 
   eslint-config-flat-gitignore@1.0.0(eslint@9.17.0):
     dependencies:
-      '@eslint/compat': 1.2.4(eslint@9.17.0)
+      '@eslint/compat': 1.2.5(eslint@9.17.0)
       eslint: 9.17.0
       find-up-simple: 1.0.0
 
