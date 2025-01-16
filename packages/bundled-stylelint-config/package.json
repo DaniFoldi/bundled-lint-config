@@ -1,6 +1,6 @@
 {
   "name": "bundled-stylelint-config",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A preset for stylelint",
   "main": "dist/index.js",
   "type": "module",
@@ -28,7 +28,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^22.10.5",
+    "@types/node": "^22.10.7",
     "esbuild": "^0.24.2",
     "some-tsconfig-preset": "^1.6.0",
     "typescript": "^5.7.3"
@@ -37,11 +37,11 @@
     "@stylistic/stylelint-plugin": "^3.1.1",
     "find-up": "^7.0.0",
     "parse-gitignore": "^2.0.0",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.1",
     "postcss-scss": "^4.0.9",
-    "stylelint": "^16.13.0",
+    "stylelint": "^16.13.2",
     "stylelint-config-idiomatic-order": "^10.0.0",
     "stylelint-high-performance-animation": "^1.10.0",
-    "stylelint-scss": "^6.10.0"
+    "stylelint-scss": "^6.10.1"
   }
 }
