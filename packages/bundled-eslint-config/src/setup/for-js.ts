@@ -12,7 +12,6 @@ import eslintPluginSecurity from 'eslint-plugin-security'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import globals from 'globals'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
-import { fixupPluginRules } from '@eslint/compat'
 
 
 export const jsSettings: Settings = {
@@ -58,7 +57,7 @@ export const jsLanguageOptions: LanguageOptions = {
 }
 
 export const jsPlugins: Plugins = {
-  '@brettz9': fixupPluginRules(brettz9EslintPlugin),
+  '@brettz9': brettz9EslintPlugin,
   // @ts-expect-error weird types
   'case-police': eslintPluginCasePolice,
   // @ts-expect-error weird types
