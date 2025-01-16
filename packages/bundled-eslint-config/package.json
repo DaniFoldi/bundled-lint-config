@@ -17,8 +17,6 @@
     "dist"
   ],
   "devDependencies": {
-    "@eslint-types/typescript-eslint": "^7.5.0",
-    "@eslint-types/unicorn": "^52.0.0",
     "@types/node": "^22.10.5",
     "esbuild": "^0.24.2",
     "some-tsconfig-preset": "^1.6.0",
@@ -27,7 +25,6 @@
   },
   "dependencies": {
     "@brettz9/eslint-plugin": "^3.0.0",
-    "@eslint/compat": "^1.2.5",
     "@stylistic/eslint-plugin-js": "^2.12.1",
     "@stylistic/eslint-plugin-plus": "^2.12.1",
     "@stylistic/eslint-plugin-ts": "^2.12.1",
@@ -46,7 +43,7 @@
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-react": "^7.37.3",
     "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-native": "^4.1.0",
+    "eslint-plugin-react-native": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-unicorn": "^56.0.1",

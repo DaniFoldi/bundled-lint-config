@@ -20,9 +20,6 @@ importers:
       '@brettz9/eslint-plugin':
         specifier: ^3.0.0
         version: 3.0.0(eslint@9.18.0)
-      '@eslint/compat':
-        specifier: ^1.2.5
-        version: 1.2.5(eslint@9.18.0)
       '@stylistic/eslint-plugin-js':
         specifier: ^2.12.1
         version: 2.12.1(eslint@9.18.0)
@@ -81,8 +78,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(eslint@9.18.0)
       eslint-plugin-react-native:
-        specifier: ^4.1.0
-        version: 4.1.0(eslint@9.18.0)
+        specifier: ^5.0.0
+        version: 5.0.0(eslint@9.18.0)
       eslint-plugin-react-refresh:
         specifier: ^0.4.16
         version: 0.4.16(eslint@9.18.0)
@@ -105,12 +102,6 @@ importers:
         specifier: ^9.4.3
         version: 9.4.3(eslint@9.18.0)
     devDependencies:
-      '@eslint-types/typescript-eslint':
-        specifier: ^7.5.0
-        version: 7.5.0
-      '@eslint-types/unicorn':
-        specifier: ^52.0.0
-        version: 52.0.0
       '@types/node':
         specifier: ^22.10.5
         version: 22.10.5
@@ -568,12 +559,6 @@ packages:
   '@eslint-community/regexpp@4.12.1':
     resolution: {integrity: sha512-CCZCDJuduB9OUkFkY2IgppNZMi2lBQgD2qzwXkEia16cge2pijY/aXi96CJMquDMn3nJdlPV1A5KrJEXwfLNzQ==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
-
-  '@eslint-types/typescript-eslint@7.5.0':
-    resolution: {integrity: sha512-zKvsPBDq6o0L4p2sRtq8fxOtGc+mm37aZSXLsiD4DIRl2kYUxKNO9CKDTAgmuMYUzih9J7lbLxAomreLrdAiVQ==}
-
-  '@eslint-types/unicorn@52.0.0':
-    resolution: {integrity: sha512-1+Om/IekT0AwlPiARvhbtKsSgVMu3ZAtP99YCzhHkDSnF5f8sQegh8/3ZmMhlCnKipa7/x8qEC7Bn4rbaagnSA==}
 
   '@eslint/compat@1.2.5':
     resolution: {integrity: sha512-5iuG/StT+7OfvhoBHPlmxkPA9om6aDUFgmD4+mWKAGsYt4vCe8rypneG03AuseyRHBmcCLXQtIH5S26tIoggLg==}
@@ -1541,10 +1526,10 @@ packages:
   eslint-plugin-react-native-globals@0.1.2:
     resolution: {integrity: sha512-9aEPf1JEpiTjcFAmmyw8eiIXmcNZOqaZyHO77wgm0/dWfT/oxC1SrIq8ET38pMxHYrcB6Uew+TzUVsBeczF88g==}
 
-  eslint-plugin-react-native@4.1.0:
-    resolution: {integrity: sha512-QLo7rzTBOl43FvVqDdq5Ql9IoElIuTdjrz9SKAXCvULvBoRZ44JGSkx9z4999ZusCsb4rK3gjS8gOGyeYqZv2Q==}
+  eslint-plugin-react-native@5.0.0:
+    resolution: {integrity: sha512-VyWlyCC/7FC/aONibOwLkzmyKg4j9oI8fzrk9WYNs4I8/m436JuOTAFwLvEn1CVvc7La4cPfbCyspP4OYpP52Q==}
     peerDependencies:
-      eslint: ^3.17.0 || ^4 || ^5 || ^6 || ^7 || ^8
+      eslint: ^3.17.0 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
   eslint-plugin-react-refresh@0.4.16:
     resolution: {integrity: sha512-slterMlxAhov/DZO8NScf6mEeMBBXodFUolijDvrtTxyezyLoTQaa73FyYus/VbTdftd8wBgBxPMRk3poleXNQ==}
@@ -3138,10 +3123,6 @@ snapshots:
 
   '@eslint-community/regexpp@4.12.1': {}
 
-  '@eslint-types/typescript-eslint@7.5.0': {}
-
-  '@eslint-types/unicorn@52.0.0': {}
-
   '@eslint/compat@1.2.5(eslint@9.18.0)':
     optionalDependencies:
       eslint: 9.18.0
@@ -4346,7 +4327,7 @@ snapshots:
 
   eslint-plugin-react-native-globals@0.1.2: {}
 
-  eslint-plugin-react-native@4.1.0(eslint@9.18.0):
+  eslint-plugin-react-native@5.0.0(eslint@9.18.0):
     dependencies:
       eslint: 9.18.0
       eslint-plugin-react-native-globals: 0.1.2

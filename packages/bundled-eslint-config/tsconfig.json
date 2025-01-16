@@ -2,6 +2,6 @@
   "extends": "some-tsconfig-preset/node",
   "include": [ "src/**/*" ],
   "compilerOptions": {
-    "types": [ "node", "@eslint-types/unicorn" ]
+    "types": [ "node" ]
   }
 }
