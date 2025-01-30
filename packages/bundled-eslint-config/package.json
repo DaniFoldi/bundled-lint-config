@@ -25,9 +25,9 @@
   },
   "dependencies": {
     "@brettz9/eslint-plugin": "^3.0.0",
-    "@stylistic/eslint-plugin-js": "^2.13.0",
-    "@stylistic/eslint-plugin-plus": "^2.13.0",
-    "@stylistic/eslint-plugin-ts": "^2.13.0",
+    "@stylistic/eslint-plugin-js": "^3.0.0",
+    "@stylistic/eslint-plugin-plus": "^3.0.0",
+    "@stylistic/eslint-plugin-ts": "^3.0.0",
     "@vitest/eslint-plugin": "^1.1.25",
     "astro-eslint-parser": "^1.2.1",
     "defu": "^6.1.4",
