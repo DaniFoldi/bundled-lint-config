@@ -42,8 +42,8 @@ importers:
         specifier: ^9.19.0
         version: 9.19.0
       eslint-config-flat-gitignore:
-        specifier: ^1.0.1
-        version: 1.0.1(eslint@9.19.0)
+        specifier: ^2.0.0
+        version: 2.0.0(eslint@9.19.0)
       eslint-define-config:
         specifier: ^2.1.0
         version: 2.1.0
@@ -1392,8 +1392,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-flat-gitignore@1.0.1:
-    resolution: {integrity: sha512-wjBmJ8TAb67G2or/gBp/H62uCIkDCjpCmlGPSG41/7QagUjMgh+iegVB3gY8eNYhTAmecjKtclT4wGAjHz5yWA==}
+  eslint-config-flat-gitignore@2.0.0:
+    resolution: {integrity: sha512-9iH+DZO94uxsw5iFjzqa9GfahA5oK3nA1GoJK/6u8evAtooYJMwuSWiLcGDfrdLoqdQ5/kqFJKKuMY/+SAasvg==}
     peerDependencies:
       eslint: ^9.5.0
 
@@ -3156,7 +3156,7 @@ snapshots:
 
   '@stylistic/eslint-plugin-ts@3.0.1(eslint@9.19.0)(typescript@5.7.3)':
     dependencies:
-      '@typescript-eslint/utils': 8.21.0(eslint@9.19.0)(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.22.0(eslint@9.19.0)(typescript@5.7.3)
       eslint: 9.19.0
       eslint-visitor-keys: 4.2.0
       espree: 10.3.0
@@ -3887,7 +3887,7 @@ snapshots:
       eslint: 9.19.0
       semver: 7.6.3
 
-  eslint-config-flat-gitignore@1.0.1(eslint@9.19.0):
+  eslint-config-flat-gitignore@2.0.0(eslint@9.19.0):
     dependencies:
       '@eslint/compat': 1.2.5(eslint@9.19.0)
       eslint: 9.19.0
