@@ -21,13 +21,13 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0(eslint@9.19.0)
       '@stylistic/eslint-plugin-js':
-        specifier: ^3.0.0
+        specifier: ^3.0.1
         version: 3.0.1(eslint@9.19.0)
       '@stylistic/eslint-plugin-plus':
-        specifier: ^3.0.0
+        specifier: ^3.0.1
         version: 3.0.1(eslint@9.19.0)
       '@stylistic/eslint-plugin-ts':
-        specifier: ^3.0.0
+        specifier: ^3.0.1
         version: 3.0.1(eslint@9.19.0)(typescript@5.7.3)
       '@vitest/eslint-plugin':
         specifier: ^1.1.25
