@@ -106,7 +106,7 @@ export const vueRules: Rules = {
   'vue/space-infix-ops': 'warn',
   'vue/static-class-names-order': 'warn',
   'vue/template-curly-spacing': [ 'warn', 'never' ],
-  'vue/v-on-handler-style': 'warn',
+  // 'vue/v-on-handler-style': 'warn',
   'vue/valid-attribute-name': 'error',
   'vue/no-lone-template': 'warn',
   'vue/no-multiple-slot-args': 'warn',
