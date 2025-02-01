@@ -194,7 +194,7 @@ importers:
         specifier: ^1.83.4
         version: 1.83.4
       stylelint:
-        specifier: ^16.14.0
+        specifier: ^16.14.1
         version: 16.14.1(typescript@5.7.3)
       stylelint-high-performance-animation:
         specifier: ^1.10.0
