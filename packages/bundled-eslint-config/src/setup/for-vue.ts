@@ -1,5 +1,4 @@
 import { parser } from 'typescript-eslint'
-// @ts-expect-error package has no types
 import eslintPluginVue from 'eslint-plugin-vue'
 import vueEslintParser from 'vue-eslint-parser'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'

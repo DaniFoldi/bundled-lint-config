@@ -1,6 +1,6 @@
 {
   "extends": "some-tsconfig-preset/node",
-  "include": [ "src/**/*" ],
+  "include": [ "src/**/*", "*.ts" ],
   "compilerOptions": {
     "types": [ "node" ]
   }
