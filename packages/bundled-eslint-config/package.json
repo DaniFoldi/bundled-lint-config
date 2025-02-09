@@ -43,7 +43,7 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-native": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.18",
+    "eslint-plugin-react-refresh": "^0.4.19",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-unicorn": "^56.0.1",
     "eslint-plugin-vue": "^9.32.0",
