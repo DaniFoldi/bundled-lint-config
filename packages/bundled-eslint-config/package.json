@@ -13,7 +13,7 @@
     }
   },
   "files": [
-    "dist"
+    "src"
   ],
   "devDependencies": {
     "@types/node": "22.13.1",
