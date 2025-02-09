@@ -32,7 +32,7 @@ jobs:
 
     - name: Lint repository
       timeout-minutes: 5
-      run: pnpm lint
+      run: pnpm -r lint
 
   npm-publish:
     name: Publish package to npm
