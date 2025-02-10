@@ -1,7 +1,6 @@
-import type { LinterOptions } from 'eslint-define-config'
-
+import type { LinterOptions } from './types'
 
 export const linterOptions: LinterOptions = {
-  // noInlineConfig: true,
-  reportUnusedDisableDirectives: true
+  reportUnusedDisableDirectives: true,
+  reportUnusedInlineConfigs: 'warn'
 }

@@ -27,6 +27,7 @@ export const tsGlobals: Globals = {}
 
 export const tsLanguageOptions: LanguageOptions = {
   globals: tsGlobals,
+  // @ts-expect-error Types are weird
   parser,
   parserOptions: {
     ecmaVersion: 2023,

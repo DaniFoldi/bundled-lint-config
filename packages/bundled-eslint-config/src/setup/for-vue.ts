@@ -15,7 +15,6 @@ export const vueLanguageOptions: LanguageOptions = {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 'latest',
     extraFileExtensions: [ '.vue' ],
-    // @ts-expect-error types are borked
     parser,
     projectService: true,
     sourceType: 'module'

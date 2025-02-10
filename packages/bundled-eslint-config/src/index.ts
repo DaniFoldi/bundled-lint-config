@@ -1,6 +1,5 @@
 import { defu } from 'defu'
 import gitignore from 'eslint-config-flat-gitignore'
-import { defineFlatConfig, type FlatESLintConfig } from 'eslint-define-config'
 import { astroRules, astroPlugins, astroLanguageOptions, astroSettings } from './setup/for-astro'
 import { jsLanguageOptions, jsPlugins, jsRules, jsSettings } from './setup/for-js'
 import { nodeRules, nodePlugins, nodeLanguageOptions, nodeSettings } from './setup/for-node'
@@ -10,7 +9,7 @@ import { tsRules, tsPlugins, tsLanguageOptions, tsSettings } from './setup/for-t
 import { vitestRules, vitestPlugins, vitestLanguageOptions, vitestSettings } from './setup/for-vitest'
 import { vueLanguageOptions, vuePlugins, vueRules, vueSettings } from './setup/for-vue'
 import { workersLanguageOptions, workersPlugins, workersRules, workersSettings } from './setup/for-workers'
-import { linterOptions, hasFile } from './util'
+import { linterOptions, hasFile, type EslintConfig } from './util'
 import eslintPluginVue from 'eslint-plugin-vue'
 import { processors as astroProcessors } from 'eslint-plugin-astro'
 import globals from 'globals'
@@ -18,13 +17,11 @@ import { playwrightRules, playwrightPlugins, playwrightLanguageOptions, playwrig
 
 
 const ignores = {
-  // @ts-expect-error define-config types are old
   name: 'ignored',
   ignores: [ '**/coverage/**', '**/dist/**', '**/*wasm-bindgen/**', '**/public/**' ]
-} satisfies FlatESLintConfig
+} satisfies EslintConfig
 
 const jsPreset = {
-  // @ts-expect-error define-config types are old
   name: 'js',
   files: [ '**/*.?(c|m)js?(x)' ],
   linterOptions,
@@ -32,10 +29,9 @@ const jsPreset = {
   plugins: jsPlugins,
   languageOptions: jsLanguageOptions,
   settings: jsSettings
-} satisfies FlatESLintConfig
+} satisfies EslintConfig
 
 const tsPreset = {
-  // @ts-expect-error define-config types are old
   name: 'ts',
   files: [ '**/*.?(c|m)ts?(x)' ],
   linterOptions,
@@ -43,10 +39,9 @@ const tsPreset = {
   plugins: { ...jsPlugins, ...tsPlugins },
   languageOptions: tsLanguageOptions,
   settings: { ...jsSettings, ...tsSettings }
-} satisfies FlatESLintConfig
+} satisfies EslintConfig
 
 const astroPreset = {
-  // @ts-expect-error define-config types are old
   name: 'astro',
   files: [ '**/*.astro' ],
   linterOptions,
@@ -55,10 +50,9 @@ const astroPreset = {
   languageOptions: astroLanguageOptions,
   settings: { ...jsSettings, ...tsSettings, ...astroSettings },
   processor: astroProcessors['client-side-ts']
-} satisfies FlatESLintConfig
+} satisfies EslintConfig
 
 const vuePreset = {
-  // @ts-expect-error define-config types are old
   name: 'vue',
   files: [ '**/*.vue' ],
   linterOptions,
@@ -67,10 +61,9 @@ const vuePreset = {
   languageOptions: vueLanguageOptions,
   settings: { ...jsSettings, ...tsSettings, ...vueSettings },
   processor: eslintPluginVue.processors.vue
-} satisfies FlatESLintConfig
+} satisfies EslintConfig
 
 const workersPreset = {
-  // @ts-expect-error define-config types are old
   name: 'workers',
   files: [ (await hasFile('wrangler.toml') || await hasFile('wrangler.json')) ? '**/*.?(m)@(j|t)s' : '**/*worker*/**/*.?(m)@(j|t)s' ],
   linterOptions,
@@ -78,10 +71,9 @@ const workersPreset = {
   plugins: workersPlugins,
   languageOptions: workersLanguageOptions,
   settings: workersSettings
-} satisfies FlatESLintConfig
+} satisfies EslintConfig
 
 const reactPreset = {
-  // @ts-expect-error define-config types are old
   name: 'react',
   files: [ '**/*.?(c|m)@(j|t)sx' ],
   linterOptions,
@@ -89,10 +81,9 @@ const reactPreset = {
   plugins: reactPlugins,
   languageOptions: reactLanguageOptions,
   settings: reactSettings
-} satisfies FlatESLintConfig
+} satisfies EslintConfig
 
 const reactNativePreset = {
-  // @ts-expect-error define-config types are old
   name: 'react-native',
   files: [ (await hasFile('app.json') || await hasFile('app.config.js')) ? '**/*.?(c|m)@(j|t)sx' : '**/*app*/**/*.?(c|m)@(j|t)sx' ],
   linterOptions,
@@ -100,10 +91,9 @@ const reactNativePreset = {
   plugins: reactNativePlugins,
   languageOptions: reactNativeLanguageOptions,
   settings: reactNativeSettings
-} satisfies FlatESLintConfig
+} satisfies EslintConfig
 
 const nodePreset = {
-  // @ts-expect-error define-config types are old
   name: 'node',
   files: [ '**/scripts/**/*', '**/*.config.?(c|m)@(j|t)s' ],
   linterOptions,
@@ -111,10 +101,9 @@ const nodePreset = {
   plugins: nodePlugins,
   languageOptions: nodeLanguageOptions,
   settings: nodeSettings
-} satisfies FlatESLintConfig
+} satisfies EslintConfig
 
 const vitestPreset = {
-  // @ts-expect-error define-config types are old
   name: 'vitest',
   files: [ '**/test?(s)/**/*' ],
   linterOptions,
@@ -122,10 +111,9 @@ const vitestPreset = {
   plugins: vitestPlugins,
   languageOptions: vitestLanguageOptions,
   settings: vitestSettings
-} satisfies FlatESLintConfig
+} satisfies EslintConfig
 
 const playwrightPreset = {
-  // @ts-expect-error define-config types are old
   name: 'playwright',
   files: [ '**/e2e/**/*' ],
   linterOptions,
@@ -133,13 +121,13 @@ const playwrightPreset = {
   plugins: playwrightPlugins,
   languageOptions: playwrightLanguageOptions,
   settings: playwrightSettings
-} satisfies FlatESLintConfig
+} satisfies EslintConfig
 
 type Preset = 'js' | 'ts' | 'astro' | 'astroClient' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'vitest' | 'playwright'
-type Overrides = Partial<Record<Preset, Partial<FlatESLintConfig>>>
+type Overrides = Partial<Record<Preset, Partial<EslintConfig>>>
 
-export function config(overrides: Overrides = {}, newItems: FlatESLintConfig[] = []): FlatESLintConfig[] {
-  return defineFlatConfig([
+export function config(overrides: Overrides = {}, newItems: EslintConfig[] = []): EslintConfig[] {
+  return [
     gitignore({ strict: false }),
     ignores,
     defu(overrides.js, jsPreset),
@@ -159,7 +147,7 @@ export function config(overrides: Overrides = {}, newItems: FlatESLintConfig[] =
     defu(overrides.vitest, vitestPreset),
     defu(overrides.playwright, playwrightPreset),
     ...newItems
-  ])
+  ]
 }
 
 export default config()

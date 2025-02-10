@@ -22,7 +22,6 @@ export const astroLanguageOptions: LanguageOptions = {
     ecmaFeatures: {
       jsx: true
     },
-    // @ts-expect-error types are borked
     parser,
     project: true,
     extraFileExtensions: [ '.astro' ]
