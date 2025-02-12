@@ -105,7 +105,7 @@ const nodePreset = {
 
 const vitestPreset = {
   name: 'vitest',
-  files: [ '**/test?(s)/**/*' ],
+  files: [ '**/test?(s)/**/*', '**/e2e/**/test?(s)/**/*' ],
   linterOptions,
   rules: vitestRules,
   plugins: vitestPlugins,
@@ -115,7 +115,7 @@ const vitestPreset = {
 
 const playwrightPreset = {
   name: 'playwright',
-  files: [ '**/e2e/**/*' ],
+  files: [ '**/e2e/**/*', '!**/test?(s)/**/e2e/**/*' ],
   linterOptions,
   rules: playwrightRules,
   plugins: playwrightPlugins,
