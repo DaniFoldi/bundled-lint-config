@@ -145,5 +145,6 @@ export const tsRules: Rules = {
   '@typescript-eslint/restrict-plus-operands': 'error',
   '@typescript-eslint/no-unnecessary-template-expression': 'warn',
   '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
-  '@typescript-eslint/prefer-find': 'warn'
+  '@typescript-eslint/prefer-find': 'warn',
+  'jsdoc/require-param-type': 'off'
 }
