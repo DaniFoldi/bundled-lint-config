@@ -1,6 +1,7 @@
 import eslintPluginStylisticPlus from '@stylistic/eslint-plugin-plus'
 import eslintPluginStylisticTs from '@stylistic/eslint-plugin-ts'
 import { parser, plugin } from 'typescript-eslint'
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
 
@@ -9,9 +10,12 @@ export const tsSettings: Settings = {
     '@typescript-eslint/parser': [ '.ts', '.tsx' ],
     espree: [ '.js', '.cjs', '.mjs', '.jsx' ]
   },
-  'import/resolver': {
-    typescript: true
-  },
+  'import-x/resolver-next': [
+    createTypeScriptImportResolver({
+      alwaysTryTypes: true,
+      project: 'tsconfig.json'
+    })
+  ],
   'import/external-module-folders': [ 'node_modules', 'node_modules/@types' ],
   'import/extensions': [
     '.cjs',

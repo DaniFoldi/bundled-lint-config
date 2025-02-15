@@ -230,8 +230,7 @@ export const jsRules: Rules = {
     'multiline'
   ],
   'getter-return': 'error',
-  // 'import/no-unresolved': 'error',
-  /*
+  'import/no-unresolved': 'error',
   'import/named': 'off',
   'import/namespace': 'error',
   'import/default': 'error',
@@ -273,7 +272,6 @@ export const jsRules: Rules = {
   'import/no-unassigned-import': 'off',
   'import/no-webpack-loader-syntax': 'error',
   'import/order': 'off',
-  */
   '@stylistic/js/indent': [
     'warn',
     2,
