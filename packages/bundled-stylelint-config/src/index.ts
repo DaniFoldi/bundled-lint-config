@@ -83,7 +83,7 @@ export default <Config>{
         'scss/at-if-closing-brace-space-after': 'always-intermediate',
         'scss/at-if-no-null': true,
         'scss/load-no-partial-leading-underscore': true,
-        'scss/at-import-partial-extension': 'never',
+        'scss/load-partial-extension': 'never',
         'scss/at-mixin-argumentless-call-parentheses': 'never',
         'scss/at-mixin-parentheses-space-before': 'never',
         'scss/at-rule-conditional-no-parentheses': true,
