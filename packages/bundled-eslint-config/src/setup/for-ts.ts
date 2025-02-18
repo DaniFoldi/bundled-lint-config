@@ -6,7 +6,7 @@ import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util
 
 
 export const tsSettings: Settings = {
-  'import/parsers': {
+  'import-x/parsers': {
     '@typescript-eslint/parser': [ '.ts', '.tsx' ],
     espree: [ '.js', '.cjs', '.mjs', '.jsx' ]
   },
@@ -16,8 +16,8 @@ export const tsSettings: Settings = {
       project: 'tsconfig.json'
     })
   ],
-  'import/external-module-folders': [ 'node_modules', 'node_modules/@types' ],
-  'import/extensions': [
+  'import-x/external-module-folders': [ 'node_modules', 'node_modules/@types' ],
+  'import-x/extensions': [
     '.cjs',
     '.js',
     '.jsx',

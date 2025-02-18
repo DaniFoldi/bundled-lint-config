@@ -15,18 +15,18 @@ import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util
 
 
 export const jsSettings: Settings = {
-  'import/extensions': [
+  'import-x/extensions': [
     '.cjs',
     '.js',
     '.jsx',
     '.mjs'
   ],
-  'import/external-module-folders': [ 'node_modules', 'node_modules/@types' ],
-  'import/parsers': {
+  'import-x/external-module-folders': [ 'node_modules', 'node_modules/@types' ],
+  'import-x/parsers': {
     espree: [ '.js', '.cjs', '.mjs', '.jsx' ],
     '@typescript-eslint/parser': [ '.ts', '.tsx' ]
   },
-  'import/resolver': {
+  'import-x/resolver': {
     typescript: true,
     'node': {
       'extensions': [
