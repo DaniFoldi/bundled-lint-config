@@ -102,7 +102,7 @@ const reactNativePreset = {
 
 const nodePreset = {
   name: 'node',
-  files: [ enables.node ? '**/*.?(m)@(j|t)s' : [ '**/scripts/**/*', '**/*.config.?(c|m)@(j|t)s' ] ],
+  files: [ enables.node ? '**/*.?(c|m)@(j|t)s' : [ '**/scripts/**/*', '**/*.config.?(c|m)@(j|t)s' ] ].flat(),
   linterOptions,
   rules: nodeRules,
   plugins: nodePlugins,
@@ -132,7 +132,7 @@ const playwrightPreset = {
   settings: playwrightSettings
 } satisfies EslintConfig
 
-type Preset = 'js' | 'ts' | 'tsAstro' | 'astro' | 'astroClient' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'vitest' | 'playwright'
+type Preset = 'js' | 'ts' | 'tsAstro' | 'astro' | 'astroClient' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'nodeCjs' | 'vitest' | 'playwright'
 type Overrides = Partial<Record<Preset, Partial<EslintConfig>>>
 
 export function config(overrides: Overrides = {}, newItems: EslintConfig[] = []): EslintConfig[] {
@@ -165,6 +165,19 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
         }
       }
     }) : undefined,
+    defu(overrides.nodeCjs, {
+      name: 'nodecjs',
+      files: [ enables.node ? '**/*.c@(j|t)s' : [ '**/scripts/**/*', '**/*.config.c@(j|t)s' ] ],
+      linterOptions,
+      rules: {
+        ...nodeRules,
+        'import/no-commonjs': 'off',
+        'unicorn/prefer-module': 'off'
+      },
+      plugins: nodePlugins,
+      languageOptions: nodeLanguageOptions,
+      settings: nodeSettings
+    }),
     ...newItems
   ].filter(element => element !== undefined)
 }
