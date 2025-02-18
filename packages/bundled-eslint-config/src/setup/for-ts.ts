@@ -105,6 +105,7 @@ export const tsRules: Rules = {
   ],
   '@stylistic/js/space-infix-ops': 'off',
   '@stylistic/ts/space-infix-ops': [ 'warn', { int32Hint: false }],
+  '@stylistic/ts/semi-spacing': 'warn',
   '@stylistic/ts/type-annotation-spacing': [
     'warn', {
       after: true, before: true,

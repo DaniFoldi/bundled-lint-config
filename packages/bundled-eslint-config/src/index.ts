@@ -163,7 +163,7 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
     defu(overrides.vitest, vitestPreset),
     defu(overrides.playwright, playwrightPreset),
     ...newItems
-  ].filter(Boolean)
+  ].filter(element => element !== undefined)
 }
 
 export default config()
