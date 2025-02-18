@@ -9,12 +9,19 @@ import { tsRules, tsPlugins, tsLanguageOptions, tsSettings } from './setup/for-t
 import { vitestRules, vitestPlugins, vitestLanguageOptions, vitestSettings } from './setup/for-vitest'
 import { vueLanguageOptions, vuePlugins, vueRules, vueSettings } from './setup/for-vue'
 import { workersLanguageOptions, workersPlugins, workersRules, workersSettings } from './setup/for-workers'
-import { linterOptions, hasFile, type EslintConfig } from './util'
+import { linterOptions, enableMode, type EslintConfig } from './util'
 import eslintPluginVue from 'eslint-plugin-vue'
 import { processors as astroProcessors } from 'eslint-plugin-astro'
 import globals from 'globals'
 import { playwrightRules, playwrightPlugins, playwrightLanguageOptions, playwrightSettings } from './setup/for-playwright'
 
+
+const enables = {
+  astro: (await enableMode([ 'astro.config.mjs', 'astro.config.js', 'astro.config.ts' ], [ 'astro' ])),
+  workers: (await enableMode([ 'wrangler.toml', 'wrangler.json' ], [ 'wrangler', '@cloudflare/workers-type' ])),
+  reactNative: (await enableMode([ 'app.json', 'app.config.js', 'app.config.ts' ], [ 'expo' ])),
+  node: (await enableMode([ 'wrangler.toml', 'wrangler.json' ], [ '@types/node', 'execa', 'ws' ]))
+}
 
 const ignores = {
   name: 'ignored',
@@ -65,7 +72,7 @@ const vuePreset = {
 
 const workersPreset = {
   name: 'workers',
-  files: [ (await hasFile('wrangler.toml') || await hasFile('wrangler.json')) ? '**/*.?(m)@(j|t)s' : '**/*worker*/**/*.?(m)@(j|t)s' ],
+  files: [ enables.workers ? '**/*.?(m)@(j|t)s' : '___disabled' ],
   linterOptions,
   rules: workersRules,
   plugins: workersPlugins,
@@ -85,7 +92,7 @@ const reactPreset = {
 
 const reactNativePreset = {
   name: 'react-native',
-  files: [ (await hasFile('app.json') || await hasFile('app.config.js')) ? '**/*.?(c|m)@(j|t)sx' : '**/*app*/**/*.?(c|m)@(j|t)sx' ],
+  files: [ enables.reactNative ? '**/*.?(m)@(j|t)s' : '___disabled' ],
   linterOptions,
   rules: reactNativeRules,
   plugins: reactNativePlugins,
@@ -95,7 +102,7 @@ const reactNativePreset = {
 
 const nodePreset = {
   name: 'node',
-  files: [ '**/scripts/**/*', '**/*.config.?(c|m)@(j|t)s' ],
+  files: [ enables.node ? '**/*.?(m)@(j|t)s' : [ '**/scripts/**/*', '**/*.config.?(c|m)@(j|t)s' ] ],
   linterOptions,
   rules: nodeRules,
   plugins: nodePlugins,
@@ -125,7 +132,7 @@ const playwrightPreset = {
   settings: playwrightSettings
 } satisfies EslintConfig
 
-type Preset = 'js' | 'ts' | 'astro' | 'astroClient' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'vitest' | 'playwright'
+type Preset = 'js' | 'ts' | 'tsAstro' | 'astro' | 'astroClient' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'vitest' | 'playwright'
 type Overrides = Partial<Record<Preset, Partial<EslintConfig>>>
 
 export function config(overrides: Overrides = {}, newItems: EslintConfig[] = []): EslintConfig[] {
@@ -134,6 +141,13 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
     ignores,
     defu(overrides.js, jsPreset),
     defu(overrides.ts, tsPreset),
+    defu(overrides.tsAstro, {
+      files: [ '***.ts' ],
+      settings: astroSettings,
+      languageOptions: {
+        globals: astroLanguageOptions.globals
+      }
+    }, tsPreset),
     defu(overrides.astro, astroPreset),
     defu(overrides.astroClient, {
       files: [ '**/*.astro/*.ts', '*.astro/*.ts' ],
