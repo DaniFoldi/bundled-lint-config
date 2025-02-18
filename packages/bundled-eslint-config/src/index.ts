@@ -141,13 +141,13 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
     ignores,
     defu(overrides.js, jsPreset),
     defu(overrides.ts, tsPreset),
-    defu(overrides.tsAstro, {
-      files: [ '***.ts' ],
+    enables.astro ? defu(overrides.tsAstro, {
+      files: [ '**/*.?(m)@(j|t)s' ],
       settings: astroSettings,
       languageOptions: {
         globals: astroLanguageOptions.globals
       }
-    }, tsPreset),
+    }, tsPreset) : undefined,
     defu(overrides.astro, astroPreset),
     defu(overrides.astroClient, {
       files: [ '**/*.astro/*.ts', '*.astro/*.ts' ],
@@ -163,7 +163,7 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
     defu(overrides.vitest, vitestPreset),
     defu(overrides.playwright, playwrightPreset),
     ...newItems
-  ]
+  ].filter(Boolean)
 }
 
 export default config()
