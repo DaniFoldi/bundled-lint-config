@@ -173,7 +173,7 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
         ...nodeRules,
         'import/no-commonjs': 'off',
         'unicorn/prefer-module': 'off'
-      },
+      } as const,
       plugins: nodePlugins,
       languageOptions: nodeLanguageOptions,
       settings: nodeSettings
