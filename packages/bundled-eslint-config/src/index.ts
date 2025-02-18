@@ -1,4 +1,4 @@
-import { defu } from 'defu'
+import { defu, defuArrayFn } from 'defu'
 import gitignore from 'eslint-config-flat-gitignore'
 import { astroRules, astroPlugins, astroLanguageOptions, astroSettings } from './setup/for-astro'
 import { jsLanguageOptions, jsPlugins, jsRules, jsSettings } from './setup/for-js'
@@ -141,13 +141,6 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
     ignores,
     defu(overrides.js, jsPreset),
     defu(overrides.ts, tsPreset),
-    enables.astro ? defu(overrides.tsAstro, {
-      files: [ '**/*.?(m)@(j|t)s' ],
-      settings: astroSettings,
-      languageOptions: {
-        globals: astroLanguageOptions.globals
-      }
-    }, tsPreset) : undefined,
     defu(overrides.astro, astroPreset),
     defu(overrides.astroClient, {
       files: [ '**/*.astro/*.ts', '*.astro/*.ts' ],
@@ -162,6 +155,16 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
     defu(overrides.node, nodePreset),
     defu(overrides.vitest, vitestPreset),
     defu(overrides.playwright, playwrightPreset),
+    enables.astro ? defu(overrides.tsAstro, {
+      files: [ '**/*.?(m)@(j|t)s' ],
+      settings: enables.workers ? defuArrayFn(astroSettings, workersSettings) : astroSettings,
+      languageOptions: {
+        globals: {
+          ...astroLanguageOptions.globals,
+          ...enables.workers ? workersLanguageOptions.globals : {}
+        }
+      }
+    }) : undefined,
     ...newItems
   ].filter(element => element !== undefined)
 }
