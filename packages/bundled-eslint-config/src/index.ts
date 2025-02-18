@@ -92,7 +92,7 @@ const reactPreset = {
 
 const reactNativePreset = {
   name: 'react-native',
-  files: [ enables.reactNative ? '**/*.?(m)@(j|t)s' : '___disabled' ],
+  files: [ enables.reactNative ? '**/*.?(m)@(j|t)sx' : '___disabled' ],
   linterOptions,
   rules: reactNativeRules,
   plugins: reactNativePlugins,
