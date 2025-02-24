@@ -16,7 +16,7 @@
     "src"
   ],
   "devDependencies": {
-    "@types/node": "22.13.4",
+    "@types/node": "22.13.5",
     "jiti": "2.4.2",
     "some-tsconfig-preset": "1.6.0",
     "typescript": "5.7.3",
