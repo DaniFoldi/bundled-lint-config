@@ -173,8 +173,8 @@ importers:
         specifier: ^16.14.1
         version: 16.14.1(typescript@5.7.3)
       stylelint-high-performance-animation:
-        specifier: ^1.10.0
-        version: 1.10.0(stylelint@16.14.1(typescript@5.7.3))
+        specifier: ^1.11.0
+        version: 1.11.0(stylelint@16.14.1(typescript@5.7.3))
       stylelint-order:
         specifier: ^6.0.4
         version: 6.0.4(stylelint@16.14.1(typescript@5.7.3))
