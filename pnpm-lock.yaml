@@ -173,8 +173,8 @@ importers:
         specifier: ^16.14.1
         version: 16.14.1(typescript@5.7.3)
       stylelint-high-performance-animation:
-        specifier: ^1.10.0
-        version: 1.10.0(stylelint@16.14.1(typescript@5.7.3))
+        specifier: ^1.11.0
+        version: 1.11.0(stylelint@16.14.1(typescript@5.7.3))
       stylelint-order:
         specifier: ^6.0.4
         version: 6.0.4(stylelint@16.14.1(typescript@5.7.3))
@@ -2544,6 +2544,11 @@ packages:
 
   stylelint-high-performance-animation@1.10.0:
     resolution: {integrity: sha512-YzNI+E6taN8pwgaM0INazRg4tw23VA17KNMKUVdOeohpnpSyJLBnLVT9NkRcaCFLodK/67smS5VZK+Qe4Ohrvw==}
+    peerDependencies:
+      stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+
+  stylelint-high-performance-animation@1.11.0:
+    resolution: {integrity: sha512-bo+VfSH5RmjVmu61BZeN4cBK+PGHpG5jfvaUsw0db+1sAqKuEGjzmxEbf271/Jq3HJHj8wyi/rCg1IcxxnIiiQ==}
     peerDependencies:
       stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
 
@@ -5278,6 +5283,11 @@ snapshots:
       stylelint-order: 6.0.4(stylelint@16.14.1(typescript@5.7.3))
 
   stylelint-high-performance-animation@1.10.0(stylelint@16.14.1(typescript@5.7.3)):
+    dependencies:
+      postcss-value-parser: 4.2.0
+      stylelint: 16.14.1(typescript@5.7.3)
+
+  stylelint-high-performance-animation@1.11.0(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
       postcss-value-parser: 4.2.0
       stylelint: 16.14.1(typescript@5.7.3)
