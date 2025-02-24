@@ -1,6 +1,6 @@
+import { globby } from 'globby'
 import { copyFile, readFile, stat, writeFile } from 'node:fs/promises'
 import { basename, join } from 'node:path'
-import { globby } from 'globby'
 
 
 const globbyOptions = { onlyFiles: false, markDirectories: true }
@@ -24,7 +24,7 @@ const packageJsonJobs = {
   },
   'packages/bundled-eslint-config': {
     type: 'module',
-    version: '0.5.12',
+    version: '0.5.13',
     description: 'A preset for ESLint',
     keywords: [
       'eslint',
