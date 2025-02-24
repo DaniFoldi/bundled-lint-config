@@ -41,7 +41,7 @@
     "postcss-scss": "^4.0.9",
     "stylelint": "^16.14.1",
     "stylelint-config-idiomatic-order": "^10.0.0",
-    "stylelint-high-performance-animation": "^1.10.0",
-    "stylelint-scss": "^6.11.0"
+    "stylelint-high-performance-animation": "^1.11.0",
+    "stylelint-scss": "^6.11.1"
   }
 }
