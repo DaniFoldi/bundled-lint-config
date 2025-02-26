@@ -265,7 +265,7 @@ export const jsRules: Rules = {
       'esmodule': true
     }
   ],
-  'import/no-duplicates': [ 'warn', { 'prefer-inline': true }],
+  // 'import/no-duplicates': [ 'warn', { 'prefer-inline': true }],
   'import/no-deprecated': 'warn',
   'import/no-named-default': 'error',
   'import/no-unassigned-import': 'off',
