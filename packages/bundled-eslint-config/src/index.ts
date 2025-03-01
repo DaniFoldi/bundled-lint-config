@@ -1,19 +1,21 @@
 import { defu, defuArrayFn } from 'defu'
 import gitignore from 'eslint-config-flat-gitignore'
-import { astroRules, astroPlugins, astroLanguageOptions, astroSettings } from './setup/for-astro'
+import { processors as astroProcessors } from 'eslint-plugin-astro'
+import eslintPluginJsonSchemaValidator from 'eslint-plugin-json-schema-validator'
+import eslintPluginVue from 'eslint-plugin-vue'
+import globals from 'globals'
+import { astroLanguageOptions, astroPlugins, astroRules, astroSettings } from './setup/for-astro'
 import { jsLanguageOptions, jsPlugins, jsRules, jsSettings } from './setup/for-js'
-import { nodeRules, nodePlugins, nodeLanguageOptions, nodeSettings } from './setup/for-node'
+import { nodeLanguageOptions, nodePlugins, nodeRules, nodeSettings } from './setup/for-node'
+import { packageJsonLanguageOptions, packageJsonPlugins, packageJsonRules, packageJsonSettings } from './setup/for-package-json'
+import { playwrightLanguageOptions, playwrightPlugins, playwrightRules, playwrightSettings } from './setup/for-playwright'
 import { reactLanguageOptions, reactPlugins, reactRules, reactSettings } from './setup/for-react'
-import { reactNativeRules, reactNativePlugins, reactNativeLanguageOptions, reactNativeSettings } from './setup/for-react-native'
-import { tsRules, tsPlugins, tsLanguageOptions, tsSettings } from './setup/for-ts'
-import { vitestRules, vitestPlugins, vitestLanguageOptions, vitestSettings } from './setup/for-vitest'
+import { reactNativeLanguageOptions, reactNativePlugins, reactNativeRules, reactNativeSettings } from './setup/for-react-native'
+import { tsLanguageOptions, tsPlugins, tsRules, tsSettings } from './setup/for-ts'
+import { vitestLanguageOptions, vitestPlugins, vitestRules, vitestSettings } from './setup/for-vitest'
 import { vueLanguageOptions, vuePlugins, vueRules, vueSettings } from './setup/for-vue'
 import { workersLanguageOptions, workersPlugins, workersRules, workersSettings } from './setup/for-workers'
-import { linterOptions, enableMode, type EslintConfig } from './util'
-import eslintPluginVue from 'eslint-plugin-vue'
-import { processors as astroProcessors } from 'eslint-plugin-astro'
-import globals from 'globals'
-import { playwrightRules, playwrightPlugins, playwrightLanguageOptions, playwrightSettings } from './setup/for-playwright'
+import { enableMode, linterOptions, type EslintConfig } from './util'
 
 
 const enables = {
@@ -132,7 +134,17 @@ const playwrightPreset = {
   settings: playwrightSettings
 } satisfies EslintConfig
 
-type Preset = 'js' | 'ts' | 'tsAstro' | 'astro' | 'astroClient' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'nodeCjs' | 'vitest' | 'playwright'
+const packageJsonPreset = {
+  name: 'packageJson',
+  files: [ '**/package.json' ],
+  linterOptions,
+  rules: packageJsonRules,
+  plugins: packageJsonPlugins,
+  languageOptions: packageJsonLanguageOptions,
+  settings: packageJsonSettings
+} satisfies EslintConfig
+
+type Preset = 'js' | 'ts' | 'tsAstro' | 'astro' | 'astroClient' | 'vue' | 'workers' | 'react' | 'reactNative' | 'node' | 'nodeCjs' | 'vitest' | 'playwright' | 'packageJson'
 type Overrides = Partial<Record<Preset, Partial<EslintConfig>>>
 
 export function config(overrides: Overrides = {}, newItems: EslintConfig[] = []): EslintConfig[] {
@@ -155,6 +167,41 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
     defu(overrides.node, nodePreset),
     defu(overrides.vitest, vitestPreset),
     defu(overrides.playwright, playwrightPreset),
+    /* {
+      files: ["** /*.json"],
+      language: "json/json",
+      plugins: {
+        json,
+        jsonc: eslintPluginJsonc
+      },
+      rules: {
+        'jsonc/auto': 'error'
+      },
+    },
+    {
+      files: ["** /*.jsonc", ".vscode/*.json", "wrangler.json"],
+      language: "json/jsonc",
+      plugins: {
+        json,
+        jsonc: eslintPluginJsonc
+      },
+      rules: {
+        'jsonc/auto': 'error'
+      },
+    },
+    {
+      files: ["** /*.json5"],
+      language: "json/json5",
+      plugins: {
+        json,
+        jsonc: eslintPluginJsonc
+      },
+      rules: {
+        'jsonc/auto': 'error'
+      },
+    }, */
+    defu(overrides.packageJson, packageJsonPreset),
+    ...eslintPluginJsonSchemaValidator.configs['flat/recommended'],
     enables.astro ? defu(overrides.tsAstro, {
       files: [ '**/*.?(m)@(j|t)s' ],
       settings: enables.workers ? defuArrayFn(astroSettings, workersSettings) : astroSettings,

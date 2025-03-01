@@ -1,6 +1,5 @@
 import eslintPluginReact from 'eslint-plugin-react'
-// @ts-expect-error package has no types
-import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
+import * as eslintPluginReactHooks from 'eslint-plugin-react-hooks'
 import eslintPluginReactRefresh from 'eslint-plugin-react-refresh'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 

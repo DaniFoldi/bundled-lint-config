@@ -1,60 +1,6 @@
 {
   "name": "bundled-eslint-config",
   "version": "0.4.32",
-  "scripts": {
-    "test": "vitest",
-    "typecheck": "tsc",
-    "lint": "eslint --cache ."
-  },
-  "type": "module",
-  "exports": {
-    ".": {
-      "import": "./src/index.ts"
-    }
-  },
-  "files": [
-    "src"
-  ],
-  "devDependencies": {
-    "@types/node": "22.13.8",
-    "jiti": "2.4.2",
-    "some-tsconfig-preset": "1.6.0",
-    "typescript": "5.8.2",
-    "vitest": "3.0.7"
-  },
-  "dependencies": {
-    "@brettz9/eslint-plugin": "^3.0.0",
-    "@stylistic/eslint-plugin-js": "^4.1.0",
-    "@stylistic/eslint-plugin-plus": "^4.1.0",
-    "@stylistic/eslint-plugin-ts": "^4.1.0",
-    "@vitest/eslint-plugin": "^1.1.36",
-    "astro-eslint-parser": "^1.2.1",
-    "defu": "^6.1.4",
-    "eslint-config-flat-gitignore": "^2.1.0",
-    "eslint-import-resolver-typescript": "^3.8.3",
-    "eslint-plugin-astro": "^1.3.1",
-    "eslint-plugin-case-police": "^1.0.0",
-    "eslint-plugin-import-x": "^4.6.1",
-    "eslint-plugin-jsdoc": "^50.6.3",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-playwright": "^2.2.0",
-    "eslint-plugin-promise": "^7.2.1",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-native": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "eslint-plugin-security": "^3.0.1",
-    "eslint-plugin-unicorn": "^57.0.0",
-    "eslint-plugin-vue": "^9.32.0",
-    "find-up": "^7.0.0",
-    "globals": "^16.0.0",
-    "typescript-eslint": "^8.25.0",
-    "vue-eslint-parser": "^9.4.3"
-  },
-  "peerDependencies": {
-    "eslint": "^9.21.0"
-  },
-  "main": "dist/index.js",
   "description": "A preset for ESLint",
   "keywords": [
     "eslint",
@@ -67,14 +13,73 @@
     "vitest eslint preset",
     "react eslint preset"
   ],
-  "author": "DaniFoldi",
-  "license": "MIT",
+  "homepage": "https://github.com/DaniFoldi/lint-my-life#readme",
   "bugs": {
     "url": "https://github.com/DaniFoldi/lint-my-life/issues"
   },
-  "homepage": "https://github.com/DaniFoldi/lint-my-life#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DaniFoldi/lint-my-life.git"
+  },
+  "license": "MIT",
+  "author": "DaniFoldi",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    }
+  },
+  "main": "dist/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "lint": "eslint --cache .",
+    "test": "vitest",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@brettz9/eslint-plugin": "^3.0.0",
+    "@eslint/json": "^0.10.0",
+    "@stylistic/eslint-plugin-js": "^4.1.0",
+    "@stylistic/eslint-plugin-plus": "^4.1.0",
+    "@stylistic/eslint-plugin-ts": "^4.1.0",
+    "@vitest/eslint-plugin": "^1.1.36",
+    "astro-eslint-parser": "^1.2.1",
+    "defu": "^6.1.4",
+    "eslint-config-flat-gitignore": "^2.1.0",
+    "eslint-import-resolver-typescript": "^3.8.3",
+    "eslint-plugin-astro": "^1.3.1",
+    "eslint-plugin-case-police": "^1.0.0",
+    "eslint-plugin-import-x": "^4.6.1",
+    "eslint-plugin-jsdoc": "^50.6.3",
+    "eslint-plugin-json-schema-validator": "^5.3.1",
+    "eslint-plugin-jsonc": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-package-json": "^0.26.0",
+    "eslint-plugin-playwright": "^2.2.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-native": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-unicorn": "^57.0.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "find-up": "^7.0.0",
+    "globals": "^16.0.0",
+    "jsonc-eslint-parser": "^2.4.0",
+    "typescript-eslint": "^8.25.0",
+    "vue-eslint-parser": "^9.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.8",
+    "jiti": "2.4.2",
+    "some-tsconfig-preset": "1.6.0",
+    "typescript": "5.8.2",
+    "vitest": "3.0.7"
+  },
+  "peerDependencies": {
+    "eslint": "^9.21.0"
   }
 }

@@ -1,4 +1,3 @@
-
 import globals from 'globals'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
