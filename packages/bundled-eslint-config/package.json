@@ -20,7 +20,7 @@
     "jiti": "2.4.2",
     "some-tsconfig-preset": "1.6.0",
     "typescript": "5.7.3",
-    "vitest": "3.0.6"
+    "vitest": "3.0.7"
   },
   "dependencies": {
     "@brettz9/eslint-plugin": "^3.0.0",
