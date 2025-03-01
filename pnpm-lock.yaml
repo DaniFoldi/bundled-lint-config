@@ -149,16 +149,16 @@ importers:
         version: 6.11.1(stylelint@16.14.1(typescript@5.8.2))
     devDependencies:
       '@types/node':
-        specifier: ^22.13.8
+        specifier: 22.13.8
         version: 22.13.8
       esbuild:
-        specifier: ^0.25.0
+        specifier: 0.25.0
         version: 0.25.0
       some-tsconfig-preset:
-        specifier: ^1.6.0
+        specifier: 1.6.0
         version: 1.6.0(typescript@5.8.2)
       typescript:
-        specifier: ^5.8.2
+        specifier: 5.8.2
         version: 5.8.2
 
   packages/stylelint-vue:
