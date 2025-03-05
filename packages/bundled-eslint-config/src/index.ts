@@ -226,7 +226,7 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
       settings: nodeSettings
     }),
     ...newItems
-  ].filter(element => element !== undefined)
+  ].filter(element => element !== undefined) as EslintConfig[]
 }
 
 export default config()
