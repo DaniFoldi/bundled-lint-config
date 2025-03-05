@@ -26,6 +26,7 @@ export const vuePlugins: Plugins = {
 }
 
 export const vueRules: Rules = {
+  'vue/no-import-compiler-macros': 'error',
   'vue/sort-keys': 'off',
   'vue/array-bracket-newline': [ 'warn', { multiline: true }],
   'vue/array-bracket-spacing': [ 'warn', 'always', { arraysInArrays: false, objectsInArrays: false }],
