@@ -96,7 +96,7 @@ export const tsRules: Rules = {
   '@stylistic/ts/space-before-blocks': 'warn',
   '@stylistic/js/space-before-function-paren': 'off',
   '@stylistic/ts/space-before-function-paren': [
-    'error',
+    'warn',
     {
       'anonymous': 'never',
       'asyncArrow': 'always',
