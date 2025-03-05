@@ -63,6 +63,7 @@ export const tsRules: Rules = {
   '@typescript-eslint/no-this-alias': 'error',
   '@typescript-eslint/no-unnecessary-type-constraint': 'error',
   '@typescript-eslint/no-unsafe-declaration-merging': 'error',
+  '@typescript-eslint/no-misused-spread': 'error',
   'no-unused-vars': 'off',
   '@typescript-eslint/prefer-as-const': 'error',
   '@typescript-eslint/triple-slash-reference': 'error',
