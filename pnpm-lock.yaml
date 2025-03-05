@@ -137,7 +137,7 @@ importers:
     dependencies:
       '@stylistic/stylelint-plugin':
         specifier: ^3.1.2
-        version: 3.1.2(stylelint@16.14.1(typescript@5.8.2))
+        version: 3.1.2(stylelint@16.15.0(typescript@5.8.2))
       find-up:
         specifier: ^7.0.0
         version: 7.0.0
@@ -151,17 +151,17 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9(postcss@8.5.3)
       stylelint:
-        specifier: ^16.14.1
-        version: 16.14.1(typescript@5.8.2)
+        specifier: ^16.15.0
+        version: 16.15.0(typescript@5.8.2)
       stylelint-config-idiomatic-order:
         specifier: ^10.0.0
-        version: 10.0.0(stylelint@16.14.1(typescript@5.8.2))
+        version: 10.0.0(stylelint@16.15.0(typescript@5.8.2))
       stylelint-high-performance-animation:
         specifier: ^1.11.0
-        version: 1.11.0(stylelint@16.14.1(typescript@5.8.2))
+        version: 1.11.0(stylelint@16.15.0(typescript@5.8.2))
       stylelint-scss:
         specifier: ^6.11.1
-        version: 6.11.1(stylelint@16.14.1(typescript@5.8.2))
+        version: 6.11.1(stylelint@16.15.0(typescript@5.8.2))
     devDependencies:
       '@types/node':
         specifier: 22.13.8
@@ -3478,7 +3478,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@stylistic/stylelint-plugin@3.1.2(stylelint@16.14.1(typescript@5.8.2))':
+  '@stylistic/stylelint-plugin@3.1.2(stylelint@16.15.0(typescript@5.8.2))':
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
@@ -3487,7 +3487,7 @@ snapshots:
       postcss-selector-parser: 6.1.2
       postcss-value-parser: 4.2.0
       style-search: 0.1.0
-      stylelint: 16.14.1(typescript@5.8.2)
+      stylelint: 16.15.0(typescript@5.8.2)
 
   '@types/doctrine@0.0.9': {}
 
@@ -5688,10 +5688,10 @@ snapshots:
 
   style-search@0.1.0: {}
 
-  stylelint-config-idiomatic-order@10.0.0(stylelint@16.14.1(typescript@5.8.2)):
+  stylelint-config-idiomatic-order@10.0.0(stylelint@16.15.0(typescript@5.8.2)):
     dependencies:
-      stylelint: 16.14.1(typescript@5.8.2)
-      stylelint-order: 6.0.4(stylelint@16.14.1(typescript@5.8.2))
+      stylelint: 16.15.0(typescript@5.8.2)
+      stylelint-order: 6.0.4(stylelint@16.15.0(typescript@5.8.2))
 
   stylelint-high-performance-animation@1.11.0(stylelint@16.14.1(typescript@5.8.2)):
     dependencies:
