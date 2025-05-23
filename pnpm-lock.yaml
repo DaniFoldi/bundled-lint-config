@@ -185,14 +185,14 @@ importers:
         specifier: ^1.8.0
         version: 1.8.0
       stylelint:
-        specifier: ^16.18.0
-        version: 16.18.0(typescript@5.8.3)
+        specifier: ^16.19.1
+        version: 16.19.1(typescript@5.8.3)
       stylelint-high-performance-animation:
         specifier: ^1.11.0
-        version: 1.11.0(stylelint@16.18.0(typescript@5.8.3))
+        version: 1.11.0(stylelint@16.19.1(typescript@5.8.3))
       stylelint-order:
         specifier: ^7.0.0
-        version: 7.0.0(stylelint@16.18.0(typescript@5.8.3))
+        version: 7.0.0(stylelint@16.19.1(typescript@5.8.3))
 
   packages/stylelint-vue-scss:
     dependencies:
@@ -5951,12 +5951,6 @@ snapshots:
     dependencies:
       postcss: 8.5.3
       postcss-sorting: 8.0.2(postcss@8.5.3)
-      stylelint: 16.18.0(typescript@5.8.3)
-
-  stylelint-order@7.0.0(stylelint@16.18.0(typescript@5.8.3)):
-    dependencies:
-      postcss: 8.5.3
-      postcss-sorting: 9.1.0(postcss@8.5.3)
       stylelint: 16.18.0(typescript@5.8.3)
 
   stylelint-order@7.0.0(stylelint@16.19.1(typescript@5.8.3)):
