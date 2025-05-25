@@ -73,9 +73,9 @@
     "vue-eslint-parser": "^10.1.3"
   },
   "devDependencies": {
-    "@types/node": "22.14.1",
+    "@types/node": "22.15.21",
     "jiti": "2.4.2",
-    "some-tsconfig-preset": "1.6.0",
+    "some-tsconfig-preset": "1.8.0",
     "typescript": "5.8.3",
     "vitest": "3.1.4"
   },
