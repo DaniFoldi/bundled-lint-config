@@ -39,9 +39,9 @@
     "parse-gitignore": "^2.0.0",
     "postcss": "^8.5.3",
     "postcss-scss": "^4.0.9",
-    "stylelint": "^16.18.0",
+    "stylelint": "^16.19.1",
     "stylelint-config-idiomatic-order": "^10.0.0",
     "stylelint-high-performance-animation": "^1.11.0",
-    "stylelint-scss": "^6.11.1"
+    "stylelint-scss": "^6.12.0"
   }
 }
