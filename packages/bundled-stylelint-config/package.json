@@ -42,6 +42,6 @@
     "stylelint": "^16.20.0",
     "stylelint-config-idiomatic-order": "^10.0.0",
     "stylelint-high-performance-animation": "^1.11.0",
-    "stylelint-scss": "^6.12.0"
+    "stylelint-scss": "^6.12.1"
   }
 }
