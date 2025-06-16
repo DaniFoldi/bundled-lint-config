@@ -510,6 +510,9 @@ export const jsRules: Rules = {
     'never'
   ],
   'stylistic/template-tag-spacing': 'warn',
+  'unicorn/no-unnecessary-array-flat-depth': 'warn',
+  'unicorn/no-unnecessary-array-splice-count': 'warn',
+  'unicorn/no-unnecessary-slice-end': 'warn',
   'unicorn/filename-case': [
     'warn',
     {
