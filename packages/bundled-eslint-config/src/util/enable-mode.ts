@@ -22,7 +22,7 @@ export async function enableMode(configFiles: string[], dependencies?: string[])
 
   const packageJson = await findUp('package.json', { cwd: cwd() })
   if (typeof packageJson === 'string') {
-    const json = JSON.parse(await readFile(packageJson, 'utf8')) as { dependencies?: Record<string, string>, devDependencies?: Record<string, string> }
+    const json = JSON.parse(await readFile(packageJson, 'utf8')) as { dependencies?: Record<string, string>; devDependencies?: Record<string, string> }
 
     return dependencies?.some(dependency =>
       json.dependencies?.[dependency] !== undefined || json.devDependencies?.[dependency] !== undefined) ?? false
