@@ -1,5 +1,4 @@
-import eslintPluginStylisticPlus from '@stylistic/eslint-plugin-plus'
-import eslintPluginStylisticTs from '@stylistic/eslint-plugin-ts'
+import eslintPluginStylistic from '@stylistic/eslint-plugin'
 import { parser, plugin } from 'typescript-eslint'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
@@ -46,8 +45,7 @@ export const tsLanguageOptions: LanguageOptions = {
 export const tsPlugins: Plugins = {
   // @ts-expect-error Configs types are broken
   '@typescript-eslint': plugin,
-  '@stylistic/ts': eslintPluginStylisticTs,
-  '@stylistic/plus': eslintPluginStylisticPlus
+  stylistic: eslintPluginStylistic
 }
 
 export const tsRules: Rules = {
@@ -67,7 +65,7 @@ export const tsRules: Rules = {
   'no-unused-vars': 'off',
   '@typescript-eslint/prefer-as-const': 'error',
   '@typescript-eslint/triple-slash-reference': 'error',
-  '@stylistic/ts/member-delimiter-style': [
+  'stylistic/member-delimiter-style': [
     'warn', {
       multiline: { delimiter: 'none', requireLast: true },
       singleline: { delimiter: 'semi', requireLast: false }
@@ -93,10 +91,8 @@ export const tsRules: Rules = {
   '@typescript-eslint/no-unsafe-function-type': 'error',
   '@typescript-eslint/no-wrapper-object-types': 'error',
   '@typescript-eslint/no-require-imports': 'off',
-  '@stylistic/js/space-before-blocks': 'off',
-  '@stylistic/ts/space-before-blocks': 'warn',
-  '@stylistic/js/space-before-function-paren': 'off',
-  '@stylistic/ts/space-before-function-paren': [
+  'stylistic/space-before-blocks': 'warn',
+  'stylistic/space-before-function-paren': [
     'warn',
     {
       'anonymous': 'never',
@@ -104,29 +100,22 @@ export const tsRules: Rules = {
       'named': 'never'
     }
   ],
-  '@stylistic/js/space-infix-ops': 'off',
-  '@stylistic/ts/space-infix-ops': [ 'warn', { int32Hint: false }],
-  '@stylistic/ts/semi-spacing': 'warn',
-  '@stylistic/ts/type-annotation-spacing': [
+  'stylistic/space-infix-ops': [ 'warn', { int32Hint: false }],
+  'stylistic/semi-spacing': 'warn',
+  'stylistic/type-annotation-spacing': [
     'warn', {
       after: true, before: true,
       overrides: { colon: { after: true, before: false } }
     }
   ],
-  '@stylistic/js/function-call-spacing': 'off',
-  '@stylistic/ts/function-call-spacing': [
+  'stylistic/function-call-spacing': [
     'warn',
     'never'
   ],
-  '@stylistic/js/semi': 'off',
-  '@stylistic/ts/semi': [
+  'stylistic/semi': [
     'warn',
     'never'
   ],
-  '@stylistic/js/no-extra-semi': 'off',
-  '@stylistic/ts/no-extra-semi': 'warn',
-  '@stylistic/js/quotes': 'off',
-  '@stylistic/ts/quotes': [ 'warn', 'single' ],
   'constructor-super': 'off',
   'getter-return': 'off',
   'no-const-assign': 'off',
@@ -146,8 +135,8 @@ export const tsRules: Rules = {
   'prefer-const': 'warn',
   'prefer-rest-params': 'error',
   'prefer-spread': 'warn',
-  '@stylistic/plus/type-generic-spacing': 'warn',
-  '@stylistic/plus/type-named-tuple-spacing': 'warn',
+  'stylistic/type-generic-spacing': 'warn',
+  'stylistic/type-named-tuple-spacing': 'warn',
   '@typescript-eslint/restrict-plus-operands': 'error',
   '@typescript-eslint/no-unnecessary-template-expression': 'warn',
   '@typescript-eslint/prefer-string-starts-ends-with': 'warn',

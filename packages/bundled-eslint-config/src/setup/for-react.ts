@@ -50,5 +50,5 @@ export const reactRules: Rules = {
   'react-hooks/exhaustive-deps': 'error',
   'react-hooks/rules-of-hooks': 'warn',
   'unicorn/no-useless-undefined': 'off',
-  '@stylistic/js/no-extra-parens': 'off'
+  'stylistic/no-extra-parens': 'off'
 }

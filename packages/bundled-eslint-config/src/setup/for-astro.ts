@@ -94,5 +94,5 @@ export const astroRules: Rules = {
 
   // *--- EXTENSION RULES ---*
   'astro/semi': [ 'warn', 'never' ],
-  '@stylistic/ts/semi': 'off'
+  'stylistic/semi': 'off'
 }
