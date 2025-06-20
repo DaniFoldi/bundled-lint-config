@@ -28,7 +28,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "22.15.30",
+    "@types/node": "22.15.32",
     "esbuild": "0.25.5",
     "some-tsconfig-preset": "1.8.0",
     "typescript": "5.8.3"
