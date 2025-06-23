@@ -13,14 +13,14 @@
   "author": "DaniFoldi",
   "license": "MIT",
   "dependencies": {
-    "postcss": "^8.5.3",
+    "postcss": "^8.5.6",
     "postcss-html": "^1.8.0",
     "postcss-scss": "^4.0.9",
-    "sass": "^1.89.0",
-    "stylelint": "^16.19.1",
+    "sass": "^1.89.2",
+    "stylelint": "^16.21.0",
     "stylelint-high-performance-animation": "^1.11.0",
     "stylelint-order": "^7.0.0",
-    "stylelint-scss": "^6.12.0"
+    "stylelint-scss": "^6.12.1"
   },
   "bugs": {
     "url": "https://github.com/DaniFoldi/lint-my-life/issues"
