@@ -66,8 +66,8 @@ importers:
         specifier: ^6.10.2
         version: 6.10.2(eslint@9.27.0(jiti@2.4.2))
       eslint-plugin-package-json:
-        specifier: ^0.40.4
-        version: 0.40.4(@types/estree@1.0.8)(eslint@9.27.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)
+        specifier: ^0.43.3
+        version: 0.43.4(@types/estree@1.0.8)(eslint@9.27.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)
       eslint-plugin-playwright:
         specifier: ^2.2.0
         version: 2.2.0(eslint@9.27.0(jiti@2.4.2))
@@ -217,8 +217,8 @@ importers:
 
 packages:
 
-  '@altano/repository-tools@1.0.1':
-    resolution: {integrity: sha512-/FFHQOMp5TZWplkDWbbLIjmANDr9H/FtqUm+hfJMK76OBut0Ht0cNfd0ZXd/6LXf4pWUTzvpgVjcin7EEHSznA==}
+  '@altano/repository-tools@2.0.1':
+    resolution: {integrity: sha512-YE/52CkFtb+YtHPgbWPai7oo5N9AKnMuP5LM+i2AG7G1H2jdYBCO1iDnkDE3dZ3C1MIgckaF+d5PNRulgt0bdw==}
 
   '@astrojs/compiler@2.10.3':
     resolution: {integrity: sha512-bL/O7YBxsFt55YHU021oL+xz+B/9HvGNId3F9xURN16aeqDK9juHGktdkCSXz+U4nqFACq6ZFvWomOzhV+zfPw==}
@@ -1874,8 +1874,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
-  eslint-plugin-package-json@0.40.4:
-    resolution: {integrity: sha512-TBL+tOVV6oqohayg9jXnJpwA13sYMR8fsucwHm2zsv7B20nyMYv9lJcQaJ1kNWj1Uj+mlv+PS0K2KHq7sJdT6Q==}
+  eslint-plugin-package-json@0.43.4:
+    resolution: {integrity: sha512-qwJs9gFRS4OXU7RojQBF9dMu3KRRzip1j5gHCtGSHUec3ZfmKWYCsAr6pgLWY6RblyAVqRgNeMj17vizbxPvDA==}
     engines: {node: ^=20.19.0 || >=22.12.0}
     peerDependencies:
       eslint: '>=8.0.0'
@@ -2612,8 +2612,8 @@ packages:
     resolution: {integrity: sha512-wPrq66Llhl7/4AGC6I+cqxT07LhXvWL08LNXz1fENOw0Ap4sRZZ/gZpTTJ5jpurzzzfS2W/Ge9BY3LgLjCShcw==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  package-json-validator@0.15.0:
-    resolution: {integrity: sha512-RnkruEPcr0DtlsTKqAySFQ4btD8KNyWaCDfkvA2BGSa7ST4hDFvHyeoEOn7kkscEx0UnQ9o7AJoQA0zC1lc7yQ==}
+  package-json-validator@0.19.0:
+    resolution: {integrity: sha512-lPYKN+CuzKvYnsZeHEZ5kM4GTM/l32rHIDWjfjooJaisTsy0PJ5wzvwGxZR42UM4hxze8zlE/RXKJtgDhHD1Ew==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -3339,7 +3339,7 @@ packages:
 
 snapshots:
 
-  '@altano/repository-tools@1.0.1': {}
+  '@altano/repository-tools@2.0.1': {}
 
   '@astrojs/compiler@2.10.3': {}
 
@@ -4965,16 +4965,16 @@ snapshots:
       safe-regex-test: 1.1.0
       string.prototype.includes: 2.0.1
 
-  eslint-plugin-package-json@0.40.4(@types/estree@1.0.8)(eslint@9.27.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0):
+  eslint-plugin-package-json@0.43.4(@types/estree@1.0.8)(eslint@9.27.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0):
     dependencies:
-      '@altano/repository-tools': 1.0.1
+      '@altano/repository-tools': 2.0.1
       change-case: 5.4.4
       detect-indent: 7.0.1
       detect-newline: 4.0.1
       eslint: 9.27.0(jiti@2.4.2)
       eslint-fix-utils: 0.4.0(@types/estree@1.0.8)(eslint@9.27.0(jiti@2.4.2))
       jsonc-eslint-parser: 2.4.0
-      package-json-validator: 0.15.0
+      package-json-validator: 0.19.0
       semver: 7.7.2
       sort-object-keys: 1.1.3
       sort-package-json: 3.0.0
@@ -5753,7 +5753,7 @@ snapshots:
     dependencies:
       p-limit: 4.0.0
 
-  package-json-validator@0.15.0:
+  package-json-validator@0.19.0:
     dependencies:
       yargs: 18.0.0
 
