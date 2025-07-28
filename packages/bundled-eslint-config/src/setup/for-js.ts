@@ -633,7 +633,7 @@ export const jsRules: Rules = {
   'unicorn/prefer-ternary': 'warn',
   'unicorn/prefer-top-level-await': 'warn',
   'unicorn/prefer-type-error': 'off',
-  'unicorn/relative-url-style': 'error',
+  'unicorn/relative-url-style': 'warn',
   'unicorn/require-array-join-separator': 'error',
   'unicorn/require-number-to-fixed-digits-argument': 'error',
   'unicorn/string-content': 'off',
