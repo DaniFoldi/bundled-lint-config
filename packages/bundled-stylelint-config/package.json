@@ -28,10 +28,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "22.15.32",
+    "@types/node": "22.17.2",
     "esbuild": "0.25.8",
     "some-tsconfig-preset": "1.8.0",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "dependencies": {
     "@stylistic/stylelint-plugin": "^3.1.3",
