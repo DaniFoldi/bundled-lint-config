@@ -23,7 +23,7 @@
     "bundled-eslint-config": "workspace:^",
     "globby": "^14.1.0"
   },
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.15.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"
