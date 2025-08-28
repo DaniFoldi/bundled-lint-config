@@ -619,7 +619,7 @@ export const jsRules: Rules = {
   'unicorn/prefer-object-from-entries': 'warn',
   'unicorn/prefer-optional-catch-binding': 'warn',
   'unicorn/prefer-prototype-methods': 'warn',
-  'unicorn/prefer-query-selector': 'warn',
+  'unicorn/prefer-query-selector': 'off',
   'unicorn/prefer-reflect-apply': 'warn',
   'unicorn/prefer-regexp-test': 'warn',
   'unicorn/prefer-set-has': 'warn',
