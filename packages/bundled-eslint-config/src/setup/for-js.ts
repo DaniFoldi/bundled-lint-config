@@ -642,7 +642,6 @@ export const jsRules: Rules = {
   'unicorn/throw-new-error': 'error',
   'unicorn/require-module-specifiers': 'warn',
   'unicorn/prefer-class-fields': 'warn',
-  'unicorn/no-useless-constructor': 'warn',
   'use-isnan': 'error',
   'valid-typeof': [
     'error',
