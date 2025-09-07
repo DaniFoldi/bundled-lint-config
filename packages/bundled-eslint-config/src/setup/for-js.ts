@@ -557,7 +557,7 @@ export const jsRules: Rules = {
   'unicorn/prefer-math-min-max': 'warn',
   'unicorn/prefer-global-this': 'warn',
   'unicorn/no-array-push-push': 'error',
-  'unicorn/no-console-spaces': 'error',
+  'unicorn/no-console-spaces': 'warn',
   'unicorn/no-document-cookie': 'error',
   'unicorn/no-empty-file': 'error',
   'unicorn/no-for-loop': 'error',
