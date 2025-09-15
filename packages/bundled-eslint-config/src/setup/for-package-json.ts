@@ -13,7 +13,6 @@ export const packageJsonLanguageOptions: LanguageOptions = {
 }
 
 export const packageJsonPlugins: Plugins = {
-  // @ts-expect-error broken types
   'package-json': eslintPluginPackageJson
 }
 
