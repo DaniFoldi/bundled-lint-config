@@ -131,7 +131,7 @@ importers:
     dependencies:
       '@stylistic/stylelint-plugin':
         specifier: ^4.0.0
-        version: 4.0.0(stylelint@16.23.1(typescript@5.9.2))
+        version: 4.0.0(stylelint@16.24.0(typescript@5.9.2))
       find-up:
         specifier: ^7.0.0
         version: 7.0.0
@@ -145,17 +145,17 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9(postcss@8.5.6)
       stylelint:
-        specifier: ^16.23.1
-        version: 16.23.1(typescript@5.9.2)
+        specifier: ^16.24.0
+        version: 16.24.0(typescript@5.9.2)
       stylelint-config-idiomatic-order:
         specifier: ^10.0.0
-        version: 10.0.0(stylelint@16.23.1(typescript@5.9.2))
+        version: 10.0.0(stylelint@16.24.0(typescript@5.9.2))
       stylelint-high-performance-animation:
         specifier: ^1.11.0
-        version: 1.11.0(stylelint@16.23.1(typescript@5.9.2))
+        version: 1.11.0(stylelint@16.24.0(typescript@5.9.2))
       stylelint-scss:
         specifier: ^6.12.1
-        version: 6.12.1(stylelint@16.23.1(typescript@5.9.2))
+        version: 6.12.1(stylelint@16.24.0(typescript@5.9.2))
     devDependencies:
       '@types/node':
         specifier: 22.18.1
@@ -3765,7 +3765,7 @@ snapshots:
       estraverse: 5.3.0
       picomatch: 4.0.3
 
-  '@stylistic/stylelint-plugin@4.0.0(stylelint@16.23.1(typescript@5.9.2))':
+  '@stylistic/stylelint-plugin@4.0.0(stylelint@16.24.0(typescript@5.9.2))':
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-tokenizer': 3.0.4
@@ -3774,7 +3774,7 @@ snapshots:
       postcss-selector-parser: 7.1.0
       postcss-value-parser: 4.2.0
       style-search: 0.1.0
-      stylelint: 16.23.1(typescript@5.9.2)
+      stylelint: 16.24.0(typescript@5.9.2)
 
   '@tybys/wasm-util@0.9.0':
     dependencies:
@@ -6140,10 +6140,10 @@ snapshots:
 
   style-search@0.1.0: {}
 
-  stylelint-config-idiomatic-order@10.0.0(stylelint@16.23.1(typescript@5.9.2)):
+  stylelint-config-idiomatic-order@10.0.0(stylelint@16.24.0(typescript@5.9.2)):
     dependencies:
-      stylelint: 16.23.1(typescript@5.9.2)
-      stylelint-order: 6.0.4(stylelint@16.23.1(typescript@5.9.2))
+      stylelint: 16.24.0(typescript@5.9.2)
+      stylelint-order: 6.0.4(stylelint@16.24.0(typescript@5.9.2))
 
   stylelint-high-performance-animation@1.11.0(stylelint@16.23.1(typescript@5.9.2)):
     dependencies:
@@ -6155,11 +6155,11 @@ snapshots:
       postcss-value-parser: 4.2.0
       stylelint: 16.24.0(typescript@5.9.2)
 
-  stylelint-order@6.0.4(stylelint@16.23.1(typescript@5.9.2)):
+  stylelint-order@6.0.4(stylelint@16.24.0(typescript@5.9.2)):
     dependencies:
       postcss: 8.5.6
       postcss-sorting: 8.0.2(postcss@8.5.6)
-      stylelint: 16.23.1(typescript@5.9.2)
+      stylelint: 16.24.0(typescript@5.9.2)
 
   stylelint-order@7.0.0(stylelint@16.23.1(typescript@5.9.2)):
     dependencies:
@@ -6172,18 +6172,6 @@ snapshots:
       postcss: 8.5.6
       postcss-sorting: 9.1.0(postcss@8.5.6)
       stylelint: 16.24.0(typescript@5.9.2)
-
-  stylelint-scss@6.12.1(stylelint@16.23.1(typescript@5.9.2)):
-    dependencies:
-      css-tree: 3.1.0
-      is-plain-object: 5.0.0
-      known-css-properties: 0.36.0
-      mdn-data: 2.21.0
-      postcss-media-query-parser: 0.2.3
-      postcss-resolve-nested-selector: 0.1.6
-      postcss-selector-parser: 7.1.0
-      postcss-value-parser: 4.2.0
-      stylelint: 16.23.1(typescript@5.9.2)
 
   stylelint-scss@6.12.1(stylelint@16.24.0(typescript@5.9.2)):
     dependencies:
