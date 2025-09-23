@@ -73,7 +73,7 @@ jobs:
       timeout-minutes: 5
       run: pnpm build && pnpm -r build
 
-    - uses: JS-DevTools/npm-publish@d9dc932de083f0e6de6a50f0d1097a7142c3751b # v4
+    - uses: JS-DevTools/npm-publish@1fe17a093199d8fabed85cbcc6f0f79eb06470da # v4
       timeout-minutes: 5
       with:
         access: public
