@@ -9,6 +9,7 @@ import eslintPluginPromise from 'eslint-plugin-promise'
 // @ts-expect-error: No types
 import eslintPluginSecurity from 'eslint-plugin-security'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
+import eslintPluginImportZod from 'eslint-plugin-import-zod'
 import globals from 'globals'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
@@ -65,7 +66,8 @@ export const jsPlugins: Plugins = {
   promise: eslintPluginPromise,
   security: eslintPluginSecurity,
   unicorn: eslintPluginUnicorn,
-  stylistic: eslintPluginStylistic
+  stylistic: eslintPluginStylistic,
+  'import-zod': eslintPluginImportZod
 }
 
 export const jsRules: Rules = {
@@ -78,6 +80,7 @@ export const jsRules: Rules = {
   '@brettz9/no-useless-rest-spread': 'warn',
   '@brettz9/prefer-for-of': 'off',
   'case-police/string-check': 'warn',
+  'import-zod/prefer-zod-namespace': 'warn',
   'jsdoc/check-alignment': 'warn',
   'jsdoc/check-examples': 'off',
   'jsdoc/check-indentation': 'warn',
@@ -134,10 +137,10 @@ export const jsRules: Rules = {
   'promise/no-return-wrap': 'warn',
   'promise/always-return': 'warn',
   'promise/catch-or-return': 'warn',
-  'promise/prefer-await-to-callbacks': 'warn',
-  'promise/prefer-await-to-then': 'warn',
+  'promise/prefer-await-to-callbacks': 'off',
+  'promise/prefer-await-to-then': 'off',
   'promise/no-native': 'off',
-  'promise/avoid-new': 'warn',
+  'promise/avoid-new': 'off',
   'promise/no-new-statics': 'warn',
   'promise/no-return-in-finally': 'warn',
   'promise/valid-params': 'warn',
