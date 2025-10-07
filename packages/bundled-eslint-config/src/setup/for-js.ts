@@ -67,6 +67,7 @@ export const jsPlugins: Plugins = {
   security: eslintPluginSecurity,
   unicorn: eslintPluginUnicorn,
   stylistic: eslintPluginStylistic,
+  // @ts-expect-error weird types
   'import-zod': eslintPluginImportZod
 }
 
