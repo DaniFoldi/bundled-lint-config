@@ -21,7 +21,7 @@
   "homepage": "https://github.com/DaniFoldi/bundled-lint-config#readme",
   "devDependencies": {
     "bundled-eslint-config": "workspace:^",
-    "globby": "^14.1.0"
+    "globby": "^15.0.0"
   },
   "packageManager": "pnpm@10.18.2"
 }
