@@ -4,7 +4,7 @@ import { processors as astroProcessors } from 'eslint-plugin-astro'
 import eslintPluginJsonSchemaValidator from 'eslint-plugin-json-schema-validator'
 import eslintPluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
-import { astroLanguageOptions, astroPlugins, astroRules, astroSettings } from './setup/for-astro'
+import { astroGlobals, astroLanguageOptions, astroPlugins, astroRules, astroSettings } from './setup/for-astro'
 import { jsLanguageOptions, jsPlugins, jsRules, jsSettings } from './setup/for-js'
 import { nodeLanguageOptions, nodePlugins, nodeRules, nodeSettings } from './setup/for-node'
 import { packageJsonLanguageOptions, packageJsonPlugins, packageJsonRules, packageJsonSettings } from './setup/for-package-json'
@@ -14,7 +14,7 @@ import { reactNativeLanguageOptions, reactNativePlugins, reactNativeRules, react
 import { tsLanguageOptions, tsPlugins, tsRules, tsSettings } from './setup/for-ts'
 import { vitestLanguageOptions, vitestPlugins, vitestRules, vitestSettings } from './setup/for-vitest'
 import { vueLanguageOptions, vuePlugins, vueRules, vueSettings } from './setup/for-vue'
-import { workersLanguageOptions, workersPlugins, workersRules, workersSettings } from './setup/for-workers'
+import { workersGlobals, workersLanguageOptions, workersPlugins, workersRules, workersSettings } from './setup/for-workers'
 import { enableMode, linterOptions, type EslintConfig } from './util'
 
 
@@ -207,8 +207,8 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
       settings: enables.workers ? defuArrayFn(astroSettings, workersSettings) : astroSettings,
       languageOptions: {
         globals: {
-          ...astroLanguageOptions.globals,
-          ...enables.workers ? workersLanguageOptions.globals : {}
+          ...astroGlobals!,
+          ...enables.workers ? workersGlobals! : {}
         }
       }
     }) : undefined,
