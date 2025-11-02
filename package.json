@@ -23,5 +23,5 @@
     "bundled-eslint-config": "workspace:^",
     "globby": "^15.0.0"
   },
-  "packageManager": "pnpm@10.19.0"
+  "packageManager": "pnpm@10.20.0"
 }
