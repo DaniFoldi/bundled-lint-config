@@ -47,11 +47,11 @@
     "defu": "^6.1.4",
     "eslint-config-flat-gitignore": "^2.1.0",
     "eslint-import-resolver-typescript": "^4.4.4",
-    "eslint-plugin-astro": "^1.4.0",
+    "eslint-plugin-astro": "^1.5.0",
     "eslint-plugin-case-police": "^2.0.0",
     "eslint-plugin-import-x": "^4.16.1",
     "eslint-plugin-import-zod": "^1.2.0",
-    "eslint-plugin-jsdoc": "^61.1.11",
+    "eslint-plugin-jsdoc": "^61.1.12",
     "eslint-plugin-json-schema-validator": "^5.4.1",
     "eslint-plugin-jsonc": "^2.21.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
@@ -68,7 +68,7 @@
     "find-up": "^8.0.0",
     "globals": "^16.5.0",
     "jsonc-eslint-parser": "^2.4.1",
-    "typescript-eslint": "^8.46.2",
+    "typescript-eslint": "^8.46.3",
     "vue-eslint-parser": "^10.2.0"
   },
   "devDependencies": {
