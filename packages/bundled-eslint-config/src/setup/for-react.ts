@@ -18,6 +18,7 @@ export const reactLanguageOptions: LanguageOptions = {
 
 export const reactPlugins: Plugins = {
   react: eslintPluginReact,
+  // @ts-ignore types are broken
   'react-hooks': eslintPluginReactHooks,
   'react-refresh': eslintPluginReactRefresh
 }
