@@ -2,11 +2,14 @@ import { parser } from 'typescript-eslint'
 import eslintPluginVue from 'eslint-plugin-vue'
 import vueEslintParser from 'vue-eslint-parser'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
+import globals from 'globals'
 
 
 export const vueSettings: Settings = {}
 
-export const vueGlobals: Globals = {}
+export const vueGlobals: Globals = {
+  ...globals.vue
+}
 
 export const vueLanguageOptions: LanguageOptions = {
   globals: vueGlobals,

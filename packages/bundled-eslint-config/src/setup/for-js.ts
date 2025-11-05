@@ -537,6 +537,8 @@ export const jsRules: Rules = {
   'no-nested-ternary': 'off',
   'unicorn/no-negation-in-equality-check': 'warn',
   'unicorn/no-null': 'off',
+  'unicorn/no-immediate-mutation': 'warn',
+  'unicorn/no-useless-collection-argument': 'warn',
   'unicorn/no-typeof-undefined': 'warn',
   'unicorn/numeric-separators-style': [
     'warn',

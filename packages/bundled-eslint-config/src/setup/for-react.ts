@@ -18,6 +18,7 @@ export const reactLanguageOptions: LanguageOptions = {
 
 export const reactPlugins: Plugins = {
   react: eslintPluginReact,
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore types are broken
   'react-hooks': eslintPluginReactHooks,
   'react-refresh': eslintPluginReactRefresh

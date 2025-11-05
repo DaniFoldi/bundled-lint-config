@@ -2,6 +2,7 @@ import { parser } from 'typescript-eslint'
 import * as astroParser from 'astro-eslint-parser'
 import eslintPluginAstro from 'eslint-plugin-astro'
 import type { Globals, Plugins, LanguageOptions, Rules, Settings } from '../util'
+import globals from 'globals'
 
 
 export const astroSettings: Settings = {
@@ -9,7 +10,7 @@ export const astroSettings: Settings = {
 }
 
 export const astroGlobals: Globals = {
-  Astro: false,
+  ...globals.astro,
   Fragment: false
 }
 
