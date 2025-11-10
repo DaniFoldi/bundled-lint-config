@@ -201,7 +201,7 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
       },
     }, */
     defu(overrides.packageJson, packageJsonPreset),
-    ...eslintPluginJsonSchemaValidator.configs['flat/recommended'],
+    // ...eslintPluginJsonSchemaValidator.configs['flat/recommended'],
     enables.astro ? defu(overrides.tsAstro, {
       files: [ '**/*.?(m)@(j|t)s' ],
       settings: enables.workers ? defuArrayFn(astroSettings, workersSettings) : astroSettings,
