@@ -67,7 +67,8 @@ export const jsPlugins: Plugins = {
   security: eslintPluginSecurity,
   unicorn: eslintPluginUnicorn,
   stylistic: eslintPluginStylistic,
-  // @ts-expect-error weird types
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore weird types
   'import-zod': eslintPluginImportZod
 }
 
