@@ -209,7 +209,7 @@ export const jsRules: Rules = {
     'property'
   ],
   'dot-notation': [
-    'error',
+    'warn',
     {
       'allowKeywords': true
     }
