@@ -27,7 +27,7 @@ const enables = {
 
 const ignores = {
   name: 'ignored',
-  ignores: [ '**/coverage/**', '**/dist/**', '**/*wasm-bindgen/**', '**/public/**' ]
+  ignores: [ '**/coverage/**', '**/dist/**', '**/*wasm-bindgen/**', '**/public/**', '**/.expo/**' ]
 } satisfies EslintConfig
 
 const jsPreset = {
