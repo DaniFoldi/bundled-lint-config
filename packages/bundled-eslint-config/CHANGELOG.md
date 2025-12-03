@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.7.1
+
+### Patch Changes
+
+- [`bdf4f00`](https://github.com/DaniFoldi/bundled-lint-config/commit/bdf4f0030a8725f24764341fc42b027216b823ea) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Add missing node import resolver dependency
+
 ## 0.7.0
 
 ### Minor Changes
