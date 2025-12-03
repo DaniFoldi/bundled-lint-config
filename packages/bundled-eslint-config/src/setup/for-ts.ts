@@ -1,5 +1,6 @@
 import eslintPluginStylistic from '@stylistic/eslint-plugin'
 import { parser, plugin } from 'typescript-eslint'
+import { createNodeResolver } from 'eslint-plugin-import-x'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
@@ -13,7 +14,8 @@ export const tsSettings: Settings = {
     createTypeScriptImportResolver({
       alwaysTryTypes: true,
       project: 'tsconfig.json'
-    })
+    }),
+    createNodeResolver()
   ],
   'import-x/external-module-folders': [ 'node_modules', 'node_modules/@types' ],
   'import-x/extensions': [
