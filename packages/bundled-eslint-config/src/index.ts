@@ -20,9 +20,9 @@ import { enableMode, linterOptions, type EslintConfig } from './util'
 
 const enables = {
   astro: (await enableMode([ 'astro.config.mjs', 'astro.config.js', 'astro.config.ts' ], [ 'astro' ])),
-  workers: (await enableMode([ 'wrangler.toml', 'wrangler.json' ], [ 'wrangler', '@cloudflare/workers-type' ])),
+  workers: (await enableMode([ 'wrangler.toml', 'wrangler.json', 'wrangler.jsonc' ], [ 'wrangler', '@cloudflare/workers-type' ])),
   reactNative: (await enableMode([ 'app.json', 'app.config.js', 'app.config.ts' ], [ 'expo' ])),
-  node: (await enableMode([ 'wrangler.toml', 'wrangler.json' ], [ '@types/node', 'execa', 'ws' ]))
+  node: (await enableMode([], [ '@types/node', 'execa', 'ws' ]))
 }
 
 const ignores = {
