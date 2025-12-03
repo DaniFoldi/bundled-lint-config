@@ -11,6 +11,8 @@ import eslintPluginSecurity from 'eslint-plugin-security'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import eslintPluginImportZod from 'eslint-plugin-import-zod'
 import globals from 'globals'
+import { createNodeResolver } from 'eslint-plugin-import-x'
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
 
@@ -26,19 +28,13 @@ export const jsSettings: Settings = {
     espree: [ '.js', '.cjs', '.mjs', '.jsx' ],
     '@typescript-eslint/parser': [ '.ts', '.tsx' ]
   },
-  'import-x/resolver': {
-    typescript: true,
-    'node': {
-      'extensions': [
-        '.cjs',
-        '.js',
-        '.jsx',
-        '.mjs',
-        '.ts',
-        '.tsx'
-      ]
-    }
-  }
+  'import-x/resolver-next': [
+    createTypeScriptImportResolver({
+      alwaysTryTypes: true,
+      project: 'tsconfig.json'
+    }),
+    createNodeResolver()
+  ],
 }
 
 export const jsGlobals: Globals = {
