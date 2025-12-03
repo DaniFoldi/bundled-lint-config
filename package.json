@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "node update.js && node prepublish.js"
+    "build": "node update.js && node prepublish.js",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && pnpm -r build && changeset publish"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,8 @@
   "private": true,
   "homepage": "https://github.com/DaniFoldi/bundled-lint-config#readme",
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.29.8",
     "bundled-eslint-config": "workspace:^",
     "globby": "^15.0.0"
   },

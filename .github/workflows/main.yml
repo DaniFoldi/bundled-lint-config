@@ -1,12 +1,13 @@
-name: Lint and release packages
+name: Release packages
 
-on: # yamllint disable-line rule:truthy
+on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  lint-linters:
-    name: Lint the linters repository
+  lint:
+    name: Lint workspace
     runs-on: ubuntu-latest
 
     steps:
@@ -15,7 +16,7 @@ jobs:
       uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
 
     - name: Setup pnpm
-      uses: pnpm/action-setup@v2
+      uses: pnpm/action-setup@v4
       with:
         version: 10.24.0
 
@@ -28,25 +29,21 @@ jobs:
 
     - name: Install dependencies
       timeout-minutes: 5
-      run: pnpm i
+      run: pnpm install --frozen-lockfile
 
     - name: Lint repository
       timeout-minutes: 5
       run: pnpm -r lint
 
-  npm-publish:
-    name: Publish package to npm
+  release:
+    name: Version and publish
     runs-on: ubuntu-latest
-    if: contains( join( github.event.commits.*.message, ', ' ), '[ci release]' )
-
     needs:
-    - lint-linters
-
-    strategy:
-      matrix:
-        package:
-        - packages/bundled-eslint-config
-        - packages/bundled-stylelint-config
+    - lint
+    permissions:
+      contents: write
+      id-token: write
+      pull-requests: write
 
     steps:
     - name: Checkout repository
@@ -54,7 +51,7 @@ jobs:
       uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
 
     - name: Setup pnpm
-      uses: pnpm/action-setup@v2
+      uses: pnpm/action-setup@v4
       with:
         version: 10.24.0
 
@@ -64,18 +61,20 @@ jobs:
       with:
         node-version: 24.11.1
         cache: pnpm
+        registry-url: https://registry.npmjs.org
 
     - name: Install dependencies
       timeout-minutes: 5
-      run: pnpm i
+      run: pnpm install --frozen-lockfile
 
-    - name: Build packages
-      timeout-minutes: 5
-      run: pnpm build && pnpm -r build
-
-    - uses: JS-DevTools/npm-publish@7f8fe47b3bea1be0c3aec2b717c5ec1f3e03410b # v4
-      timeout-minutes: 5
+    - name: Create release PR or publish
+      id: changesets
+      uses: changesets/action@v1
       with:
-        access: public
-        package: ${{ matrix.package }}/package.json
-        token: ${{ secrets.NPM_TOKEN }}
+        version: pnpm version-packages
+        publish: pnpm release
+        commit: "chore: release packages"
+        title: "chore: release packages"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_CONFIG_PROVENANCE: true

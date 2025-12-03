@@ -1,7 +1,7 @@
 # An eslint config
 that you might not like, but that's not the point.
 
-Check [https://github.com/DaniFoldi/lint-my-life](https://github.com/DaniFoldi/lint-my-life) for more details.
+Check [https://github.com/DaniFoldi/bundled-lint-config](https://github.com/DaniFoldi/bundled-lint-config) for more details.
 
 ## Usage (eslint)
 

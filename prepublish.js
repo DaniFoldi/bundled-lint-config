@@ -42,12 +42,12 @@ const packageJsonJobs = {
     author: 'DaniFoldi',
     license: 'MIT',
     bugs: {
-      url: 'https://github.com/DaniFoldi/lint-my-life/issues'
+      url: 'https://github.com/DaniFoldi/bundled-lint-config/issues'
     },
-    homepage: 'https://github.com/DaniFoldi/lint-my-life#readme',
+    homepage: 'https://github.com/DaniFoldi/bundled-lint-config#readme',
     repository: {
       type: 'git',
-      url: 'git+https://github.com/DaniFoldi/lint-my-life.git'
+      url: 'git+https://github.com/DaniFoldi/bundled-lint-config.git'
     }
   }
 }
