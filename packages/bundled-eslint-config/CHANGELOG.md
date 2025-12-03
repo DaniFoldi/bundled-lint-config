@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.7.2
+
+### Patch Changes
+
+- [`f623c25`](https://github.com/DaniFoldi/bundled-lint-config/commit/f623c2507f3c82a20ad78e1b7e0431bc9c0fd258) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Fix js node import resolution
+
 ## 0.7.1
 
 ### Patch Changes
