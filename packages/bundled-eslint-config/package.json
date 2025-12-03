@@ -29,8 +29,10 @@
     "dist"
   ],
   "scripts": {
+    "build": "esbuild --format=esm --bundle src/index.ts --outdir=dist --target=node20 --platform=node --packages=external --sourcemap=external",
     "lint": "eslint --cache .",
-    "prepublishOnly": "esbuild --format=esm --bundle src/index.ts --outdir=dist --target=node20 --platform=node --packages=external --sourcemap=external",
+    "prelint": "pnpm build",
+    "prepublishOnly": "pnpm build",
     "test": "vitest",
     "typecheck": "tsc"
   },
