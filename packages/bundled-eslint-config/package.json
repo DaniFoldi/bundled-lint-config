@@ -75,7 +75,7 @@
     "jiti": "2.6.1",
     "some-tsconfig-preset": "1.9.0",
     "typescript": "5.9.3",
-    "vitest": "4.0.9"
+    "vitest": "4.0.15"
   },
   "peerDependencies": {
     "eslint": "^9.39.1"
