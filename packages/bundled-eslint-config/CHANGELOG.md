@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.7.4
+
+### Patch Changes
+
+- [`8fd46ca`](https://github.com/DaniFoldi/bundled-lint-config/commit/8fd46cadfbf323e070d44c41e9cf723daef0c8e7) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Add custom no-self-assign rule that prevents const x = x, function a(x = x) and similar self-initialization cases
+
 ## 0.7.3
 
 ### Patch Changes
