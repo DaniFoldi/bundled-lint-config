@@ -13,6 +13,7 @@ import eslintPluginImportZod from 'eslint-plugin-import-zod'
 import globals from 'globals'
 import { createNodeResolver } from 'eslint-plugin-import-x'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
+import bundledEslintPlugin from '../rules'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
 
@@ -34,7 +35,7 @@ export const jsSettings: Settings = {
       project: 'tsconfig.json'
     }),
     createNodeResolver()
-  ],
+  ]
 }
 
 export const jsGlobals: Globals = {
@@ -54,6 +55,7 @@ export const jsLanguageOptions: LanguageOptions = {
 
 export const jsPlugins: Plugins = {
   '@brettz9': brettz9EslintPlugin,
+  bundled: bundledEslintPlugin,
   // @ts-expect-error weird types
   'case-police': eslintPluginCasePolice,
   // @ts-expect-error weird types
@@ -393,6 +395,7 @@ export const jsRules: Rules = {
   'no-prototype-builtins': 'error',
   'no-redeclare': 'error',
   'no-regex-spaces': 'error',
+  'bundled/no-self-assign': 'error',
   'no-self-assign': 'error',
   'no-setter-return': 'error',
   'no-shadow-restricted-names': 'error',
