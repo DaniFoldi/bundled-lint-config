@@ -11,9 +11,12 @@ function isIdentifier(node: Rule.Node): node is IdentifierNode {
 function traverseNodes(
   node: Rule.Node,
   sourceCode: SourceCode,
-  visitor: (child: Rule.Node) => void
+  visitor: (child: Rule.Node) => void,
+  shouldSkipChildren?: (child: Rule.Node) => boolean
 ): void {
   visitor(node)
+
+  if (shouldSkipChildren?.(node)) return
 
   const keys = sourceCode.visitorKeys[node.type] ?? []
 
@@ -30,6 +33,12 @@ function traverseNodes(
       traverseNodes(value as Rule.Node, sourceCode, visitor)
     }
   }
+}
+
+function isFunctionLike(node: Rule.Node): boolean {
+  return node.type === 'FunctionExpression'
+    || node.type === 'FunctionDeclaration'
+    || node.type === 'ArrowFunctionExpression'
 }
 
 function isReferenceIdentifier(identifier: IdentifierNode): boolean {
@@ -150,7 +159,7 @@ const rule: Rule.RuleModule = {
             data: { name: variable.name }
           })
         }
-      })
+      }, child => isFunctionLike(child))
     }
 
     return {
