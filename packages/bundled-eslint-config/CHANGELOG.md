@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.7.5
+
+### Patch Changes
+
+- [`f01cb8d`](https://github.com/DaniFoldi/bundled-lint-config/commit/f01cb8dee90ab35d780f55a75684a402a88eff59) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Fix false positives in no-self-assign rule
+
 ## 0.7.4
 
 ### Patch Changes
