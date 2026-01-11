@@ -75,7 +75,7 @@ importers:
         specifier: ^6.10.2
         version: 6.10.2(eslint@9.39.1(jiti@2.6.1))
       eslint-plugin-package-json:
-        specifier: ^0.88.0
+        specifier: ^0.88.1
         version: 0.88.1(@types/estree@1.0.8)(eslint@9.39.1(jiti@2.6.1))(jsonc-eslint-parser@2.4.2)
       eslint-plugin-playwright:
         specifier: ^2.4.0
