@@ -34,7 +34,7 @@
     "typescript": "5.9.3"
   },
   "dependencies": {
-    "@stylistic/stylelint-plugin": "^4.0.1",
+    "@stylistic/stylelint-plugin": "^5.0.0",
     "find-up": "^8.0.0",
     "parse-gitignore": "^2.0.0",
     "postcss": "^8.5.6",
