@@ -1,1 +1,8 @@
-export { default } from 'bundled-eslint-config'
+import { config } from 'bundled-eslint-config'
+
+export default config({}, [
+  {
+    name: 'tests-fixtures-ignore',
+    ignores: [ '**/tests/fixtures/**' ]
+  }
+])

@@ -1,3 +1,5 @@
+export {}
+
 const describe = (name: string, fn: () => void) => fn()
 const it = (name: string, fn: () => void) => fn()
 

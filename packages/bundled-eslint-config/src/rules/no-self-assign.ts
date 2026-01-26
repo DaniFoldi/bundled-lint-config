@@ -3,6 +3,7 @@ import type { Rule, SourceCode, Scope } from 'eslint'
 
 type IdentifierNode = Extract<Rule.Node, { type: 'Identifier' }>
 type NodeWithParent = Rule.Node & { parent?: Rule.Node }
+type AssignmentPatternNode = Rule.Node & { type: 'AssignmentPattern'; left: Rule.Node }
 
 function isIdentifier(node: Rule.Node): node is IdentifierNode {
   return node.type === 'Identifier'
@@ -49,8 +50,7 @@ function isReferenceIdentifier(identifier: IdentifierNode): boolean {
   if (parent.type === 'Property' && parent.key === identifier) return parent.computed || parent.shorthand
 
   if (
-    (parent.type === 'MemberExpression'
-      || parent.type === 'OptionalMemberExpression')
+    parent.type === 'MemberExpression'
     && parent.property === identifier
   ) {
     return parent.computed
@@ -73,7 +73,6 @@ function isReferenceIdentifier(identifier: IdentifierNode): boolean {
   if (
     parent.type === 'ExportSpecifier'
     && parent.exported === identifier
-    && !parent.computed
   ) {
     return false
   }
@@ -112,8 +111,10 @@ function isSelfReference(identifier: IdentifierNode, variable: Scope.Variable, s
     const candidate = scope.set.get(identifier.name)
     if (candidate) {
       if (candidate === variable) return true
+
       return false
     }
+
     scope = scope.upper
   }
 
@@ -122,11 +123,16 @@ function isSelfReference(identifier: IdentifierNode, variable: Scope.Variable, s
   while (current) {
     if (
       current.type === 'AssignmentPattern'
-      && current.left.type === 'Identifier'
-      && current.left.name === variable.name
-      && variable.defs.some(def => def.name === current.left)
     ) {
-      return true
+      const left = (current as AssignmentPatternNode).left
+
+      if (
+        isIdentifier(left)
+        && left.name === variable.name
+        && variable.defs.some(def => def.name === left)
+      ) {
+        return true
+      }
     }
 
     current = (current as NodeWithParent).parent
@@ -138,6 +144,7 @@ function isSelfReference(identifier: IdentifierNode, variable: Scope.Variable, s
 function isUnresolvedSelfReference(identifier: IdentifierNode, name: string, sourceCode: SourceCode): boolean {
   if (identifier.name !== name) return false
   if (findVariable(identifier, name, sourceCode)) return false
+
   return true
 }
 
@@ -200,7 +207,7 @@ const rule: Rule.RuleModule = {
         for (const param of node.params) {
           if (param.type !== 'AssignmentPattern' || param.left.type !== 'Identifier') continue
 
-          const variable = findVariable(param.left, param.left.name, sourceCode)
+          const variable = findVariable(param.left as Rule.Node, param.left.name, sourceCode)
           if (!variable) continue
 
           reportSelfReferences(param.right as Rule.Node, variable)
@@ -211,7 +218,7 @@ const rule: Rule.RuleModule = {
         for (const param of node.params) {
           if (param.type !== 'AssignmentPattern' || param.left.type !== 'Identifier') continue
 
-          const variable = findVariable(param.left, param.left.name, sourceCode)
+          const variable = findVariable(param.left as Rule.Node, param.left.name, sourceCode)
           if (!variable) continue
 
           reportSelfReferences(param.right as Rule.Node, variable)
@@ -222,7 +229,7 @@ const rule: Rule.RuleModule = {
         for (const param of node.params) {
           if (param.type !== 'AssignmentPattern' || param.left.type !== 'Identifier') continue
 
-          const variable = findVariable(param.left, param.left.name, sourceCode)
+          const variable = findVariable(param.left as Rule.Node, param.left.name, sourceCode)
           if (!variable) continue
 
           reportSelfReferences(param.right as Rule.Node, variable)

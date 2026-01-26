@@ -1,3 +1,5 @@
+export {}
+
 const test = {
   only: (name: string, fn: () => Promise<void> | void) => fn()
 }

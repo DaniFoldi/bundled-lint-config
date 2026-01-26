@@ -5,6 +5,7 @@ import { join, dirname } from 'node:path'
 import { tmpdir } from 'node:os'
 import { fileURLToPath } from 'node:url'
 
+
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const fixturesRoot = join(__dirname, 'fixtures')
 
@@ -18,7 +19,7 @@ async function withFixture<T>(fixtureName: string, run: (eslint: ESLint, cwd: st
   process.chdir(fixtureDir)
   vi.resetModules()
 
-  const { config } = await import('../src/index.ts')
+  const { config } = await import('../src/index')
 
   const eslint = new ESLint({
     cwd: fixtureDir,
@@ -37,20 +38,23 @@ async function withFixture<T>(fixtureName: string, run: (eslint: ESLint, cwd: st
 type LintMessage = Awaited<ReturnType<ESLint['lintFiles']>>[number]['messages'][number]
 
 async function lintMessages(fixtureName: string, filePath: string): Promise<LintMessage[]> {
-  return withFixture(fixtureName, async (eslint) => {
+  return withFixture(fixtureName, async eslint => {
     const results = await eslint.lintFiles([ filePath ])
+
     return results.flatMap(result => result.messages)
   })
 }
 
 async function lintRules(fixtureName: string, filePath: string): Promise<string[]> {
   const messages = await lintMessages(fixtureName, filePath)
+
   return messages.map(message => message.ruleId).filter(Boolean) as string[]
 }
 
 function sortedRuleIds(ruleIds: string[], prefix?: string): string[] {
   const filtered = prefix ? ruleIds.filter(ruleId => ruleId.startsWith(prefix)) : ruleIds
-  return filtered.slice().sort()
+
+  return [ ...filtered ].sort()
 }
 
 describe('bundled-eslint-config', () => {
@@ -117,7 +121,7 @@ describe('bundled-eslint-config', () => {
   })
 
   it('applies astro rules to astro files', async () => {
-    await withFixture('astro', async (eslint) => {
+    await withFixture('astro', async eslint => {
       const configForAstro = await eslint.calculateConfigForFile('src/component.astro')
       const astroRules = {
         'astro/no-set-html-directive': configForAstro.rules?.['astro/no-set-html-directive'],
@@ -208,7 +212,7 @@ describe('bundled-eslint-config', () => {
         line: message.line,
         column: message.column
       }))
-      .sort((left, right) => (left.line - right.line)
+      .sort((left, right) => left.line - right.line
         || (left.column - right.column)
         || left.message.localeCompare(right.message))
 
@@ -246,7 +250,7 @@ describe('bundled-eslint-config', () => {
         line: message.line,
         column: message.column
       }))
-      .sort((left, right) => (left.line - right.line)
+      .sort((left, right) => left.line - right.line
         || (left.column - right.column)
         || left.message.localeCompare(right.message))
 
