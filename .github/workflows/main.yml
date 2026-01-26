@@ -35,6 +35,10 @@ jobs:
       timeout-minutes: 5
       run: pnpm -r lint
 
+    - name: Lint repository
+      timeout-minutes: 5
+      run: pnpm -r test
+
   release:
     name: Version and publish
     runs-on: ubuntu-latest

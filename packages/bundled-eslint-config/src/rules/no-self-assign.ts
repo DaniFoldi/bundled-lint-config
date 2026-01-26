@@ -26,11 +26,11 @@ function traverseNodes(
     if (Array.isArray(value)) {
       for (const child of value) {
         if (child && typeof child === 'object' && 'type' in child) {
-          traverseNodes(child as Rule.Node, sourceCode, visitor)
+          traverseNodes(child as Rule.Node, sourceCode, visitor, shouldSkipChildren)
         }
       }
     } else if (value && typeof value === 'object' && 'type' in value) {
-      traverseNodes(value as Rule.Node, sourceCode, visitor)
+      traverseNodes(value as Rule.Node, sourceCode, visitor, shouldSkipChildren)
     }
   }
 }
@@ -110,7 +110,10 @@ function isSelfReference(identifier: IdentifierNode, variable: Scope.Variable, s
 
   while (scope) {
     const candidate = scope.set.get(identifier.name)
-    if (candidate === variable) return true
+    if (candidate) {
+      if (candidate === variable) return true
+      return false
+    }
     scope = scope.upper
   }
 
@@ -130,6 +133,12 @@ function isSelfReference(identifier: IdentifierNode, variable: Scope.Variable, s
   }
 
   return false
+}
+
+function isUnresolvedSelfReference(identifier: IdentifierNode, name: string, sourceCode: SourceCode): boolean {
+  if (identifier.name !== name) return false
+  if (findVariable(identifier, name, sourceCode)) return false
+  return true
 }
 
 const rule: Rule.RuleModule = {
@@ -157,6 +166,21 @@ const rule: Rule.RuleModule = {
             node: child,
             messageId: 'selfRef',
             data: { name: variable.name }
+          })
+        }
+      }, child => isFunctionLike(child))
+    }
+
+    function reportSelfReferencesByName(node: Rule.Node, name: string): void {
+      traverseNodes(node, sourceCode, child => {
+        if (!isIdentifier(child)) return
+        if (!isReferenceIdentifier(child)) return
+
+        if (isUnresolvedSelfReference(child, name, sourceCode)) {
+          context.report({
+            node: child,
+            messageId: 'selfRef',
+            data: { name }
           })
         }
       }, child => isFunctionLike(child))
@@ -203,6 +227,13 @@ const rule: Rule.RuleModule = {
 
           reportSelfReferences(param.right as Rule.Node, variable)
         }
+      },
+
+      PropertyDefinition(node) {
+        if (!node.value) return
+        if (node.key.type !== 'Identifier') return
+
+        reportSelfReferencesByName(node.value as Rule.Node, node.key.name)
       }
     }
   }

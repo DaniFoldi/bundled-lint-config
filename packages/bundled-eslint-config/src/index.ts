@@ -214,7 +214,10 @@ export function config(overrides: Overrides = {}, newItems: EslintConfig[] = [])
     }) : undefined,
     defu(overrides.nodeCjs, {
       name: 'nodecjs',
-      files: [ enables.node ? '**/*.c@(j|t)s' : [ '**/scripts/**/*', '**/*.config.c@(j|t)s' ] ],
+      files: [
+        '**/*.c@(j|t)s',
+        ...(enables.node ? [] : [ '**/scripts/**/*', '**/*.config.c@(j|t)s' ])
+      ],
       linterOptions,
       rules: {
         ...nodeRules,
