@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.7.6
+
+### Patch Changes
+
+- [`30bfcaf`](https://github.com/DaniFoldi/bundled-lint-config/commit/30bfcaf6f141000fbe355f6e4a8da5b7158a16a4) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Fix no-self-assign rule in callbacks
+
 ## 0.7.5
 
 ### Patch Changes

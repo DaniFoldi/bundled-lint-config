@@ -1,6 +1,6 @@
 {
   "name": "bundled-eslint-config",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "description": "A preset for ESLint",
   "keywords": [
     "eslint",
