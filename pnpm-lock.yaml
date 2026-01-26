@@ -142,7 +142,7 @@ importers:
   packages/bundled-stylelint-config:
     dependencies:
       '@stylistic/stylelint-plugin':
-        specifier: ^5.0.0
+        specifier: ^5.0.1
         version: 5.0.1(stylelint@16.26.1(typescript@5.9.3))
       find-up:
         specifier: ^8.0.0
