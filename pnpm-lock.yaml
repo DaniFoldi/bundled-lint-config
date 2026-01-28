@@ -20,12 +20,6 @@ importers:
       globby:
         specifier: ^16.1.0
         version: 16.1.0
-      some-tsconfig-preset:
-        specifier: ^3.0.0
-        version: 3.0.0(typescript@5.9.3)
-      typescript:
-        specifier: ^5.9.3
-        version: 5.9.3
 
   packages/bundled-eslint-config:
     dependencies:
@@ -132,12 +126,15 @@ importers:
       esbuild:
         specifier: 0.27.2
         version: 0.27.2
+      eslint-plugin-i18n-text:
+        specifier: ^1.0.1
+        version: 1.0.1(eslint@9.39.2(jiti@2.6.1))
       jiti:
         specifier: 2.6.1
         version: 2.6.1
       some-tsconfig-preset:
-        specifier: 1.9.0
-        version: 1.9.0(typescript@5.9.3)
+        specifier: 3.0.0
+        version: 3.0.0(typescript@5.9.3)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -182,8 +179,8 @@ importers:
         specifier: 0.27.2
         version: 0.27.2
       some-tsconfig-preset:
-        specifier: 1.9.0
-        version: 1.9.0(typescript@5.9.3)
+        specifier: 3.0.0
+        version: 3.0.0(typescript@5.9.3)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1964,6 +1961,11 @@ packages:
     peerDependencies:
       eslint: ^9.9.0
 
+  eslint-plugin-i18n-text@1.0.1:
+    resolution: {integrity: sha512-3G3UetST6rdqhqW9SfcfzNYMpQXS7wNkJvp6dsXnjzGiku6Iu5hl3B0kmk6lIcFPwYjhQIY+tXVRtK9TlGT7RA==}
+    peerDependencies:
+      eslint: '>=5.0.0'
+
   eslint-plugin-import-x@4.16.1:
     resolution: {integrity: sha512-vPZZsiOKaBAIATpFE2uMI4w5IRwdv/FpQ+qZZMR4E+PeOcM4OeoEbqxRMnywdxP19TyB/3h6QBB0EWon7letSQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -3194,11 +3196,6 @@ packages:
   slice-ansi@4.0.0:
     resolution: {integrity: sha512-qMCMfhY040cVHT43K9BFygqYbUPFZKHOg7K73mtTWJRb8pyP3fzf4Ixd5SzdEJQ6MRUg/WBnOLxghZtKKurENQ==}
     engines: {node: '>=10'}
-
-  some-tsconfig-preset@1.9.0:
-    resolution: {integrity: sha512-UMJ6n1lJSUxh4PDnqW6gh+R/yvwvCHPcOgF9RfgykldsI4YrBLYwTGIFSzYSPOIvvCG/9rvWSo+m5RgOkNrdaQ==}
-    peerDependencies:
-      typescript: ^5.9.2
 
   some-tsconfig-preset@3.0.0:
     resolution: {integrity: sha512-+m3lUYk9KXiP7+p3whaiQ/Sy475edkA3TLwGdIXjeFfkrgzo0ucxLboZxgSwJFJNOk6eN6Sibozsp8iIgH86zw==}
@@ -5463,6 +5460,10 @@ snapshots:
       - supports-color
       - typescript
 
+  eslint-plugin-i18n-text@1.0.1(eslint@9.39.2(jiti@2.6.1)):
+    dependencies:
+      eslint: 9.39.2(jiti@2.6.1)
+
   eslint-plugin-import-x@4.16.1(@typescript-eslint/utils@8.53.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint@9.39.2(jiti@2.6.1)):
     dependencies:
       '@typescript-eslint/types': 8.46.2
@@ -6798,10 +6799,6 @@ snapshots:
       ansi-styles: 4.3.0
       astral-regex: 2.0.0
       is-fullwidth-code-point: 3.0.0
-
-  some-tsconfig-preset@1.9.0(typescript@5.9.3):
-    dependencies:
-      typescript: 5.9.3
 
   some-tsconfig-preset@3.0.0(typescript@5.9.3):
     dependencies:

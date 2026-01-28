@@ -10,6 +10,7 @@ import eslintPluginPromise from 'eslint-plugin-promise'
 import eslintPluginSecurity from 'eslint-plugin-security'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import eslintPluginImportZod from 'eslint-plugin-import-zod'
+const eslintPluginI18nText = require('eslint-plugin-i18n-text')
 import globals from 'globals'
 import { createNodeResolver } from 'eslint-plugin-import-x'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
@@ -61,6 +62,7 @@ export const jsPlugins: Plugins = {
   // @ts-expect-error weird types
   import: eslintPluginImport,
   jsdoc: eslintPluginJsdoc,
+  'no-en': eslintPluginI18nText,
   promise: eslintPluginPromise,
   security: eslintPluginSecurity,
   unicorn: eslintPluginUnicorn,
