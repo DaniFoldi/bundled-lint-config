@@ -10,7 +10,8 @@ import eslintPluginPromise from 'eslint-plugin-promise'
 import eslintPluginSecurity from 'eslint-plugin-security'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import eslintPluginImportZod from 'eslint-plugin-import-zod'
-const eslintPluginI18nText = require('eslint-plugin-i18n-text')
+// @ts-expect-error: No types
+import eslintPluginI18nText from 'eslint-plugin-i18n-text'
 import globals from 'globals'
 import { createNodeResolver } from 'eslint-plugin-import-x'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
