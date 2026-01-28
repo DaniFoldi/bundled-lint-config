@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.7.7
+
+### Patch Changes
+
+- Add i18next plugin
+
 ## 0.7.6
 
 ### Patch Changes
