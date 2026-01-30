@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.7.8
+
+### Patch Changes
+
+- [`0f3f080`](https://github.com/DaniFoldi/bundled-lint-config/commit/0f3f08018c5a180559b3542ff646e06b98ca0656) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Replace i18next plugin
+
 ## 0.7.7
 
 ### Patch Changes
