@@ -28,7 +28,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "24.10.9",
+    "@types/node": "25.1.0",
     "esbuild": "0.27.2",
     "some-tsconfig-preset": "3.0.0",
     "typescript": "5.9.3"
@@ -41,7 +41,7 @@
     "postcss-scss": "^4.0.9",
     "stylelint": "^17.0.0",
     "stylelint-config-idiomatic-order": "^10.0.0",
-    "stylelint-high-performance-animation": "^1.11.0",
-    "stylelint-scss": "^6.14.0"
+    "stylelint-high-performance-animation": "^2.0.0",
+    "stylelint-scss": "^7.0.0"
   }
 }

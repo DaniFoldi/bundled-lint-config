@@ -10,8 +10,7 @@ import eslintPluginPromise from 'eslint-plugin-promise'
 import eslintPluginSecurity from 'eslint-plugin-security'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import eslintPluginImportZod from 'eslint-plugin-import-zod'
-// @ts-expect-error: No types
-import eslintPluginI18nText from 'eslint-plugin-i18n-text'
+import eslintPluginI18next from 'eslint-plugin-i18next'
 import globals from 'globals'
 import { createNodeResolver } from 'eslint-plugin-import-x'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
@@ -63,10 +62,10 @@ export const jsPlugins: Plugins = {
   // @ts-expect-error weird types
   import: eslintPluginImport,
   jsdoc: eslintPluginJsdoc,
-  'no-en': eslintPluginI18nText,
   promise: eslintPluginPromise,
   security: eslintPluginSecurity,
   unicorn: eslintPluginUnicorn,
+  i18next: eslintPluginI18next,
   stylistic: eslintPluginStylistic,
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore weird types
@@ -136,6 +135,7 @@ export const jsRules: Rules = {
   'jsdoc/tag-lines': 'warn',
   'jsdoc/text-escaping': 'off',
   'jsdoc/valid-types': 'warn',
+  'i18next/no-literal-string': 'warn',
   'promise/param-names': 'warn',
   'promise/no-return-wrap': 'warn',
   'promise/always-return': 'warn',
