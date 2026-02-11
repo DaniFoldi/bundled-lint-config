@@ -37,7 +37,7 @@ jobs:
 
     - name: Lint repository
       timeout-minutes: 5
-      run: pnpm -r test
+      run: pnpm -r --if-present test
 
   release:
     name: Version and publish
