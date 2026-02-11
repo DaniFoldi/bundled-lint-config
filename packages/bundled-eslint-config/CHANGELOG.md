@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.7.9
+
+### Patch Changes
+
+- [`3b60c50`](https://github.com/DaniFoldi/bundled-lint-config/commit/3b60c50abad6dbad6022b3da14018d1191473777) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Bump dependencies
+
 ## 0.7.8
 
 ### Patch Changes
