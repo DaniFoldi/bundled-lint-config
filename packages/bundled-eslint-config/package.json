@@ -72,7 +72,7 @@
   },
   "devDependencies": {
     "@types/node": "24.10.12",
-    "esbuild": "0.27.2",
+    "esbuild": "0.27.3",
     "jiti": "2.6.1",
     "some-tsconfig-preset": "3.0.0",
     "typescript": "5.9.3",
