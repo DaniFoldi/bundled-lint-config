@@ -246,7 +246,7 @@ export const jsRules: Rules = {
   'import/no-commonjs': 'warn',
   'import/no-import-module-exports': 'warn',
   'import/unambiguous': 'off',
-  'import/no-cycle': 'warn',
+  'import/no-cycle': 'off',
   'import/no-dynamic-require': 'warn',
   'import/no-relative-packages': 'warn',
   'import/no-relative-parent-imports': 'off',
