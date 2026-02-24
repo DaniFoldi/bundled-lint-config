@@ -228,9 +228,13 @@ export const jsRules: Rules = {
     'warn',
     'never'
   ],
+  'stylistic/function-call-argument-newline': [
+    'warn',
+    'consistent'
+  ],
   'stylistic/function-paren-newline': [
     'warn',
-    'multiline'
+    'multiline-arguments'
   ],
   'getter-return': 'error',
   'import/no-unresolved': 'error',
