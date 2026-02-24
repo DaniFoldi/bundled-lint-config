@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.7.10
+
+### Patch Changes
+
+- [`b5dffe1`](https://github.com/DaniFoldi/bundled-lint-config/commit/b5dffe16d656cd6eb3dccb368351f81ffb010f1c) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Disable import/no-cycle rule
+
 ## 0.7.9
 
 ### Patch Changes
