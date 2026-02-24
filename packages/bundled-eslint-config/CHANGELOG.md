@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.7.11
+
+### Patch Changes
+
+- [`da45fc1`](https://github.com/DaniFoldi/bundled-lint-config/commit/da45fc1dc855f4a991ec484fd3bca643459810db) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Allow newline in arguments
+
 ## 0.7.10
 
 ### Patch Changes
