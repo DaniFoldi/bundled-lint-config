@@ -19,7 +19,7 @@ export const vitestPlugins: Plugins = {
 export const vitestRules: Rules = {
   'vitest/consistent-test-it': [ 'warn', { fn: 'it', withinDescribe: 'it' }],
   'vitest/expect-expect': 'warn',
-  'vitest/max-expects': 'warn',
+  'vitest/max-expects': [ 'warn', { max: 40 }],
   'vitest/max-nested-describe': 'warn',
   'vitest/no-alias-methods': 'warn',
   'vitest/no-commented-out-tests': 'warn',
