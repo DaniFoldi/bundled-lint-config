@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.7.12
+
+### Patch Changes
+
+- [`bd2b69f`](https://github.com/DaniFoldi/bundled-lint-config/commit/bd2b69fcee572699f19aeaa7957cc307c6773c5e) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Allow more expects in a test
+
 ## 0.7.11
 
 ### Patch Changes
