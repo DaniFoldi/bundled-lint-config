@@ -26,7 +26,7 @@
     "@changesets/changelog-github": "^0.6.0",
     "@changesets/cli": "^2.30.0",
     "bundled-eslint-config": "workspace:^",
-    "globby": "^16.1.1"
+    "globby": "^16.2.0"
   },
   "packageManager": "pnpm@10.33.0"
 }
