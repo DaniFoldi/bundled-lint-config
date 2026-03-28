@@ -96,7 +96,7 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-react-refresh:
-        specifier: ^0.5.0
+        specifier: ^0.5.2
         version: 0.5.2(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-security:
         specifier: ^3.0.1
