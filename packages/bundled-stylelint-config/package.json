@@ -34,12 +34,12 @@
     "typescript": "6.0.2"
   },
   "dependencies": {
-    "@stylistic/stylelint-plugin": "^5.0.1",
+    "@stylistic/stylelint-plugin": "^5.1.0",
     "find-up": "^8.0.0",
     "parse-gitignore": "^2.0.0",
     "postcss": "^8.5.8",
     "postcss-scss": "^4.0.9",
-    "stylelint": "^17.5.0",
+    "stylelint": "^17.6.0",
     "stylelint-config-idiomatic-order": "^10.0.0",
     "stylelint-high-performance-animation": "^2.0.0",
     "stylelint-scss": "^7.0.0"
