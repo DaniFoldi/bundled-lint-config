@@ -24,12 +24,19 @@
   "license": "MIT",
   "author": "DaniFoldi",
   "type": "module",
-  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "esbuild --format=esm --bundle src/index.ts --outdir=dist --target=node20 --platform=node --packages=external --sourcemap=external",
+    "build": "tsdown",
     "prelint": "pnpm build",
     "lint": "eslint --cache .",
     "prepublishOnly": "pnpm build",
@@ -38,6 +45,7 @@
   },
   "dependencies": {
     "@brettz9/eslint-plugin": "^3.0.0",
+    "@eslint/compat": "^2.0.3",
     "@eslint/json": "^1.2.0",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@vitest/eslint-plugin": "^1.6.13",
@@ -72,9 +80,9 @@
   },
   "devDependencies": {
     "@types/node": "24.12.0",
-    "esbuild": "0.27.4",
     "jiti": "2.6.1",
     "some-tsconfig-preset": "3.0.1",
+    "tsdown": "0.21.7",
     "typescript": "6.0.2",
     "vitest": "4.1.2"
   },

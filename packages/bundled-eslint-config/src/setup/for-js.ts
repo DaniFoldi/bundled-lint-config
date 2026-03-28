@@ -14,6 +14,7 @@ import eslintPluginI18next from 'eslint-plugin-i18next'
 import globals from 'globals'
 import { createNodeResolver } from 'eslint-plugin-import-x'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
+import { fixupPluginRules } from '@eslint/compat'
 import bundledEslintPlugin from '../rules'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
 
@@ -65,7 +66,7 @@ export const jsPlugins: Plugins = {
   promise: eslintPluginPromise,
   security: eslintPluginSecurity,
   unicorn: eslintPluginUnicorn,
-  i18next: eslintPluginI18next,
+  i18next: fixupPluginRules(eslintPluginI18next),
   stylistic: eslintPluginStylistic,
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore weird types
