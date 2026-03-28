@@ -1,6 +1,7 @@
 // @ts-expect-error package has no types
 import eslintPluginReactNative from 'eslint-plugin-react-native'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
+import { fixupPluginRules } from '@eslint/compat'
 
 
 export const reactNativeSettings: Settings = {}
@@ -12,7 +13,7 @@ export const reactNativeLanguageOptions: LanguageOptions = {
 }
 
 export const reactNativePlugins: Plugins = {
-  'react-native': eslintPluginReactNative
+  'react-native': fixupPluginRules(eslintPluginReactNative)
 }
 
 export const reactNativeRules: Rules = {

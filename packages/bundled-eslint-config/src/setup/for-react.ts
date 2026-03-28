@@ -2,6 +2,7 @@ import eslintPluginReact from 'eslint-plugin-react'
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
 import eslintPluginReactRefresh from 'eslint-plugin-react-refresh'
 import type { Globals, LanguageOptions, Plugins, Rules, Settings } from '../util'
+import { fixupPluginRules } from '@eslint/compat'
 
 
 export const reactSettings: Settings = {
@@ -17,7 +18,7 @@ export const reactLanguageOptions: LanguageOptions = {
 }
 
 export const reactPlugins: Plugins = {
-  react: eslintPluginReact,
+  react: fixupPluginRules(eslintPluginReact),
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore types are broken
   'react-hooks': eslintPluginReactHooks,
