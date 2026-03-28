@@ -19,7 +19,7 @@
     "sass": "^1.98.0",
     "stylelint": "^17.5.0",
     "stylelint-high-performance-animation": "^2.0.0",
-    "stylelint-order": "^7.0.1",
+    "stylelint-order": "^8.1.1",
     "stylelint-scss": "^7.0.0"
   },
   "bugs": {
