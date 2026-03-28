@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.8.0
+
+### Minor Changes
+
+- [`97ba461`](https://github.com/DaniFoldi/bundled-lint-config/commit/97ba4619387a9bdae661539b037acc540398f850) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Add support for eslint v10, drop support for eslint v9
+
 ## 0.7.12
 
 ### Patch Changes
