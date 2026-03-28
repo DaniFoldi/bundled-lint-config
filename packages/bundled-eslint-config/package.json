@@ -62,7 +62,7 @@
     "eslint-plugin-react-native": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.5.2",
     "eslint-plugin-security": "^4.0.0",
-    "eslint-plugin-unicorn": "^63.0.0",
+    "eslint-plugin-unicorn": "^64.0.0",
     "eslint-plugin-vue": "^10.8.0",
     "find-up": "^8.0.0",
     "globals": "^17.4.0",
