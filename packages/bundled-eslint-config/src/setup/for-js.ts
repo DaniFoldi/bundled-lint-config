@@ -524,6 +524,10 @@ export const jsRules: Rules = {
   'unicorn/no-unnecessary-array-flat-depth': 'warn',
   'unicorn/no-unnecessary-array-splice-count': 'warn',
   'unicorn/no-unnecessary-slice-end': 'warn',
+  'unicorn/switch-case-break-position': 'error',
+  'unicorn/prefer-simple-condition-first': 'warn',
+  'unicorn/no-useless-iterator-to-array': 'warn',
+  'unicorn/consistent-template-literal-escape': 'warn',
   'unicorn/filename-case': [
     'warn',
     {
