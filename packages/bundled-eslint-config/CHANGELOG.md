@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.8.1
+
+### Patch Changes
+
+- [`34dfdec`](https://github.com/DaniFoldi/bundled-lint-config/commit/34dfdec00174be25a6f9cbee030421d78eaaeeb0) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Compatibility with typescript 6
+
 ## 0.8.0
 
 ### Minor Changes
