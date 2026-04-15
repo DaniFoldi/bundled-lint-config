@@ -87,6 +87,6 @@
     "vitest": "4.1.2"
   },
   "peerDependencies": {
-    "eslint": "^10.1.0"
+    "eslint": "^10.2.0"
   }
 }
