@@ -82,7 +82,7 @@
     "@types/node": "24.12.0",
     "jiti": "2.6.1",
     "some-tsconfig-preset": "3.0.1",
-    "tsdown": "0.21.7",
+    "tsdown": "0.21.9",
     "typescript": "6.0.2",
     "vitest": "4.1.2"
   },
