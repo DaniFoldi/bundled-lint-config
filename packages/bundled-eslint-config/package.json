@@ -79,12 +79,12 @@
     "vue-eslint-parser": "^10.4.0"
   },
   "devDependencies": {
-    "@types/node": "24.12.0",
+    "@types/node": "24.12.2",
     "jiti": "2.6.1",
     "some-tsconfig-preset": "3.0.1",
     "tsdown": "0.21.9",
-    "typescript": "6.0.2",
-    "vitest": "4.1.2"
+    "typescript": "6.0.3",
+    "vitest": "4.1.4"
   },
   "peerDependencies": {
     "eslint": "^10.2.0"
