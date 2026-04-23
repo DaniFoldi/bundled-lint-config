@@ -94,6 +94,5 @@ export const astroRules: Rules = {
   'astro/jsx-a11y/tabindex-no-positive': 'warn',
 
   // *--- EXTENSION RULES ---*
-  'astro/semi': [ 'warn', 'never' ],
-  'stylistic/semi': 'off'
+  'astro/semi': [ 'warn', 'never' ]
 }

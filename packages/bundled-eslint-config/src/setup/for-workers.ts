@@ -16,6 +16,4 @@ export const workersLanguageOptions: LanguageOptions = {
 
 export const workersPlugins: Plugins = {}
 
-export const workersRules: Rules = {
-  'import/no-unassigned-import': 'off'
-}
+export const workersRules: Rules = {}

@@ -5,3 +5,8 @@ ignoredBuiltDependencies:
   - '@parcel/watcher'
   - esbuild
   - unrs-resolver
+
+peerDependencyRules:
+  allowedVersions:
+    stylelint: ^17.0.0
+    eslint: ^10.0.0

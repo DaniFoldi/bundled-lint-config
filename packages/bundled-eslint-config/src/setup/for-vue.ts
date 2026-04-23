@@ -67,7 +67,6 @@ export const vueRules: Rules = {
       ignoreUrls: true
     }
   ],
-  'stylistic/max-len': 'off',
   'vue/multi-word-component-names': 'off',
   'vue/no-child-content': 'error',
   'vue/no-constant-condition': 'warn',
@@ -103,7 +102,6 @@ export const vueRules: Rules = {
   'vue/require-emit-validator': 'error',
   // 'vue/require-explicit-slots': 'error',
   'vue/script-indent': [ 'warn', 2, { baseIndent: 1, switchCase: 1 }],
-  'stylistic/indent': 'off',
   'vue/space-in-parens': [ 'warn', 'never' ],
   'vue/space-infix-ops': 'warn',
   'vue/static-class-names-order': 'warn',
