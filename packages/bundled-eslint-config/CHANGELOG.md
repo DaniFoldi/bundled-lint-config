@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.9.0
+
+### Minor Changes
+
+- [`b51fc21`](https://github.com/DaniFoldi/bundled-lint-config/commit/b51fc215aefad83082933cafc9c4c54a25289e23) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Breaking change: Remove all plugins/rules already covered by oxlint. This config now only covers vue/astro templates and package.json. For the rest, use oxlint.
+
 ## 0.8.1
 
 ### Patch Changes
