@@ -51,8 +51,8 @@ importers:
         specifier: ^6.10.2
         version: 6.10.2(eslint@10.2.1)
       eslint-plugin-package-json:
-        specifier: ^0.91.1
-        version: 0.91.1(@types/estree@1.0.8)(eslint@10.2.1)(jsonc-eslint-parser@3.1.0)
+        specifier: ^0.91.2
+        version: 0.91.2(@types/estree@1.0.8)(eslint@10.2.1)(jsonc-eslint-parser@3.1.0)
       eslint-plugin-vue:
         specifier: ^10.9.0
         version: 10.9.0(@stylistic/eslint-plugin@5.10.0(eslint@10.2.1))(@typescript-eslint/parser@8.59.0(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1)(vue-eslint-parser@10.4.0(eslint@10.2.1))
@@ -1389,8 +1389,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
-  eslint-plugin-package-json@0.91.1:
-    resolution: {integrity: sha512-rxmCAcuTvDqrtywsmVHcFxEZdJUTByetAelAZiAcjMqo0BS1090KbjTeyEOiEdpEqxwa83c+xHCjFoZX9OKEcA==}
+  eslint-plugin-package-json@0.91.2:
+    resolution: {integrity: sha512-tuPjHVYOjqEJtErmzuYiQY6o877l9Kb7+lfLhR/mAzHuy9CBqhRreIGPsQmVM/dMJ8yQVg92Bz1vBAgugELIXw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       eslint: '>=8.0.0'
@@ -1690,6 +1690,10 @@ packages:
 
   hookified@2.1.1:
     resolution: {integrity: sha512-AHb76R16GB5EsPBE2J7Ko5kiEyXwviB9P5SMrAKcuAu4vJPZttViAbj9+tZeaQE5zjDme+1vcHP78Yj/WoAveA==}
+
+  hosted-git-info@9.0.3:
+    resolution: {integrity: sha512-Hc+ghLoSt6QaYZUv0WBiIvmMDZuZZ7oaDvdH8MbfOO4lOsxdXLEvuC6ePoGs9H1X9oCLyq6+NVN0MKqD+ydxyg==}
+    engines: {node: ^20.17.0 || >=22.9.0}
 
   html-tags@5.1.0:
     resolution: {integrity: sha512-n6l5uca7/y5joxZ3LUePhzmBFUJ+U2YWzhMa8XUTecSeSlQiZdF5XAd/Q3/WUl0VsXgUwWi8I7CNIwdI5WN1SQ==}
@@ -2044,6 +2048,10 @@ packages:
   lodash.truncate@4.4.2:
     resolution: {integrity: sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw==}
 
+  lru-cache@11.3.6:
+    resolution: {integrity: sha512-Gf/KoL3C/MlI7Bt0PGI9I+TeTC/I6r/csU58N4BSNc4lppLBeKsOdFYkK+dX0ABDUMJNfCHTyPpzwwO21Awd3A==}
+    engines: {node: 20 || >=22}
+
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
@@ -2116,6 +2124,10 @@ packages:
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
+
+  npm-package-arg@13.0.2:
+    resolution: {integrity: sha512-IciCE3SY3uE84Ld8WZU23gAPPV9rIYod4F+rc+vJ7h7cwAJt9Vk6TVsK60ry7Uj3SRS3bqRRIGuTp9YVlk6WNA==}
+    engines: {node: ^20.17.0 || >=22.9.0}
 
   npm-run-path@4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
@@ -2198,8 +2210,8 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  package-json-validator@1.4.0:
-    resolution: {integrity: sha512-Nb1qg9Z7Om/r3kw3gZfKbFvFC6e0Cj38Zc5NS2LCogxqbUCbFLTjlvRKk/9doMvaAyrzUVwrR0si/opLru4CHw==}
+  package-json-validator@1.5.1:
+    resolution: {integrity: sha512-5WpI9I6pMy/ueq7rkDcJXfVjcHX6OBVTQk4Z7ObVZzsgPv/sX3kUfFFfvobErl/HpgleLcW4egvNypyBwGlkpw==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
 
   package-manager-detector@0.2.11:
@@ -2312,6 +2324,10 @@ packages:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+
+  proc-log@6.1.0:
+    resolution: {integrity: sha512-iG+GYldRf2BQ0UDUAd6JQ/RwzaQy6mXmsk/IzlYyal4A4SNFw54MeH4/tLkF4I5WoWG9SQwuqWzS99jaFQHBuQ==}
+    engines: {node: ^20.17.0 || >=22.9.0}
 
   prompts@2.4.2:
     resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
@@ -4215,7 +4231,7 @@ snapshots:
       safe-regex-test: 1.1.0
       string.prototype.includes: 2.0.1
 
-  eslint-plugin-package-json@0.91.1(@types/estree@1.0.8)(eslint@10.2.1)(jsonc-eslint-parser@3.1.0):
+  eslint-plugin-package-json@0.91.2(@types/estree@1.0.8)(eslint@10.2.1)(jsonc-eslint-parser@3.1.0):
     dependencies:
       '@altano/repository-tools': 2.0.3
       change-case: 5.4.4
@@ -4224,7 +4240,7 @@ snapshots:
       eslint: 10.2.1
       eslint-fix-utils: 0.4.2(@types/estree@1.0.8)(eslint@10.2.1)
       jsonc-eslint-parser: 3.1.0
-      package-json-validator: 1.4.0
+      package-json-validator: 1.5.1
       semver: 7.7.4
       sort-object-keys: 2.1.0
       sort-package-json: 3.6.1
@@ -4562,6 +4578,10 @@ snapshots:
 
   hookified@2.1.1: {}
 
+  hosted-git-info@9.0.3:
+    dependencies:
+      lru-cache: 11.3.6
+
   html-tags@5.1.0: {}
 
   htmlparser2@8.0.2:
@@ -4864,6 +4884,8 @@ snapshots:
 
   lodash.truncate@4.4.2: {}
 
+  lru-cache@11.3.6: {}
+
   magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -4913,6 +4935,13 @@ snapshots:
       whatwg-url: 5.0.0
 
   normalize-path@3.0.0: {}
+
+  npm-package-arg@13.0.2:
+    dependencies:
+      hosted-git-info: 9.0.3
+      proc-log: 6.1.0
+      semver: 7.7.4
+      validate-npm-package-name: 7.0.2
 
   npm-run-path@4.0.1:
     dependencies:
@@ -5004,8 +5033,9 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  package-json-validator@1.4.0:
+  package-json-validator@1.5.1:
     dependencies:
+      npm-package-arg: 13.0.2
       semver: 7.7.4
       validate-npm-package-license: 3.0.4
       validate-npm-package-name: 7.0.2
@@ -5102,6 +5132,8 @@ snapshots:
   prelude-ls@1.2.1: {}
 
   prettier@2.8.8: {}
+
+  proc-log@6.1.0: {}
 
   prompts@2.4.2:
     dependencies:
