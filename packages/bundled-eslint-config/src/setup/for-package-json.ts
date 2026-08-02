@@ -25,7 +25,6 @@ export const packageJsonRules: Rules = {
   'package-json/sort-collections': 'error',
   'package-json/unique-dependencies': 'error',
   'package-json/valid-name': 'error',
-  'package-json/valid-package-definition': 'error',
   'package-json/valid-repository-directory': 'error',
   'package-json/valid-version': 'error'
 }
