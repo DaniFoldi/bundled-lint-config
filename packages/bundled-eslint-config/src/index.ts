@@ -24,7 +24,7 @@ const ignores = {
 
 const jsPreset = {
   name: 'js',
-  files: [],
+  files: ['__disabled__'],
   linterOptions,
   rules: jsRules,
   plugins: jsPlugins,
@@ -34,7 +34,7 @@ const jsPreset = {
 
 const tsPreset = {
   name: 'ts',
-  files: [],
+  files: ['__disabled__'],
   linterOptions,
   rules: { ...jsRules, ...tsRules },
   plugins: { ...jsPlugins, ...tsPlugins },
