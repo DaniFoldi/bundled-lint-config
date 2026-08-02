@@ -64,7 +64,7 @@
     "@types/node": "25.9.3",
     "some-tsconfig-preset": "3.0.1",
     "tsdown": "0.22.14",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "vitest": "4.1.8"
   },
   "peerDependencies": {
