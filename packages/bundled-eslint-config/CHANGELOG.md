@@ -1,5 +1,11 @@
 # bundled-eslint-config
 
+## 0.9.1
+
+### Patch Changes
+
+- [`b7fc1ff`](https://github.com/DaniFoldi/bundled-lint-config/commit/b7fc1ff5aa7c5a8ac6fe5d664421e933ad6e898e) Thanks [@DaniFoldi](https://github.com/DaniFoldi)! - Fix linting js/ts
+
 ## 0.9.0
 
 ### Minor Changes
