@@ -46,7 +46,7 @@
   "dependencies": {
     "@eslint/compat": "^2.1.0",
     "@eslint/json": "^1.2.0",
-    "astro-eslint-parser": "^1.4.0",
+    "astro-eslint-parser": "^3.0.0",
     "defu": "^6.1.7",
     "eslint-config-flat-gitignore": "^2.3.0",
     "eslint-plugin-astro": "^1.7.0",
