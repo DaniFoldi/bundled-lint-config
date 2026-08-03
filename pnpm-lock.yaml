@@ -137,13 +137,13 @@ importers:
   packages/stylelint-vue:
     dependencies:
       postcss:
-        specifier: ^8.5.8
+        specifier: ^8.5.25
         version: 8.5.25
       postcss-html:
         specifier: ^1.8.1
         version: 1.8.1
       stylelint:
-        specifier: ^17.6.0
+        specifier: ^17.14.1
         version: 17.14.1(supports-color@10.2.2)(typescript-native-bridge@6.0.3-bridge.8.tsgo.7.0.2)
       stylelint-high-performance-animation:
         specifier: ^2.0.0
