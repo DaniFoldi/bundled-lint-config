@@ -89,7 +89,7 @@ importers:
         version: typescript-native-bridge@6.0.3-bridge.8.tsgo.7.0.2
       vitest:
         specifier: 4.1.8
-        version: 4.1.8(@types/node@25.9.3)(vite@8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.102.0))
+        version: 4.1.8(@types/node@25.9.3)(vite@8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.103.1))
 
   packages/bundled-stylelint-config:
     dependencies:
@@ -155,19 +155,19 @@ importers:
   packages/stylelint-vue-scss:
     dependencies:
       postcss:
-        specifier: ^8.5.8
-        version: 8.5.25
+        specifier: ^8.5.26
+        version: 8.5.26
       postcss-html:
         specifier: ^1.8.1
         version: 1.8.1
       postcss-scss:
         specifier: ^4.0.9
-        version: 4.0.9(postcss@8.5.25)
+        version: 4.0.9(postcss@8.5.26)
       sass:
-        specifier: ^1.99.0
-        version: 1.102.0
+        specifier: ^1.103.0
+        version: 1.103.1
       stylelint:
-        specifier: ^17.6.0
+        specifier: ^17.14.1
         version: 17.14.1(supports-color@10.2.2)(typescript-native-bridge@6.0.3-bridge.8.tsgo.7.0.2)
       stylelint-high-performance-animation:
         specifier: ^2.0.0
@@ -176,7 +176,7 @@ importers:
         specifier: ^8.1.1
         version: 8.1.1(stylelint@17.14.1(supports-color@10.2.2))
       stylelint-scss:
-        specifier: ^7.0.0
+        specifier: ^7.2.0
         version: 7.2.0(stylelint@17.14.1(supports-color@10.2.2))
 
 packages:
@@ -2256,6 +2256,11 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  nanoid@3.3.18:
+    resolution: {integrity: sha512-DTg4MJbGMWkfi6VZFdNt2/caMbQy4Ou+Op/hJQvGEWcnVfoA1QA+xzRKAzw9jD6+GVOOeYr/mIcuDSdug6F6+w==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
@@ -2463,6 +2468,10 @@ packages:
     resolution: {integrity: sha512-DTPx3RWSSnWyzLxQnlH0rJP+EW5ekl16ZU4/psbIhA0e53kJfdgaN5vKM+xP7yJtXVu+nfdVFmlgFDEKAe4Pyw==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postcss@8.5.26:
+    resolution: {integrity: sha512-u82N74LFzG8ca+dD8puPnplTXoGH4fTPpVGuIbt36G3qvNlkvfD0lEAZSxaly3KX8TS/L1A1gsCEmvKmBcVbkQ==}
+    engines: {node: ^10 || ^12 || >=14}
+
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -2574,8 +2583,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.102.0:
-    resolution: {integrity: sha512-NSOyTnaQF7rTAEOtI2fwb386vL+akyiQLBZu8Na7hXCb+umJy0GAqlcMIaqACZ6Z1VgTBS4K9PG6B3IdjHGJsw==}
+  sass@1.103.1:
+    resolution: {integrity: sha512-9icZURbP51S6S0QGoyaeqk9uB06GNWxsFYWfH5RgpFgqK5FA8tJcM3AdVxrZEVJ7dz+L87nG95gBKf4VuaMHGw==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -3841,13 +3850,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.1
 
-  '@vitest/mocker@4.1.8(vite@8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.102.0))':
+  '@vitest/mocker@4.1.8(vite@8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.103.1))':
     dependencies:
       '@vitest/spy': 4.1.8
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.102.0)
+      vite: 8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.103.1)
 
   '@vitest/pretty-format@4.1.8':
     dependencies:
@@ -5141,6 +5150,8 @@ snapshots:
 
   nanoid@3.3.16: {}
 
+  nanoid@3.3.18: {}
+
   natural-compare@1.4.0: {}
 
   node-addon-api@7.1.1:
@@ -5315,6 +5326,10 @@ snapshots:
     dependencies:
       postcss: 8.5.25
 
+  postcss-scss@4.0.9(postcss@8.5.26):
+    dependencies:
+      postcss: 8.5.26
+
   postcss-selector-parser@7.1.4:
     dependencies:
       cssesc: 3.0.0
@@ -5333,6 +5348,12 @@ snapshots:
   postcss@8.5.25:
     dependencies:
       nanoid: 3.3.16
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
+  postcss@8.5.26:
+    dependencies:
+      nanoid: 3.3.18
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -5458,7 +5479,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.102.0:
+  sass@1.103.1:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.9
@@ -5894,7 +5915,7 @@ snapshots:
 
   verkit@0.3.1: {}
 
-  vite@8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.102.0):
+  vite@8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.103.1):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.5
@@ -5905,12 +5926,12 @@ snapshots:
       '@types/node': 25.9.3
       esbuild: 0.28.1
       fsevents: 2.3.3
-      sass: 1.102.0
+      sass: 1.103.1
 
-  vitest@4.1.8(@types/node@25.9.3)(vite@8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.102.0)):
+  vitest@4.1.8(@types/node@25.9.3)(vite@8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.103.1)):
     dependencies:
       '@vitest/expect': 4.1.8
-      '@vitest/mocker': 4.1.8(vite@8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.102.0))
+      '@vitest/mocker': 4.1.8(vite@8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.103.1))
       '@vitest/pretty-format': 4.1.8
       '@vitest/runner': 4.1.8
       '@vitest/snapshot': 4.1.8
@@ -5927,7 +5948,7 @@ snapshots:
       tinyexec: 1.2.4
       tinyglobby: 0.2.17
       tinyrainbow: 3.1.1
-      vite: 8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.102.0)
+      vite: 8.2.0(@types/node@25.9.3)(esbuild@0.28.1)(sass@1.103.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 25.9.3
