@@ -13,11 +13,11 @@
   "author": "DaniFoldi",
   "license": "MIT",
   "dependencies": {
-    "postcss": "^8.5.26",
+    "postcss": "^8.5.31",
     "postcss-html": "^1.8.1",
-    "stylelint": "^17.14.1",
+    "stylelint": "^17.16.0",
     "stylelint-high-performance-animation": "^2.0.0",
-    "stylelint-order": "^8.1.1"
+    "stylelint-order": "^8.1.2"
   },
   "bugs": {
     "url": "https://github.com/DaniFoldi/bundled-lint-config/issues"
